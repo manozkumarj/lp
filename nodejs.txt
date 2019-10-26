@@ -1,0 +1,122 @@
+* Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.
+* NodeJs is a C++ program that includes Google's V8 engine.
+* Express.js, or simply Express, is a web application framework for Node.js
+
+
+Commannds:
+----------------------------------
+* npm init (OR) npm init --yes (OR) npm init -y
+* npm list = to see all the dependency packages
+* npm install underscore (OR) npm i underscore
+* npm i -g lodash = It install "lodash" package globally
+* npm root -g = it gives the path that where all the global packages are instaling
+* npm i -g npm@5.0.1 = This is how we can install a package with particular version
+* npm uninstall -g npm (OR) npm un -g npm (OR) npm remove -g npm (OR) npm rm -g npm = It removes globally
+* npm uninstall underscore (OR) npm un underscore (OR) npm remove underscore (OR) npm rm underscore
+* npm i mocha --save-dev (OR) npm i -D mocha
+* npm list (OR) npm ls = To get all the modules with version number that are installed.
+* npm list --depth=0 (OR) npm ls --depth=0 (OR) npm ls --depth 0 = To get only the modules with version number that are installed by us.
+* npm view mongoose = To view package.json file a particular module
+* npm view mongoose dependencies
+* npm view mongoose versions
+* npm outdated
+* npm update mongoose@
+* npm i -g npm-check-updates
+
+* npm config get init-author-name = It gives the default author name
+* npm config set init-author-name "Manoj" = It sets the default author name to "Manoj"
+* npm config delete init-author-name = It deltes the previouslt set author name to default
+
+
+-----------------------------------
+
+Semantic versioning (SemVer) example = 5.0.1
+5 = Major
+0 = Minor
+1 = Patch release
+
+^5.0.1 = 5.X
+~5.0.1 = 5.0.X
+
+* Every node module contains package.json file
+
+
+Few ExpressJS middlewares
+--------------------------------------
+helmet = Secures our app by setting variour HTTP headers
+app.use(helmet());
+
+morgan = logs all the HTTP requests -> It impacts the request process pipeline
+app.use(morgan('tiny'));
+----------------------------------------
+
+
+* Function expressions
+* Module & Require()
+* Read, Write & delete files
+* Create, remove directories
+* Protocols: A set of communication rules , that two sides agree to use when communicating.
+* HTTP is used for websites whereas FTP is used for transfer files.
+* A programme running on a computer can listen for requests sent to a particular port.
+* Client & Server topics
+* Streams & Buffers
+* Basic routing using NodeJS
+* NPM concept
+
+
+* Ryan Dahl embeded Google's V8 into C++ and named it as Node
+* Node is a run time javascript environment. It contains javascript engine that executes javascript code.
+* Every file in Node is considered as Module.
+* Variables and functions that are declared in a file are scoped to that module.
+* If we want to use a variable or a function which is defined in a module from outside of that module we need to export and then import that module.
+* Every Node application has at least one file/module which is called "Main Module".
+* The type of the HTTP request determines the kind of the operation.
+* 
+
+
+
+********************************************************************************************
+Creating server with pure NodeJS and serving files with headers:
+--------------------------------------------------------------------
+const http = require('http');
+const path = require('path');
+const fs = require('fs');
+
+const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    fs.readFile(
+      path.join(__dirname, 'public', 'index.html'),
+      (err, content) => {
+        if (err) throw err;
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.end(content);
+      }
+    );
+  }
+
+  if (req.url === '/api/users') {
+    const users = [
+      { name: 'Bob Smith', age: 40 },
+      { name: 'John Doe', age: 30 }
+    ];
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(users));
+  }
+********************************************************************************************
+
+
+
+
+
+
+
+
+
+NodeJS core modules:
+--------------------------------
+HTTP, path, fs, os, events, buffer
+
+
+* https://thebittheories.com/nodejs-interview-questions-935498510d46
+* http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm
+* https://www.youtube.com/watch?v=-PuMp5tQ8Jw&list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x&index=15

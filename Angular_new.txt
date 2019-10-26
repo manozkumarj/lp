@@ -1,0 +1,143 @@
+* An angular app is made up of several components, each component represnts its view.
+* Node version should be min 6.9 to build angular app.
+* Angular uses HMR - Hot Module Reload/Replacement.
+* "@Component", "@Injectable", "@Directive" & "@NgModule" are DECORATORS.
+* "*ngIf", "*ngFor", "*ngSwith" are STRUCTURAL DIRECTIVES.
+* ngClass & ngStyle are ATTRIBUTE DIRECTIVES.
+* "Ingectable" decorator is used in "services" only. "Ingectable" decorator is used only when this service has dependencies in its constructor, otherwise no need put "ingectable" decorator in "services".
+* Property binding example
+	let tite = "Some text";
+	let imgUrl = 'https://picsum.photos/id/276/400/200';
+		[src]='imgUrl'
+		<h2 textContent="title"></h2>
+* Wherever we want add text between Headeings, Divs, Span so on, we should use "Interpolation", but not "Property binding"
+* Attribute binding
+Ex: let colSpan = 2;
+	<td [attr.colspan]="colSpan"></td>
+* Class binding
+	isActive = true;
+	<button class="btn btn-primary" [class.active]="isActive">Save</button>
+	 -> "active" class will be added into the class.
+* Style binding
+	let isActive = true;
+	<button [style.backgroundColor]="isActive ? 'blue' : 'green'">Save</button>
+* Event binding
+	onSave($event){ alert("Button Clicked"); }
+	<button (click)="onSave($event)"> Save </button>
+* Event filtering
+	<input type="text" (keyup.enter)="clickedEnter()" />
+	clickedEnter(){
+		alert("Clicked enter");
+	}
+* <input type="text" #email (keyup.enter)="clickedEnter(email.value)" />
+	"#email" is called as "Template Variable".
+	clickedEnter(email){
+		alert("Clicked enter & the value is = "+ email);
+	}
+* Two way binding
+	let email = 'me@example.com';
+	<input type="text" [(ngMoel)]='email' (keyup.enter)="clickedEnter()" />
+	clickedEnter(){
+		alert("Clicked enter & the value is = "+ email);
+	}
+    -> In order use "ngModel" we need to import "formsModule"
+* "BrowserModule" is one of the built-in module in Angular
+* We can use "<ng-content select='.heading'></ng-content>" whenever we want consumer component will provide the content to the current component.
+* If we don't want the HTML eements to be rendered from consumer component then we need to use "<ng-container class="heading"> inside of consumer component HTML.
+* We can use "if" and "else" in HTML from version 4 as below
+	<div *ngIf="courses.length > 0; else noCourses"> List of courses </div>
+	<ng-template #noCourses> No courses yet </ng-template>
+			(OR)
+	<div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+	<ng-template #coursesList> List of courses </ng-template>
+	<ng-template #noCourses> No courses yet </ng-template>
+* If we use "ngIf" and that condition evaluates to "Falsy" then that element will be removed from DOM. But if we use "hidden" attribute eventhough the condition evaluates to "Falsy" that element won't be removed from DOM. That's difference B/W "ngIf" & "hidden".
+* let viewMode = 'map';
+	<div [ngSwitch]="viewMode">
+		<div *ngSwitchCase="'map'"> Map view content </div>
+		<div *ngSwitchCase="'list'"> List view content </div>
+		<div *ngSwitchDefault> Other case </div>
+	</div>
+* let courses = [
+		{ id: 1, name: 'course1' },
+		{ id: 2, name: 'course2' },
+		{ id: 3, name: 'course3' },
+	];
+	<ul>
+		<li *ngFor="let course of courses; index as i">
+			{{ i }} - {{ course.name }}
+		</li>
+	</ul>
+
+* "Safe Traversal operator" ex:
+	let task = {
+		title: "Some title",
+		assignee: null
+	}
+
+	<span>{{ task.assignee?.name }}</span>
+* 
+
+
+
+
+
+
+
+
+
+
+
+Short & Sweet:
+----------------------------------------------------------------------------
+* We should register all the "componenets", "pipes" & "directives" inside of "declarations" array in app.module.ts
+* We should register all the services in "providers" array in app.module.ts
+* We should register all the modules in "imports" array in app.module.ts
+* If we want to use "Reactive Forms" then first we need to add "ReactiveFormsModule" in "imports" array in app.module.ts
+* Ex for Modules, "forms", "HTTP", "ReactiveForms" & "Router"
+* Whenever we create a service using CLI, the service won't be added in "provides" array in "app.module.ts" file. We should add it manually.
+* To do HTTP requests we need to import "HttpModule" and add it to "imports" array in "app.module.ts"
+* "OnInit" is an interface and it is defined in angular core lib.
+* Few angular Lifecycle Hooks
+	-> OnInit
+	-> OnChanges
+	-> DoCheck
+	-> AfterContentInit
+	-> OnDestroy
+	-> 
+
+	Above all are interfaces and are includes a method with same name with a prefix 'ng', Ex: ngOnInit()
+
+* We should use "ngOnInit()" method whenever we want to perform while initialiing the component.
+* 
+
+
+
+
+Folder structure:
+----------------------------------------------------------------------------
+* Foder - e2e = End 2 End - used to do end 2 end test
+* Foder - node_modules
+* Foder - src
+			- app - assets - environment
+* 
+
+
+
+
+
+
+
+
+Commands:
+----------------------------------------------------------------------------
+* ng build environment=prod || ng build --prod
+* ng lint
+* ng lint --fix
+* 
+
+
+
+
+
+

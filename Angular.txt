@@ -1,0 +1,400 @@
+* https://nodejs.org/en/
+* https://angular.io/
+* https://cli.angular.io/
+
+* Angular JS is initially released in 2010
+* Angular 2 is released in 2016
+* Angular 2 is completely re-write of Angular JS
+
+
+
+* ng new "appName"
+  npm install
+  ng serve --open
+  ng generate component [componentName]
+  ng generate service [serviceName]
+  
+https://hype.codes/differences-between-promise-and-observable-angular
+* Promise
+A Promise handles a single event when an async operation completes or fails.
+
+Note: There are Promise libraries out there that support cancellation, but ES6 Promise doesn't so far.
+
+* Observable
+An Observable is like a Stream (in many languages) and allows to pass zero or more events where the callback is called for each event.
+
+Often Observable is preferred over Promise because it provides the features of Promise and more. With Observable it doesn't matter if you want to handle 0, 1, or multiple events. You can utilize the same API in each case.
+
+Observable also has the advantage over Promise to be cancelable. If the result of an HTTP request to a server or some other expensive async operation isn't needed anymore, the Subscription of an Observable allows to cancel the subscription, while a Promise will eventually call the success or failed callback even when you don't need the notification or the result it provides anymore.
+
+Observable provides operators like map, forEach, reduce, ... similar to an array
+
+There are also powerful operators like retry(), or replay(), ... that are often quite handy.
+
+*********************************************************************************
+
+some meta data is called "Component".
+* Service is a class with a specific purpose.
+* The response that we get from http service is called "Observable".
+* Angular application is a collection of many invidual modules.
+* Every Angular application has at least one module that is route module - AppModule by convension
+* Every Angular application has at least one component that is route component - AppComponent by convension
+* A component controls a portion of the view on the browser.
+* All components will be nested in route component.
+* Each component will have a html template to represent the view in the browser and a class that controls the logic of that particular view.
+* Module contains services that contains business logic of the application
+* In Angular app main file is "main.ts" files it resides inside of "src" folder.
+* Angular cli is used to create building blocks.
+
+* A component is made up of 3 things, 1)Template 2)Class 3)Meta data
+* There are 3 ways to specify the selector - 1)app-test 2).app-test 3)[app-test]
+* A property within double curly braces is known as "Interpolation" in Angular
+* Interpolation only works with Srtings but not boolean things.
+To work with boolean things "Property binding" comes to the picture.
+Ex: <input type='text' [disabled]='isDisabled' value='Manoj' id={{myId}}' />
+Ex: <input type='text' bind-disabled='isDisabled' value='Manoj' id={{myId}}' />
+let myId = 'idName';
+let isDisabled = true;
+https://www.youtube.com/watch?v=N8FBmB2jme8&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=6
+
+* A directive is nothing but a custom attribute that Angular provides.
+* Class binding & style binding & event binding
+* Template refence variables = #attribute
+Ex: <input type='text' value='' #inputField />
+<button (click)="logMsg($event)">Click</button>
+<button (click)="logMsg(inputField)">Click</button>
+<button (click)="logMsg(inputField.value)">Click</button>
+
+* Two way binding - We have to use [(ngModel)]="name"
+To use "ngModel", we have import "FormsModule" into app.module.ts file
+
+* Structural directives
+------------------------------
+* Structural directives allows us to add or remove html elements.
+* ngIf, ngSwitch and ngFor
+* ngIf and ngSwitch are used to conditionally render HTML elements
+* ngFor is used to render list of HTML elements.
+* ngIf
+----------------
+Ex1:
+<div *ngIf="false; else elseBlock">This is statement 1</div>
+<ng-template #elseBlock>This is statement 2</div>
+
+Ex2: 
+<div *ngIf="false; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>This is statement 1</div>
+<ng-template #elseBlock>This is statement 2</div>
+
+* ngSwitch:
+-------------------------
+<div [ngSwitch]="color">
+	<div *ngSwitchCase="white">You picked white color</div>
+	<div *ngSwitchCase="red">You picked red color</div>
+	<div *ngSwitchCase="black">You picked black color</div>
+	<div *ngSwitchDefault="black">You picked no color</div>
+</div>
+
+* ngFor:
+--------------------
+
+<div *ngFor="let color of colors">
+	<h1>{{ color }}</h1>
+</div>
+
+<div *ngFor="let color of colors; index as i">
+	<h1>{{i}} {{ color }}</h1>
+</div>
+
+<div *ngFor="let color of colors; first as f">
+	<h1>{{f}} {{ color }}</h1>
+</div>
+
+<div *ngFor="let color of colors; last as l">
+	<h1>{{l}} {{ color }}</h1>
+</div>
+
+<div *ngFor="let color of colors; odd as o">
+	<h1>{{o}} {{ color }}</h1>
+</div>
+
+<div *ngFor="let color of colors; even as e">
+	<h1>{{e}} {{ color }}</h1>
+</div>
+
+
+* Component Interaction - @input & @output
+* Using @input decorator child component can accept input from parent component
+* Using @output decorator child component can send events to parent component
+* <app-test (childEvent)="message=$event" [parentData]="name"></app-test>
+
+* Pipes
+------------------------
+* String pipes
+* Number pipes
+* json pipes
+* Date pipes
+* currency pipes
+
+
+* Service:
+----------------------------------
+* A Service is a class with a specific purpose
+* We can share the data to multiple components
+* Implement application logic
+* External interaction like connecting to database - HTTP requests
+* Naming convension is - .service.ts
+
+
+* Dependency Injection (DI):
+----------------------------------
+* DI is a coding pattern in which a class receives its dependencies from external sources rather than creating them itself.
+* DI framework has something called Injector where you register all your dependencies.
+* The ngOnInit hook gets called once the component is initialized.
+
+
+HTTP & Observable:
+--------------------------------
+* The response we get from HTTP call is an Observable.
+* Observable is nothing but a sequence of items that arrive asynchronously over time.
+* First we will make a HTTP request to server and we receive the observable  and cast it to an array and then subscribe to the observable and then assign that array to a local variable.
+
+RxJS: Reactive Extensions for Javascript. External library to work with Observable.
+*  
+https://www.youtube.com/watch?v=qh5nHv-4aw0&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=25
+
+
+
+* 'Transpiling' is the process of converting the typescript into javascript
+* Components break up the application into smaller parts; whereas, Directives add behavior to an existing DOM element. 
+* When it comes to the communication of Angular Components, which are in Parent-Child Relationship; we use @Input in Child Component when we are passing data from Parent to Child Component and @Output is used in Child Component to receive an event from Child to Parent Component. 
+* Services help us in not repeating the code. With the creation of services, we can use the same code from different components. Here is the command to create a service in angular, ng g service User (a UserService is created when this command is used). 
+* When a component is dependent on another component the dependency is injected/provided during runtime. 
+* Routing helps a user in navigating to different pages using links. 
+* A web page in Angular has many components involved in it. A Component is basically a block in which the data can be displayed on HTML using some logic usually written in typescript. 
+* ngModel is a directive which can be applied on a text field. This a two-way data binding. ngModel is represented by [()] 
+* It is a method which is subscribed to an observable. Whenever the subscribe method is called, an independent execution of the observable happens.  
+* Observables are lazy, which means nothing happens until a subscription is made. Whereas Promises are eager; which means as soon as a promise is created, the execution takes place. Observable is a stream in which passing of zero or more events is possible and the callback is called for each event. Whereas, promise handles a single event. 
+
+* Authentication: The user login credentials are passed to an authenticate API (on the server). On the server side validation of the credentials happens and a JSON Web Token (JWT) is returned. JWT is a JSON object that has some information or attributes about the current user.  Once the JWT is given to the client, the client or the user will be identified with that JWT.
+
+Authorization: After logging in successfully, the authenticated or genuine user does not have access to everything. The user is not authorized to access someone else’s data,  he/she is authorized to access some data. 
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Routing:
+-----------------
+* To use routes, first we need to import RouterModule and Routes...
+import {RouterModule, Router} from '@angular/router';
+
+Then we should add it to Imports array
+RouterModule.forRoot(appRoutes)
+
+Then need to create appRoutes object
+const appRoutes: Routes = [
+	{ path:'', component: HomeComponent },
+	{ path:'profile', component: ProfileComponent },
+	{ path:'*', component: HomeComponent }
+];
+
+We should add 'base' tag in the body.
+Then we should add <router-outlet></router-outlet> tag to render the component.
+
+<li [routerLinkActive]=["active"] [routerLinkActiveOptions]="{exact:true}">
+	<a [routerLink]=["/login"]>Login</a>
+</li>
+
+To make a redirection-
+this.router.navigate(['/login']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*************************************************************************************
+Angular by MAX:
+------------------------------
+* Angular is a Javascript Framework which allows you to creative reactive Single-Page-Application
+* Whenver we run 'ng serve' command it will create javascript script bundles and those bundles will be added to index.html file.
+Bundles names: 
+	inline.bundle.js, 
+	polyfils.bundle.js, 
+	styles.bundle.js, 
+	vendor.bundle.js, 
+	main.bundle.js
+
+* main.ts file is the file which runs first in Angular, it exists inside of 'src' folder.
+* @Component, @Injectable, @NgModule are decorators.
+* @Component contains below properties
+	selecotor, template/templateUrl, styles/styleUrls
+
+* @NgModule contains below properties
+	declarations, imports, providers, bootsrtap
+
+
+* Generally we import below packages in app.moddule.ts
+	import { BrowserModule } from '@angular/platform-browser';
+	import { NgModule } from '@angular/core';
+	import { FormsModule } from '@angular/forms';
+	import { HttpModule } from '@angular/http';
+
+
+
+*************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*************************************************************************************
+IMP points to remember:
+------------------------------
+* Whenver we create any component, we should import it to app.service.ts file and need to add it to "declarations" array
+* Whenver we create any service, we should import it to app.service.ts file and need to add it to "Providers" array
+* After importing any service, we need to inject it as a dependency into the constructor parameter.
+* If we import any modules like 'FormsModule', it should be added to add it to "Imports" array
+* Every component includes a class and properties and methods attached to it.
+* 'OnInit' is an interface
+
+
+
+
+*************************************************************************************
+
+
+
+
+
+
+
+
+
+*************************************************************************************
+Tests:
+------------------------------
+* Unit testing
+* Integration test
+* End-to-end test
+
+
+TDD = Test driven development
+
+*************************************************************************************
+
+
+*************************************************************************************
+Angular 2+ Interview questions
+
+https://www.tutorialspoint.com/angular2/angular2_interview_questions.htm
+https://www.onlineinterviewquestions.com/angular2-interview-questions/
+https://www.onlineinterviewquestions.com/angularjs-interview-questions/
+https://www.greycampus.com/blog/programming/top-30-interview-questions-and-answers-on-angular-5
+
+
+
+

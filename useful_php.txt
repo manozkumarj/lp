@@ -1,0 +1,17 @@
+* $numbers = array('gf'=>4,'ered'=> 6,'hrte'=> 2, 'abr'=>22,'def'=> 11);
+
+print_r($numbers);
+
+echo "<br/>";
+
+rsort($numbers);
+
+$arrlength = count($numbers);
+for($x = 0; $x < $arrlength; $x++) {
+    echo $numbers[$x];
+    echo "<br>";
+}
+
+
+
+* 

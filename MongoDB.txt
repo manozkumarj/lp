@@ -1,0 +1,171 @@
+* MongoDB is a document or NoSQL database.
+* We use the schema to define the shape of documents in a MongoDB collection.
+* __id is a unique identifier of a document
+* Mongoose is built on top of MongoDB driver
+
+Possible datatypes:
+---------------------------------------
+String, Number, Date, Array, Boolean
+Array of strings -> [ String ]
+Buffer = Is used to store binary data
+ObjectID = Used to store unique ID
+
+
+Arithmetic operators:
+---------------------------------------------------
+$eq, $neq, $in, $nin, $gt, $gte, $lt, $lte
+
+
+Logical operators:
+---------------------------------------------------
+$or, $and
+
+
+Regular expression:
+---------------------------------------------------
+User.find({ name: /^manoj/i }) = This will fetch all the documents where name starts with "manoj"
+User.find({ name: /kumar$/i }) = This will fetch all the documents where name ends with "kumar"
+User.find({ name: /.*manoj.*/i }) = This will fetch all the documents where name contains "manoj"
+
+* Sample Insert Query - 
+
+async function insertUser(){
+
+	const user = new User{
+		name: 'manoj',
+		age: 25,
+		isPublished: true
+	}
+
+	const result = await user.save();
+	console.log(result);
+
+}
+
+
+* User.find({ name:'Manoj', isActive: true}); This can also be writter as
+User.find().and({ name:'Manoj' }, { isActive: true });
+
+* OR - User.find().or([{ name:'Manoj' }, { isActive: true }]);
+
+* Sample select query- 
+User.find()
+	.and([{ name:'Manoj' }, { isActive: true }, tags: { $in : ['frontend', 'backend'] }])
+	.or([{ age: { $gt: 20, $lt: 30 } }, { city: 'jgl' }])
+	.limit(10)
+	.skip(3)
+	.sort([{ name: 1 }, { age: -1 }]) (OR) .sort('name -age')
+	.select({ name: 1, email: 1, _id: -1 }); (OR)  .select('name email -_id');
+
+	Above query can also be writter as 
+
+	User.find()
+	.and([{ name:'Manoj' }, { isActive: true }])
+	.or([{ tags: 'frontend' }, { tags: 'backend' }])
+	.or([{ age: { $gt: 20, $lt: 30 } }, { city: 'jgl' }])
+	.limit(10)
+	.skip(3)
+	.sort([{ name: 1 }, { age: -1 }]) (OR) .sort('name -age')
+	.select({ name: 1, email: 1, _id: -1 }); (OR)  .select('name email -_id');
+
+
+* Sample select query- 
+User.find()
+	.and([{ name:'Manoj' }, { isActive: true }, tags: { $in : ['frontend', 'backend'] }])
+	.or([{ age: { $gt: 20, $lt: 30 } }, { city: 'jgl' }])
+	.limit(10)
+	.skip(3)
+	.sort([{ name: 1 }, { age: -1 }])
+	.cound();
+
+
+* Sample update query - 
+async function updateUser(id){
+	
+	const user = await Course.findByIdAndUpdate(id,
+		$set: {
+			author: 'Jack',
+			isPublished: true
+		}, { new: true }
+	);
+}
+
+updateUser('546fskjsfkjl485fsjj');
+
+
+* Sample Delete query - 
+async function deleteUser(id){
+	
+	const user = await Course.deleteOne({_id: id});
+}
+
+deleteUser('546fskjsfkjl485fsjj');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Aggregation is collection of stages.
+Examples of stages: $match, $group, $sort, $project, $count, $limit, $skip, $out
+
+* Aggregation expression refers to the name of the field of input document
+
+* $sum is cumulative operator
+
+* $match
+Ex: db.collection.aggregate([
+		{ $match : { city : 'Hyderabad' } }
+
+		{ $match : { age : { $gt : 25 } } }
+
+		{ $match : { $and : [ 
+			{ gender : "female" }, 
+			{ age : { $gt : 25 } } 
+		] } }
+
+	]);
+
+
+https://www.youtube.com/watch?v=dQIXLhKcv5c&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX0LI&index=9
+
+* 
+
+* https://www.youtube.com/watch?v=A3jvoE0jGdE&index=1&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX0LI  -> Introduction to the Aggregation Framework -> 45 Vids
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Learnable links:
+---------------------------------------------------------------
+* https://www.freetutorials.eu/mongodb-the-complete-developers-guide/

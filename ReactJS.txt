@@ -1,0 +1,67 @@
+VSCode extension:
+* Simple react snippets
+* 
+
+
+
+--------------------------------------------------------
+* React is used create (SAP) "Single Page Application"
+* React can have class base components & functional components
+* Class base components will have like cycle hooks.
+* When we build web application using React we need "react" and "react-dom" packages for sure.
+* We should use ES6's "Arrow Function" to create methods in order to access "this.props" object of it's 	component.
+	Ex: sampleMethod = (todo) =>{
+		console.log(this.props);
+	}
+* 
+
+
+
+
+
+
+Short & Sweet:
+------------------------------------------------------------------------
+* We can use "React.Fragment" tag to wrap all the html elements.
+* 
+
+
+
+
+
+
+
+Tips:
+------------------------------------------------------------------------
+* https://www.youtube.com/watch?v=xa-_FIy2NgE
+
+
+
+
+
+
+
+
+Useful packages for React:
+------------------------------------------------------------------------
+* react-router-dom -> For routing
+* uuid -> It generates random keys
+* axios -> To make HTTP requests
+* 
+
+
+
+
+
+
+PWA(Progressive Web Apps)
+------------------------------------------------------------------------
+* "ServiceWorked" module is used for PWA.
+* 
+
+
+
+Redux:
+------------------------------------------------------------------------
+* Redux is a state manager.
+* 

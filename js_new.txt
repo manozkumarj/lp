@@ -1,0 +1,80 @@
+Short & Sweet:
+--------------------------------------------------------------------------
+* var -> is function level
+* let -> is block level
+* const -> is block level
+
+function sample(){
+	for (let i = 0; i < 5; i++){
+		console.log(i);
+	}
+		console.log(i);
+}
+
+* Defining an object
+const person = {
+	name: 'Manoj',
+	walk: function() {},
+	talk() {}
+};
+
+Obeject functions can be accessible as below
+person.talk();
+
+* const person = {
+	name: 'Manoj',
+	walk: function() {
+		console.log(this);
+	},
+	talk() {}
+};
+
+const walk = person.walk;
+walk();  // Output will be 'undefined'
+
+* Arrow function Ex:
+const square = function (number){
+	return number * number;
+}
+
+the above function can be written with arrow function as below
+
+const square = number => number * number;
+
+
+* Spread operator Ex:
+const first = [a, b, c];
+const second = [d, e, f];
+
+const combine = first.concat(second);  // Old way
+const combine = [...first, '1', ...second, '2'];  // New way
+
+* Cloning an array
+const clone = [...first];
+
+NOTE: Spread operator & cloning both works same way for arrays and objects
+
+* Object destructuring Ex:
+const person = {
+	name: "Manoj",
+	city: "Hyderabad",
+	state: "TG"
+};
+
+const {name, city, state} = person;
+const {name: n} = person;
+
+* conole.log(true && "hi");  // returns "hi"
+
+* conole.log(true && "hi" && 1);  // returns 1
+
+
+
+
+
+Askable interview Qs:
+--------------------------------------------------------------------------
+* Swapping two string variables.
+* Swapping two integers without 3rd variable.
+* Write infinite loop using while, do while and for loops.
+* 

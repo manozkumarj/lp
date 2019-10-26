@@ -1,0 +1,1643 @@
+eradicate = నిర్మూలించేందుకు
+nurture = పెంపకం
+tackle = అధిగమించేందుకు
+economies = ఆర్థిక వ్యవస్థలు
+illusion = fad = భ్రాంతిని
+contraceptive pills = గర్భనిరోధ
+contrast = విరుద్ధంగా
+entrepreneurship = వ్యవస్థాపకత
+hustle = గొడవ
+sarcasm = వ్యంగ్యం
+toxic = విష
+chaos = గందరగోళం
+rebate = డిస్కౌంట్ , వెల తగ్గింపు
+thrive = వృద్ధి
+envy = అసూయ
+prevail = వ్యాప్తి చెందడం
+excess = అదనపు
+stroll = షికారు చేయు, సరదాగా నడిచివెళ్ళు
+trait = విశిష్ట లక్షణం
+indulge = మునిగిపోతారు
+endure = భరిస్తున్నారు
+insight = అంతర్దృష్టి
+disrupt = అంతరాయం
+perspective = దృష్టికోణం
+moron = బాలల మనస్తత్వం కలిగిన యువకుడు
+mock = వెక్కిరించు, వేళాకోళం చేయు
+venom = విషం
+demise = పతనాన్ని, మరణము
+messy = దారుణంగా
+hanker = అత్యాశపడు
+laudable = మెచ్చుకొనదగిన
+etiquette = మర్యాద
+solely = కేవలం
+mentor = గురువు, 
+illusion = భ్రమ, భ్రాంతి
+ejaculation = స్ఖలనం
+opium = నల్లమందు
+spy = గూఢచారి
+prominent = ప్రముఖ
+soothe = ఉపశమనానికి
+deprived = దూరంచేసి
+hustle = గొడవ
+stomp = పైన కాలితో తొక్కటం
+stumble = తడబడుతుంది
+remedy = పరిహారం, విరుగుడు
+tremendous = విపరీతమైన
+slouch = అసహ్యంగా నిలబడు, ముందుకు వంగిపోవు
+anxiety = ఆందోళన
+brawn = కండ బలం
+semen = వీర్యం
+retort = వెంటనే జవాబు చెప్పుట
+dread = భయపడటం
+begrudge = అసూయపడు
+fuss = రచ్చ,గడబిడ
+urge = కోరారు, పురిగొల్పు, తొందర చేయు
+contagious = అంటు
+fatigue = అలసట
+constipation = మలబద్ధకం
+exhausted = అయిపోయిన, అలిసిపోయే
+isolate = విడిగా, మిగతావారి నుంచి వేరుచేయు
+envy = అసూయ, envy, jealous, gurdging, కడుపుమంట
+linger = ఆలస్యము
+edible = తినదగిన
+foe = శత్రువుని
+confine = హద్దులలో ఉంచు, లోపల బంధించబడు
+meticulous = ఖచ్చితమైన
+riot = అల్లర్లు
+rituals = ఆచారాలు
+infertility = సంతాన ప్రాప్తి లేకుండుట
+redundant = పునరావృత
+distraction = పరధ్యానంగా
+miserable = బాధాకరమైన
+weird = అసహజ
+irony = వ్యంగ్యం, వ్యతిరేఖము
+awkward = ఇబ్బందికరమైన, 
+obsessed = నిమగ్నమయ్యాడు
+ethics = నీతి
+introvert = లోపల ఆలోచించు, ఎప్పుడూ తన గురించే ఆలోచించుకొను వ్యక్తి
+Clay = బంక మన్ను
+upfront = ముందస్తు
+proactively = ముందుగా
+prominent = ప్రముఖ
+proficiency = నైపుణ్యత
+giggles = ముసిముసి
+dynasty = రాజవంశం
+paranoid = అనుమానాస్పద
+cemetery = స్మశానం
+concede = అంగీకరించడానికి
+bankrupt = దివాలాతియ్యి
+carousel = రంగులరాట్నం
+metaphor = రూపకాలంకారం
+in contrast = విరుద్ధంగా
+comprehensive = సంపూర్ణమైన
+versatile = బహుముఖ
+drain = హరించడం
+credibility = విశ్వసనీయత
+visibility = ప్రత్యక్షత
+purge = శుభ్ర పరచు
+imposed = విధించింది
+
+
+
+
+
+Chin dimple
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   ----------------------------------------------------------  Sentenses   ---------------------------------------------------------------------*/
+
+* ‘If I cared about what other people thought of me, I wouldn’t be where I am right now.’
+
+* And then I realized, it's actually not as fun as I thought.
+
+* Love is a broad spectrum. Explore it and define what it means to you.
+
+* I have this great idea but I'm not in a position of power to make it happen!
+
+* What works for someone else may not work for you. Every single one of us is unique after all.
+
+* Get started. Now. Because it's never too late to live an epic life.
+
+*  In addition, I have a brother to take care of.
+
+* – Don’t waste your time on work that you don’t enjoy. It is obvious that you cannot succeed in something that you don’t like. Patience, passion, and dedication come easily only when you love what you do.
+
+* Let your life be shaped by decisions you made, not by the ones you didn’t.
+
+* We are thankful to our passengers to be part of this journey and helping us in reaching this milestone
+
+* and other support staff have played a major role in this achievement.
+
+* but we have still miles to go
+
+* We’re all very proud of what our city keeps achieving every day. 
+
+* Here are the ten things you should know about ...
+
+* If it’s difficult to think of something right away, realize that something JUST happened that you can be grateful for…  you woke up today.   Not everyone gets that opportunity.
+
+* It has been known for hundreds of years that our intake of food, water, and sleep can greatly affect our mood and mental health.
+
+* One of the greatest things you can do to stay positive throughout each day is to make sure you’re doing what you LOVE!
+
+* There comes a time when you should stop expecting ...
+
+* The one thing that ...
+
+* She’s incapable of making a decision about anything without bringing her mother’s opinion into the matter!
+
+* “You must be the change you wish to see in the world.” – Gandhi
+
+* “Challenges is what makes life interesting and overcoming them is what makes life meaningful.” – Joshua J. Marine
+
+* “When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.” – Helen Keller
+
+* “The only way that we can live is if we grow. The only way we can grow is if we change. The only way we can change is if we learn. The only way we can learn is if we are exposed. And the only way that we are exposed is if we throw ourselves into the open.” – C. Joybell
+
+* “If you don’t like something, change it. If you can’t change it, change the way you think about it.” – Mary Engelbreit
+
+* “Time is too slow for those who wait, too swift for those who fear, too long for those who grieve, too short for those who rejoice, but for those who love, time is eternity.” – Henry van Dyke
+
+* “Most people do not listen with the intent to understand; they listen with the intent to reply.” – Stephen Covey
+
+* In my opinion, this shows that you don’t really want to live your own life.
+
+* if you jump out of bed in the morning, life will begin to burn more brightly!
+
+* Each of us has our own personal
+
+* Imagine the story of your life is going to be the subject of a book; it should be one you would want to read yourself.
+
+* If you are one of those people who constantly touches their hair, plays with it, or tries to fix it all the time while others talk to you, drop this bad habit! This only shows your insecurity and lack of attention. Stop touching your hair, and try to focus on communicating naturally.
+
+* "The time is always right to do what is right." — Martin Luther King
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* https://www.powerofpositivity.com/10-things-to-stop-expecting-from-others/
+
+* https://brightside.me/inspiration-relationships/7-things-wise-women-dont-demand-from-their-partners-275710/
+
+* https://yourstory.com/2016/12/become-master-public-speaker/
+
+* https://www.powerofpositivity.com/12-things-highly-creative-people-will-understand/
+
+* https://www.fluentland.com/groups/learn-english/forum/topic/useful-words-to-use-instead-of-very/
+
+* http://www.beautifulquotes.co/2016/09/7-exercises-that-train-your-brain-to.html
+
+* http://www.beautifulquotes.co/2016/12/28-of-most-powerful-quotes-of-all-time.html
+
+* http://www.healthtipsportal.com/12-facts-farting-probably-didnt-know/
+
+* https://familyshare.com/27215/a-husband-should-always-prioritize-his-wife-especially-in-these-5-situations
+
+* https://brightside.me/article/how-to-change-your-life-for-the-better-in-just-one-month-505/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_brightside
+
+* https://brightside.me/inspiration-tips-and-tricks/7-body-language-habits-of-successful-people-you-need-to-adopt-269910/?utm_source=fb_r69f48&utm_campaign=MMQ&utm_medium=cpm
+
+* http://www.success.com/blog/21-things-i-wish-i-knew-when-i-was-21
+
+* https://www.littlethings.com/farting-health-benefits/?utm_source=hp&utm_medium=Facebook&utm_campaign=shocking
+
+* http://www.success.com/article/youre-killing-it-15-quotes-for-an-unstoppable-attitude
+
+* http://www.naturalhealthyways.com/signs-shape-belly-button-says-health/
+
+* http://millionairessayings1.com/2017/02/15/15-outrageous-things-that-could-only-happen-in-dubai/
+
+* http://hackspirit.com/7-empowering-life-lessons-people-often-learn-late-life/?utm_content=buffer03104&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+
+* https://www.powerofpositivity.com/6-behaviors-make-people-like/
+
+* http://www.mensxp.com/special-features/today/26987-10-qualities-that-define-a-man-7-that-dont.html
+
+* https://familyshare.com/27265/10-signs-he-s-actually-worth-falling-for
+
+* https://familyshare.com/21332/10-things-men-find-unattractive-in-women
+
+* http://www.awesomequotes4u.com/2017/03/10-strange-but-totally-awesome-uses-for.html
+
+* https://familyshare.com/27276/6-conversations-married-men-dread-and-how-to-avoid-them
+
+* https://familyshare.com/24492/if-your-husband-does-these-15-things-never-leave-him
+
+* http://womansera.com/trending/relationship/qualities-guys-look-future-wife
+
+* https://familyshare.com/22771/10-things-men-need-to-know-after-their-wife-becomes-a-mommy
+
+* https://yourstory.com/2017/03/things-to-do-in-20s/
+
+* https://www.powerofpositivity.com/10-things-confident-people-dont-do/
+
+* http://www.caravanalive.com/lifestyle/how-long-sex-should-last-science-has-the-answer-15593.html
+
+* https://www.powerofpositivity.com/10-things-you-should-never-sacrifice-for-a-relationship/
+
+* http://millionairessayings1.com/2017/03/15/12-signs-youre-way-intelligent-realize/
+
+* http://www.cnbc.com/2017/02/24/you-will-regret-these-choices-in-10-years.html?__source=Facebook
+
+* https://brightside.me/inspiration-psychology/the-simple-principle-of-9010-that-affects-your-whole-life-314560/?utm_source=fb_r69f33&utm_campaign=pub171&utm_medium=cpm
+
+* http://millionairessayings1.com/2017/03/15/10-things-wrong-every-day/
+
+* http://www.thinkinghumanity.com/2016/09/5-things-you-need-to-know-about-a-girl-who-loves-being-on-her-own.html#sthash.xqPKCBpT.dpuf
+
+* https://www.powerofpositivity.com/10-behaviors-keep-people-from-finding-relationships-works/?c=love
+
+* http://womansera.com/trending/relationship/4-things-discuss-partner-marrying
+
+* http://simplecapacity.com/2017/02/14-amazing-psychology-facts-you-should-keep-to-yourself/
+
+* https://familyshare.com/24106/16-signs-he-loves-you-even-if-he-doesn-t-say-it-out-loud
+
+* http://www.awesomequotes4u.com/2016/11/17-things-you-shouldnt-do-abroad.html
+
+* http://www.healthyfoodhouse.com/12-etiquette-rules-everyone-need-know/
+
+* http://www.success.com/article/8-ways-to-be-a-more-confident-person
+
+* https://familyshare.com/27320/17-powerful-thoughts-on-success
+
+* http://www.success.com/article/16-rich-habits
+
+* http://www.success.com/article/how-to-achieve-a-rich-mindset
+
+* http://www.success.com/mobile/article/answer-3-questions-to-identify-your-strengths
+
+* http://www.success.com/article/rohn-3-money-habits-that-separate-the-rich-from-the-poor
+
+* https://www.powerofpositivity.com/10-things-alpha-women-need-relationship/
+
+* https://www.powerofpositivity.com/10-reasons-men-cant-handle-strong-woman/
+
+* https://themindsjournal.com/signs-strong-personality-might-scare-people/
+
+* https://www.powerofpositivity.com/10-things-tell-partner-relationship-difficult/
+
+* http://www.success.com/article/15-motivational-quotes-to-stop-making-excuses
+
+* http://www.organicandhealthy.org/2017/03/women-with-larger-behinds-are-healthier.html
+
+* http://www.mensxp.com/special-features/today/25654-12-things-every-man-must-experience-at-least-once-in-life.html
+
+* https://jerseydemic.com/12-facts-about-farting-you-probably-didnt-know/
+
+* http://www.businessinsider.in/the-11-skills-every-24-year-old-should-learn/articleshow/57718896.cms
+
+* http://millionairessayings1.com/2017/03/21/9-items-mans-wardrobe-women-love/
+
+* http://www.success.com/article/10-things-exceptionally-successful-people-do-on-the-weekends
+
+* http://millionairessayings1.com/2017/03/17/21-simple-tricks-keep-clothes-shoes-perfect-condition/
+
+* http://www.thinkinghumanity.com/2016/10/5-facts-of-psychology-that-you-need-to-know.html
+
+* https://www.onlinehealthsociety.com/10-great-reasons-drink-beer-pay-attention-no-4/
+
+* https://familyshare.com/20601/10-ugly-things-awful-husbands-do-to-their-wives
+
+* http://www.relrules.com/according-to-psychiatrists-couples-who-argue-actually-love-each-other-more/
+
+* http://womansera.com/trending/young-adult/5-signs-taking-wrong-person-bed
+
+* https://familyshare.com/21578/how-to-respond-when-your-child-is-disrespectful
+
+* https://insiders.fortune.com/what-every-entrepreneur-should-learn-from-mark-zuckerberg-and-elon-musk-8febe0713ca3#.exlug3kbw
+
+* https://www.powerofpositivity.com/10-signs-friend-crush/
+
+* http://millionairessayings1.com/2017/03/24/select-nose-shape-well-tell-personality/
+
+* http://millionairessayings1.com/2017/03/24/26-simple-yet-wonderful-ideas-interior/
+
+* http://womansera.com/trending/six-things-you-should-not-reveal-about-your-relationship-to-others
+
+* http://www.relrules.com/9-signs-youve-found-mr-right/
+
+* http://www.relrules.com/13-signs-that-you-are-a-terrible-girlfriend/
+
+* http://www.relrules.com/5-signs-you-have-a-strong-personality-but-are-also-incredibly-sensitive/
+
+* http://www.rajnikantvscidjokes.in/14-superstitions-possible-scientific-reasons-behind-will-stun/
+
+* http://www.mensxp.com/work-life/get-better-at-finance/21944-10-ways-to-make-money-without-working.html
+
+* http://www.relrules.com/6-things-you-can-do-for-your-partner-that-are-more-intimate-than-sex/
+
+* http://womansera.com/trending/ten-things-women-want-you-to-know-about-boobs
+
+* http://india.curejoy.com/content/10-must-do-things-for-male-sexual-health-01-2017/
+
+* https://www.techworm.net/2017/02/javascript-nothing-java-called-javascript.html
+
+* https://familyshare.com/27368/8-things-about-women-that-turn-men-away
+
+* https://familyshare.com/27360/14-things-men-will-never-understand-about-women
+
+* https://familyshare.com/24492/if-your-husband-does-these-15-things-never-leave-him
+
+* https://familyshare.com/24864/8-things-men-only-do-with-the-woman-they-love
+
+* http://womansera.com/features/international/8-secret-questions-men-are-dying-to-ask-women-but-are-afraid-to
+
+* http://millionairessayings1.com/2017/03/27/change-life-better-just-one-month/
+
+* http://millionairessayings1.com/2017/03/27/10-ways-search-google-information-96-people-dont-know/
+
+* https://postdekh.com/this-is-what-mukesh-ambani-replied-to-a-rich-husband-seeking-girl-pooja/
+
+* https://familyshare.com/24269/5-things-men-are-only-willing-to-do-for-the-woman-he-loves
+
+* http://millionairessayings1.com/2017/02/03/why-successful-people-choose-to-wear-the-same-outfit-every-day/
+
+* https://familyshare.com/27390/sponsored/leonardo/16-signs-your-husband-is-out-of-this-world-amazing
+
+* http://time.com/money/4630374/this-chart-can-help-you-become-a-millionaire-no-matter-what-you-earn/?xid=soc_socialflow_facebook_FORTUNE
+
+* https://familyshare.com/27380/this-is-what-your-sleeping-position-says-about-your-relationship
+
+* https://familyshare.com/27375/8-nasty-ways-you-totally-limit-your-happiness
+
+* https://www.techworm.net/2017/01/3-essential-skills-can-guarantee-job-according-bill-gates.html
+
+* https://www.techworm.net/2017/01/15-things-not-know-bill-gates.html
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTimeforLearning%2Fposts%2F1462690583787353&width=500" width="500" height="670" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* http://www.thinkinghumanity.com/2017/03/10-reasons-why-highly-intelligent-social-skills.html
+
+* http://www.indiatimes.com/health/healthyliving/these-are-the-10-things-that-a-man-sees-in-a-woman-which-turns-him-on-272220.html?utm_source=FB&utm_medium=paid
+
+* http://www.relrules.com/15-things-that-damage-even-the-strongest-of-relationships/
+
+* http://millionairessayings1.com/2017/03/29/22-brilliant-ways-save-time/
+
+* http://www.success.com/blog/34-things-you-need-to-know-about-becoming-successful
+
+* https://familyshare.com/27393/sponsored/ava/8-things-every-woman-should-know-about-her-vagina-and-most-women-don-t
+
+* http://www.relrules.com/the-sexiest-thing-a-man-can-do-is-say-something-and-mean-it/
+
+* http://www.healthyandnaturalhouse.com/6-ways-how-men-are-destroying-their-sperms-everyday/
+
+* http://corporatebytes.in/best-way-end-interview/
+
+* https://www.powerofpositivity.com/researchers-reveal-10-things-make-kids-happier/
+
+* https://www.pickthebrain.com/blog/the-psychology-of-confidence-5-hidden-qualities-of-bold-individuals/
+
+* https://familyshare.com/22029/12-signs-you-were-totally-made-for-each-other
+
+* https://familyshare.com/21624/10-signs-a-man-is-in-love
+
+* https://familyshare.com/27383/the-keys-to-discovering-if-he-s-flirting-or-just-being-friendly
+
+* http://computerera.co.in/telugu/?page_id=5486
+
+* http://www.mensxp.com/special-features/today/28785-dear-daddy-i-will-be-called-a-whore-this-powerful-video-has-an-important-message-for-every-man-in-the-world.html
+
+* http://millionairesinstitute.blogspot.in/2017/03/how-we-can-create-right-minset.html?spref=fb
+
+* https://telugu.ap2tg.com/changes-in-female/
+
+* <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FFirstMediaBlossom%2Fvideos%2F10155193939779586%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+* https://familyshare.com/27399/3-gestures-of-a-husband-who-will-love-you-forever
+
+* http://www.relrules.com/if-your-guy-has-these-7-habits-he-is-a-keeper/
+
+* http://www.relrules.com/4-differences-between-real-love-and-attachment/
+
+* https://www.pickthebrain.com/blog/7-reasons-this-book-will-change-lives/
+
+* http://www.mensxp.com/special-features/today/34993-if-you-think-you-are-going-nowhere-in-life-take-a-deep-breath-and-read-this.html
+
+* https://familyshare.com/27414/5-mistakes-women-make-early-in-dating
+
+* https://familyshare.com/22661/13-signs-you-have-the-best-husband-ever
+
+* https://familyshare.com/27417/5-things-your-wife-needs-but-would-never-say-out-loud
+
+* http://www.thinkinghumanity.com/2017/03/why-intelligent-people-cant-find-happiness.html
+
+* https://blog.flaunt7.com/http-vs-https-https-work-use-ssl-encryption/
+
+* http://www.mensxp.com/relationships/understanding-women/26971-29-signs-she-is-secretly-in-love-with-you.html
+
+* https://www.powerofpositivity.com/5-habits-of-deeply-connected-couples/?c=VIRAL
+
+* https://familyshare.com/27411/16-reasons-you-should-never-give-up-on-him
+
+* https://familyshare.com/27402/7-things-no-one-ever-told-me-could-end-up-ruining-my-marriage
+
+* http://www.relrules.com/9-things-men-want-but-never-ask-for/
+
+* http://india.curejoy.com/content/8-differences-between-genuine-and-fake-people-01-2017/
+
+* http://www.relrules.com/things-healthy-couples-do-in-their-relationships/
+
+* http://www.relrules.com/12-things-you-should-never-say-to-a-girl-in-relationship/
+
+* https://familyshare.com/20990/5-distinct-kisses-that-send-5-distinct-messages
+
+* http://www.businessinsider.in/psychology-lazy-productivity-strategy-2016-11?utm_content=buffer9c1ab&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer-bi&r=US&IR=T
+
+* https://familyshare.com/27408/its-true-love-if-hes-done-these-3-things-for-you
+
+* https://familyshare.com/27409/10-things-only-people-who-married-young-will-understand
+
+* https://familyshare.com/27422/6-ways-you-are-unknowingly-pushing-your-wife-to-divorce-you
+
+* http://www.relrules.com/7-signs-its-lust-not-love/
+
+* http://www.relrules.com/what-men-really-mean-when-they-call-you-cute-sexy-or-beautiful/
+
+* http://www.success.com/blog/9-ways-to-achieve-your-biggest-goals-quickly
+
+* https://www.powerofpositivity.com/12-things-emotionally-intelligent-people-avoid/
+
+* https://brightside.me/inspiration-psychology/three-ways-to-gain-confidence-in-yourself-from-a-harvard-psychologist-229510/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_gorgeous_side
+
+* http://millionairesinstitute.blogspot.in/2017/04/reasons-why-you-are-not-millionaire-yet.html?m=1
+
+* http://www.relrules.com/10-things-truly-mature-men-dont-do/
+
+* http://millionairessayings1.com/2017/03/27/seven-things-always-keep-secret/
+
+* http://www.relrules.com/27-signs-youre-dating-a-man-who-actually-respects-you/
+
+* http://www.relrules.com/the-one-18-signs-that-youve-found-your-life-partner/
+
+* http://www.relrules.com/if-you-do-these-5-things-youre-the-problem-with-your-relationship/2/
+
+* http://www.relrules.com/6-reasons-men-leave-the-women-they-love/
+
+* https://www.fluentland.com/groups/learn-english/forum/topic/money-has-different-names/
+
+* http://meaww.com/activities/result/one_word_major_sm_p/8237/10309971491790886
+
+* http://meaww.com/activities/result/my_fault_was/2162/16223301491791057
+
+* http://millionairesinstitute.blogspot.in/2017/04/you-were-born-to-succeed-must-read.html?m=1
+
+* http://www.lifecoachcode.com/2017/04/06/never-use-these-phrases-talk-to-children/
+
+* https://brightside.me/creativity-home/16-utterly-surprising-ways-to-use-table-salt-298310/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_gorgeous.side
+
+* http://yourdost.com/blog/2017/03/open-letter-to-my-ex-boyfriend-who-left-me-but-doesnt-know-what-happened-next.html?yd_source=Blog&yd_medium=Facebook&yd_content=OpenLetterEx&yd_campaign=BlogPostPromotion
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1602825720047172%2Fpermalink%2F1770550816607994%2F&width=500" width="500" height="611" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finspiringyoungindian%2Fposts%2F749279245251120&width=500" width="500" height="715" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUsefulGen%2Fposts%2F1709205486044964&width=500" width="500" height="696" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* http://goodmedicaltips.net/using-ingredient-youll-never-use-lipstick-lips-will-look-naturally-pink/
+
+* http://openchey.com/caught-cam-man-mercilessly-beaten-laws-gandhinagar/
+
+* http://www.awesomequotes4u.com/2015/04/when-man-loves-woman_28.html
+
+* https://yourstory.com/2017/03/google-adwords-facebook-ads/
+
+* http://www.success.com/blog/8-things-successful-people-never-waste-time-doing
+
+* http://india.curejoy.com/content/how-are-you-sabotaging-your-sperms-02-2017/
+
+* https://brightside.me/wonder-curiosities/10-personal-attributes-you-never-knew-you-inherited-from-your-parents-270910/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_brightside
+
+* http://www.rajnikantvscidjokes.in/forbes-list-worlds-wealthiest-billionaires-bill-gates-continues-rule-world/
+
+* http://www.success.com/article/10-harmless-habits-to-drop-if-you-want-to-be-successful
+
+* http://www.mensxp.com/special-features/today/25390-11-signs-youre-the-nicest-guy-ever.html
+
+* https://www.powerofpositivity.com/powerful-advice-dying-24-year-old/
+
+* http://www.mensxp.com/relationships/understanding-women/20395-top-10-ways-to-make-women-chase-you.html
+
+* https://www.powerofpositivity.com/things-true-gentleman-does-differently/
+
+* http://www.cnbc.com/2017/01/11/phrases-smart-people-refuse-to-use-in-conversation.html?__source=Facebook
+
+* https://familyshare.com/27474/what-does-it-really-mean-when-you-dream-your-spouse-is-cheating-on-you
+
+* http://www.success.com/blog/5-daily-habits-of-highly-successful-people
+
+* http://www.lifebuzz-fun.com/women-reveal-the-best-way-to-ask-for-a-girl-to-drop-her-panties-for-you-3k5cw?utm_content=bufferaec09&utm_medium=cpc&utm_source=PM&utm_campaign=tommychong
+
+* https://familyshare.com/27488/a-husband-s-4-biggest-needs-a-wife-s-4-biggest-needs
+
+* https://familyshare.com/27491/if-he-no-longer-loved-you-he-would-not-do-these-8-things-with-you
+
+* https://familyshare.com/22919/10-signs-a-man-is-actually-in-love
+
+* https://www.wittyfeed.com/story/41302/cheat-sheet-for-men-to-turn-on-girl?utm_source=FB&utm_medium=SOCIAL&utm_campaign=53385-campaign&utm_hash=jJlhk
+
+* http://www.relrules.com/10-things-women-should-never-lie-to-men-about/
+
+* http://www.success.com/article/john-c-maxwell-instead-of-complaining-remember-these-10-things
+
+* https://familyshare.com/27476/4-characteristics-of-a-woman-that-make-a-man-fall-in-love
+
+* https://familyshare.com/21660/10-signs-your-spouse-is-cheating
+
+* http://millionairessayings1.com/2017/02/07/7-steps-to-become-super-rich/
+
+* http://www.success.com/article/12-motivational-quotes-about-improving-yourself
+
+* http://www.success.com/article/rohn-5-tips-for-using-your-time-wisely
+ 
+* https://india.curejoy.com/content/mind-blowing-things-happen-read-books/
+
+* https://www.wittyfeed.com/story/41335/things-people-do-during-sex?utm_source=FB&utm_medium=SOCIAL&utm_campaign=53385-campaign&utm_hash=GC8yy
+
+* https://brightside.me/article/why-you-should-never-cross-your-legs-96505/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_gorgeous_side
+
+* https://familyshare.com/27515/5-flawless-ways-to-make-him-only-see-you
+
+* http://millionairessayings1.com/2017/03/14/22-brilliant-pieces-advice-chinas-successful-businessman/
+
+* https://familyshare.com/2895/10-things-you-should-never-tell-your-spouse-in-a-fight
+
+* http://fortune.com/2017/01/25/how-to-break-bad-habits-2/?xid=soc_socialflow_facebook_FORTUNE
+
+* http://www.fluentland.com/groups/learn-english/forum/topic/10-ways-to-reply-to-how-are-you/
+
+* http://www.curejoy.com/content/5-parenting-behaviors-stop-children-successful/
+
+* https://www.youthkiawaaz.com/2017/04/good-girl-definitely-does-not-masturbate-young-poet-smashes-patriarchy/?utm_content=buffer5c7c0&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+
+* http://www.thinkinghumanity.com/2016/11/i-hope-he-loves-you-like-this-poem.html
+
+* https://www.powerofpositivity.com/10-reasons-to-have-sex-daily/
+
+* http://www.explorerscode.com/10-best-sex-positions-men-small-manhood/
+
+* http://www.explorerscode.com/10-best-sex-positions-men-small-manhood/
+
+* http://www.mensxp.com/relationships/understanding-women/26566-10-reasons-why-you-should-avoid-a-serious-relationship-in-your-20s.html
+
+* http://india.curejoy.com/content/5-parenting-behaviors-stop-children-successful/
+
+* https://india.curejoy.com/content/5-things-supposed-right-eating/
+
+* https://www.inc.com/chris-winfield/want-to-be-happier-ask-yourself-this-question-every-morning.html?cid=cp01002quartz
+
+* http://www.cnbc.com/2017/04/12/google-founders-reveal-6-secrets-to-becoming-a-billionaire.html?__source=Facebook
+
+* http://www.businessinsider.in/A-Harvard-psychologists-advice-on-how-to-argue-when-you-know-youre-right/articleshow/53830336.cms
+
+* http://www.mensxp.com/relationships/sex-and-intimacy/26975-8-reasons-why-theres-nothing-wrong-with-premarital-sex.html
+
+* http://www.businessinsider.com/ways-to-change-your-thinking-to-get-richer-next-year-2016-12?IR=T
+
+* http://www.mensxp.com/health/sexual-health/28841-5-masturbation-mistakes-you-are-unintentionally-making.html
+
+* http://www.mensxp.com/relationships/friendship/30261-10-reasons-why-we-lose-friends.html
+
+* http://fortune.com/2016/09/27/managing-older-employees/?xid=soc_socialflow_facebook_FORTUNE
+
+* http://www.caravanalive.com/lifestyle/unveiling-mia-khalifa-s-good-side-see-how-she-helped-these-guys-gain-confidence-again-17153.html
+
+* http://www.curejoy.com/content/6-things-happen-turn-40/
+
+* https://www.quora.com/Why-are-most-of-the-people-in-the-software-industry-unhappy-with-their-lives/answer/Jitender-S-Bhatia?ref=fb_page
+
+* http://www.rajnikantvscidjokes.in/indians-wont-tolerate-insult-thrashed-snapchats-ceo-harsh-tweets/
+
+* https://www.curejoy.com/content/6-types-men-definitely-date/
+
+* http://www.mensxp.com/grooming/hair-care/29153-5-things-you-should-shouldn-t-do-in-order-to-have-good-hair.html
+
+* https://familyshare.com/27532/if-she-has-these-12-characteristics-she-s-a-keeper-and-you-should-never-let-her-go
+
+* https://familyshare.com/23038/8-ways-to-appear-more-attractive-than-you-are
+
+* https://familyshare.com/27547/science-reveals-the-best-age-to-have-children-women-can-t-believe-it
+
+* https://familyshare.com/27546/9-ways-to-keep-flirting-in-your-marriage-to-keep-him-head-over-heels-in-love
+
+* http://www.relrules.com/10-body-language-signs-that-show-she-is-falling-for-you/
+
+* http://www.mensxp.com/relationships/impress-a-girl/26994-36-magical-questions-that-can-make-any-two-people-fall-in-love.html
+
+* https://familyshare.com/27537/sponsored/islandspasauna/13-gestures-that-make-men-feel-loved
+
+* http://www.relrules.com/5-signs-that-your-relationship-is-a-deeply-intimate-one/
+
+* http://www.mensxp.com/relationships/better-partner/29863-the-real-reason-why-indian-men-suck-at-dating.html
+
+* http://www.relrules.com/if-a-guy-does-these-5-things-hes-an-emotional-psychopath/
+
+* http://www.relrules.com/the-real-reason-she-lost-interest-in-you-and-its-not-what-you-think/
+
+* http://www.mensxp.com/fashion/style-guide/36295-how-to-get-ready-for-your-first-date-in-5-simple-steps.html
+
+* http://www.relrules.com/5-zodiac-signs-that-get-attached-a-little-too-quickly-2/
+
+* http://www.relrules.com/the-7-most-common-lies-women-tell-in-relationships/
+
+* http://www.relrules.com/11-things-you-never-knew-men-find-ridiculously-hot/
+
+* https://familyshare.com/24054/31-signs-he-doesn-t-love-you
+
+* https://familyshare.com/27552/11-health-problems-you-can-detect-by-looking-at-your-nails
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FonlyUsefulinfo%2Fposts%2F1309486222470715&width=500" width="500" height="712" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* http://www.relrules.com/10-things-a-man-who-is-truly-mature-will-never-do-in-his-relationship/
+
+* http://www.relrules.com/30-texts-that-you-could-send-him-in-the-morning-to-make-him-happy/
+
+* http://www.relrules.com/13-signs-that-hes-not-liking-being-in-a-relationship-with-you/
+
+* http://www.relrules.com/the-4-types-of-men-you-should-never-fall-in-love-with-ever/
+
+* http://www.relrules.com/why-nice-guys-stay-single/
+
+* http://www.relrules.com/why-nice-guys-stay-single/
+
+* http://www.relrules.com/9-things-about-deep-women-that-men-cant-keep-up-with/
+
+* http://stayhealthyfood.news/10-powerful-habits-will-boost-intelligence/
+
+* http://www.success.com/podcast/ep-59-be-a-badass-at-making-money
+
+* https://familyshare.com/27569/11-things-a-husband-should-never-tell-another-woman-for-the-sake-of-his-marriage
+
+* http://www.relrules.com/the-real-reasons-why-were-attracted-to-someone-we-shouldnt-be/
+
+* http://www.relrules.com/7-signs-shes-only-taking-advantage-of-you/
+
+* http://www.relrules.com/this-is-why-you-are-going-to-miss-her/
+
+* https://familyshare.com/24522/do-you-feel-you-re-losing-him-2-things-you-must-do-and-2-things-you-should-never-do
+
+* http://www.relrules.com/5-signs-he-will-never-cheat/
+
+* https://familyshare.com/27543/how-to-romance-your-wife
+
+* http://www.relrules.com/10-quotes-to-remember-when-youre-overthinking/
+
+* http://www.relrules.com/14-things-you-did-not-know-about-kissing/
+
+* http://www.relrules.com/13-reasons-people-cheat-on-the-people-they-love/
+
+* https://familyshare.com/24106/16-signs-he-loves-you-even-if-he-doesn-t-say-it-out-loud
+
+* https://familyshare.com/2652/the-10-marriage-commandments
+
+* http://www.relrules.com/things-men-women-attractive/
+
+* https://familyshare.com/27590/13-essentials-to-make-your-husband-fall-back-in-love-with-you
+
+* https://familyshare.com/26365/20-things-you-should-be-doing-for-your-wife-on-a-regular-basis
+
+* https://familyshare.com/27591/5-ridiculous-lies-that-lead-you-to-think-you-don-t-love-him-anymore
+
+* http://www.huffingtonpost.in/2017/04/17/indian-women-recall-the-first-advice-they-were-given-against-h_a_22042820/?utm_medium=Keywee&utm_source=FB&utm_campaign=indian-women-recall-the-first-advice-they-were-given-against&kwp_0=391441&kwp_4=1445186&kwp_1=633610
+
+* http://www.reportbollywood.com/2017/04/22/using-ingredient-youll-never-use-lipstick-lips-will-look-naturally-pink/?utm_source=woman
+
+* http://www.relrules.com/7-qualities-marry-him/
+
+* http://www.relrules.com/7-little-things-that-matter-in-a-relationship/
+
+* https://www.quora.com/How-do-I-plan-my-next-10-years-to-become-a-CEO-of-any-company/answer/David-S-Rose?ref=fb_page
+
+* http://www.mensxp.com/grooming/personal-hygiene/36453-here-are-5-crucial-skin-care-tips-for-men-with-dark-skin.html
+
+* http://www.awesomequotes4u.com/2017/04/16-reasons-to-have-sex-daily.html
+
+* http://www.awesomequotes4u.com/2017/04/14-amazing-psychology-facts-everyone.html
+
+* http://www.thinkinghumanity.com/2017/02/8-things-that-are-truly-a-waste-of-your-time.html
+
+* https://familyshare.com/27607/13-little-things-that-make-women-attractive-from-real-men
+
+* https://familyshare.com/27599/a-letter-to-the-wife-of-an-unfaithful-man
+
+* https://familyshare.com/22380/how-i-fell-back-in-love-with-my-husband
+
+* https://familyshare.com/27613/9-places-you-hardly-ever-clean-but-need-to-for-the-sake-of-your-health
+
+* https://familyshare.com/22614/19-gestures-that-make-a-woman-feel-absolutely-adored
+
+* https://www.youthkiawaaz.com/2017/04/my-story-ever-suicidal-ever-happy/?utm_content=buffer81348&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+
+* https://familyshare.com/27597/it-s-true-love-if-your-husband-does-these-11-things-for-you
+
+* https://www.curejoy.com/content/7-plants-keep-house-cool-air-fresh-summers/
+
+* http://positivemed.com/2017/01/23/mans-private-part/
+
+* https://familyshare.com/27351/man-proposes-with-an-8-engagement-ring-what-his-girlfriend-does-5-days-later-is-unbelievable
+
+* https://familyshare.com/27608/15-signs-your-friendship-with-that-man-is-turning-into-a-romance
+
+* https://familyshare.com/27602/11-signs-your-wife-is-a-keeper
+
+* http://www.huffingtonpost.in/2017/04/13/15-things-many-indian-women-in-relationships-miss-about-being-si_a_22036859/?utm_medium=Keywee&utm_source=FB&utm_campaign=15-things-many-indian-women-in-relationships-miss-about-being&kwp_0=391424&kwp_4=1456499&kwp_1=638100
+
+* https://familyshare.com/128/10-things-a-man-should-never-say-to-his-wife
+
+* http://www.relrules.com/12-signs-shes-a-high-quality-woman/
+
+* http://www.relrules.com/10-signs-your-woman-is-deeply-in-love-with-you/
+
+* http://www.mensxp.com/grooming/skin-care/30379-6-morning-rituals-that-will-make-you-look-amazing-before-you-step-out-of-the-house.html
+
+* http://www.relrules.com/15-signs-he-is-the-guy-you-have-been-looking-for/
+
+* http://www.relrules.com/things-you-need-to-know-before-dating-the-girl-who-has-always-been-single/
+
+* http://www.mensxp.com/dating/flirting-a-attraction/6885-how-to-impress-a-girl-on-chat.html
+
+* http://www.curejoy.com/content/7-non-sexual-things-increase-sex-appeal/
+
+* http://www.relrules.com/4-reasons-a-girl-refuses-to-sleep-with-you-even-when-she-really-likes-you/
+
+* http://www.relrules.com/why-are-some-people-always-reluctant-to-apologize/
+
+* http://www.mensxp.com/relationships/relationship-problems/28389-this-scientific-theory-on-infidelity-proves-some-people-are-born-cheaters.html
+
+* https://www.techworm.net/2016/10/top-10-super-cool-notepad-tricks-hacks-commands-pc.html
+
+* http://hackspirit.com/4-profound-life-lessons-lao-tzu-will-blow-mind/?utm_content=buffer0cd77&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+
+* http://www.success.com/article/rohn-how-to-create-a-master-plan-for-your-life
+
+* http://www.relrules.com/if-she-does-these-12-things-without-being-asked-shes-definitely-worth-the-chase/
+
+* http://www.huffingtonpost.in/2017/04/24/12-things-that-indian-women-wish-people-told-them-about-pregnanc_a_22053058/?utm_medium=Keywee&utm_source=FB&utm_campaign=12-things-that-indian-women-wish-people-told-them-about-pregnanc&kwp_0=392845&kwp_4=1453395&kwp_1=636785
+
+* http://www.relrules.com/10-uncomfortable-signs-that-you-are-actually-in-the-best-relationship-of-your-life/
+
+* http://www.relrules.com/the-10-secret-things-that-can-make-men-crazy-about-you/
+
+* https://www.quora.com/What-are-the-lessons-people-most-often-learn-too-late-in-life/answer/Milena-Rangelov?ref=fb_page
+
+* http://www.relrules.com/what-its-really-like-to-date-a-woman-who-has-her-life-together/
+
+* http://www.relrules.com/6-signs-to-know-if-a-guy-likes-you/
+
+* http://millionairessayings1.com/2017/03/21/9-items-mans-wardrobe-women-love/
+
+* https://scripbox.com/blog/5-habits-that-are-stopping-you-from-becoming-rich/?utm_source=times-internet&utm_medium=content-distribution&utm_content=habits-stop-becoming-rich&utm_campaign=content-marketing
+
+* https://familyshare.com/27601/5-things-you-didn-t-know-were-considered-cheating
+
+* https://www.smartlook.com/?utm_source=facebook&utm_medium=cpc&utm_term=fb_in_lookDash1_d_b&utm_campaign=fb_in_lookDash1_d_b
+ 
+* https://familyshare.com/27610/4-justifiable-reasons-why-your-mother-in-law-still-doesn-t-love-you
+
+* http://millionairessayings1.com/2017/03/17/21-simple-tricks-keep-clothes-shoes-perfect-condition/
+
+* http://www.relrules.com/6-things-you-should-never-say-to-your-ex/
+
+* http://www.relrules.com/10-reasons-why-getting-involved-with-a-married-guy-is-a-big-no/
+
+* http://www.relrules.com/5-wrong-things-women-do-with-men-that-end-a-relationship-before-it-even-starts/
+
+* http://www.relrules.com/15-signs-your-guy-might-be-a-loser-and-it-has-nothing-to-do-with-you/
+
+* http://www.relrules.com/5-signs-your-relationship-is-out-of-balance/
+
+* http://www.relrules.com/12-truths-you-need-to-accept-if-your-partner-is-the-one/
+
+* http://www.relrules.com/10-signs-youre-not-actually-in-a-relationship-like-you-think-you-are/
+
+* http://www.relrules.com/7-things-that-can-wreck-any-relationship/
+
+* http://www.relrules.com/10-subtle-ways-to-show-your-partner-youre-in-love/
+
+* http://www.relrules.com/10-harmless-things-that-guys-should-stop-telling-their-girlfriends/
+
+* http://www.relrules.com/9-of-the-most-annoying-but-effective-things-you-can-do-to-have-a-happy-healthy-relationship/
+
+* http://www.relrules.com/10-most-common-mistakes-women-make-in-a-relationship/
+
+* http://www.relrules.com/the-5-red-flags-that-your-partner-will-never-be-able-to-handle-how-great-you-are/
+
+* https://familyshare.com/27644/7-reasons-cheaters-don-t-confess-until-they-get-caught
+
+* https://familyshare.com/27571/there-s-a-new-outbreak-of-a-dangerous-disease-that-attacks-children-do-you-know-the-symptoms
+
+* https://familyshare.com/27657/6-questions-you-should-answer-before-deciding-if-it-s-time-to-end-the-relationship-or-work-harder-to-save-it
+
+* http://www.relrules.com/how-to-move-on-when-you-think-you-cant/
+
+* http://www.relrules.com/things-men-will-never-understand-about-the-women-in-their-lives/
+
+* https://familyshare.com/27662/15-things-men-only-do-if-they-are-being-100-percent-faithful
+
+* https://familyshare.com/27521/5-things-men-only-do-if-they-are-not-in-love-with-a-woman
+
+* https://familyshare.com/27665/5-things-men-misunderstand-about-women-no-matter-how-hard-we-try-to-make-them-understand-us
+
+* https://familyshare.com/27661/these-6-things-are-why-you-re-tired-all-the-time-according-to-science
+
+* http://universallifemagazine.com/2017/05/04/german-government-sets-website-tell-migrants-sex-german-women/
+
+* https://familyshare.com/27666/how-to-stay-positive-when-you-feel-like-you-can-t
+
+* http://www.relrules.com/9-signs-youre-with-a-real-man/
+
+* http://www.mensxp.com/relationships/sex-and-intimacy/36713-here-are-4-easy-ways-to-make-women-orgasm-within-minutes.html
+
+
+* https://scripbox.com/blog/6-investing-lessons-from-the-richest-man-in-the-world-warren-buffett/?utm_source=times-internet&utm_medium=content-distribution-mobile&utm_content=buffett_lessons&utm_campaign=content-marketing&ctn=2
+
+* http://www.relrules.com/if-your-guy-has-these-7-habits-he-is-a-keeper/
+
+* http://millionairessayings1.com/2017/04/17/12-amazing-business-cards-world-famous-personalities/
+
+* https://familyshare.com/27647/if-he-does-these-8-things-you-are-with-a-manipulator
+
+* https://familyshare.com/27648/13-things-your-wife-secretly-wants-but-will-never-tell-you
+
+* https://familyshare.com/27641/7-signs-he-s-the-wrong-guy-for-you
+
+* http://www.relrules.com/10-reasons-why-getting-involved-with-a-married-guy-is-a-big-no/
+
+* https://familyshare.com/27669/9-ways-to-know-you-re-really-in-love
+
+* https://familyshare.com/27671/8-things-women-wish-men-knew-about-periods
+
+* http://www.relrules.com/stay-single-until-you-meet-a-guy-like-this/
+
+* http://www.relrules.com/top-8-ways-men-destroy-their-marriage/
+
+* http://www.relrules.com/if-your-relationship-doesnt-have-these-5-things-it-probably-wont-last/
+
+* http://www.relrules.com/10-things-ive-learned-from-a-great-father-about-what-makes-a-good-man/
+
+* http://www.relrules.com/13-mistakes-that-can-destroy-your-relationship/
+
+* https://familyshare.com/27676/5-things-you-re-doing-to-be-the-most-miserable-person-in-the-world
+
+* http://www.relrules.com/9-mistakes-everyone-makes-in-their-first-long-term-relationship/
+
+* https://www.quora.com/What-did-former-shy-people-understand-that-made-them-become-confident/answer/Nicolas-Cole-1?ref=fb_page
+
+* https://brightside.me/wonder-curiosities/10-ways-to-search-google-for-information-that-96-of-people-dont-know-about-256760/
+
+* http://www.relrules.com/10-ways-women-act-when-they-dont-love-you-anymore/
+
+* http://www.relrules.com/5-signs-your-partner-is-in-it-for-sex/
+
+* http://kalamfanclub.com/trishneet-arora-from-failing-in-8th-standard-to-successful-entrepreneur/
+
+* http://www.relrules.com/10-things-to-tell-your-partner-when-your-relationship-is-difficult/
+
+* http://www.relrules.com/10-things-that-will-end-a-relationship-before-it-begins/
+
+* http://www.relrules.com/14-common-reasons-men-dump-good-girls/
+
+* http://www.relrules.com/4-reasons-you-should-stay-out-of-contact-with-your-ex/
+
+* http://www.cnbc.com/2017/05/08/8-things-you-have-to-give-up-to-be-successful.html?__source=Facebook
+
+* http://www.mensxp.com/special-features/today/22542-10-skills-every-man-worth-his-salt-should-know.html
+
+* http://www.success.com/article/17-motivating-quotes-about-becoming-rich?utm_source=Facebook&utm_medium=Social&utm_campaign=Post
+
+* http://www.success.com/article/17-motivational-quotes-to-inspire-you-to-be-successful?utm_source=Facebook&utm_medium=Social&utm_campaign=Post
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazingList.net%2Fposts%2F1472204862840186&width=500" width="500" height="656" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* https://www.techworm.net/2016/03/amazing-facts-computer-programmer.html
+
+* http://www.success.com/blog/use-this-5-second-life-hack-to-make-your-biggest-decisions?utm_source=Facebook&utm_medium=Social&utm_campaign=Post
+
+* https://www.techworm.net/2017/05/bill-gates-gives-career-advice-series-tweets-university-graduates.html
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTimeforLearning%2Fposts%2F1520794357976975&width=500" width="500" height="651" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* https://www.quora.com/How-might-a-brilliant-middle-class-teenager-become-the-richest-person-on-Earth-within-20-years/answer/Balaji-Viswanathan-2?ref=fb_page
+
+* https://www.curejoy.com/content/8-totally-valid-reasons-shower-partner/
+
+* http://topyaps.com/girl-indian-man-marry-non-virgin
+
+* http://www.thinkinghumanity.com/2017/02/if-you-love-her-dont-destroy-her.html
+
+* http://www.mensxp.com/relationships/understanding-women/37015-when-you-tell-a-woman-you-like-her-this-is-what-she-s-thinking.html
+
+* http://www.mensxp.com/entertainment/gossip/27239-14-quotes-by-the-joker-that-are-painfully-true-in-todays-cruel-world.html
+
+* https://www.inc.com/travis-bradberry/14-things-ridiculously-successful-people-do-every-day.html?cid=cp01002fortune&xid=soc_socialflow_facebook_FORTUNE
+
+* https://www.quora.com/How-can-you-overcome-your-envy-of-people-who-are-your-age-but-are-far-more-successful/answer/Matthew-Manning?ref=fb_page
+
+* http://time.com/money/4088651/bill-gates-best-career-advice/?xid=time_socialflow_facebook
+
+* http://www.cnbc.com/2017/05/16/why-bill-gates-says-finding-you-unique-type-of-intelligence-is-key.html?__source=Facebook
+
+* http://time.com/money/4037619/wealth-secrets-billion-dollars-get-rich/?xid=time_socialflow_facebook
+
+* http://fortune.com/2016/08/30/12-business-leaders-on-how-they-handle-stress/?xid=soc_socialflow_facebook_FORTUNE
+
+* https://www.powerofpositivity.com/signs-good-man/
+
+* http://time.com/money/4630374/this-chart-can-help-you-become-a-millionaire-no-matter-what-you-earn/?xid=soc_socialflow_facebook_FORTUNE
+
+* http://millionairessayings1.com/2017/05/21/15-things-didnt-know-sundar-pichai-ceo-google-billionaire-lifestyle/
+
+* https://familyshare.com/24864/8-things-men-only-do-with-the-woman-they-love
+
+* https://familyshare.com/24846/6-small-ways-a-man-makes-his-wife-feel-ugly-without-saying-a-thing
+
+* https://familyshare.com/24383/10-signs-your-man-is-lying-to-you
+
+* http://millionairessayings1.com/2017/05/23/22-things-least-life-2/
+
+* http://millionairessayings1.com/2017/05/22/6-ways-men-destroying-sperms-everyday-2/
+
+* http://www.relrules.com/11-things-men-pay-attention-to-but-you-dont/
+
+* https://familyshare.com/27777/6-things-you-and-your-husband-should-be-doing-in-front-of-your-kids-to-teach-them-about-love
+
+* https://familyshare.com/26019/10-things-your-man-needs-but-would-never-ask-of-you
+
+* https://www.curejoy.com/content/10-inspiring-qualities-strong-women-men-cant-handle-05-2017/
+
+* https://india.curejoy.com/content/10-inspiring-qualities-strong-women-men-cant-handle-05-2017/
+
+* http://www.relrules.com/5-signs-that-your-relationship-is-a-deeply-intimate-one/
+
+* https://www.powerofpositivity.com/10-signs-youve-found-soul-mate/
+
+* http://www.mensxp.com/special-features/today/26420-23-fascinating-quotes-on-life-that-will-inspire-you-to-live-life-to-the-fullest.html
+
+* https://familyshare.com/20614/10-ugly-things-awful-wives-do-to-their-husbands
+
+* http://www.relrules.com/14-things-you-should-do-before-getting-married/
+
+* http://www.relrules.com/7-reasons-why-you-should-date-someone-whos-just-a-little-bit-crazy/
+
+* https://india.curejoy.com/content/10-must-do-things-for-male-sexual-health-03-2017/
+
+* http://www.relrules.com/11-uncomfortable-signs-youve-finally-met-a-good-guy/
+
+* http://www.relrules.com/10-things-to-always-look-for-in-a-relationship/
+
+* http://www.relrules.com/if-he-does-these-15-things-over-text-he-totally-wants-you/
+
+* https://familyshare.com/22818/5-signs-your-spouse-doesn-t-love-you-anymore
+
+* https://familyshare.com/27826/if-your-husband-does-these-10-things-you-hit-the-marriage-jackpot
+
+* https://familyshare.com/27836/sponsored/xplor/8-tests-to-determine-if-your-relationship-will-last
+
+* https://familyshare.com/27820/5-things-you-should-never-say-to-your-wife-when-she-s-dealing-with-infertility
+
+* https://familyshare.com/27828/are-you-tired-of-your-spouse-not-meeting-your-needs
+
+* https://familyshare.com/20859/10-things-that-cheating-men-having-in-common
+
+* https://familyshare.com/22661/13-signs-you-have-the-best-husband-ever
+
+* https://brightside.me/article/the-only-guide-men-need-to-get-dressed-17555/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_gorgeous_side
+
+* https://simplecapacity.com/2017/04/you-have-4-kinds-of-soul-mates-heres-how-to-recognize-each-one/
+
+* http://fortune.com/2017/03/22/john-collison-youngest-self-made-billionaire/?xid=soc_socialflow_facebook_FORTUNE
+
+* https://upvee.co/traits-of-extremely-intelligent-people/
+
+* https://upvee.co/secrets-making-someone-like-right-away/
+
+* http://www.thinkinghumanity.com/2014/05/ten-choices-you-will-regret-in-10-years.html
+
+* http://www.relrules.com/7-signs-youve-found-a-good-woman/
+
+* http://www.success.com/blog/if-you-want-to-change-your-life-change-what-you-think?utm_source=Facebook&utm_medium=Social&utm_campaign=Post
+
+* http://fortune.com/2017/05/26/mark-zuckerbergs-harvard-commencement-speech/?xid=soc_socialflow_facebook_FORTUNE
+
+* http://www.relrules.com/do-not-marry-the-guy-who-has-these-15-habits/
+
+* http://www.relrules.com/10-things-you-should-never-sacrifice-for-a-relationship/
+
+* http://www.relrules.com/let-him-go-if-he-never-does-these-10-things-for-you/
+
+* http://www.mensxp.com/relationships/understanding-women/30121-23-indian-women-reveal-what-turns-them-on-in-a-man-it-s-going-to-help-you-a-lot.html
+
+* https://familyshare.com/26365/20-things-you-should-be-doing-for-your-wife-on-a-regular-basis
+
+* http://millionairessayings1.com/index.php/2017/05/25/11-signs-youre-dating-real-man-not-playboy/
+
+* http://www.relrules.com/25-signs-its-time-to-quit-worrying-because-hes-obviously-never-going-to-cheat-on-you/
+
+* http://www.relrules.com/35-signs-hell-never-become-your-boyfriend/
+
+* http://motto.time.com/4542707/stop-fearing-failure-criticism/?xid=time_socialflow_facebook
+
+* http://fortune.com/2016/06/03/saying-youre-an-entrepreneur-means-nothing/?xid=soc_socialflow_facebook_FORTUNE
+
+* http://time.com/4652551/bill-gates-warren-buffett/?xid=soc_socialflow_facebook_FORTUNE
+
+* https://brightside.me/wonder-people/10-signs-youve-found-an-ideal-husband-302660/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_gorgeous_side
+
+* https://upvee.co/one-thing-men-want-sex/
+
+* http://www.relrules.com/date-someone-who-makes-you-feel-comfortable-from-day-one/
+
+* https://familyshare.com/22029/12-signs-you-were-totally-made-for-each-other
+
+* http://www.relrules.com/13-reasons-people-cheat-on-the-people-they-love/
+
+* http://www.thinkinghumanity.com/2016/06/10-things-i-learned-while-everyone-else-was-getting-married.html
+
+* https://familyshare.com/21624/10-signs-a-man-is-in-love
+
+* http://time.com/4341680/busy-brain-cognitive-function-aging/?xid=soc_socialflow_facebook_FORTUNE
+
+* http://fortune.com/2017/02/01/mark-zuckerberg-rich-billionaire-inheritance-kids/?xid=soc_socialflow_facebook_FORTUNE
+
+* http://india.curejoy.com/content/5-strong-differences-soulmate-life-partner/?utm_medium=IAO&utm_source=FBFeed&utm_campaign=FBIndia
+
+* http://www.relrules.com/the-7-most-common-lies-women-tell-in-relationships/
+
+* http://www.mensxp.com/relationships/impress-a-girl/29292-15-things-you-should-never-do-while-flirting.html
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FIndianCitizenOfficial%2Fposts%2F1623643574341817&width=500" width="500" height="667" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* http://www.mensxp.com/relationships/understanding-women/26971-29-signs-she-is-secretly-in-love-with-you.html
+
+* http://www.akkarbakkar.com/indian-society/how-not-to-find-an-india-guy-in-3-months/
+
+* http://www.mensxp.com/grooming/hair-care/29153-5-things-you-should-shouldn-t-do-in-order-to-have-good-hair.html
+
+* http://www.relrules.com/9-signs-that-its-not-time-to-give-up-on-your-relationship-yet/
+
+* http://www.relrules.com/10-things-i-learned-when-my-10-year-relationship-came-to-an-end/
+
+* https://india.curejoy.com/content/5-sleep-habits-successful-people/?utm_medium=IAO&utm_source=FBFeed&utm_campaign=FBIndia
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FFactsFactory1%2Fposts%2F712720468910005&width=500" width="500" height="645" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* http://www.relrules.com/9-signs-your-new-partner-isnt-ready-to-be-in-a-relationship/
+
+* http://india.curejoy.com/content/4-crazy-things-happen-vagina-dont-sex-solutions/?utm_medium=IAO&utm_source=FBFeed&utm_campaign=FBIndia
+
+* https://brightside.me/inspiration-health/7-everyday-habits-that-can-damage-our-health-311810/?utm_source=fb_brightside&utm_medium=fb_organic&utm_campaign=fb_gr_brightside
+
+* http://www.rajnikantvscidjokes.in/3-women-kidnapped-gang-raped-23-yr-man-3-days-threw-semi-naked-die/
+
+* http://www.relrules.com/8-reasons-why-long-distance-couples-have-the-strongest-relationships/
+
+* http://www.thinkinghumanity.com/2015/08/40-questions-that-will-quiet-your-mind.html
+
+* http://www.relrules.com/8-signs-you-arent-a-priority-in-your-relationship/
+
+* http://www.relrules.com/10-signs-your-relationship-is-doing-better-than-you-think-it-is/
+
+* https://familyshare.com/22454/7-things-you-should-not-tolerate-in-your-marriage
+
+* https://familyshare.com/21755/10-things-men-secretly-love-about-their-wives
+
+* http://www.mensxp.com/relationships/impress-a-girl/27036-8-ways-to-make-any-girl-go-crazy-about-you.html
+
+* <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffortafyfans%2Fvideos%2F2262249363869393%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+* https://familyshare.com/21505/6-things-a-woman-should-never-do-for-the-man-she-loves
+
+* https://familyshare.com/22076/10-traits-of-a-husband-who-will-never-ever-stop-loving-you
+
+* https://familyshare.com/27878/7-conversations-you-should-have-with-your-kid-before-they-grow-up
+
+* https://familyshare.com/27879/20-signs-you-ve-married-your-best-friend
+
+* https://familyshare.com/24269/5-things-men-are-only-willing-to-do-for-the-woman-he-loves
+
+* https://familyshare.com/21645/7-signs-your-husband-is-happily-married
+
+* https://upvee.co/difference-love-attached/
+
+* https://www.akkarbakkar.com/women/how-i-taught-myself-to-be-a-strong-woman-after-my-husband-said-these-words-to-me/
+
+* http://www.relrules.com/16-tips-for-making-a-long-term-relationship-work/
+
+* https://india.curejoy.com/content/7-types-female-orgasms-need-know/?utm_medium=IAO&utm_source=FBFeed&utm_campaign=FBIndia
+
+* http://www.relrules.com/15-signs-he-is-not-serious-with-you-and-you-are-just-a-toy-to-him/
+
+* http://www.relrules.com/things-that-automatically-turn-men-off/
+
+* http://www.relrules.com/5-reasons-why-we-need-physical-touch-everyday/
+
+* https://www.powerofpositivity.com/habits-of-couples-that-last/
+
+* https://upvee.co/one-trait-women-find-attractive-men/
+
+* https://brightside.me/wonder-people/15-overheard-stories-about-how-everyone-finds-happiness-sooner-or-later-325710/?utm_source=fb_rb6106673add1&utm_campaign=F_L&utm_medium=cpm
+
+* https://familyshare.com/687/20-ways-to-be-nicer-to-your-husband-or-wife
+
+* http://www.mensxp.com/special-features/today/26987-10-qualities-that-define-a-man-7-that-dont.html
+
+* <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fupvee.co%2Fvideos%2F370663309970735%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+* http://www.relrules.com/9-signs-she-is-the-one-you-should-marry/
+
+* http://www.relrules.com/the-10-secret-things-that-can-make-men-crazy-about-you/
+
+* http://www.relrules.com/10-signs-the-guy-is-really-in-love-with-you/
+
+* https://familyshare.com/27890/if-your-man-does-these-9-things-he-will-break-your-heart-without-a-doubt
+
+* http://www.relrules.com/27-signs-youre-dating-a-man-who-actually-respects-you/
+
+* http://www.relrules.com/15-ways-to-tell-if-your-ex-still-likes-you-and-wants-you/
+
+* http://www.travelandleisure.com/travel-tips/celebrity-travel/mark-zuckerberg-priscilla-chan-honeymoon-every-year?Internal+Recirc+-+FB=partner_TIME_FB&utm_campaign=time&utm_source=facebook.com&utm_medium=social&xid=time_socialflow_facebook
+
+* https://familyshare.com/27215/a-husband-should-always-prioritize-his-wife-especially-in-these-5-situations
+
+* http://www.relrules.com/if-the-woman-you-are-with-even-has-half-of-these-qualities-marry-her/
+
+* http://www.relrules.com/17-differences-you-will-observe-between-a-lover-and-a-life-partner/
+
+* http://www.relrules.com/10-signs-you-are-dating-a-great-guy-you-should-never-let-go/
+
+* <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FGKGeneralKnowledgee%2Fvideos%2F1317128178405361%2F&show_text=0&width=560" width="560" height="420" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FIncredibleFactsIF%2Fposts%2F684231968428295%3A0&width=500" width="500" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FIncredibleFactsIF%2Fposts%2F684740908377401%3A0&width=500" width="500" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+* https://www.powerofpositivity.com/10-reasons-to-have-sex-daily/
+
+* https://www.inverse.com/article/32341-sperm-bendiness?utm_source=facebook.com&utm_medium=dailydot&utm_campaign=swap
+
+* http://www.thinkinghumanity.com/2016/10/5-facts-of-psychology-that-you-need-to-know.html
+
+* http://www.relrules.com/11-signs-youre-falling-for-him-that-he-has-no-idea-of/
+
+* http://www.thinkinghumanity.com/2015/11/the-difference-between-needing-wanting-and-loving-somebody.html
+
+* https://www.curejoy.com/content/men-always-this-notice-about-you-during-sex/?utm_medium=IAO&utm_source=FBFeed&utm_campaign=FBAyurveda
+
+* https://www.triphobo.com/blog/best-roadtrips-in-india?utm_source=facebookblogs&utm_campaign=shortroadtripsindia&utm_medium=referral   --> WOW visit
+
+* http://www.relrules.com/i-never-stopped-loving-you-i-just-stopped-running-after-you/
+
+* http://www.thinkinghumanity.com/2016/12/5-reasons-why-a-strong-woman-will-never-choose-an-immature-man.html
+
+* http://www.relrules.com/5-things-you-shouldnt-say-to-a-girl-in-a-relationship/
+
+* http://www.relrules.com/12-signs-he-really-really-likes-you-and-its-not-just-about-the-sex/
+
+* http://www.relrules.com/15-thoughts-a-man-has-when-he-finally-finds-the-right-woman/
+
+* http://www.relrules.com/10-things-you-learn-after-your-first-loving-relationship/
+
+* http://www.relrules.com/11-powerful-habits-of-happy-relationships/
+
+* http://www.yourhealthtoday.net/9-things-men-afraid-ask-bed/
+
+* https://familyshare.com/27911/9-secrets-to-smell-addictively-delicious-all-day-your-man-will-go-crazy-for-you
+
+* http://www.relrules.com/9-ways-to-tell-if-he-has-good-intentions-or-hes-just-stringing-you-along/
+
+* http://www.relrules.com/differences-a-for-now-and-a-forever-kind-of-guy/
+
+* http://www.relrules.com/6-things-that-you-should-expect-when-youre-in-love-with-someone-who-doesnt-love-you/
+
+* http://www.relrules.com/11-signs-shes-worth-marrying/
+
+* http://www.relrules.com/10-things-guys-dont-pay-attention-to-at-all/
+
+* http://www.relrules.com/15-signs-your-partner-wants-to-cheat/
+
+* https://www.curejoy.com/content/sex-tricks-to-bring-your-partner-closer/?utm_medium=IAO&utm_source=FBFeed&utm_campaign=FBAyurveda
+
+* http://www.relrules.com/5-signs-you-are-in-a-mature-relationship/
+
+* http://www.relrules.com/4-reasons-why-you-should-date-a-girl-who-puts-in-a-lot-of-effort/
+
+* http://www.relrules.com/10-ways-some-men-badly-fail-in-relationships/
+
+* http://motto.time.com/4117921/emotional-intelligence-signs/?xid=time_socialflow_facebook&utm_campaign=time&utm_source=facebook.com&utm_medium=social
+
+* http://dailyhealthgen.com/2017/06/07/10-signs-woman-may-interested/
+
+* http://www.relrules.com/14-signs-hes-using-you-and-you-dont-even-know-it/
+
+* http://www.relrules.com/the-real-reasons-why-were-attracted-to-someone-we-shouldnt-be/
+
+* http://www.relrules.com/6-things-you-want-in-a-man-that-you-shouldnt-even-have-to-ask-for/
+
+* http://www.relrules.com/10-things-women-should-never-lie-to-men-about/
+
+* https://india.curejoy.com/content/things-men-should-know-about-vaginas/?utm_medium=IAO&utm_source=FBFeed&utm_campaign=FBAyurveda
+
+* http://www.relrules.com/he-wont-be-your-forever-person-unless-you-can-talk-openly-about-these-13-things/
+
+* http://www.mensxp.com/relationships/understanding-women/28352-10-corny-things-women-want-men-to-do-but-won-t-ever-say-it.html
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****************************************************************************************************************
+Normal info:-
+
+* http://telugustop.com/5-ways-a-man-can-delay-his-ejaculation-or-orgasm/?utm_source=tstopfbad
+* http://www.mensxp.com/relationships/sex-and-intimacy/35643-8-things-women-observe-about-you-in-bed-that-you-probably-didn-t-realise.html
+* https://www.powerofpositivity.com/40-things-every-person-know-age-40/
+* 
+
+http://www.omdbapi.com/?apikey=2d2c9886&t=movie&y=2014&type=movie
+
+{
+    "Title": "The Test",
+    "Year": "2019",
+    "Rated": "N/A",
+    "Released": "18 Sep 2019",
+    "Runtime": "87 min",
+    "Genre": "Horror",
+    "Director": "Steven M. Smith",
+    "Writer": "Steven M. Smith",
+    "Actors": "Jon-Paul Gates, Tiffany-Ellen Robinson, Zane Casablanca, Mat Holt",
+    "Plot": "A horror film about a pilot who is the sole survivor of the plane crash in the deep unknown. He must survive in an isolated building where something evil is waiting.",
+    "Language": "English",
+    "Country": "UK",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNmY1ZWQ5YzAtOWUwZS00YmVlLWI4MWEtZmMwOTM4ZDQ2MDQ2XkEyXkFqcGdeQXVyMzU5NzU5OQ@@._V1_SX300.jpg",
+    "Ratings": [],
+    "Metascore": "N/A",
+    "imdbRating": "N/A",
+    "imdbVotes": "N/A",
+    "imdbID": "tt6157414",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ http://www.omdbapi.com/?apikey=2d2c9886&t=test&y=2019

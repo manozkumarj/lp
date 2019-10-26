@@ -1,0 +1,101 @@
+Request processing pipeline
+
+
+const express = require("express");
+const app = express();
+
+* app.use(express.json()); = It reads the request body and it will parse the body of the request into a json object and then it will set OR populates req.body property.
+* app.use(express.urlencoded({extended: true})); = It parses incoming requests with urlencoded payloads
+* app.use(express.static('public')); = It is used to serve static files of the application
+
+* If we use unnecesary middlewares, it will slow down the "request processing pipeline"
+
+* In express, every route function is technically a middleware function
+
+* A middleware function basically a function that takes request object and either return a response to the client or passes control to another middleware function.
+
+* Every request we get on the server will go through the middleware function
+
+* 
+
+
+
+
+
+
+
+**********************************************************
+Environments:
+----------------------------------------------------------
+* We can know the environment as
+-> process.env.NODE_ENV
+-> app.get('env'); = This will return "development" by default if "process.env.NODE_ENV" is not set explicitly.
+
+* We can set environment variables as below.
+-> If it is windows, "set NODE_ENV=production"
+-> If it is linux, "export NODE_ENV=production"
+
+**********************************************************
+
+
+**********************************************************
+Configuration settings:
+----------------------------------------------------------
+* We should use "config" module/package
+* There is another module as "rc", but we use "config".
+* After installing "config", we should create "config" folder in root directory.
+* Then need to create 3 json files, which are 
+->default.json ->development.json ->production.json
+
+* Usage
+const config = require('config');
+console.log('Application name'+ config.get('name'));
+console.log('Application name'+ config.get('mail.host'));
+
+* We should not store applicartion secret things like passwords, secret keys in config file.
+We should create an environment variable and then read/call them in config file.
+
+* To store/create environment variables, follow below process
+-> If it is windows, "set appName_password=1234"
+-> If it is linux, "export appName_password=1234"
+
+Then need to create a file in "config" folder with the name "custom-environment-variables.json"
+Ex: {
+		"name": "My App - Production",
+		"password": "appName_password"
+	}
+
+**********************************************************
+
+
+
+
+**********************************************************
+Debugging:
+----------------------------------------------------------
+* We can use "debug" module/package to controll console.log messages and all that stuff
+* After installation
+const startupDebugger = require('debug')('app:startup'); - orbiraty namespace
+const dbDebugger = require('debug')('app:db'); - orbiraty namespace
+
+startupDebugger("This is startup message");
+dbDebugger("This is Database related message");
+
+* We can set what kind of dubugging information we can see in the console
+Now we need to set environment variable
+set DEBUG=app:startup,app:db
+(OR) We can use wildcard to show all msgs
+set DEBUG=app:*
+
+We can remove above thing as 
+set DEBUG=
+
+We can also set them as
+DEBUG=app* nodemon index.js
+**********************************************************
+
+
+
+
+
+

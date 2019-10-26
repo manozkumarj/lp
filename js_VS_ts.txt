@@ -1,0 +1,11 @@
+* We have "strict typing" in TS but not in JS.
+"strict typing" means
+	Ex: let a: number;
+
+* We can re-assign a value to a variable with different type in JS but not in TS.
+Ex: let a = 1;
+	a = 'one';
+
+	-> The above statements give error in TS but not in JS.
+
+* 

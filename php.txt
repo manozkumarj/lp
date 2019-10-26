@@ -1,0 +1,500 @@
+* When it comes to PHP first we should think about php.ini and .htaccess files.
+file_uploads = On, 
+
+***********************************************************
+Forms:
+---------------
+* enctype="multipart/form-data"
+* Files
+$_FILES["fileToUpload"]["tmp_name"], $_FILES["fileToUpload"]["size"], 
+
+
+***********************************************************
+
+
+
+* What's new in PHP 7
+PHP 7 is much faster than the previous popular stable release (PHP 5.6)
+PHP 7 has improved Error Handling
+PHP 7 supports stricter Type Declarations for function arguments
+PHP 7 supports new operators (like the spaceship operator: <=> )
+
+* PHP Variables Scope are 3 - local, global and static
+* A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function
+	<?php
+	$x = 5; // global scope
+
+	function myTest() {
+	    // using x inside this function will generate an error
+	    echo "<p>Variable x inside function is: $x</p>";
+	} 
+	myTest();
+
+	echo "<p>Variable x outside function is: $x</p>";
+	?>
+
+* A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function
+	<?php
+	function myTest() {
+	    $x = 5; // local scope
+	    echo "<p>Variable x inside function is: $x</p>";
+	} 
+	myTest();
+
+	// using x outside the function will generate an error
+	echo "<p>Variable x outside function is: $x</p>";
+	?>
+
+* The "global" keyword is used to access a global variable from within a function.
+	<?php
+	$x = 5;
+	$y = 10;
+
+	function myTest() {
+		global $x, $y;
+		$y = $x + $y;
+	}
+
+	myTest();
+	echo $y; // outputs 15
+	?>
+
+* PHP also stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable. This array is also accessible from within functions and can be used to update global variables directly
+	<?php
+	$x = 5;
+	$y = 10;
+
+	function myTest() {
+	    $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+	} 
+
+	myTest();
+	echo $y; // outputs 15
+	?>
+
+* Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted. We need it for a further job.
+To do this, use the static keyword when you first declare the variable.
+	<?php
+	function myTest() {
+	    static $x = 0;
+	    echo $x;
+	    $x++;
+	}
+
+	myTest();
+	myTest();
+	myTest();
+	?>
+Then, each time the function is called, that variable will still have the information it contained from the last time the function was called.
+
+Note: The variable is still local to the function.
+
+* PHP echo and print Statements
+echo and print are more or less the same. They are both used to output data to the screen.
+
+The differences are small: echo has no return value while print has a return value of 1 so it can be used in expressions. echo can take multiple parameters (although such usage is rare) while print can take one argument. echo is marginally faster than print.
+
+* If a variable is created without a value, it is automatically assigned a value of NULL.
+Variables can also be emptied by setting the value to NULL
+
+**************************************************************
+String functions:
+------------------------
+* strlen
+* str_word_count
+* strrev
+* strpos
+* str_replace
+* explode()
+* implode() * The join() function is an alias of the implode() function.
+* echo()
+* print()
+* strstr() - The strstr() function searches for the first occurrence of a string inside another string.
+* substr() - The substr() function returns a part of a string.
+* trim()
+
+**************************************************************
+
+**************************************************************
+Array functions:
+------------------------
+* count
+* array_combine() = The array_combine() function creates an array by using the elements from one "keys" array and one "values" array. Note: Both arrays must have equal number of elements!
+* The sizeof() function is an alias of the count() function.
+* array_merge() = The array_merge() function merges one or more arrays into one array.
+* array_chunk()
+* array_keys()
+* array_values()
+* array_unique()
+* array_diff() * array_intersect()
+* array_push()
+* array_pop()
+* array_unshift()
+* array_shift()
+* array_slice()
+* array_flip
+* array_product()
+* array_sum()
+* The array_search() function search an array for a value and returns the key.
+* in_array()
+
+**************************************************************
+
+* Constants are like variables except that once they are defined they cannot be changed or undefined
+	<?php
+	define("GREETING", "Welcome to W3Schools.com!", true);
+	echo greeting;
+	?>
+
+* In PHP7, you can create a Array constant using the define() function.
+	<?php
+	define("cars", [
+	    "Alfa Romeo",
+	    "BMW",
+	    "Toyota"
+	]);
+	echo cars[0];
+	?>
+
+* Constants are automatically global and can be used across the entire script.
+
+* PHP Operators
+Operators are used to perform operations on variables and values.
+
+PHP divides the operators in the following groups:
+
+Arithmetic operators
+Assignment operators
+Comparison operators
+Increment/Decrement operators
+Logical operators
+String operators
+Array operators
+Conditional assignment operators
+
+* <> = Inequality
+* <=> = Spaceship
+//integer comparison
+   print( 1 <=> 1);print("<br/>");
+   print( 1 <=> 2);print("<br/>");
+   print( 2 <=> 1);print("<br/>");
+   print("<br/>");
+   //float comparison
+   print( 1.5 <=> 1.5);print("<br/>");
+   print( 1.5 <=> 2.5);print("<br/>");
+   print( 2.5 <=> 1.5);print("<br/>");
+   print("<br/>");
+   //string comparison
+   print( "a" <=> "a");print("<br/>");
+   print( "a" <=> "b");print("<br/>");
+   print( "b" <=> "a");print("<br/>");
+It produces the following browser output −
+
+0
+-1
+1
+
+0
+-1
+1
+
+0
+-1
+1
+
+* null coalescing operator (??) has been introduced. It is used to replace the ternary operation in conjunction with isset() function. The Null coalescing operator returns its first operand if it exists and is not NULL; otherwise it returns its second operand.
+
+// fetch the value of $_GET['user'] and returns 'not passed'
+   // if username is not passed
+   $username = $_GET['username'] ?? 'not passed';
+   print($username);
+
+* 
+
+
+* Conditional statements are used to perform different actions based on different conditions.
+if, if...else, if...elseif...else, switch
+
+* PHP while loops execute a block of code while the specified condition is true.
+
+* while - loops through a block of code as long as the specified condition is true
+* do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true
+* for - loops through a block of code a specified number of times
+* foreach - loops through a block of code for each element in an array
+
+* PHP is a Loosely Typed Language - that we did not have to tell PHP which data type the variable is.
+	<?php
+	function addNumbers(int $a, int $b) {
+	    return $a + $b;
+	}
+	echo addNumbers(5, "5 days"); 
+	// since strict is NOT enabled "5 days" is changed to int(5), and it will return 10
+	?>
+
+* <?php 
+
+	declare(strict_types=1); // strict requirement
+
+	function addNumbers(int $a, int $b) {
+	    return $a + $b;
+	}
+	echo addNumbers(5, "5 days"); 
+	// since strict is enabled and "5 days" is not an integer, an error will be thrown
+	?>
+
+* Default parameter
+	<?php declare(strict_types=1); // strict requirement
+	function setHeight(int $minheight = 50) {
+	    echo "The height is : $minheight <br>";
+	}
+
+	setHeight(350);
+	setHeight(); // will use the default value of 50
+	setHeight(135);
+	setHeight(80);
+	?>
+
+* Return Type Declarations
+	<?php declare(strict_types=1); // strict requirement
+	function addNumbers(float $a, float $b) : float {
+	    return $a + $b;
+	}
+	echo addNumbers(1.2, 5.2); 
+	?>
+
+* In PHP, there are three types of arrays:
+
+Indexed arrays - Arrays with a numeric index
+Associative arrays - Arrays with named keys
+Multidimensional arrays - Arrays containing one or more arrays
+
+* built-in variables that are always available in all scopes.
+* The PHP superglobal variables are:
+
+$GLOBALS
+$_SERVER
+$_REQUEST
+$_POST
+$_GET
+$_FILES
+$_ENV
+$_COOKIE
+$_SESSION
+
+* $_SERVER is a PHP super global variable which holds information about headers, paths, and script locations.
+* Use require when the file is required by the application.
+  Use include when the file is not required and application should continue when file is not found.
+
+* COOKIE
+A cookie is often used to identify a user. A cookie is a small file that the server embeds on the user's computer. Each time the same computer requests a page with a browser, it will send the cookie too. With PHP, you can both create and retrieve cookie values.
+Note: The setcookie() function must appear BEFORE the <html> tag.
+Note: The value of the cookie is automatically URLencoded when sending the cookie, and automatically decoded when received (to prevent URLencoding, use setrawcookie() instead).
+$cookie_name = "user";
+$cookie_value = "John Doe";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 month
+isset($_COOKIE[$cookie_name])
+
+To modify a cookie, just set (again) the cookie using the setcookie() function
+To delete a cookie, use the setcookie() function with an expiration date in the past:
+// set the expiration date to one hour ago
+setcookie("user", "", time() - 3600);
+
+
+* SESSION
+A session is a way to store information (in variables) to be used across multiple pages.
+Unlike a cookie, the information is not stored on the users computer.
+A session is started with the session_start() function.
+$_SESSION["favcolor"] = "green";
+
+To remove all global session variables and destroy the session, use session_unset() and session_destroy()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+************************  Previous  **********************************************
+
+
+* In PHP, all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are NOT case-sensitive.
+* all variable names are case-sensitive.
+
+
+PHP 7 Features:
+---------------------------
+* Scalar datatype hinting
+* Return type hinting
+* Null coaleasce operator (Short form of Ternary operator)
+* Combine coparision operator (Spaceship operator)
+* 
+
+
+
+Magic functions:
+All magic functions will start with "__"
+* __autoload()
+* __cunstruct($takesParams)
+* __destruct()
+* __get($varName) -> If we try to access any non-existing, non-accessable variable, this function will be triggered.
+* __set($varName, $varValue) -> If we try to modify any non-existing, non-accessable variable, this function will be triggered.
+* __call($funcName, Array $array_of_param) -> If we try to modify any non-existing, non-accessable function, this function will be triggered.
+* static __callStatic($funcName, Array $array_of_param) -> If we try to modify any non-existing, non-accessable function, this function will be triggered.
+* __isset($varName) -> Return boolean -> Used to check whether a property is available/public in a class.
+* __unset() -> Used to unset/remove a property which is available/public in a class.
+* __toString() -> If we try to echo an object of a class, this function will be triggered.
+-- get_class(){
+	return get_class($this);
+} method is used to get class name of an object.
+* __sleep() -> Will be triggered when we try to serialize an object of a class.
+* __wakeup() -> Will be triggered when we try to unserialize an object of a class.
+* __invoke($params) -> If we try to call an object of a class as a function, this function will be triggered.
+* __clone() -> 
+
+
+* Inheritance = 
+class TVWithTimer extends TV{
+	
+}
+
+* Encapsulation = Access Modifiers
+Public, Private, Protected
+* We can declare variables in interface.
+* Abstract class = We can not create object for abstract class
+abstract class Base{
+
+	public $abc;
+	public abstract abc(){
+
+	}
+}
+
+We only declare the functions in abstract class. But classes with extends abstract class, should define all the abstract fumctions in them.
+
+We can extend only 1 class.
+
+
+* Interface = 
+We can not declare variables in interface.
+interface abc{
+	public abc();
+}
+
+class implements def{
+	
+}
+
+We only declare the functions in abstract class. But classes with implements abstract class, should define all the abstract fumctions in them.
+
+We can not create constructor function in interface.
+
+We can not create PRIVATE functions in interface.
+
+We can implement multiple interfaces 
+class C implements a,b {
+	
+}
+
+
+
+Static variables AND methods:
+----------------------------------
+* ClassName::method();
+Scope resolution operator
+
+* We can not use $this to static variables. We should use self::$variable.
+class xyz extents abc{
+	
+	public static function getCount(){
+		parent::getCount();
+	}
+}
+
+* 
+
+******************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****************************************************************************
+Interview Questions:
+-----------------------------------
+* Diff B/W echo and print
+* Diff B/W unset and unlink
+* Diff B/W cookie and session
+* Diff B/W array_combine() and array_merge()
+* Diff B/W usage of single and double quotations
+* Array functions
+* String functions
+* About .htaccess
+* CURL
+* PHP 7 features
+* Patterns
+* Swaping two variables
+* Types of errors
+* MIME type
+* Diff B/W PHP and NodeJS
+
+
+
+
+
+
+****************************************************************************
+Useful Commands:
+-----------------------------------
+https://www.youtube.com/watch?v=OK_JCtrrv-c
+* echo %PATH%
+* php -S localhost:4000
+
+*  
+
+
+
+
+
+****************************************************************************
+
+Learn:
+* https://www.freetutorials.eu/php-send-and-receive-mobile-text-messages-sms-1/
+* https://www.freetutorials.eu/1-php-for-beginners-how-to-build-an-e-commerce-store/
+* https://www.freetutorials.eu/php-login-and-registration-system-email-confirm-activation/
+* https://www.freetutorials.eu/php-security-2/
+* https://www.freetutorials.eu/php-oop-object-oriented-programming-for-beginners-project-3/
+* https://www.tutorialspoint.com/php7

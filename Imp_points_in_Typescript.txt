@@ -1,0 +1,142 @@
+* It is superset of Javascript
+* It auto compiles the code to Plain javascript.
+* Optional static typying and type inference.
+
+
+VARIABLE declaration:
+----------------------------
+Difference between CONST & LET
+* LET declarations can be done without initialization.
+* CONST declarations can not be done without initialization. CONST declarations will always be initialized with a value. And CONST declarations once assigned will never be assigned.
+* Both are scoped variables { }
+
+* Setting a variable type is Column after variable name
+EX: let roll_number: Number = 517;
+
+* Embeded expression is nothing but using variables inside of template strings
+Ex: let sentence: String = `My roll number is ${roll_number}
+							I love typescript.`;
+							
+* Multiple lines and embeded expression is possible with template strings.
+
+* Boolean, Number and String are basic types in Typescript.
+* Null and Undefined are classified as sub types of all other types.
+* Some other types are Any, Enum, Unknown
+
+* The use of having types is 1) Static type checking 2) ide intellisense
+
+* let num: Number[] = [1,2,3];
+  let num: Array<Number> = [1,2,3]; These both are same
+  
+ * In Tuple, the number of elements in an array are fixed. And the order of the value has to match with the order of the type.
+ Ex: let person1: [String, Number] = ["Manoj", 517];
+ 
+ * Fixed number of types and values, Tuple is perfect.
+ 
+ * Type assertion is nothing but type casting.
+ 
+ * Type inference takes place when initializing the variables;
+ Ex: let a = 123
+	 a = 'okay';
+Above thing gives error, because type inferenced to Number while declaring and defining at a time.
+
+Ex: let a;
+	a = 123;
+	a = 'okay';
+Above thing doesn't give any error, because declaring and defining did not happen at a time.
+
+* We can assign multile types to a variable. It is called UNION OF TYPE
+Ex: let multiType: Number | Boolean;
+	multiType = 123;
+	multiType = true;
+ 
+* Functions
+---------------------------
+function hasName(obj: name): obj is {name: String} {
+	return !!obj &&
+	typeof obj === 'object' &&
+	"name" in obj
+ }
+ 
+ * We have "Optional parameters" and "Default parameters";
+ 
+  function add(num2: number, num1?: number): Number{
+  
+	if(num1){
+		return num1 + num2;
+	}else{
+		return num2;
+	}
+  
+  }
+  
+  add(1,2); add(1);
+  
+  Note: Required parameters should be placed first in function defination as above num2 first and num1 second. Since num1 is optional, it is placed after num2;
+  
+ * Interface
+ ------------------
+ 
+ interface Person{
+	first_name: String;
+	last_name: String = 'Kumar';
+ }
+  
+  function fullName(person: Person){
+	return `${person.first_name} ${person.last_name}`;
+  }
+  
+  let p = {
+	first_name: 'Manoj';
+  };
+  
+  fullName(p);
+  
+
+* Class & Access Modifiers
+
+class Employee{
+
+	protected employeeName: String;
+	
+	constructor(name: String){
+		this.employeeName = name;
+	}
+	
+	function greet(){
+		return `Good morning ${this.employeeName}`;
+	}
+
+}
+
+let emp1 = new Employee('Manoj Kumar');
+console.log(emp1.employeeName);
+console.log(emp1.greet());
+
+class Manager extends Employee{
+
+	constructor(manager: String){
+		super(manager)
+	}
+	
+	function delegateWork(){
+		console.log("Manager delegating tasks ${this.employeeName}");
+	}
+
+}
+
+let manager1 = new Manager('Manoj Kumar');
+console.log(manager1.employeeName);
+console.log(manager1);
+
+
+* 3 types of access modifiers are there, those
+Public = Can be accessed from anywhare
+Private = Can be accessed within the class only
+Protected = Can be accessed within the class and it's derived(extended) classes.
+
+
+
+
+
+

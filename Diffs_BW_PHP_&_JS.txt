@@ -1,0 +1,37 @@
+Differences B/W PHP N Javascript:
+------------------------------------------
+* By default the value of a declared variable is 'null' in PHP, But in JS it is 'undefined'
+* We can not access a variable which is defined outside of a fuinction in PHP, But in JS it can be accessable if we use 'VAR' keyword while declaring the variable.
+
+* In PHP
+$a = 2;
+$b = '5 birds';
+
+$c = $a+$b; 
+echo $c; // gives 7 as output. var_dump($c); gives INT
+
+In JS
+let a = 2;
+let b = '5 birds';
+
+let c = a+b; 
+console.log(c); // gives "25 birds" as output.
+console.log(typeof(c)); // gives "string"
+
+* In PHP
+$a = 2;
+$b = 'birds 5';
+
+$c = $a+$b;
+
+echo $c.'<br/>';
+console.log(c); // gives "2 A non-numeric value encountered on line 4" as output.
+var_dump($c); // gives INT
+
+In JS
+let a = 2;
+let b = 'birds 5';
+
+let c = a+b; 
+console.log(c); // gives "2birds 5" as output.
+console.log(typeof(c)); // gives "string"

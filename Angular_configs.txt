@@ -1,0 +1,25 @@
+Note: If you encounter any error as "Module not found" then first install that module.
+
+* import { RouterModule } from "@angular/router";
+* import { HttpModule } from "@angular/http";
+* import { ActivatedRoute } from "@angular/router";
+* import { FormsModule } from "@angular/forms";
+* 
+
+
+
+
+Tasks done:
+---------------------------------------------------------------
+* 
+
+Tasks to be done:
+---------------------------------------------------------------
+* Template variable (Two ways)
+* Two way binding within a component & B/W two components
+* Input & Output decorators
+* Auth guard (Can active)
+* Reactive forms
+* ViewChild concept
+* Form submission within a component & B/W two components
+* 

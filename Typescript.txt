@@ -1,0 +1,150 @@
+* A superset of javascript created by Microsoft
+* Compiles to plain javascript code
+* Includes many ES6 features
+* Cohesion concept: Things that are related should be part of one unit
+
+Typescript compiler:
+----------------------------
+* Automatically compiles .ts files to .js files.
+* Will be installed with NPM
+* Supports ES6 features
+* Used by Angular
+
+* We can install typescript with npm as below
+npm i -g typescript
+* We can run typescript file like below
+tsc file-name.ts
+* We can execute both TS and JS files at a time as below
+tsc file-name.js | node file-name.js (OR)
+tsc file-name.js && node file-name.js
+
+* 
+
+Available Types:
+---------------------------
+* String
+* Number
+* Boolean
+* Null
+* Array
+* Any
+* Void => No return type
+* Tuple
+* enum Color { Reb = 0, Green = 1, Blue = 2 };
+
+
+* Object[] => Array of objects
+* number[] => Array of numbers
+* string[] => Array of strings
+* any[] => Array of any
+
+
+
+
+
+
+*************************************************************************************
+* let aa: number; // this is called 'type annotation'
+* let a = 10;
+	a = 'hello'; // Gives error = here the type of 'a' is 'number'
+
+* Declaring a type a parameter while defining the function is called "Inline annotation"
+Ex 1:
+	let drawPoint = (point: number) => {
+		console.log(point);
+	}
+
+	drawPoint(10);
+
+Ex 2:
+	let drawPoint = (point: {x: number, y: number}) => {
+		console.log(point);
+	}
+
+	drawPoint({
+		x: 1,
+		y: 5
+	});
+
+	Note: we can achieve Ex 2 with interface as well as below
+
+	interface Point {
+		x: number,
+		y: number
+	}
+
+	let drawPoint = (point: Point) => {
+		console.log(point);
+	}
+
+	drawPoint({
+		x: 1,
+		y: 5
+	});
+
+	Note: The first word of name of the interface should be capital (Pascal case)
+
+
+* let b; // here the type of 'b' is 'any'
+
+* Type assertion concept:
+	Type assertion means...
+	let message;
+	message = 'abc';
+	let endsWithC = (<string>message).endsWith('c');
+	let alternativeWay = (message as string).endsWith('c');
+
+* 
+
+
+
+
+* Class example:
+class Point{
+
+	// private x: number;
+	// private y: number;
+
+	constructor(private x?: number, private y?: number){
+		// this.x = x;
+		// this.y = y;
+	}
+
+	draw(){
+		console.log('X: '+this.x+', Y: '+this.y);
+	}
+}
+
+// To create an object follow as below
+	let point: Point = new Point(1, 2); (OR) let point = new Point(1, 2);
+	point.draw();
+
+
+
+
+*************************************************************************************
+
+IMP points to remember:
+---------------------------------
+* No need to specify 'function' keyword while creating a function
+* Interfaces are purely for declarations
+* To execute .ts file and .js at once, follow below command
+	tsc filename.ts | node filename.js (OR) tsc filename.ts && node filename.js
+
+* tsc *.ts --target ES5 && node main.js
+
+* Once we make a parameter optional all the other parameters on the right side parameters should also optional.
+
+
+
+
+
+
+
+
+
+*************************************************************************************
+Useful site:
+---------------------------------
+* https://www.tutorialsteacher.com/typescript/
+

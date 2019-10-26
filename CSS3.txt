@@ -1,0 +1,141 @@
+* SASS & LESS are CSS pre-compilers/pre-processors.
+* SASS = Syntactically Awesome Style Sheets
+* LESS = Leaner Style Sheets
+* 
+
+
+@@ TARGATED SELECTORS @@
+-------------------------------------------
+* "div > p" it selects all the direct 'p' tags inside of 'div' tag.
+* "div + p" it selects the 'p' tag which is right after the 'div' tag.
+* "a[target]" it selects all the 'a' tags which has 'target' attribute in it.
+* "a[target='_blank']" it selects all the 'a' tags which has 'target' attribute with value 		'_blank' in it.
+
+
+@@ NTH CHILD @@
+-------------------------------------------
+LETS imagine there are 20 li elements
+* "li:first-child" - It selects first child
+* "li:last-child" - It selects last child
+* "li:nth-child(3)" - It selects 3rd child
+* "li:nth-child(3n+0)" - It selects every 3rd child (3,6,9...)
+* "li:nth-child(3n+7)" - It selects every 3rd child from 7th element... including 7th 			element (7,10,13...)
+* "li:nth-child(odd)" It selects every odd positioned elemets in list. (1,3,5...)
+* "li:nth-child(even)" It selects every even positioned elemets in list. (2,4,6...)
+* 
+
+
+@@ PSEUDO SELECTORS @@
+-------------------------------------------
+* Pseudo selectors are used to insert content before OR after the element
+* 
+
+
+
+@@ POSITIONS @@
+----------------------------------------------------------
+* 'static' - by default every element has 'static' position. And won't effected by tblr(Top, Bottom, Left and Right) property/values. 
+* 'relative' - tblr(Top, Bottom, Left and Right) cause elements to move from it's normal position.
+* 'absolute' - Posiotioned relative to it's parent element that is positioned 'relative'
+* 'fixed' - Posiotioned relative to viewport.
+* 'sticky' - Positioned based on scroll position.
+
+
+
+@@ FLEXBOX @@
+----------------------------------------------------------
+* Flexbox is awesome way to avoid "float".
+
+Ex: <div id="container">
+		<div class="item"><h3>Item 1</h3></div>
+		<div class="item"><h3>Item 2</h3></div>
+		<div class="item"><h3>Item 3</h3></div>
+	</div>
+
+	#container {
+		display: flex;
+
+		flex-direction: row; (column, row-reverse, column-reverse)
+		flex-wrap: wrap; (nowrap)
+		flex-flow: row wrap;
+	}
+
+*	.item{
+		flex: 1;
+	}
+	This makes all the items width equal across the browser width
+
+*	.item:first-child{
+		flex: 2;
+	}
+
+* "justify-content: center" - Aligns items horizontally
+  Other possible values - flex-start,flex-end,space-between,space-around,space-evenly
+
+* "align-items: center" - Aligns items vertically.  By default the value is "stretch".
+  Other possible values - flex-start,flex-end,baseline,stretch
+
+Note: If we want to align items vertically, we should specify height to the container.
+
+* "align-content" - By default the value is "space-between"
+	Other possible values - flex-start/flex-end/space-around
+
+	It is used if there is more space vertically in cotainer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IMP points to be remembered:
+---------------------------------------------------------
+* We should use "overflow: auto" when we use "float: left" for list items for example.
+* We should use "Padding" on <a> tag if it is inside of <li> tag for better view.
+* We can't do "margin: auto" on inline elements.
+* Top, Bottom, Laft and Right properties won't work on "position: static".
+* "position: absolute" property work based on Parent element. And parent element position 	should be "relative".
+* 'class' styles overrides 'tag' styles.
+* Negative things are possible only for margins but not on paddings.
+* If we want to make an image center, first we should apply "display: block".
+* If we apply "display: inline" on "li" selector, bullets points will be removed automatically.
+* If we want to display "block" elements like (3 div tags) as inline, we need to make them "inline-block". Height, width, margin, padding won't work on inline elements. We need to make them "inline-block".
+* Specifically, look for any overflow property set on the parent. You can't use: overflow: hidden, overflow: scroll or overflow: auto on the parent of a position: sticky element.
+https://stackoverflow.com/questions/43707076/position-sticky-not-working-css-and-html/47878455
+
+* 
+
+
+
+
+
+For Cross browser support
+---------------------------------------------------
+* https://medium.com/@elad/supporting-css-grid-in-internet-explorer-b38669e75d66
+* https://stackoverflow.com/questions/11173106/apply-style-only-on-ie
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}

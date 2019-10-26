@@ -1,0 +1,235 @@
+JWT = JSON web tokens
+passportjs = It's an authentication middleware for Node -> Used to generate web tokens
+Pug/Jade = Template engines like HTML
+CORS = "Cross Origin Resource Sharing" - Which helps to make requests from different domain names
+Mangoose ODM = "Object Document Mapper", which helps to work with MongoDB
+body-parser = It parses the incoming requests body
+MongoDB default port = 27017
+bcrypt = Bcrypt is the de facto way to hash and store passwords.
+ORM = Object Relational Mapper - Is a way of mapping B/W objects and relational databases
+
+Morgan = Morgan is used for logging request details. However, the snippet in your question doesn't make sense because it's not actually a single coherent snippet top to bottom. It is a series of examples of the various types of options you can pass to morgan. In a real program, you would only need one of them.
+- HTTP request logger middleware for node.js
+
+config = Configuration control for production node deployments. - It used to control production and development settings/configurations
+
+_lodash = 
+Sequelize = It is NodeJS module, it makes our work easy to work with relational databases like MySQL, MSSQL, PostgreSQL
+
+
+
+
+
+
+
+
+
+
+**********************************************************************************
+
+* https://www.onlineinterviewquestions.com/mean-stack-interview-questions/
+* 
+
+
+
+
+
+
+
+
+
+
+
+2 B dowloaded:
+----------------------
+* https://www.youtube.com/watch?v=-gd73iczlS8&list=PL3vQyqzqjZ637sWpKvniMCxdqZhnMJC1d
+* https://www.youtube.com/watch?v=GDrXe9fGZCI&list=PLIGDNOJWiL1--PkxBwF8ghr0Oc0hXVJi7
+* https://www.youtube.com/watch?v=4lRve3hp-xQ&list=PLIGDNOJWiL1--PkxBwF8ghr0Oc0hXVJi7&index=4
+* https://www.youtube.com/watch?v=X99f9xtiNy8  => Best JS Partner | Angular vs Vuejs vs React
+
+
+
+
+Node JS
+--------------------------------------------------------------------------------------------
+* https://www.youtube.com/watch?v=7nafaH9SddU => Node.js API Authentication With JWT
+* https://www.youtube.com/watch?v=926mknSW9Lo => What is JWT ? JSON Web Token Explained
+* https://www.youtube.com/watch?v=Z1ktxiqyiLA&list=PLillGF-RfqbbqvbObyE7CldS5-trkefnB  => Node.js Login System With Passport - 3 Vids
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************************
+bcryptjs:
+==========
+npm install bcryptjs
+
+var bcrypt = require('bcryptjs');
+
+To hash a password:
+-------------------
+	var bcrypt = require('bcryptjs');
+	bcrypt.genSalt(10, function(err, salt) {
+	    bcrypt.hash("B4c0/\/", salt, function(err, hash) {
+	    	if(err) throw err;
+	        // Store hash in your password DB.
+	    });
+	});
+
+To check a password:
+-------------------
+	// Load hash from your password DB.
+	bcrypt.compare("B4c0/\/", hash, function(err, res) {
+	    if(err) throw err;
+	    // res === true
+	});
+
+**************************************************************************************
+
+
+**************************************************************************************
+Interview:
+------------
+* What’s the MEAN Stack?
+
+The term MEAN stack refers to a collection of JavaScript-based technologies used to develop web applications. MEAN is an acronym for MongoDB, ExpressJS, AngularJS, and Node.js. From client to server to database, MEAN is full stack JavaScript.
+
+* What is Express?
+
+Express is one the most prevalent and generally utilized web systems in Node.js advancement zone. Express is a negligible web server based on Node.js that gives all the basic usefulness required for conveying web applications to the program and cell phones. ExpressJS enables you to deal with Routes, Server, and I/O stuff effortlessly.
+
+* What is Node.js?
+
+Node.js is a headless JavaScript runtime. It is literally the same JavaScript engine (named V8) that runs inside of Google Chrome, except that with Node.js, you can run JavaScript from the command line instead of in your browser.
+
+* What is DATA Modeling?
+
+Data modeling, in the context of Mongoose and MongoDB, is defining what data can be in a document, and what data must be in a document. When storing user information you might want to be able to save first name, last name, email address, and phone number. But you only need a first name and email address, and the email address must be unique. This information is defined in a schema, which is used as the basis for the data model.
+
+* What are the features of Node.js?
+
+Node.js is a single-threaded but highly scalable system that utilizes JavaScript as its scripting language. It uses asynchronous, event-driven I/O instead of separate processes or threads. It is able to achieve high output via single-threaded event loop and non-blocking I/O.
+
+* Why is consistent style important and what tools can be used to assure it?
+
+Consistent style helps team members modify projects easily without having to get used to a new style every time. Tools that can help include Standard and ESLint.
+
+* What is the difference between AngularJS and Node.js?
+
+Angular.JS is a web application development framework while Node.js is a runtime system.
+
+* What Is Mongoose?
+
+Mongoose is an Object Document Mapper (ODM). This means that Mongoose allows you to define objects with a strongly-typed schema that is mapped to a MongoDB document.
+
+* What Are The Key Features Of Node.Js?
+
+-Asynchronous event-driven IO helps concurrent request handling – All APIs of Node.js are offbeat. This component implies that if a Node gets a demand for some Input/Output activity, it will execute that task out of sight and proceed with the preparing of different solicitations. Accordingly, it won’t sit tight for the reaction from the past solicitations.
+
+-Quick in Code execution – Node.js utilizes the V8 JavaScript Runtime motor, the one which is utilized by Google Chrome. Hub has a wrapper over the JavaScript motor which makes the runtime motor substantially quicker and thus preparing of solicitations inside Node.js additionally turn out to be speedier.
+
+-Single Threaded yet Highly Scalable – Node.js utilizes a solitary string model for occasion circling. The reaction from these occasions could conceivably achieve the server quickly. In any case, this does not piece different activities. In this way making Node.js exceptionally adaptable. Customary servers make restricted strings to deal with demands while Node.js makes a solitary string that gives administration to significantly bigger quantities of such demands.
+
+-Node.js library uses JavaScript – This is another essential part of Node.js from the engineer’s perspective. The larger part of engineers is as of now knowledgeable in JavaScript. Consequently, advancement in Node.js winds up plainly less demanding for a designer who knows JavaScript.
+
+-There is an Active and energetic group for the Node.js system – The dynamic group dependably keeps the structure refreshed with the most recent patterns in the web advancement.
+
+-No Buffering – Node.js applications never support any information. They essentially yield the information in pieces.
+
+
+* Explain REPL In Node.Js?
+
+The REPL stands for “Read Eval Print Loop”. It is a simple program that accepts the commands, evaluates them, and finally prints the results. REPL provides an environment similar to that of Unix/Linux shell or a window console, in which we can enter the command and the system, in turn, responds with the output. REPL performs the following tasks.
+
+READ- It Reads the input from the user, parses it into JavaScript data structure and then stores it in the memory.
+
+EVAL- It Executes the data structure.
+
+PRINT- It Prints the result obtained after evaluating the command.
+
+LOOP- It Loops the above command until the user presses Ctrl+C two times.
+
+* What Is The Difference Between Nodejs, AJAX, And JQuery?
+
+The one common trait between Node.js, AJAX, and jQuery is that all of them are the advanced implementation of JavaScript. However, they serve completely different purposes.
+
+Node.Js – It is a server-side platform for developing client-server applications. For example, if we’re to build an online employee management system, then we won’t do it using client-side JS. But the Node.js can certainly do it as it runs on a server similar to Apache, Django not in a browser.
+
+AJAX (Aka Asynchronous Javascript And XML) – It is a client-side scripting technique, primarily designed for rendering the contents of a page without refreshing it. There are a no. of large companies utilizing AJAX such as Facebook and Stack Overflow to display dynamic content.
+
+JQuery –It is a famous JavaScript module which complements AJAX, DOM traversal, looping and so on. This library provides many useful functions to help in JavaScript development. However, it’s not mandatory to use it but as it also manages cross-browser compatibility, so can help you produce highly maintainable web applications.
+
+* What’s the difference between operational and programmer errors?
+
+Operation errors are not bugs, but problems with the system, like request timeout or hardware failure.
+
+On the other hand programmer errors are actual bugs.
+
+* Explain callback in Node.js?
+
+A callback work is called toward the culmination of a given errand. This enables other code to be keep running meanwhile and keeps any blocking. Being an offbeat stage, Node.js intensely depends on callback. All APIs of Node is composed to help callbacks.
+
+* What is the exact meaning of non-blocking in Node.js?
+
+console.log(“first”);
+setTimeout(()=>{console.log(“second”);},5000);
+console.log(“third”);
+////////////////////
+Output will be:
+first
+third
+second
+/////////////////////
+First line will be place in the call stack of V8. It will print “first” as it does not looking for I/o operation or any time consuming thing.
+
+Then second line will be placed in call stack, since it has to wait for 5sec for that to print. It will pop that setTimeout to node memory to get executed and third line will be placed in call stack to get executed.
+
+After 5sec, 2nd line will get executed and the callback of that function will be placed in event queue and event loop will pick that and placed in call stack to get that executed. So that node will not sit idle for 5sec in order to execute other remaining code.
+
+https://www.quora.com/What-is-the-exact-meaning-of-non-blocking-in-Node-js
+
+
+* Asynchronous programming in Node.js
+JavaScript is asynchronous in nature and so is Node. Asynchronous programming is a design pattern which ensures the non-blocking code execution.
+
+Non blocking code do not prevent the execution of piece of code. In general if we execute in Synchronous manner i.e one after another we unnecessarily stop the execution of those code which is not depended on the one you are executing.
+
+* 
+
+
+
+
+
+
+**************************************************************************************

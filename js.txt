@@ -1,0 +1,752 @@
+* JSON.parse(): A common use of JSON is to exchange data to/from a web server.
+When receiving data from a web server, the data is always a string.
+Parse the data with JSON.parse(), and the data becomes a JavaScript object.
+
+* JSON.stringify(): A common use of JSON is to exchange data to/from a web server.
+When sending data to a web server, the data has to be a string.
+Convert a JavaScript object into a string with JSON.stringify().
+
+* ECMAScript is a specification that defines a standard
+
+*********************************************************************
+VARIABES:
+-----------
+* We use variables to store data in computer's memory temporarily.
+* By default the declared variables value is 'undefined'
+* 
+
+*********************************************************************
+*********************************************************************
+Primitive/Value DATATYPES:
+----------------------
+* String
+* Number
+* Boolean
+* NULL
+* Undefined
+
+
+Reference DATATYPES:
+----------------------
+* Functions
+* Objects
+* Array
+*********************************************************************
+
+*********************************************************************
+STRINGS:
+-------------
+* const message = 'Hi'; // String primitive
+* const message = new String('Hi'); // String Object
+* Escape notations (\n)
+* 
+
+Few string funs:
+------------------
+* string.length
+* string.includes
+* string.startsWith
+* string.endsWith
+* string.substr
+* string.subString
+* string.indexOf('my');
+* string.replace('first', 'second');
+* string.toUpperCase();
+* string.toLowerCase();
+* string.trim(); string.trimLeft(); string.trimRight();
+* string.split(' '); // This is just like explode() function in PHP
+* 
+*********************
+
+
+*********************************************************************
+Literals:
+* Object Literal = {}
+* Boolean Literal = true OR false
+* String Literals = '' OR ""
+* Template Literal = `` (Backticks)
+*********************************************************************
+
+
+*********************************************************************
+Arrays:
+-------------------------------
+* Creation
+* Adding elements
+array.push(1); => Adds an element at the end of an array
+array.unshift(1); => Adds an element at the begining of an array
+array.splice(3, 0, 'a', 'b'); => Adds 'a' and 'b' at third index of an array
+
+* Removing elements
+Ex: array.pop();
+    array.shift();
+    array.splice(index, countOfNumberOfElements);
+
+Emptying an array:
+------------------------------
+let numbers = [1,2,3,4];
+let another = numbers;
+
+numbers = []; // But referenced ('another') array still contains that memory
+numbers.length = 0; // This will make all the refences arrays also empty.
+numbers.splice(0, numbers.length); // This will make all the refences arrays also empty.
+
+* Finding elements
+if(array.indexOf(element) !== -1){ console.log('element is exist in that array'); }
+if(array.includes(element)){ console.log('element is exist in that array'); }
+
+To find an element in array of object, we should use .find() method
+Ex: Courses.find(function(element){
+  return course.name === 'a';
+});
+
+Courses.findIndex(function(element){
+  return course.name === 'a';
+});
+
+
+* Copying an array
+let first = [1,2,3];
+let second = [4,5,6];
+
+let third = second.slice(); //gives [4,5,6]
+
+* Combining arrays
+------------------------------
+let first = [1,2,3];
+let second = [4,5,6];
+
+let three = first.combine(second); // gives [1,2,3,4,5,6]
+
+* We can combine two or more arrays as below
+const combined = [...first, ...second];
+
+* We can copy an array into another array as below
+const copy = [...combined];
+
+* Extracting few elements from array
+const slice = three.slice(2, 4); // gives [3,4];
+
+
+Iterating an Array:
+-----------------------------------
+* We can use 'for of' loop and 'forEach' loop
+Const numners = [1,2,3,4,5];
+for(let number of numbers){
+  console.log(number);
+}
+
+forEach((number, index) => console.log(index,number) );
+
+* To make an array as a string, we can use join function
+const stringArray = numbers.join(','); // gives "1,2,3,4,5"
+
+Note: JS "join" function is equals to "impolde()" function in PHP
+
+Filtering an array:
+--------------------------------
+* 
+
+Few Array funcs:
+------------------
+let numbers = [1, -1, 2, 3];
+* array.every => checks to see if every element in a given array matches the given criteria => Returns Boolean
+* array.some => checks to see at least 1 element in a given array matches the given criteria => Returns Boolean
+* let getOnlyPositives = numbers.filter(n=> n>= 0); => Return new array
+* let addContent = numbers.map(n=> '<li>'+n+'</li>'); => Return new array => 'map' is used to map each element in an array into something else.
+* let sum = numbers.reduce((accumulator, currentValue)=>{
+    return accumulator + currentValue;
+},0);
+
+*********************************************************************
+
+
+*********************************************************************
+Functions:
+-------------------------------
+* Function declaration
+function walk(){
+  console.log('Walk');
+}
+
+* Function Expression OR Anonymous Function Expression
+const walk = function(){
+  console.log('Walk');
+};
+Note: ';' should be added at the end of the function expression
+
+
+* Named Function Expression
+const walk = function walk(){
+  console.log('Walk');
+};
+Note: ';' should be added at the end of the named function expression
+*********************************************************************
+
+*********************************************************************
+Hoisting:
+-------------------------------
+* Hoisting is a process of moving function declarations to the top of the file. (By default JS does it)
+* 
+*********************************************************************
+
+*********************************************************************
+OPERATORS:
+*********************
+* Arithmetic
+Addition, Subtraction, Product, Division, Modulus(Remainder of Division), Exponentiation, Inc/Dec operators
+Exponentiation = (x ** y) 'x' to the power 'y' => Math.pow(x,y);
+
+* Assignment
+=, +=, -=, *=, /= %=
+
+* Comparison
+Lose Equality operator (==),
+Strict Equality operator (===),
+!==, >, >=, <, <=, <>, !=
+
+Ternary/Conditional operator => type = points > 100 ? 'Gold' : 'Silver';
+
+Falsy values(false)
+undefined, null, 0, false, NaN, ''
+
+Anything that is not Falsy, it is Truthy
+
+false || 1 || 2 => Returns 1; Coz evaluation starts from Left to Right
+This is what we call short-circuting
+
+* Logical
+AND(&&), OR(||), NOT(!)
+
+* Operator precedence  --> BODMAS stands for "brackets, orders, division, multiplication, addition, subtraction".
+
+
+* Bitwise
+
+*********************************************************************
+
+*********************************************************************
+LOOPS:
+-----------
+* for
+* while
+* do...while
+* for...in
+is used to iterate over an object
+for(let key in person){
+  console.log(key, person[key]);
+}
+
+* for...of
+for(let color of colors){
+  console.log(color);
+}
+
+is used to iterate over an array
+* foreach
+
+*********************************************************************
+
+*********************************************************************
+ERROR TYPES:
+-----------
+* Uncaught type error: if we try to change the CONST value
+* Uncaught ReferenceError: Using a variable/constant before defining it.
+
+*********************************************************************
+
+*********************************************************************
+Creating Class & Object:
+------------------------
+* Factory Function -> Use Camel Notation
+function createCircle(radius){
+  return {
+    radius,
+    draw(){
+      console.log('Draw');
+    }
+  }
+}
+
+const circleObg1 = createCircle(1);
+const circleObg2 = createCircle(2);
+
+
+* Constructor Function -> Use Pascal Notation
+function Circle(radius){
+  this.radius = radius,
+  this.draw = function(){
+      console.log('Draw');
+  }
+}
+
+const circleObg1 = new Circle(1);
+const circleObg2 = new Circle(2);
+
+
+* Adding properties, functions and deleting to an object
+objName.propName = 'value';
+
+objName.funcName = function(){ }
+
+delete objName.propName;
+delete objName.funcName;
+
+
+*********************************
+Cloning:
+----------------------------------
+* We can use 'Object.assign' to copy/clone the object
+Ex: const anotherObj = Object.assign({}, objName);
+
+* Another way is - by using spread operator(...objName)
+const anotherObj = { ...objName };
+
+* We can combine multiple objects into a single object
+const anotherObj = { ...objOne, ...objTwo };
+
+* 
+
+*********************************
+
+
+
+
+*********************************
+Imp points about objects:
+----------------------------------
+* The backtick `…` is actually called "command substitution". The variables we use inside of backticks are called 'placeholders'.
+* We can not reassign constant object, but we can add,edit and remove properties and methods from constant object.
+* Every object will have a property called 'constructor', it references the function that was used to create that object.
+* We can use 'dot notations' or 'bracket notation' to access properties of objects.
+* We should use 'for in' loop for objects. If we use 'for of' loop, it gives error.
+* 'for of' loop is used for only iterables, such as arrays and maps.
+* An object is not iterable
+* We can use 'for of' loop for objects as below
+for(let key of Object.keys(objName)){  } // gives all the keys as an string array
+for(let entry of Object.entries(objName)){  } // gives as array with key value pair
+
+* if('radius' in circle){ console.log('Yes'); }
+the 'in' checks for 'radius' property in 'circle' object.
+
+* All functions in javascript are objects.
+
+* Circle.name will return name of the function
+* Circle.length will return number of arguments
+* let x = 10;
+  let y = x;
+  x = 20;
+  console.log(x); // gives 20
+  console.log(y); // gives 10
+
+* let x = {value: 10};
+  let y = x;
+  x = {value: 20}
+  console.log(x); // gives 20
+  console.log(y); // gives 20
+Because here both x and y pointing to the same object in the memory
+
+* Primitive/Value datatypes are copied by their value
+* Reference datatypes are copied by their reference
+
+* let number = 10;
+  function increase(number){
+    number++;
+  }
+
+  increase(number);
+  console.log(number); // gives 10
+
+* let obj = {value:10};
+  function increase(obj){
+    obj.value++;
+  }
+
+  increase(obj);
+  console.log(obj); // gives 11
+
+* Memory allocation and de-allocation will happen behind the scenes by Javascript engine.
+
+* Object.assign, Object.keys(), Object.entries(), Object.freeze(), Object.seal(), Object.call(), Object.apply(), Object.addProperty()
+
+* Every function in javascript has a special object called 'arguments'
+
+************************************
+
+
+Everything happens under the hood
+*********************************************************************
+
+* Parameter is what a function holds while declaring a function.
+* Argument is what we pass while calling that function
+
+* fizzBuzz function(input){  } = This is called fizzBuzz algorithm
+function fizzBuzz(input){
+
+  if(typeof input !== 'number'){
+    return 'Not a Number';
+  }
+
+  if((input % 3 == 0) && (input % 3 == 0)){
+    return 'FizzBuzz';
+  }
+
+  if(input % 3 == 0){
+    return 'Fizz';
+  }
+
+  if(input % 5 == 0){
+    return 'Buzz';
+  }
+
+  return input;
+}
+
+
+* The setTimeout & setInterval are the 2 timers functions of JavaScript. They can be used to create functions that executes 1 time or unlimited times. That is, if you want a function to execute 1 time then use .setTimeout(), if you want to execute a function unlimited times then use .setInterval().
+
+You can also add time in mill-seconds to these 2 function. That means - that milli-second is the time for them to execute after.
+
+* Javascript Undefined vs NULL
+Many a times we often get confused on whats the difference between UNDEFINED and NULL.
+"undefined" means a variable has been declared but has not yet been assigned a value. On the other hand, "null" is an assignment value. It can be assigned to a variable as a representation of no value.
+Also, undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object.
+* Unassigned variables are initialized by JavaScript with a default value of "undefined". 
+* JavaScript never sets a value to null. That must be done programmatically.
+
+
+* Splice and slice
+splice() changes the original array whereas slice() doesn't.
+
+See the examples below:
+
+var array=[1,2,3,4,5];
+console.log(array.splice(2));
+This will return [3,4,5]. The original array is affected resulting in array being [1,2].
+
+var array=[1,2,3,4,5]
+console.log(array.slice(2));
+This will return 3,4,5. The original array is NOT affected with resulting in array being [1,2,3,4,5].
+
+* subString
+The substring() method extracts the characters from a string, between two specified indices, and returns the new sub string.
+This method extracts the characters in a string between "start" and "end", not including "end" itself.
+
+If "start" is greater than "end", this method will swap the two arguments, meaning str.substring(1, 4) == str.substring(4, 1).
+
+If either "start" or "end" is less than 0, it is treated as if it were 0.
+
+Note: The substring() method does not change the original string.
+
+* substr
+The substr() method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.
+
+Tip: To extract characters from the end of the string, use a negative start number (This does not work in IE 8 and earlier).
+
+Note: The substr() method does not change the original string.
+
+
+
+
+* Exceptions
+Parsing Dates
+Date objects are not allowed in JSON.
+
+If you need to include a date, write it as a string.
+
+You can convert it back into a date object later:
+
+Ex 1:<script>
+var text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+var obj = JSON.parse(text);
+obj.birth = new Date(obj.birth);
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth; 
+</script>
+
+-------
+Or, you can use the second parameter, of the JSON.parse() function, called reviver.
+
+The reviver parameter is a function that checks each property, before returning the value.
+
+Ex 2: <script>
+var text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+var obj = JSON.parse(text, function (key, value) {
+  if (key == "birth") {
+    return new Date(value);
+  } else {
+    return value;
+  }
+});
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth; 
+</script>
+
+* The eval() function evaluates or executes an argument.
+
+If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.
+
+* Js imparative and declarative
+
+
+List some new features of ES6:
+---------------------------------------------------------------------
+New Features in ES6.
+Support for constants (also known as “immutable variables”)
+Block-Scope support for both variables, constants, functions
+Arrow Functions
+Spread operator (Rest parameter)
+Extended Parameter Handling
+Template Literals
+Extended Literals
+Enhanced Regular Expression
+Enhanced Object Properties
+Destructuring Assignment
+Modules, Classes, Iterators, Generators
+Support for Map/Set & WeakMap/WeakSet
+Promises, Meta-Programming ,Internationalization & Localization
+Exponentiation Operator
+---------------------------------------------------------------------------
+
+* JSON.stringify
+* JSON.parse
+
+
+* Separation of concerns
+
+There are two types of data types
+1) Prmitive/value type:
+String, Number, Boolean, Undefined, Null
+2) Reference type:
+Object, Array, Function
+
+We have to ways to access a property of an object.
+1) dot notation = obj.property;
+2) bracket notation = obj['property'];
+
+* Parameter is what we have at the declaration of a function
+Ex: function abc(param1, param2){}
+
+* Argument is what we pass while calling a function
+Ex: abc('arg1', 'arg2');
+
+* Default value of variable is - undefined
+
+* EIFE = Emmediately Invoked Function Expression
+
+* A function is a set of statements
+
+* Callback hell == Chrismus tree problem 
+
+* Promise = Holds the eventual result of an asynchoronus operation
+The Promise consrtuctor function takes an argument of a functions, and this function takes two parameters which are resolve, reject
+
+typeof undefined is "Undefined"
+typeof null is "Object"
+typeof array is "Object"
+typeof 1.2 is "Number"
+* All functions in javascript are objects.
+
+
+
+JS OOPS:
+------------
+* Prototypes. When a function is created in JavaScript, JavaScript engine adds a prototype property to the function. This prototype property is an object (called as prototype object) has a constructor property by default. constructor property points back to the function on which prototype object is a property.
+
+* Any custom object will have a prototype
+* We were using Cunstructor functions as class B4 "Class" concept is released.
+* function Admin(..args){
+      User.apply(this, args);
+      this.role = 'Super admin';
+}
+
+Admin.prototype = Object.create(User.prototype);
+
+
+
+
+
+* Object.assign() Method
+Among the Object constructor methods, there is a method Object.assign() which is used to copy the values and properties from one or more source objects to a target object.
+Object.assign() is used for cloning an object.
+Object.assign() is used to merge object with same properties.
+Input : var obj1 = { a: 10 };
+        var obj2 = { b: 20 };
+        var obj3 = { c: 30 };
+        var new_obj = Object.assign(o1, o2, o3);
+        console.log(new_obj);
+Output : Object { a: 10, b: 20, c: 30 }
+
+
+
+
+* Swaping two variables:
+Ex1: 
+$a =  $a + $b;  // 5 + 6 = 11
+$b = $a - $b;   // 11 - 6 = 5
+$a = $a - $b;  // 11 - 5 = 6
+print $a . ',' . $b;
+
+Ex2: b = [a, a = b][0];
+
+/*  ---- callback starts here  */
+function add(a,b,c, callback){
+	return callback(a+b+c);
+}
+
+/*
+add(1,2,7, (value) => {
+	alert(value);
+});
+*/
+
+add(1,2,7, func);
+function func(valuee){
+//  alert(valuee);
+}
+/*  ---- callback ends here  */
+
+
+/*********************** Promise starts here *****************/
+/*---- Example 1 ------*/
+let addd = function(a,b,c){
+  return new Promise((resolve, reject) => {
+    // resolve(a+b+c);
+    reject(new Error("Something went wrong"));
+  });
+}
+
+addd(1,2,3).then((valuee) => {
+  alert(valuee);
+}).catch((err) => {
+  // alert(err.message);
+});
+/*---- Example 1 ------*/
+
+/*---- Example 2 ------*/
+let promise1 = function(){
+  return new Promise((resolve, reject)=>{
+    resolve("Resolved promise1");
+  });
+}();
+let promise2 = function(){
+  return new Promise((resolve, reject)=>{
+    resolve("Resolved promise2");
+  });
+}();
+let promise3 = function(){
+  return new Promise((resolve, reject)=>{
+    // resolve("Resolved promise3");
+    reject(new Error("Resolved promise3"));
+  });
+}();
+
+Promise.all([promise1, promise2, promise3]).then((response)=>{
+  // alert("All promises are resloved... :)");
+}).catch((err)=>{
+  // alert("One of the promises is not resolved... :(");
+});
+Promise.race([promise1, promise2, promise3]).then((response)=>{
+  // alert("All promises are resloved... :)");
+}).catch((err)=>{
+  // alert("One of the promises is not resolved... :(");
+});
+/*---- Example 2 ------*/
+/*********************** Promise ends here *****************/
+
+
+/*********************** Async/Await starts here *****************/
+/*---- Example 1 ------*/
+
+
+
+/*---- Example 1 ------*/
+async function f(){
+  let posts = await fetch('https://api.github.com/users');
+  posts = await (posts.json());
+  // console.log(posts);
+}
+f();
+
+async function ff(){
+  try{
+    let posts = await fetch('https://api.githubb.com/users');
+    posts = await (posts.json());
+    console.log(posts);
+  }catch(err){
+    throw new Error("URL is invalid");
+  }
+}
+// ff();
+
+
+async function fff(){
+    let posts = await fetch('https://api.github.com/users');
+    posts = await (posts.json());
+    // console.log(posts);
+}
+fff().catch(err=>{
+  console.log(err);
+});
+
+
+async function f4() {
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+  let result = await promise; // wait till the promise resolves (*)
+  alert(result); // "done!"
+}
+f4();
+/*********************** Async/Await ends here *****************/
+
+
+
+/*********************** Fetch starts here *****************/
+let postss = () => {
+  return fetch('https://api.github.com/users')
+  .then(res => res.json())
+  .then(posts => console.log(posts));
+}
+// postss();
+/*********************** Fetch ends here *****************/
+
+
+
+
+
+
+
+
+Principles/Concepts:
+* DRY - Don't Repeat Yourself
+* SR - Single Responsibility
+
+
+Info:
+-----------------------------
+* Downloaded JS videos of Mosh from Udemy
+* And took help of Brad's and Ninja's videos as well
+
+* Prime number: whose factors are only 1 and itself
+* Palindrome: 1001
+* In math we have two types of numbers
+1) Prime 2)Composite
+
+* 
+
+
+
+IMP points of JS
+---------------------------------------
+* Local scope is also known as Lexical scope.
+
+
+
+Interview things
+---------------------------------------
+* WAP for prime numbers, Palindrome, stars
+* Call and apply
+* return 1 + undefined; // returns NaN
+* Rest operator is used to pass many number of parameters to a function
+Note: Rest parameter must be last formal parameter
+* https://www.youtube.com/watch?v=R8rmfD9Y5-c
+

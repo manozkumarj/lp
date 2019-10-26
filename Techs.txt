@@ -1,0 +1,44 @@
+
+* React JS
+https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+
+* HTML5
+* CSS3 (&) CSS processers like - SASS & LESS
+* Bootstrap
+* Javascript
+* jQuery
+* JSON
+* Angular
+* PHP
+* MySQL
+* MongoDB
+* NodeJS
+* SequelizeJS
+* Python
+* dJango
+* Lodash
+* AWS
+* Mocha
+* ReactJS
+* PostgreSQL
+* Linux commands
+* Hosting things
+* DynamoDB
+* Jasmine
+* Redis
+* Cassandra
+* ElasticSearch
+
+* JavaScript ES6, ES7, ES8: Learn to Code on the Bleeding Edge (Full Course)
+https://www.youtube.com/watch?v=nZ1DMMsyVyI
+
+* NodeJS + MySQL Database Connection Tutorial
+https://www.youtube.com/watch?v=EN6Dx22cPRI
+https://www.youtube.com/watch?v=hGZX_SA7lYg
+
+* Node.js Unit Testing In-Depth (Mocha, Chai)
+https://www.udemy.com/nodejs-unit-testing-in-depth/
+
+* Node JS: Advanced Concepts
+https://www.udemy.com/advanced-node-for-developers/
+

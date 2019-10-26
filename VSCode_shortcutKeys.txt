@@ -1,0 +1,46 @@
+VS Code shortcut keys:
+-------------------------------------------------------------------
+* shift+alt then down arrow = To copy current line
+* Alt+z = word wrap
+* Ctrl+` = Opens embeded terminal
+* Ctrl+f = finds
+* Ctrl+b = to open files panel
+* Ctrl+,
+* Ctrl+?
+* Ctrl+(Enter)
+* Shift+Alt+(down arrow) = to copy current line
+* Shify+Ctrl+p = to open comman pallet then type "code" which shows an option to add VSCode editor to path.
+* 
+
+
+
+
+
+
+******************************************************************************
+Plugins:
+-----------------------------------------------------------------------------
+* auto import
+* live server
+* Emitter
+* tslint
+
+
+
+
+
+
+
+
+******************************************************************************
+IMP Points:
+-----------------------------------------------------------------------------
+* "ul.nav.nav-pills" this sysntax is called as "zen coding".
+* 
+
+
+
+
+
+Note: After installing any plugin, we should re-start VSCode.
+******************************************************************************

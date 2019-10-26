@@ -1,0 +1,100 @@
+
+
+* In PHP, all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are NOT case-sensitive.
+* all variable names are case-sensitive.
+
+
+PHP 7 Features:
+---------------------------
+* Scalar datatype hinting
+* Return type hinting
+* Null coaleasce operator (Short form of Ternary operator)
+* Combine coparision operator (Spaceship operator)
+* 
+
+
+
+Magic functions:
+All magic functions will start with "__"
+* __autoload()
+* __cunstruct($takesParams)
+* __destruct()
+* __get($varName) -> If we try to access any non-existing, non-accessable variable, this function will be triggered.
+* __set($varName, $varValue) -> If we try to modify any non-existing, non-accessable variable, this function will be triggered.
+* __call($funcName, Array $array_of_param) -> If we try to modify any non-existing, non-accessable function, this function will be triggered.
+* static __callStatic($funcName, Array $array_of_param) -> If we try to modify any non-existing, non-accessable function, this function will be triggered.
+* __isset($varName) -> Return boolean -> Used to check whether a property is available/public in a class.
+* __unset() -> Used to unset/remove a property which is available/public in a class.
+* __toString() -> If we try to echo an object of a class, this function will be triggered.
+-- get_class(){
+	return get_class($this);
+} method is used to get class name of an object.
+* __sleep() -> Will be triggered when we try to serialize an object of a class.
+* __wakeup() -> Will be triggered when we try to unserialize an object of a class.
+* __invoke($params) -> If we try to call an object of a class as a function, this function will be triggered.
+* __clone() -> 
+
+
+* Inheritance = 
+class TVWithTimer extends TV{
+	
+}
+
+* Encapsulation = Access Modifiers
+Public, Private, Protected
+* We can declare variables in interface.
+* Abstract class = We can not create object for abstract class
+abstract class Base{
+
+	public $abc;
+	public abstract abc(){
+
+	}
+}
+
+We only define/declare the functions in abstract class. But classes with extends abstract class, should define all the abstract fumctions in them.
+
+We can extend only 1 class.
+
+
+* Interface = 
+We can not declare variables in interface.
+interface abc{
+	public abc();
+}
+
+class implements def{
+	
+}
+
+We only define/declare the functions in abstract class. But classes with extends abstract class, should define all the abstract fumctions in them.
+
+We can not create constructor function in interface.
+
+We can not create PRIVATE functions in interface.
+
+We can implement multiple interfaces 
+class C implements a,b {
+	
+}
+
+
+
+Static variables AND methods:
+----------------------------------
+* ClassName::method();
+Scope resolution operator
+
+* We can not use $this to static variables. We should use self::$variable.
+class xyz extents abc{
+	
+	public static function getCount(){
+		parent::getCount();
+	}
+}
+
+* 
+
+
+
+

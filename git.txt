@@ -1,0 +1,140 @@
+* git --version
+* git init
+* git config --global user.name 'Manoj Kumar'
+* git config --global user.email 'manoz@gmail.com'
+* git config --list  ( will list all the settings )
+* git config --list/-l --global ( will list only the global settings )
+* git config --list/-l --local ( will list only the local settings )
+* git config --list/-l --system ( will list only the system settings )
+* git add index.html
+* git status
+* git rm --cached index.html
+* git reset  --> Used to undone "git add"
+* git commit -m 'changed a file'
+* git diff  --> Shows the differences between current repository and changes that were made.
+* "git merge --abort" to abort the merge
+
+* git --help
+* git help commit -a
+
+* git remote show origin  --> Shows if local reposiory is upto date with remote repository or not. And show pullable & pushable branches from local to remote.
+
+	We can also use two other commands to check if local reposiory is upto date with remote repository or not.
+	-> git fetch origin (THEN) -> git status
+
+*  
+
+
+* To create a branch
+	-> git branch branchName(Login)
+* To switch to another branch
+	-> git checkout branchName(Login)
+* We have a shortcut to create a new branch and switch into it with below command
+	-> git checkout -b branchName
+* The command to list all branches in local and remote repositories is
+	-> git branch --all/-a
+* If you require only listing the remote branches from Git Bash then use this command
+	-> git branch -r
+* If you require only listing the local branches then use this command
+	-> git branch -l
+* You may also use the show-branch command for seeing the branches and their commits as follows
+	-> git show-branch
+
+
+* If we want to merge Login to Master branch
+	-> git merge login
+	* With above command, all the changes which were made inside of "Login" branch will be merged inside of "Master" branch
+
+
+
+
+* To push local repository to server(GIT), first we need to create a repository in our GITHUB account. Then it will give instructions to add our local repository to server
+
+
+* git remote add origin {{ URL of our server repository }}
+* git remote
+* git push -u origin master
+* Once we push our local repository to server, then if we make any changes and want to add those changes to server we can simply use below command. But again we no need to repeat above step.
+* git push
+
+* git remote rm origin (Removes Origin)
+
+
+
+
+
+* To clone a repository use below command
+	-> git clone {{ URL }}
+
+
+* To get all the changes from remote repository to our local repository, use below command
+	-> git pull
+
+* $ git push
+fatal: The current branch 2nd has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin 2nd
+
+* 
+
+
+====================================================================================
+To ignore file OR folders:
+----------------------------------------------------
+First we need create '.gitignore' file using below command
+* touch .gitignore
+
+* Then if we want to ignore "log.txt" file, then we need to add that file name with it's extension in '.gitignore' file. Ex: log.txt
+
+* If we want to ignore a directory with a name "dir1", then we need to add that directory name in '.gitignore' file in a new line. Ex: /dir1
+
+* To ignore all text files, use - "*.txt"
+
+
+====================================================================================
+
+
+
+
+
+
+Shortcuts:
+------------------------------------------
+* git add *.html
+* git add .
+* 
+
+
+
+
+Points:
+------------------------------------------------------------------------------------
+* If we use 'git commit', it will open VIM editor. We need to press 'i' to insert text there. After entering some text, we need to click "Esc" key then type ":wq" to save the file.
+
+
+
+Useful links:
+------------------------------------------------------------------------------------
+* https://stackoverflow.com/questions/3541647/git-add-vs-git-commit-a
+
+
+
+
+
+
+
+
+
+Git messages and their meanings:
+------------------------------------------------------------------------------------
+* Message: Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+* Message: Your branch and 'origin/2nd' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+  Meaning: Our local repository has a commit which is not exist in Server repository & Server repository has a commit which is not exist in our local repository.
+
+* 
+

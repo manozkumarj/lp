@@ -1,0 +1,19 @@
+* In software engineering, CI/CD or CICD may refer to the combined practices of continuous integration and continuous delivery..
+
+* Addition/concatenation of Integer & Strings
+* Built-in Array & String functions
+* Sorting an array
+* Fetching Max, Min, Odd, Even numbers, Unique & Duplicate values from an array
+* Counting the number of repeated elements in a given array 
+	=> $things = ['a','a','a','b','b','c','a']; //Output shoud be = a3b2c1a1
+* Copying/cloning of an array & object
+* Iterating array & object
+* Editing, deleting, splitting properties to/from array & object
+* Implementing patterns
+* WAP for
+	-> Prime numbers
+	-> Palindrom numbers
+	-> Fibonacci series
+	-> 
+
+* Some logical questions

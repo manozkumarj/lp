@@ -1,0 +1,12 @@
+* Need to check IE, Chrome, Firefox, UC, Opera browsers for compatability.
+* Need to add <noscript> tag.
+* Need to add IE compatability code like
+	<!--[if IE]>
+	<style>
+	    .actual-form table {
+	         width: 100%;
+	    }
+	</style>
+	<![endif]-->
+
+* 
