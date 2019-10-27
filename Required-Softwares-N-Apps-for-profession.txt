@@ -1,0 +1,19 @@
+* Git bash
+* XAMPP
+* MongoDB
+* Editors: VS code, Sublime Text, Atom
+* Browsers: Chrome, Firefox, Torch browser
+* Postman
+* MySQL query browser
+* Skype
+* AnyDesk / Join.me / Go to Meeting / Team Viewer
+* Microsoft Outlook
+* SVN
+
+
+
+Install -----
+* Angular* Nodemon
+* pm2
+
+* My browser bookmarks file
