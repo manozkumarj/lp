@@ -94,7 +94,7 @@ Short & Sweet:
 * We should register all the services in "providers" array in app.module.ts
 * We should register all the modules in "imports" array in app.module.ts
 * If we want to use "Reactive Forms" then first we need to add "ReactiveFormsModule" in "imports" array in app.module.ts
-* Ex for Modules, "forms", "HTTP", "ReactiveForms" & "Router"
+* Ex for Modules, "FormsModule", "HttpModule", "ReactiveFormsModule" & "RouterModule"
 * Whenever we create a service using CLI, the service won't be added in "provides" array in "app.module.ts" file. We should add it manually.
 * To do HTTP requests we need to import "HttpModule" and add it to "imports" array in "app.module.ts"
 * "OnInit" is an interface and it is defined in angular core lib.
