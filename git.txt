@@ -12,6 +12,7 @@
 * git restore --staged <file | .>" to unstage  (OR)  git reset  --> Used to undone "git add"
 * git commit -m 'changed a file'
 * git diff  --> Shows the differences between current repository and changes that were made.
+* git diff master 2nd   --> Shows the differences between "master" & "2nd" branches.
 * "git merge --abort" to abort the merge
 
 * git --help
