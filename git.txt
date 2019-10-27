@@ -9,7 +9,7 @@
 * git add index.html
 * git status
 * git rm --cached index.html
-* git reset  --> Used to undone "git add"
+* git restore --staged <file>..." to unstage  (OR)  git reset  --> Used to undone "git add"
 * git commit -m 'changed a file'
 * git diff  --> Shows the differences between current repository and changes that were made.
 * "git merge --abort" to abort the merge
