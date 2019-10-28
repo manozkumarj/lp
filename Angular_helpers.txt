@@ -1,0 +1,75 @@
+IMP points:
+---------------------------------------------------------------------------------
+* If we want to use [(ngModel)] directive, we need to import "FormsModule" in "app.module.ts" file.
+* "Input" & "Output" decorators can be implemented in two ways.
+  -> Adding "Input" & "Output" variables in an array inside of "@Component" decorator.
+  -> Can import "Input" & "Output" modules in that file externally and can use
+      @Input('aliasName') id: string;
+
+      @Output('addedQuestion') questionAdded = new EventEmitter<QuestionInterface>();
+      addQuestion(){
+          this.questionAdded.emit({text:this.text, answer:this.answer, hide:true});
+      }
+
+      Note: We need to import "EventEmitter" CLASS from '@angular/core'.
+
+* CircularDependencies: You are using custom.model.ts into custom.form.ts
+and also custom.form.ts into custom.model.ts,
+This is called CircularDependencies and that is not good.
+
+ Ref = https://stackoverflow.com/questions/47466147/warning-in-circular-dependency-detected-angular-cli/47466816
+
+
+
+
+
+
+
+
+
+
+
+
+***************************************************************************************************
+Patterns:
+-----------------------------------------------------------------------------------------------------
+1) /^[6-9]\\d{9}$/   -> Indian Mobile Number, should start with num B/W 6-9 and length should be 10
+2) /^[a-zA-Z]+ [a-zA-Z]+$/   -> Full name (Space is Mandatory, without limit length)
+3) /^([a-zA-Z]{3,5})+ ([a-zA-Z]){3,5}$/   -> Full name (Space is Mandatory, with firstname & lastname 
+  should contain min 3 chars and max 5 chars)
+4) /^[a-zA-Z ]{2,5}$/   -> Name (Space is optional, with length min 2 chars and max 5 chars)
+6) /^[a-zA-Z]{3,5}$/   -> First name (Space should not allowed, with length min 2 chars and max 5 chars)
+
+
+
+Validation Examples:
+-----------------------------------------------------------------------------------
+* 
+
+
+
+
+***************************************************************************************************
+
+
+
+
+
+
+*******************************************************************************
+ageTypeChange() {
+    let ageType = this.deathRegistrationForm.value.victimAgeType;
+
+    if (ageType.toLowerCase() == 'years') {
+      this.deathRegistrationForm.controls["victimAge"].setValidators([Validators.required, Validators.min(1), Validators.max(120)]);
+    } else if (ageType.toLowerCase() == 'months') {
+      this.deathRegistrationForm.controls["victimAge"].setValidators([Validators.required, Validators.min(1), Validators.max(11)]);
+    } else {
+      this.deathRegistrationForm.controls["victimAge"].setValidators([Validators.required, Validators.min(1), Validators.max(30)]);
+    }
+    this.deathRegistrationForm.controls["victimAge"].updateValueAndValidity();
+  }
+
+  this.commonservice.PatientdetailsForm.controls["patient_age"].setValidators([Validators.maxLength(3)]);
+
+*******************************************************************************
