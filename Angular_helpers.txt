@@ -39,6 +39,7 @@ Patterns:
   should contain min 3 chars and max 5 chars)
 4) /^[a-zA-Z ]{2,5}$/   -> Name (Space is optional, with length min 2 chars and max 5 chars)
 6) /^[a-zA-Z]{3,5}$/   -> First name (Space should not allowed, with length min 2 chars and max 5 chars)
+7) /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/   -> Valid Email (For all domains)
 
 
 
@@ -70,6 +71,79 @@ ageTypeChange() {
     this.deathRegistrationForm.controls["victimAge"].updateValueAndValidity();
   }
 
-  this.commonservice.PatientdetailsForm.controls["patient_age"].setValidators([Validators.maxLength(3)]);
+* 
+  emailpattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+* this.commonservice.PatientdetailsForm.controls["patient_age"].setValidators([Validators.maxLength(3)]);
+* <span *ngIf="commonservobj.callerdetailsForm.get('email').errors.pattern">
+Please Enter Valid Email.</span>
 
 *******************************************************************************
+
+
+
+
+
+
+**********************************************************************************************
+Practise format:
+------------------------------------------------------------------
+
+
+Form building format:
+------------------------------------------------------------------
+* Full name -> space is mandatory (Length min 3, max 12)
+* Father name -> space is options (Length min 3, max 12)
+* Mother name -> no space (Length min 3, max 12)
+* Gender
+  Rario button options = Male, Female & Transgender
+* Email -> should accept all kinda emails including "example@sample.co.in"
+* Password -> should contain at least one Capital, Lower case char, digit, special char with length 15
+* Age:
+    if age type is "Infant" then age should be between 1 to 5 years
+    if age type is "child" then age should be between 6 to 12 years
+    if age type is "men/women" then age should be between 13 to 133 years
+* Known languages
+  Checkbox options = English, Telugu, Hindi & Other
+    If "Other" option is selected then one inbox will be shown with required attribute.
+* District, Mandal & Villages will be dropdowns
+  District options will be 1-9
+  Mandal options will be 1oo-190
+  Villages options will be 200-290
+
+  Note: Child options will filtered based on parent selection.
+
+* After submitting the form need to store the date in local storage as an object then display them back
+
+
+
+* Then work on ACCESSORS
+* Then work on "Lifecycle hooks" with new components.
+
+**********************************************************************************************
+
+
+
+
+
+
+
+
+*******************************************************************************
+Helpers:
+-----------------------------------------------------------------------------------------
+* Likecycle hooks are well explained here
+https://www.youtube.com/watch?v=0KWQLFI8mFE
+
+* 
+
+*******************************************************************************
+
+
+
+
+
+
+Interview things:
+-----------------------------------------------------------------------------------------
+* What are Angular lifecycle hooks and sequesnce and when will each hook be triggered.
+* 
