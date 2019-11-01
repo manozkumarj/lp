@@ -23,7 +23,8 @@
 	We can also use two other commands to check if local reposiory is upto date with remote repository or not.
 	-> git fetch origin (THEN) -> git status
 
-*  
+*  To check the differences between local and github before the pull use below commands
+	-> git fetch origin (THEN) -> git diff master origin/master
 
 
 * To create a branch
