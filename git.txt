@@ -61,6 +61,9 @@
 
 * git remote rm origin (Removes Origin)
 
+* To push all branches which are exist in local branch & remote branch, use below command
+	-> git push --all
+
 
 
 
