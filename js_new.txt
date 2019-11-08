@@ -72,6 +72,37 @@ const {name: n} = person;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+* 'filter' method is used to filter an array and it does not change the original array.
+Ex: const jobs = [
+		{ id: 1, isActive: true },
+		{ id: 2, isActive: false },
+		{ id: 3, isActive: true }
+	];
+
+	const activeJobs = jobs.filter( job => job.isActive);
+
+
+* 'map' method is used to modify/transform an array and it return new array.
+Ex: const colors = ['red', 'green', 'blue'];
+	const list = colors.map(color => `<li> ${color} </li>`);
+	console.log(items);
+
+* 'slice', 'map' method return new array.
+* 'splice' modifies original array.
+
+
+
 Askable interview Qs:
 --------------------------------------------------------------------------
 * Swapping two string variables.

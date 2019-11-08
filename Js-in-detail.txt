@@ -1,0 +1,364 @@
+IMP points:
+-----------------------------------------------------------------------------------
+* setTimeout(expression, timeout); runs the code/function once after the timeout.
+
+setInterval(expression, timeout); runs the code/function in intervals, with the length of the timeout between them.
+
+Example: var intervalID = setInterval(alert, 1000); // Will alert every second.
+		// clearInterval(intervalID); // Will clear the timer.
+
+	setTimeout(alert, 1000); // Will alert once, after a second.
+
+	REF -> https://stackoverflow.com/questions/2696692/setinterval-vs-settimeout
+
+* 
+
+
+
+
+
+Getting last date of a month
+------------------------------
+<script>
+	var lastday = function(y,m){
+	return  new Date(y, m +1, 0).getDate();
+	}
+	console.log(lastday(2014,0));
+</script>
+
+************************************************************
+Getting date and time of current day from midnight 
+--------------------------------------------------
+<script>
+	var todayDate = this.day.getDate();
+	var currentMonth = this.day.getMonth();
+	var currentYear = this.day.getFullYear();
+	var todatdateTime = new Date(currentYear, currentMonth, todayDate, 0, 0, 0);
+	document.write(todatdateTime);
+</script>
+
+**************************************************************
+Getting date and time of current month from midnight 
+--------------------------------------------------
+<script>
+	var lastday = function(y,m){
+	return  new Date(y, m, 1,0,0,0);
+	}
+	var currentMonth = new Date().getMonth();
+	document.write(lastday(2019,currentMonth));
+</script>
+
+**************************************************************
+
+* 9 Ways to Remove Elements From A JavaScript Array - Plus How to Safely Clear JavaScript Arrays
+	https://love2dev.com/blog/javascript-remove-from-array/
+
+* Removing an object (which index is 2) from an array of object
+this.masterServ.options_Subcalltype = this.masterServ.options_Subcalltype.slice(0, 2);
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about ARRAYs:
+------------------------------------------------------------------------------------------
+
+	let first = [1,2,3];
+	let second = [4,5,6];
+
+* Joining second arrays
+
+	-> let combined = first.concat(second);  // Old way
+	-> let combined = [...first, ...second]  // Using Spread operator, We can also add other elements 		as below, -> let addition = [ 'a', ...first, 'b', ...second, 'c'];
+	-> 
+
+* Cloning an array with spread operator
+	let clone = [...first];
+* 
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about OBJECTS:
+------------------------------------------------------------------------------------------
+
+	let first = { name: 'Manoj' };
+	let second = { job: 'Developer' };
+	
+* Joining second arrays
+
+	-> let combined = Object.assign({}, first, second);  // Old way
+	-> let combined = {...first, ...second, location: 'Hyderabad' }  // Using Spread operator, We can 		also add other elements as 	below, 
+		-> let addition = { one:'1', ...first, 'b', ...second, two:'2' };
+	-> 
+
+* Cloning an object with spread operator
+	let clone = {...first};
+* 
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about CLASS:
+------------------------------------------------------------------------------------------
+* Always use Pascal case naming convension while creating the class.
+
+* class Person {
+	constructor(name){
+		this.name = name;
+	}
+
+	walk(){
+		console.log(this.name + "is walking");
+	}
+  }
+
+  const person = new Person("Manoj");
+  person.walk();
+
+INHERITENCE:
+----------------
+* class Teacher extends Person {
+	constructor(name, degree){
+		super(name);
+		this.degree = degree;
+	}
+
+	teach(){
+		console.log(this.name + "is done" + this.degree + " & is walking.");
+	}
+  }
+
+  const teacher = new Teacher('Manoj', 'B.Tech');
+
+* 
+
+
+
+
+
+******************************************************************************************
+All about MODULES:
+------------------------------------------------------------------------------------------
+* 'Modularity' is nothing but creating each class in seperate files.
+* Will create 'person.js' & 'teacher.js' files separately.
+* When working with modules, the objects defined in a module are private by default. To make a class public we need to use 'export' keyword before 'class' keyword.
+
+Ex: export class Person {}
+
+* To use exported class in another module first we need to import is as below.
+	-> import { Person } from './person';
+
+	Note: We no need to specify extension of file.
+
+
+
+Named & Default exports:
+--------------------------------
+* Named exports are what is exported has a name.
+
+* Example for default export is below
+	export default class Person {}
+
+* Following the way to import 'default exports'
+	import Person from './person';
+
+Default export => import ... from './...';
+Named export => import {...} from './...';
+
+* To import 'name' & 'default' exports combine, follow as below
+	import Person, { promote } from './person';
+
+* While importig custom modules we need to specify './', but it is not needed while importing 			third-party libraries that are stored inside of "node_modules" folder like REACT, ANGULAR.
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about Recursion:
+------------------------------------------------------------------------------------------
+* What is Recursion?
+	Recursion is simply when a function calls itself.
+	Lets jump right in and take a look at probably the most famous recursion example. This example returns the factorial of a supplied integer:
+	function factorial(x) {
+	  if (x < 0) return;
+	  if (x === 0) return 1;
+	  return x * factorial(x - 1);
+	}
+	factorial(3);
+	// 6
+
+	For more details follow below link
+	https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea
+
+* 
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about Closures:
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about Prmises:
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about Async/Await:
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about ES6/ES2015:
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+All about higher order functions:
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***************************************************************************
+Miscellaneous
+------------------------------------------
+day = new Date();
+todayDate = this.day.getDate();
+currentMonth = this.day.getMonth();
+currentYear = this.day.getFullYear();
+
+* 8 Must Know JavaScript Array Methods
+https://www.youtube.com/watch?v=R8rmfD9Y5-c
+
+* 
+
+
+
+
+
+
+
+
+
+TEMP:
+----------------------------------
+* https://www.youtube.com/watch?v=rRgD1yVwIvE
+* https://www.w3schools.com/js/js_function_closures.asp
+* https://www.youtube.com/watch?v=DHvZLI7Db8E&list=PLZlA0Gpn_vH-0FlQnruw2rd1HuiYJHHkm

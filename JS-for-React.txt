@@ -1,0 +1,26 @@
+* Variables declared with "VAR" keyword are scoped to function level.
+* Variables declared with "LET" & "CONST" keyword are scoped to block level in which they are defined.
+* "CONST" variables can not be re-assigned.
+* We can create methods in an object as below
+	const person = {
+		name: 'Manoj',
+		walk: function() {
+			console.log(this);
+		},
+		talk() {}
+	};
+
+	-> If we call 'walk' function as below it will give a reference of it's object
+	person.walk();
+
+	-> But if we call 'walk' function as below it will say 'undefined'
+	const walk = person.walk;
+	walk();
+
+	-> To fix this problem, we need to do as below
+	const walk = person.walk.bind(person);
+	walk();
+
+* In JS, the "this" keyword will work based on how a function is called.
+* If we call a function as a method in an obeject, 'this' will return a reference of that object.
+* 
