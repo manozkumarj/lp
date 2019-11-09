@@ -42,5 +42,15 @@ IMP Points:
 
 
 
+
+******************************************************************************
+IMP Links:
+-----------------------------------------------------------------------------
+* https://community.dynamics.com/nav/b/tharangacnavblog/posts/git-bash-on-visual-studio-code-integrated-terminal
+
+
+
+
+
 Note: After installing any plugin, we should re-start VSCode.
 ******************************************************************************

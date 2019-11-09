@@ -1,0 +1,20 @@
+/************   INETRVIEW purpose links   ***********/
+*  https://www.youtube.com/watch?v=6Wzj7kxfRdI
+* https://www.youtube.com/watch?v=qsNxdukPc2U
+* https://www.youtube.com/watch?v=3qnrouysbG8
+* https://www.youtube.com/watch?v=mhZWi9tSy44
+
+
+
+
+
+
+
+
+****************************************************************************************
+Askable interview Qs:
+--------------------------------------------------------------------------
+* Swapping two string variables.
+* Swapping two integers without 3rd variable.
+* Write infinite loop using while, do while and for loops.
+* 
