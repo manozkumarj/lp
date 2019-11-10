@@ -209,6 +209,167 @@ expected output:
 "c: 3"
 */
 
+// Initialize gimli object
+const gimli = {
+    name: "Gimli",
+    race: "dwarf",
+    weapon: "axe",
+    greet: function() {
+        return `Hi, my name is ${this.name}...!`;
+    },
+};
+// console.log(gimli.greet());
+// console.log(gimli.name);
+// console.log(gimli['weapon']);
+
+// Add new age & degree properties to gimli
+gimli.age = 28;
+// console.log(gimli.age);
+
+gimli['degree'] = 'B.Tech';
+// console.log(gimli.degree);
+
+// Add new fight method to gimli
+gimli.fight = function() {
+    return `Gimli attacks with an ${this.weapon}.`;
+}
+// console.log(gimli.fight());
+
+// Update weapon from axe to battle axe
+gimli.weapon = "battle axe";
+// console.log(gimli);
+
+// Remove weapon from gimli
+delete gimli.weapon;
+// console.log(gimli);
+
+
+// Looping Through Object Properties
+const gimli_1 = {
+    name: "Gimli",
+    race: "dwarf",
+    weapon: "battle axe",
+};
+// Iterate through properties of gimli_1
+for (let key in gimli_1) {
+  // console.log(gimli_1[key]);
+}
+
+// Get keys and values of gimli_1 properties
+for (let key in gimli_1) {
+  // console.log(key.toUpperCase() + ':', gimli_1[key]);
+}
+
+// Initialize method on gimli object to return property keys
+// console.log(Object.keys(gimli_1));
+
+// Initialize method on gimli object to return property values
+// console.log(Object.values(gimli_1));
+
+
+// Object.entries() creates a nested array of the key/value pairs of an object.
+// Initialize an object
+const operatingSystem = {
+    name: 'Ubuntu',
+    version: 18.04,
+    license: 'Open Source'
+};
+// Get the object key/value pairs
+const entries = Object.entries(operatingSystem);
+// console.log(entries);
+
+// Loop through the results
+entries.forEach(entry => {
+    let key = entry[0];
+    let value = entry[1];
+
+    // console.log(`${key}: ${value}`);
+});
+
+// Object.assign()
+// Object.assign() is used to copy values from one object to another.
+// We can create two objects, and merge them with Object.assign().
+// Initialize an object
+const name = {
+    firstName: 'Philip',
+    lastName: 'Fry'
+};
+
+// Initialize another object
+const details = {
+    job: 'Delivery Boy',
+    employer: 'Planet Express'
+};
+
+// Merge the objects
+// const character = Object.assign(name, details);
+// console.log(character);
+
+// It is also possible to use the spread operator (...) to accomplish the same task. In the code below, we’ll modify how we declare character through merging the name and details objects.
+// Merge the object with the spread operator
+const character = {...name, ...details}
+// console.log(character);
+
+
+// Object.freeze()
+// Object.freeze() prevents modification to properties and values of an object, and prevents properties from being added or removed from an object.
+// Initialize an object
+const user = {
+    username: 'AzureDiamond',
+    password: 'hunter2'
+};
+
+// console.log(user);
+
+// Freeze the object
+const newUser = Object.freeze(user);
+
+newUser.password = '*******';
+newUser.active = true;
+
+// console.log(newUser);
+
+// Object.isFrozen() is available to determine whether an object has been frozen or not, and returns a Boolean.
+// console.log(Object.isFrozen(user));
+
+// Object.seal()
+// Object.seal() prevents new properties from being added to an object, but allows the modification of existing properties.
+
+const user_1 = {
+    username: 'AzureDiamond',
+    password: 'hunter2'
+};
+const newUser_1 = Object.seal(user_1);
+
+newUser_1.password = '*******';
+newUser_1.active = true;
+
+// console.log(newUser_1);
+// console.log(Object.isFrozen(user_1));
+
+/* Object.getPrototypeOf()
+Object.getPrototypeOf() is used to get the internal hidden [[Prototype]] of an object, also accessible through the __proto__ property.  */
+const employees = ['Ron', 'April', 'Andy', 'Leslie'];
+
+// Below thing is not working
+// console.log(Object.getPrototypeOf(employees));
+
+// The static method Object.defineProperty() defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+// Note: By default, values added using Object.defineProperty() are immutable.
+const object1 = {};
+
+Object.defineProperty(object1, 'property1', {
+  value: 42,
+  writable: false
+});
+
+object1.property1 = 77;
+// throws an error in strict mode
+
+console.log(object1.property1);
+
+// FMD - https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript
+
 /************   ALL ABOUT OBJECTS - Ends   ***********/
 
 /************   ES6 String functions - Starts   ***********/
@@ -327,7 +488,7 @@ const tree = {
     }
   ]
 };
-printChildrenRecursive(tree);
+// printChildrenRecursive(tree);
 /************   Recursion - Ends   ***********/
 
 /************   INETRVIEW purpose   ***********/
