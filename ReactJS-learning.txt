@@ -1,0 +1,65 @@
+* React is a Javascript library which is developed by Facebook in 2011 & is used to create fast and interactive user interfaces.
+* Every React app will contain at least one main component which we refer to root component.
+* Every React app is essentially a tree of components.
+* Each component is a pieace of UI.
+* In terms of implementation a component is implemeted as a javascript class that has some "state" and a render "method".
+* class Tweet {
+	state = {};
+	render() {
+
+	}
+}
+
+* Here the "state" is the data that we want display when the component is render.
+* And the "render" method is responsible for discribing what the UI should look like.
+* React = React to state changes. Because when the state changes React essentially reacts to the state change and updates the DOM.
+* Both Angular & React are similar in terms of their component based architecture, However Angular is a Framework and a complete solution while React is library.
+* 
+
+
+* To create React app, first we need to install react globally with below command
+	-> npm i -g create-react-app
+* To know global installed react-app version use below command
+	-> create-react-app --version
+* Now use below command to create react app.
+	-> create-react-app [app name]
+* By default the above command installs
+	Development server, Webpack, Babel and other few libraries we need.
+* 'Babel' is a "Modern Javascript Compier" and is used to compiling our javascript code.
+* 'Babel' takes 'jsx' syntax and converts it to plain javascript that browser can understand.
+* By default we get below folders
+	node_modules, public & src
+* By default we get below files
+	.gitignore, packet.json, packet-lock.json & README.md
+* Index.html file will reside in 'public' folder
+* In React we have .jsx which stands for "Javascript XML"
+* React contains "Hot Module Reloading" feature in-built.
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+React commands:
+------------------------------------------------------------------
+* npm i -g create-react-app
+* create-react [app name]
+* npm start   --> This will start our dev server on port 3000 by default
+* 
+
+
+
+
+
+
+Other:
+------------------------------------------------------------------------
+* "Ayu Mirage" is the theme Mosh is using.

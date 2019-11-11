@@ -22,6 +22,7 @@ VSCode extension:
 
 Short & Sweet:
 ------------------------------------------------------------------------
+* 
 * We can use "React.Fragment" tag to wrap all the html elements.
 * 
 

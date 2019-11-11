@@ -31,6 +31,65 @@ const arrayAges = [
 const stringAges = "33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32";
 const es6String = "Hi, this is Manoz Kumar Jadala";
 
+/*===============    let, var & const - Starts    ===============*/
+// If we use "var" keyword while creating a variable, that variable can be accessible anywhere within the function that is created, As below
+function usingVar(){
+  for (var i = 0; i < 5; i++){
+    console.log(i);
+  }
+    console.log("The value of i from outside of for loop is -> " + i);
+}
+// usingVar();
+
+// If we use "var" keyword while creating a variable, that variable can be accessible within scope
+function usingLet(){
+  for (let i = 0; i < 5; i++){
+    console.log(i);
+  }
+    console.log("The value of i from outside of for loop is -> " + i);
+}
+// usingLet();
+
+// If we use "var" keyword while creating a variable, that variable can be accessible within scope only. But the difference B/W 'let' & 'const' is variables which are created with 'let' keywords can be modified while 'const' variables can not.
+const const_1 = 'I am outside CONST 1';
+function sayHelloConst(name = 'Manoj'){
+  const const_1 = 1;
+    console.log("Hello " + name);
+console.log(const_1);
+}
+// const_1 = 'I am outside CONST 1 tried to update';
+// sayHelloConst();
+// console.log(const_1);
+
+
+// Example for 'var' keyword
+var var_1 = 'I am VAR';
+function sayHelloVar(name = 'Manoj'){
+  var var_1 = 1; // Try removing 'var' keyword
+    console.log("Hello " + name);
+console.log(var_1);
+}
+// sayHelloVar();
+// console.log(var_1);
+
+
+// Miscellaneous
+miss = 'miss - 1';
+function miss_1(){
+    console.log(miss);
+    miss = 'miss - 2';
+    console.log("Hello I am miss");
+}
+// miss_1();
+// console.log(miss);
+
+// Note: If we create any variable without using any of [let, var, const] then by default it will be 'var' keyword only.
+
+/*===============    let, var & const - Ends    ===============*/
+
+
+
+
 /*===============    Higher order functions - Starts    ===============*/
 
 /************   'for loop'   ***********/
@@ -366,7 +425,7 @@ Object.defineProperty(object1, 'property1', {
 object1.property1 = 77;
 // throws an error in strict mode
 
-console.log(object1.property1);
+// console.log(object1.property1);
 
 // FMD - https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript
 
@@ -490,6 +549,16 @@ const tree = {
 };
 // printChildrenRecursive(tree);
 /************   Recursion - Ends   ***********/
+
+/************   Miscellaneous - Starts  ***********/
+// Math.pow(2,3) is equivalant to 2 ** 3; // Both gives output as '8' (2*2*2)
+// ** is called "Exponentiation" operator
+// console.log(Math.pow(2,3));
+// console.log(2 ** 3);
+
+
+/************   Miscellaneous - Ends  ***********/
+
 
 /************   INETRVIEW purpose   ***********/
 //---> How to create a private variable in JS
