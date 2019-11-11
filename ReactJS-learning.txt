@@ -34,8 +34,29 @@
 * Index.html file will reside in 'public' folder
 * In React we have .jsx which stands for "Javascript XML"
 * React contains "Hot Module Reloading" feature in-built.
-* 
+* To use bootstrap in react app, first we need to install it using below command
+	-> npm i bootstrap@latest
+	then we need to import bootstrap in 'index.js' file as below
+	-> import 'boorstrap/dist/css/bootstrap.css';
 
+* 'React' module will call "React.createElement" internally.
+* "React.Fragment" element can be used to ommit wrapper div inside of 'render' method.
+Ex: class Counter extends Component {
+		state = {
+			count: 0
+		}
+		render () {
+			return (
+				<React.Fragment>
+					<span> { this.state.count } </span>
+					<button> Increament </button>
+				</React.Fragment>
+			);
+		}
+	}
+
+* 'state' is a special property in react components, basically it's an object which includes any data that this component needs.
+*  'JSX' are just like normal javascript objects. We can return them from a function, we can pass them to a function. We can also use then as constant OR a variable.
 
 
 

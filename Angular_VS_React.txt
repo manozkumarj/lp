@@ -10,10 +10,17 @@ Angular: ng serve -o  || npm run ng serve -o
 React: npm start  || npm run start
 
 
-To create buils file for the  app
+To create buils file for the app
 ------------------------------------------------------------
 Angular: ng build
 React: npm build
+
+
+Data binding
+------------------------------------------------------------
+Angular: Two curly braces {{ variable }}
+React: Single curly brace { variable }
+
 
 
 To app in different port apart from default port
