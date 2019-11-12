@@ -38,6 +38,6 @@ React: please refer to "https://stackoverflow.com/questions/40714583/how-to-spec
 ************************************** IMP Points to remember ****************************************
 * Angular app will be served from 4200 port by default
 * React app will be served from 3000 port by default
-* 
+* Both Angular & React are similar in terms of their component based architecture, However Angular is a Framework and a complete solution while React is library.
 
 ******************************************************************************************************

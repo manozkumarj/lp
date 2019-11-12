@@ -1,16 +1,16 @@
 * React is a Javascript library which is developed by Facebook in 2011 & is used to create fast and interactive user interfaces.
-* Every React app will contain at least one main component which we refer to root component.
+* Every React app will contain at least one main component which we refer to 'root' component.
 * Every React app is essentially a tree of components.
 * Each component is a pieace of UI.
-* In terms of implementation a component is implemeted as a javascript class that has some "state" and a render "method".
+* In terms of implementation a component is implemeted as a javascript class that has some "state" and a "render" method.
 * class Tweet {
 	state = {};
 	render() {
-
+		return <h1>Hello world</h1>
 	}
 }
 
-* Here the "state" is the data that we want display when the component is render.
+* Here the "state" is the data that we want to display when the component is render.
 * And the "render" method is responsible for discribing what the UI should look like.
 * React = React to state changes. Because when the state changes React essentially reacts to the state change and updates the DOM.
 * Both Angular & React are similar in terms of their component based architecture, However Angular is a Framework and a complete solution while React is library.
@@ -19,13 +19,13 @@
 
 * To create React app, first we need to install react globally with below command
 	-> npm i -g create-react-app
-* To know global installed react-app version use below command
+* To know globally installed react-app version use below command
 	-> create-react-app --version
 * Now use below command to create react app.
 	-> create-react-app [app name]
 * By default the above command installs
 	Development server, Webpack, Babel and other few libraries we need.
-* 'Babel' is a "Modern Javascript Compier" and is used to compiling our javascript code.
+* 'Babel' is a "Modern Javascript Compier" and is used to compile our javascript code.
 * 'Babel' takes 'jsx' syntax and converts it to plain javascript that browser can understand.
 * By default we get below folders
 	node_modules, public & src
@@ -34,7 +34,7 @@
 * Index.html file will reside in 'public' folder
 * In React we have .jsx which stands for "Javascript XML"
 * React contains "Hot Module Reloading" feature in-built.
-* To use bootstrap in react app, first we need to install it using below command
+* To use "bootstrap" in react app, first we need to install it using below command
 	-> npm i bootstrap@latest
 	then we need to import bootstrap in 'index.js' file as below
 	-> import 'boorstrap/dist/css/bootstrap.css';
