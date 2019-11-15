@@ -18,4 +18,18 @@ Askable interview Qs:
 * Swapping two integers without 3rd variable.
 * Write infinite loop using while, do while and for loops.
 * What is REPL?
+* Unique elements from Array
+Ex: 
+	function onlyUnique(value, index, self) { 
+	    return self.indexOf(value) === index;
+	}
+
+	// usage example:
+	var a = ['a', 1, 'a', 2, '1'];
+	var unique = a.filter( onlyUnique );
+
+	console.log(unique);
+
+	FMD -> https://medium.com/dailyjs/how-to-remove-array-duplicates-in-es6-5daa8789641c
+
 * 

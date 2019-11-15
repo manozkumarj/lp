@@ -38,6 +38,8 @@
 	-> npm i bootstrap@latest
 	then we need to import bootstrap in 'index.js' file as below
 	-> import 'boorstrap/dist/css/bootstrap.css';
+	If the above path doesn't work then use below path
+	-> import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 * 'React' module will call "React.createElement" internally.
 * "React.Fragment" element can be used to ommit wrapper div inside of 'render' method.
@@ -58,11 +60,57 @@ Ex: class Counter extends Component {
 * 'state' is a special property in react components, basically it's an object which includes any data that this component needs.
 *  'JSX' are just like normal javascript objects. We can return them from a function, we can pass them to a function. We can also use then as constant OR a variable.
 
+* Setting an attribute to an element
+	state = {
+		count: 0,
+		imageUrl: 'http://picsum.photos.com/200'
+	}
+	<img src={this.state.imageUrl} alt="" />
+* If we want apply any classes on element then we need to use "className" but not "class".
+And we need to use "style" attribute as below.
+Note: We should follow "camelCase" notation for "class"es and for "css attributes" as below.
+
+Ex: class Counter extends Component {
+		state = {
+			count: 0
+		}
+		styles = {
+			fontSize: 10,
+			fontWeight: "bold"
+		}
+		render () {
+			return (
+					<div>
+						<span style = { this.styles } className="btn btin-primary m-2">{this.formatCount()}</span>
+						<button>Increment</button>
+					</div>
+				)
+		}
+
+		formatCount(){
+			let { count } = this.state;
+			return if(count === 0) ? 'Zero' : count;
+		}
+	}
+	export default Counter;
+
+* We can also use in-line styles as below
+Ex: <span style = {{fontSize: 30}} className="btn btin-primary m-2">{this.formatCount}</span>
+
+* Rendering classes dynamically
+Ex: render() {
+		let classes = "badge m-2 badge-";
+		classes += (this.state.count === 0) ? "warning" : "primary";
+
+			return ( <span className={classes}>{this.formatCount}</span> );
+	}
+
+Note: Did you notice that we didn't use 'this' keyword while calling "classes" class name? It's because that "classes" variable is declared inside of "render" method.
 
 
+* Always use descriptive names that determine the intension of your code.
 
-
-
+* 
 
 
 
@@ -72,7 +120,7 @@ Ex: class Counter extends Component {
 React commands:
 ------------------------------------------------------------------
 * npm i -g create-react-app
-* create-react [app name]
+* create-react [app name] | npx create-react [app name] .
 * npm start   --> This will start our dev server on port 3000 by default
 * 
 

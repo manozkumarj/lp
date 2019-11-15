@@ -24,6 +24,8 @@ Plugins:
 * live server
 * Emitter
 * tslint
+* Simple react snippets | ES7 React/Redux/GraphQL/React-Native snippets
+* 
 
 
 
@@ -36,6 +38,9 @@ Plugins:
 IMP Points:
 -----------------------------------------------------------------------------
 * "ul.nav.nav-pills" this sysntax is called as "zen coding".
+* If VScode shows blank screen then run this command 'code --disable-gpu'
+	Refer to below link FMD
+	https://github.com/Microsoft/vscode/issues/51701
 * 
 
 
