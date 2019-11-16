@@ -64,13 +64,23 @@ const person = {
 const {name, city, state} = person;
 const {name: n} = person;
 
-* conole.log(true && "hi");  // returns "hi"
+* In Javascript unlike other proramming languages we can apply the logical and (&&) between non-boolean values. Below two are examples
+	-> conole.log(true && "hi");  // returns "hi"
+	-> conole.log(true && "hi" && 1);  // returns 1
+* An empty string is considered 'falsy'
+* In javascript number zero [0] is considered 'falsy'
+* We can use all DOM events in React. (CamelCase  naming convention)
+Ex: onClick, onDoubleCick, onKeyDown, etc.,
 
-* conole.log(true && "hi" && 1);  // returns 1
+* We should not use parentheses while calling a event related function.
+* We can not change state properties directly. We have to explicitly tell react that what is changed.
 
+* We should create a event function as below
+  handleIncrement = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
 
-
-
+* 
 
 
 

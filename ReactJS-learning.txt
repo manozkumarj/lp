@@ -33,6 +33,7 @@
 	.gitignore, packet.json, packet-lock.json & README.md
 * Index.html file will reside in 'public' folder
 * In React we have .jsx which stands for "Javascript XML"
+* 'jsx' is used for discribing UI.
 * React contains "Hot Module Reloading" feature in-built.
 * To use "bootstrap" in react app, first we need to install it using below command
 	-> npm i bootstrap@latest
@@ -110,7 +111,66 @@ Note: Did you notice that we didn't use 'this' keyword while calling "classes" c
 
 * Always use descriptive names that determine the intension of your code.
 
+* Since "jsx" is not a template engine, Unlike "Angular" we don't have "if else" conditions.
+* Every React component contains a property called "props".
+
+
+*** Difference B/W PROPS & STATE ***
+* "props" includes data that we give to a component.
+* "state" includes data that is local or private to that component.
+* "props" are 'readonly' in other words, we can't change the provided properties to a component inside of it's component.
 * 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Actions Done:
+--------------------------------------------------------------------------------------------
+* JSX
+* Rendering lists
+* Conditional Rendering
+* Handling Events
+* Updating the State
+* Passing Data B/W components
+* Raise and Handle Events B/W components
+* Multiple Components in Sync
+* Functional Components
+* Lifecycle Hooks
+
+
+
+
+
+
+
+
+
+
+Short & Sweet:
+--------------------------------------------------------------------------------------------
+* In Javascript unlike other proramming languages we can apply the logical and (&&) between non-boolean values. Below two are examples
+	-> conole.log(true && "hi");  // returns "hi"
+	-> conole.log(true && "hi" && 1);  // returns 1
+* 
+
+
+
+
 
 
 
