@@ -20,7 +20,7 @@ VS Code shortcut keys:
 ******************************************************************************
 Plugins:
 -----------------------------------------------------------------------------
-* auto import
+* auto import | Auto Import - ES6, TS, JSX, TSX
 * live server
 * Emitter
 * tslint
@@ -40,6 +40,7 @@ IMP Points:
 * "ul.nav.nav-pills" this sysntax is called as "zen coding".
 * table.table>thead>tr>th*4
 * div.col-1+div.col
+* ul>(li>Link[to=''])*2
 * If VScode shows blank screen then run this command 'code --disable-gpu'
 	Refer to below link FMD
 	https://github.com/Microsoft/vscode/issues/51701

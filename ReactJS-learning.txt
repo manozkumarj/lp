@@ -275,6 +275,75 @@ Ex: componentDidMount(){
 
 * 'componentWillUnmount' phase will be triggered just before a component is removed from DOM. We can do any king of cleanups like if we set up like timers or listners, to avoid memory leaks here.
 
+* To implement routing we need follow two things
+	-> We need to import "BrowserRouter" from "react-router-dom" in index.js
+		* import { BrowserRouter } from "react-router-dom";
+	-> Then we need to wrap <App /> with <BrowserRouter>, as below
+		* <BrowserRouter><App /></BrowserRouter>
+
+* Registering routes
+	-> We can use 'exact' OR
+	-> Can import "Switch" module from "react-router-dom"
+
+* We should impletemt 'a' tag as below, but we need to import "Link" module from "react-router-dom"
+	-> <Link to="/">Home</Link>
+
+* Router props are "history", "location" & "match"
+
+* Passing props
+<Route path="/products" render={(props) => <Products sortBy="newest" {...props} />} />
+
+* Router params
+	-> <Route path="/products/:id" component={ProductDetails} />
+	-> In 'ProductDetails' component, <h1>Product Details - {this.props.match.params.id}</h1>
+
+* Optional Route Params
+	-> <Route path="/posts/:year?/:month?" component={Posts} />
+
+* Query String: To extract query strings we need to install "query-string" package using npm
+
+* We use 'match' object to extract the route parameters.
+* Query Strings will be in "location" object.
+
+* Redirects: 
+    <Redirect from="/messages" to="/posts" />
+
+* Programmatic navigation: 
+	this.props.history.push("/products");
+	this.props.history.replace("/products");
+
+* Nested routing: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,7 +362,7 @@ Short & Sweet:
 * In Javascript unlike other proramming languages we can apply the logical and (&&) between non-boolean values. Below two are examples
 	-> conole.log(true && "hi");  // returns "hi"
 	-> conole.log(true && "hi" && 1);  // returns 1
-* 
+* To add routing to the DOM we need to install library called "react-router-dom"
 
 
 
@@ -347,7 +416,7 @@ Other:
 
 =================================== Vidly Application ======================================
 * npx create-react-app .
-* npm i bootstrap@4.1.1 font-awesome@4.7.0 prop-types@15.6.2
+* npm i bootstrap@4.1.1 font-awesome@4.7.0 prop-types@15.6.2 react-router-dom@4.3.1 query-string@6.1.0
 * 
 
 
