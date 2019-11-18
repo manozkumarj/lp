@@ -117,15 +117,93 @@ Note: Did you notice that we didn't use 'this' keyword while calling "classes" c
 
 *** Difference B/W PROPS & STATE ***
 * "props" includes data that we give to a component.
-* "state" includes data that is local or private to that component.
+* "state" includes data that is local or private to that component, other component can not access that state.
 * "props" are 'readonly' in other words, we can't change the provided properties to a component inside of it's component.
-* 
+
+* The component that owns a piece of the state, should be the one modifying it.
+
+* We need to follow "Single Source of Truth" principle.
+
+* "Controlled component" concept
+
+* In situation like that when there is no parent child relationship B/W two components and you want to keep then in sync & you want to share data B/W them then you need to lift the state up.
+
+* We can use "this" in class components only but not in "Stateless functional components"
+
+* If we use "Stateless functional components" then we need to pass "props" as an agrument to use "props" in return method.
+Ex: const Navbar = props => {
+	  return (
+	    <nav className="navbar navbar-light bg-light">
+	      <span className="navbar-brand">
+	        Navbar
+	        <span className="badge m-2 badge-pill badge-primary">
+	          {props.totalCounters}
+	        </span>
+	      </span>
+	    </nav>
+	  );
+	};
+
+* Destructuring Arguments in SFC : In above example can be re-written like below
+Ex: const Navbar = ({totalCounters}) => {
+	  return (
+	    <nav className="navbar navbar-light bg-light">
+	      <span className="navbar-brand">
+	        Navbar
+	        <span className="badge m-2 badge-pill badge-primary">
+	          {totalCounters}
+	        </span>
+	      </span>
+	    </nav>
+	  );
+	};
 
 
+* Destructuring Arguments in CC :
+	-> Actual code (Before destructuring): 
+		render() {
+		    return (
+		      <div>
+		        <button
+		          onClick={this.props.onReset}
+		          className="btn btn-primary btn-sm m-2"
+		        >
+		          Reset
+		        </button>
+		        {this.props.counters.map(counter => (
+		          <Counter
+		            key={counter.id}
+		            onDelete={this.props.onDelete}
+		            onIncrement={this.props.onIncrement}
+		            counter={counter}
+		          />
+		        ))}
+		      </div>
+		    );
+		  }
 
-
-
-
+	-> Aefore destructuring: 
+		render() {
+		const { onReset, counters, onDelete, onIncrement } = this.props;
+		    return (
+		      <div>
+		        <button
+		          onClick={onReset}
+		          className="btn btn-primary btn-sm m-2"
+		        >
+		          Reset
+		        </button>
+		        {counters.map(counter => (
+		          <Counter
+		            key={counter.id}
+		            onDelete={onDelete}
+		            onIncrement={onIncrement}
+		            counter={counter}
+		          />
+		        ))}
+		      </div>
+		    );
+		  }
 
 
 
@@ -151,6 +229,55 @@ Actions Done:
 * Multiple Components in Sync
 * Functional Components
 * Lifecycle Hooks
+* Lifing the state up
+* Bubbling events to parent component
+* Multiple components in Sync
+* Stateless Functional Components
+* Destructuring Arguments
+
+* Lifecycle Hooks (phase)
+	-> Mountain phase = Where instance of a component is created & inserted into the DOM
+		-> constructor
+		-> render
+		-> componentDidMount
+		* React will call these methods in order.
+	-> Update
+		-> render
+		-> componentDidUpdate
+		* This happens when the state or the props of a component get changed.
+	-> Unmount
+		-> componentWillUnmount
+	* This happens when component is removed from DOM such when we delete a counter (as per our example)
+
+
+Note: There are few methods we can add to the components and React will automatically call all these methods. We refer these methods as "Lifecycle Hooks", so they allow us hook into certain moments during the lifecycle of a component and do something.
+
+
+We have other lifecycle hooks also, but we use then very rarely.
+
+* We can not use "props" inside of "constructor" method unless we pass "props" as parameter to 'constructor' and 'super' methods, otherwise 'this.props' will return 'undeined'.
+Ex:	constructor (props){
+		super(props);
+		this.state = props;
+	}
+
+* 'constructor' method is the right place to initialize properties in this class.
+
+* 'componentDidMount' will be triggered after component is rendered into the DOM. It is the perfect place to make AJAX calls to get data from server.
+Ex: componentDidMount(){
+		// AJAX call
+		this.setState({movies});
+	}
+
+* Point to be noted: When component is rendered it means all it's child components also rendered recursively.
+
+* Point to be noted: We can not use 'lifecycle hooks' in 'stateless functional components'.
+
+* 'componentWillUnmount' phase will be triggered just before a component is removed from DOM. We can do any king of cleanups like if we set up like timers or listners, to avoid memory leaks here.
+
+
+
+
 
 
 
@@ -184,6 +311,13 @@ React commands:
 * npm start   --> This will start our dev server on port 3000 by default
 * 
 
+
+
+Shortcuts, can be used in VS code:
+------------------------------------------------------------------
+* imrc = imports React and React component module.
+* cc = class component
+* sfc = stateless functional component.
 
 
 
