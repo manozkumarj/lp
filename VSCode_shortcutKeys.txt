@@ -38,6 +38,8 @@ Plugins:
 IMP Points:
 -----------------------------------------------------------------------------
 * "ul.nav.nav-pills" this sysntax is called as "zen coding".
+* table.table>thead>tr>th*4
+* div.col-1+div.col
 * If VScode shows blank screen then run this command 'code --disable-gpu'
 	Refer to below link FMD
 	https://github.com/Microsoft/vscode/issues/51701

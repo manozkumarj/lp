@@ -22,7 +22,7 @@ VSCode extension:
 
 Short & Sweet:
 ------------------------------------------------------------------------
-* 
+* React project folder name should not contain 'capital letters'.
 * We can use "React.Fragment" tag to wrap all the html elements.
 * 
 

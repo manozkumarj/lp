@@ -316,8 +316,12 @@ React commands:
 Shortcuts, can be used in VS code:
 ------------------------------------------------------------------
 * imrc = imports React and React component module.
+* imr = imports React module
 * cc = class component
 * sfc = stateless functional component.
+
+
+Note: We use 'imr' in 'sfc'
 
 
 
@@ -326,3 +330,93 @@ Shortcuts, can be used in VS code:
 Other:
 ------------------------------------------------------------------------
 * "Ayu Mirage" is the theme Mosh is using.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================== Vidly Application ======================================
+* npx create-react-app .
+* npm i bootstrap@4.1.1 font-awesome@4.7.0 prop-types@15.6.2
+* 
+
+
+* 
+* table.table>thead>tr>th*4
+* div.col-1+div.col
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
