@@ -1,0 +1,69 @@
+* 1 Feet = 12 inches/ 30 CMs
+* 1 Cent = 435.6 SQFTs
+* 1 Square Yard = 1 Gajam = 9 SQFTs
+* 1 Gunta = 1089 SQFTs
+* 
+
+
+* 1 Gajam(Yard) = 3 Feets = 36 inches
+* 1 Gunta = 121 Gajams(Yards) = 1089 SQFTs
+* 1 Acre = 40 Guntas = 4840 Gajams = 43560 SQFTs
+* 1 Hector = 2.47 Acres
+
+
+
+
+
+
+Examples:
+-----------------------------------------------------------------------------------
+Ex 1: Area = 21 Feet (height) * 21 Feet (width) = 441 SQFT
+	-> If we want to know 441 SQFT in Cents, so as below
+		441/435.6 = 1.01 cent
+
+	-> If we want to know 441 SQFT in Gajams, so as below
+		441/9 = 49 Gajams
+
+	-> If we want to know 441 SQFT in Guntas, so as below
+		441/1089 = 0.404 Gunta
+
+
+Ex 2: Area = 66 Feet (height) * 33 Feet (width) = 2178 SQFT
+	-> If we want to know 2178 SQFT in Cents, so as below
+		2178/435.6 = 5 cent
+
+	-> If we want to know 2178 SQFT in Gajams, so as below
+		2178/9 = 242 Gajams
+
+	-> If we want to know 2178 SQFT in Guntas, so as below
+		2178/1089 = 2 Guntas
+
+
+Ex 3: Area = 33 Feet (height) * 33 Feet (width) = 1089 SQFT
+	-> If we want to know 1089 SQFT in Cents, so as below
+		1089/435.6 = 2.5 cent
+
+	-> If we want to know 1089 SQFT in Gajams, so as below
+		1089/9 = 121 Gajams
+
+	-> If we want to know 1089 SQFT in Guntas, so as below
+		1089/1089 = 1 Gunta
+
+
+
+
+
+
+Useful links:
+-----------------------------------------------------------------------------------
+* how to measure land area in telugu
+https://www.youtube.com/watch?v=2SODHG0k-sw
+
+* ఎకరం కొలతలు గజల్లో || Land Measurement Conversions in Telugu VOL 1 (By Writing)
+https://www.youtube.com/watch?v=YVpBZAO0kmQ
+
+* how to measure land area
+Measuring a land which is in not in measurable shape
+https://www.youtube.com/watch?v=KLN68OlIMcs
+
+* 
