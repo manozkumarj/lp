@@ -1,0 +1,39 @@
+* https://www.youtube.com/watch?v=3QPbBJgNF94
+	-> https://ionicacademy.com/ionic-4-app-api-calls/
+* http://www.omdbapi.com/  |  https://swapi.co/api/films
+* information?.Genre => This means if 'information' object is null then it won't give errors.
+
+
+
+* Install Ionic if you haven't before
+npm install -g ionic
+ 
+* Create a blank new Ionic 4 app with Angular support
+ionic start movieApp blank --type=angular
+cd movieApp
+ 
+* Use the CLI to generate some pages and a service
+ionic g page pages/movies
+ionic g page pages/movieDetails
+ionic g service services/movie
+
+* ionic serve
+
+* Ionic uses '8100' port by default for local. Previously it was '8101'
+
+* npm i @ionic/lab
+* Ionic uses '8200' port by default for lab. Previously it was '8201'
+
+
+
+
+
+
+
+
+
+
+* Generating APK:
+----------------------------------------------------------
+https://www.youtube.com/watch?v=_QlduRREVJI
+https://www.youtube.com/watch?v=cP9SWMV4xKg
