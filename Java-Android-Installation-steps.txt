@@ -1,0 +1,39 @@
+---------------------------------------------------------------------------------------------
+-------------------------------------------- JDK --------------------------------------------
+* For 64 bit:
+https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html
+
+* For 32 bit:
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+In the above link select "Windows x86". It make take you to 'Oracle login' page.
+
+After installing JAVA, run below commands in CMD to check whether JAVA is installed properly or not.
+* java
+* java --version
+* javac
+
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+------------------------------------------- Android -----------------------------------------
+Useful links:
+--------------
+* https://developer.android.com/studio#downloads
+* https://developer.android.com/studio/install
+
+
+
+* how to install android studio in windows 7 32 bit properly and completely latest 2018
+https://www.youtube.com/watch?v=G2_I7pjXdjE
+
+* 
+
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------

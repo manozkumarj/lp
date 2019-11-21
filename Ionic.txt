@@ -17,7 +17,7 @@ ionic g page pages/movies
 ionic g page pages/movieDetails
 ionic g service services/movie
 
-* ionic serve
+* ionic serve  | ionic lab
 
 * Ionic uses '8100' port by default for local. Previously it was '8101'
 
@@ -32,8 +32,35 @@ ionic g service services/movie
 
 
 
+*********************************************************************************************
+Steps to Generate ANDROID APK file:
+----------------------------------------------------------
+* FMD about Generate ANDROID APK file refer below link:
+	-> https://ionicframework.com/docs/v3/intro/deploying/
 
-* Generating APK:
+
+* First need to install Java's JDK & Android latest version
+* Then install 'cordova' & 'native-run' globally using below commands
+	-> npm install -g ionic cordova
+	-> npm i -g native-run
+* Then navigate to the project folder and then run below command
+	-> ionic cordova run android
+* 
+
+*********************************************************************************************
+
+
+
+
+
+
+
+
+* Useful links to generate APK file:
 ----------------------------------------------------------
 https://www.youtube.com/watch?v=_QlduRREVJI
 https://www.youtube.com/watch?v=cP9SWMV4xKg
+
+
+
+
