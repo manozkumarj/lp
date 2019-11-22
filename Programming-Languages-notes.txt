@@ -1,0 +1,62 @@
+****************************** Native Vs Hybrid Vs Web Apps **************************************
+* https://www.youtube.com/watch?v=ZikVtdopsfY
+* https://www.youtube.com/watch?v=oRhigpTj3M4
+* https://www.mobiloud.com/blog/native-web-or-hybrid-apps/
+
+Web Apps:
+-----------------------------
+* Built with HTML, CSS & Js
+* Can simply uploaded to server and make changes
+* Used CSS Media queries to look good in mobiles/tablets
+* Runs on browsers like Chrome, Safari, Firefox etc...
+* It won't have any special Icon.
+* Cheaper & slow
+* Works only internet is available
+* It needs a browser & need to enter a URL
+* Can't be submitted to app store
+* Less interactive
+* Can't interact with device utilities like Camera, GEO location, etc...
+
+
+
+Native Apps:
+-----------------------------
+* Built on specific platoform like only for Android, only for IOS
+* Built using native programming languages like JAVA, SWIFT | Objective C
+* Can be submitted to app stores
+* These are very fast since they are built on specific platforms
+* Can interact with device utilities like Camera, GEO location, etc...
+
+* Very expensive
+* Single platform
+* Harder languages
+
+Note: "React Native", "Flutter" & "Xamarin" are used to build Native Apps at a time for both Android & IOS
+
+
+
+Hybrid Apps:
+-----------------------------
+* These are like combination of Web App & Native App
+* Easy to build - HTML, CSS, JS
+* Single app for all platforms
+* No browser needed.
+* Can be submitted to app stores
+* Can usually access device utilities using an API
+* Faster to develop than Native App
+
+* Slower than Native Apps
+* More expensive than Web Apps
+* Less interactive than Native Apps
+
+
+Note: "Ionic", "Cordova" & "Phonegap" are used to build Native Apps at a time for both Android & IOS
+
+
+**************************************************************************************************
+**************************** Extension of Apps of diff Brands ************************************
+* Android = APK
+* IOS = IPK
+**************************************************************************************************
+
+
