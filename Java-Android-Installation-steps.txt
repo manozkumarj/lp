@@ -12,6 +12,13 @@ After installing JAVA, run below commands in CMD to check whether JAVA is instal
 * java --version
 * javac
 
+* After installing JDK, just add below path inside of 'path' variable of "System variables"
+	-> C:\Program Files\Java\jdk-13.0.1\bin
+* Then run below commands in CMD to confirm java installation
+	-> java
+	-> javac
+	-> java --version
+
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
 

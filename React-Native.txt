@@ -1,0 +1,3 @@
+Useful Info
+* https://github.com/expo/xde/releases
+* https://github.com/atom/atom/releases/tag/v1.5.3
