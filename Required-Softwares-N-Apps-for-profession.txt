@@ -2,18 +2,23 @@
 * XAMPP
 * MongoDB
 * Editors: VS code, Sublime Text, Atom
-* Browsers: Chrome, Firefox, Torch browser
+* Browsers: Chrome, Firefox, Brave & Torch browser
 * Postman
 * MySQL query browser
 * Skype
 * AnyDesk / Join.me / Go to Meeting / Team Viewer
 * Microsoft Outlook
 * SVN
+* puTTY
+* Stackblitz
+* Expo
+* JAVA
+* Android
 
 
 
 Install -----
-* Angular* Nodemon
+* NodeJS & Angular & React* Nodemon
 * pm2
 
 * My browser bookmarks file

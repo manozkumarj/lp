@@ -1,3 +1,16 @@
 Useful Info
 * https://github.com/expo/xde/releases
 * https://github.com/atom/atom/releases/tag/v1.5.3
+
+
+
+---------------------------------------------------------------------------------------------
+--------------------------- Installation Steps using Expo CLI -------------------------------
+* Install JDK & Android
+* Install NodeJS with 12.9.0 version
+* Install NPM with 6.10.2 version
+* Install Expo-cli with 3.9.0 version
+* Install joi with below command
+	-> npm i -g @hapi/joi
+* 
+---------------------------------------------------------------------------------------------

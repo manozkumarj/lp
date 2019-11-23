@@ -20,16 +20,13 @@ After installing JAVA, run below commands in CMD to check whether JAVA is instal
 	-> java --version
 
 ---------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
----------------------------------------------------------------------------------------------
 ------------------------------------------- Android -----------------------------------------
+* After installing JDK, just add below path inside of 'path' variable of "System variables"
+	-> C:\Users\manoj\AppData\Local\Android\Sdk\platform-tools
+	-> C:\Users\manoj\AppData\Local\Android\Sdk\tools
+* Then run below commands in CMD to confirm Android installation
+	-> android
+
 Useful links:
 --------------
 * https://developer.android.com/studio#downloads
