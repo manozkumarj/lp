@@ -5,12 +5,17 @@ Useful Info
 
 
 ---------------------------------------------------------------------------------------------
---------------------------- Installation Steps using Expo CLI -------------------------------
+----------------------- Installation Steps to build app with Expo CLI -----------------------
 * Install JDK & Android
 * Install NodeJS with 12.9.0 version
 * Install NPM with 6.10.2 version
 * Install Expo-cli with 3.9.0 version
-* Install joi with below command
+* Since 'joi' package is deprecared, Install 'joi' package with below command
 	-> npm i -g @hapi/joi
-* 
+* Install 'Expo' app from 'Play store' in your device.
+
+* Follow the steps as mentioned in below URL
+	-> https://expo.io/learn
+
+Note: After running the command 'npm start' OR 'expo start', a QR code will be shown in the browser. Scan that QR code from 'Expo' app in your device.
 ---------------------------------------------------------------------------------------------
