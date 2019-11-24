@@ -6,6 +6,9 @@ Useful Info
 
 ---------------------------------------------------------------------------------------------
 ----------------------- Installation Steps to build app with Expo CLI -----------------------
+
+IMP Note: Use default "Command Line Interface" instead of 'Git Bash'
+
 * Install JDK & Android
 * Install NodeJS with 12.9.0 version
 * Install NPM with 6.10.2 version
@@ -19,3 +22,13 @@ Useful Info
 
 Note: After running the command 'npm start' OR 'expo start', a QR code will be shown in the browser. Scan that QR code from 'Expo' app in your device.
 ---------------------------------------------------------------------------------------------
+
+
+* If you create 'React Native' app normally and want to generate APK file, then use below link to know the process
+	-> https://www.youtube.com/watch?v=cws_eQ5LQUk
+
+* If you create 'React Native' app using "EXPO" and want to generate APK file, then use below link to know the process
+	-> https://www.youtube.com/watch?v=6v-BQjbS-BY
+	-> https://www.youtube.com/watch?v=6XJhgeuUszQ
+
+* 
