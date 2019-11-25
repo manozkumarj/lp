@@ -32,3 +32,37 @@ Note: After running the command 'npm start' OR 'expo start', a QR code will be s
 	-> https://www.youtube.com/watch?v=6XJhgeuUszQ
 
 * 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+---------------------------------------- Useful Links ---------------------------------------
+* https://reactnativecode.com/netinfo-example-to-detect-internet-connection/
+* https://www.djamware.com/post/5caec76380aca754f7a9d1f1/react-native-tutorial-sqlite-offline-androidios-mobile-app
+
+
+
+

@@ -53,6 +53,10 @@ Hybrid Apps:
 Note: "Ionic", "Cordova" & "Phonegap" are used to build Native Apps at a time for both Android & IOS
 
 
+Additional: Progressive Web App vs. Native App
+https://www.youtube.com/watch?v=XoIhPjS5y1M
+https://www.youtube.com/watch?v=DQLyhcMoZUQ
+
 **************************************************************************************************
 **************************** Extension of Apps of diff Brands ************************************
 * Android = APK
