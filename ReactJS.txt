@@ -35,7 +35,7 @@ Short & Sweet:
 Tips:
 ------------------------------------------------------------------------
 * https://www.youtube.com/watch?v=xa-_FIy2NgE
-
+* https://www.youtube.com/watch?v=oZbTqEmQpDo
 
 
 
@@ -66,3 +66,17 @@ Redux:
 ------------------------------------------------------------------------
 * Redux is a state manager.
 * 
+
+
+
+
+
+
+
+
+For Interview:
+------------------------------------------------------------------------
+* https://www.youtube.com/watch?v=nRI0dn6GTj8
+* https://www.youtube.com/watch?v=vtUdacXj4Ws
+
+

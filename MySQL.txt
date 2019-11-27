@@ -177,8 +177,9 @@ SQL injection is the placement of malicious code in SQL statements, via web page
 
 
 
-
-
+Multiple rows insertion:
+-------------------------------------------------------
+* https://stackoverflow.com/questions/8899802/how-do-i-do-a-bulk-insert-in-mysql-using-node-js
 
 
 

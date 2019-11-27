@@ -106,6 +106,9 @@ const server = http.createServer((req, res) => {
 
 
 
+Payment Gateway:
+--------------------------------------------------------------------------------------------
+* https://www.youtube.com/watch?v=mI_-1tbIXQI
 
 
 
