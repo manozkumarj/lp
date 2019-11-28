@@ -2,6 +2,11 @@ Useful Info
 * https://github.com/expo/xde/releases
 * https://github.com/atom/atom/releases/tag/v1.5.3
 
+* Explanation of Folder structure
+https://alligator.io/react/react-native-getting-started/
+
+* Detect app is in background
+https://reactnativecode.com/detect-app-is-in-background/
 
 
 ---------------------------------------------------------------------------------------------
@@ -63,6 +68,9 @@ Note: After running the command 'npm start' OR 'expo start', a QR code will be s
 * https://reactnativecode.com/netinfo-example-to-detect-internet-connection/
 * https://www.djamware.com/post/5caec76380aca754f7a9d1f1/react-native-tutorial-sqlite-offline-androidios-mobile-app
 
-
-
-
+* https://facebook.github.io/react-native/docs/headless-js-android.html
+* https://reactnativecode.com/
+* https://github.com/vicke4/react-native-invoke-app
+* https://www.npmjs.com/package/react-native-launch-application
+* https://www.npmjs.com/package/react-native-background-fetch
+* https://blog.expo.io/how-to-build-a-chat-app-with-react-native-3ef8604ebb3c
