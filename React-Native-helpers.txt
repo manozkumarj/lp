@@ -1,0 +1,57 @@
+* We can create React Native app in 3 ways
+	-> Normal RN way which is React Native CLI
+	-> Expo CLI
+	-> Expo Application
+
+
+
+*****************************  All about Expo CLI  ***************************************
+* import React, { Component, useState } from "react";
+* import { View, Text, Button, TextInput } from "reat-native";
+
+
+
+******************************************************************************************
+
+
+
+
+
+
+*****************************  All about Expo CLI  ***************************************
+* https://expo.io/learn
+
+* It's a third-party service and it's free to use
+* You are limited to the Expo Ecosystem
+
+* We need to install 'Expo clint' app in our device from "App Store" and scan the QR code for output.
+
+
+Commands:
+------------------------------
+* npm install expo-cli --global
+* expo init my-new-project
+* cd my-new-project
+* expo start | npm start
+	-> After running this command, it will open a new tab in the browser with a QR code.
+
+* expo build:android
+
+
+
+
+
+*****************************  All about React Native CLI  ***************************************
+* https://facebook.github.io/react-native/docs/getting-started
+
+* We need to install "Adroid Studio" for output.
+
+
+
+Commands:
+------------------------------
+* npm install react-native-cli --global
+* npx react-native init AwesomeProject
+* cd AwesomeProject
+* npx react-native run-android
+
