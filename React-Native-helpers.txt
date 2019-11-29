@@ -3,15 +3,80 @@
 	-> Expo CLI
 	-> Expo Application
 
+* If we use 'map' function to render list of items then we need to create 'key' attribute for each item to React Native can aware of each item change.
+
+* We should use 'StyleSheet' object instead of inline styles. We can create 'StyleSheet' as below
+const styles = StyleSheet.create({
+	sreen: {
+		margin: 30,
+		padding: 10
+	},
+	inputStyle: {
+		padding: 50
+	}
+});
+
+* We should use "ScrollView" OR "FlatList" tag if we want to scroll a container.
+
+* "FlatList" tag is a self-closed tag.
+
+* We can use "onPress", "onLongPress" functions on "TouchableOpacity" tag.
+Ex: <TouchableOpacity activeOpacity={0.8} onPress={props.onDelete}>
+		Touch me
+	</TouchableOpacity>
+
+* "TouchableNativeFeedback" tag only work on Android devices. And this tag will give "Ripple effect" upon clicking.
+
+
+
+
+New CSS attributes:
+--------------------------------------------
+* marginVertical
+* marginHorizontal
+
+
+
+
+
+
+
+
+
+Function names:
+--------------------------------------------
+* onChangeText
+* onClick
+* onPress
+
+
+
+
+React Hooks:
+--------------------------------------------
+* useState
 
 
 *****************************  All about Expo CLI  ***************************************
 * import React, { Component, useState } from "react";
-* import { View, Text, Button, TextInput } from "reat-native";
+* import { View, Text, Button, TextInput, Image, StyleSheet, ScrollView, FlatList, Touchable, TouchableOpacity, TouchableHightlight, TouchableNativeFeedback, TouchableWithoutFeedback, Alert, Modal } from "reat-native";
+
+
 
 
 
 ******************************************************************************************
+*****************************  All about Expo CLI  ***************************************
+* Any text/content should be rendered within <Text> tag.
+
+
+
+
+
+
+
+
+
 
 
 
