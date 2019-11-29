@@ -1,5 +1,5 @@
 * We can create React Native app in 3 ways
-	-> Normal RN way which is React Native CLI
+	-> Normal RN way which is React Native CLI - npx react-native init AwesomeProject
 	-> Expo CLI
 	-> Expo Application
 
