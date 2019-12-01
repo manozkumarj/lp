@@ -25,7 +25,9 @@ Plugins:
 * Emitter
 * tslint
 * Simple react snippets | ES7 React/Redux/GraphQL/React-Native snippets
-* 
+* Prettier - Code formatter
+* Bracket Pair Colorizer
+* Auto Rename Tag
 
 
 

@@ -1,0 +1,178 @@
+* ReactJS is client side Javascript library
+* Created & Maintained by Facebook.
+* Used to build dynamic user interfaes.
+* Component based library.
+* React is "technically" a library because it doesn't include a router OR Http like Angular does and so on but it is often refered to as a Framework as it is used for many of the same reasons as a framework.
+* 
+
+
+
+
+
+
+
+* Components can have "props" & "state"
+* Class components can have "state" but "Functional components" could not. But "Hooks" allow us to have "State" within "Functional components".
+* Class component example
+	import React, { Component } from "react";
+	export default class App extends Component {
+		render(){
+			return (
+				<React.Fragment>
+					<p> Hello World </p>
+				</React.Fragment>
+			);
+		}
+	}
+
+* Functional component example
+	import React from "react";
+	export default App() {
+		return (
+			<React.Fragment>
+				<p> Hello World </p>
+			</React.Fragment>
+		);
+	}
+
+* We should use "className" in place of "class" with HTML tags. And in "label" tag we should use "htmlFor" in place of "for".
+
+* We should use "this." whenver we call call a function which is outside of "render" method.
+	export default class App extends Component {
+		foo(){
+			return "Hello";
+		}
+
+		render(){
+			return (
+				<React.Fragment>
+					<p> Hello World </p>
+					{ this.foo() }
+				</React.Fragment>
+			);
+		}
+	}
+
+	But if the function is inside of "render" method then we no need to use "this." while calling the function in JSX.
+
+* We can create "defaultProps" as below
+	-> static defaultProps = {
+		title: "Github Finder",
+		icon: "fab fa-github"
+	}
+
+* In addition to "defaultProps" we also have "PropTypes". In order to use "PropTypes" we need to import it as below.
+	-> import PropTypes from "prop-types";
+
+	-> static propTypes = {
+		title: PropTypes.string.isRequired,
+		icon: PropTypes.string.isRequired
+	}
+
+
+
+------------------------------------------------------------------------------------------
+
+* We should create "defaultProps" & "defaultProps" in "class components" as below
+	import React, { Component } from "react";
+	import PropTypes from "prop-types";
+
+	export default UserItem extends Component {
+
+		const { login, avatarUrl } = this.props.user;
+
+		static defaultProps = {
+			login: "Github Finder",
+			avatarUrl: "https://www.google.com/"
+		}
+
+		static propTypes = {
+			title: PropTypes.string.isRequired,
+			icon: PropTypes.string.isRequired
+		}
+
+		render(){
+			return (
+				<React.Fragment>
+					<p> Hello World </p>
+					Name is = { login }
+					Avatar URL is = { avatarUrl }
+				</React.Fragment>
+			);
+		}
+	}
+
+
+
+
+* We should create "defaultProps" & "defaultProps" in "functional components" as below
+	import React from "react";
+	import PropTypes from "prop-types";
+
+	export const UserItem = props => (
+
+		const { login, avatarUrl } = props.user;
+
+		return (
+			<React.Fragment>
+				<p> Hello World </p>
+				Name is = { login }
+				Avatar URL is = { avatarUrl }
+			</React.Fragment>
+		);
+	);
+
+	UserItem.defaultProps = {
+		login: "Github Finder",
+		avatarUrl: "https://www.google.com/"
+	}
+
+	UserItem.propTypes = {
+		title: PropTypes.string.isRequired,
+		icon: PropTypes.string.isRequired
+	}
+
+
+
+Note: We can destructure the "props" variables as below as well
+export default const UserItem = ({ user: { login, avatarUrl }})
+
+
+------------------------------------------------------------------------------------------
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================== Errors =============================================
+* We will get "parse" error when we don't wrap all the tags in a single tag while returning.
+* 
+
+
+
+
+
+
+===================================================================================================
+
+React JS topics:
+---------------------------------------------------------------------------------------------------
+* Class based components
+* Stateless functional components
+* Context API
+* React Redux
+* React Hooks
+* Lifecycle
+* 

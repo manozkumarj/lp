@@ -25,6 +25,7 @@
 	-> create-react-app [app name]
 * By default the above command installs
 	Development server, Webpack, Babel and other few libraries we need.
+* By default React provides "react", "react-dom" & "react-scripts" dependencies.
 * 'Babel' is a "Modern Javascript Compier" and is used to compile our javascript code.
 * 'Babel' takes 'jsx' syntax and converts it to plain javascript that browser can understand.
 * By default we get below folders
@@ -41,6 +42,8 @@
 	-> import 'boorstrap/dist/css/bootstrap.css';
 	If the above path doesn't work then use below path
 	-> import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+* If we want to use "Font-Awesome" then simply paste the "Font-Awesome" URL in "index.html" file.
 
 * 'React' module will call "React.createElement" internally.
 * "React.Fragment" element can be used to ommit wrapper div inside of 'render' method.
@@ -378,7 +381,7 @@ React commands:
 * npm i -g create-react-app
 * create-react [app name] | npx create-react [app name] .
 * npm start   --> This will start our dev server on port 3000 by default
-* 
+* npm run build  --> To build the app for deployment - It generates "build" folder
 
 
 
