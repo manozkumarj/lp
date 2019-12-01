@@ -20,12 +20,54 @@ const styles = StyleSheet.create({
 
 * "FlatList" tag is a self-closed tag.
 
+* "Button" tag is a self-closed tag.
+	-> <Button title="Click Me" onPress={clicked} color="#f7287b" />
+
 * We can use "onPress", "onLongPress" functions on "TouchableOpacity" tag.
 Ex: <TouchableOpacity activeOpacity={0.8} onPress={props.onDelete}>
 		Touch me
 	</TouchableOpacity>
 
 * "TouchableNativeFeedback" tag only work on Android devices. And this tag will give "Ripple effect" upon clicking.
+
+
+* We can create "config" file which contains all the configurations as below.
+	-> Create a file called "config.js"
+	-> Inside of that file,
+		export default {
+			projectName: "Yummy",
+			databaseName: "yummy",
+			user: "root",
+			password: "123"
+		}
+
+* "props.children" means whatever the content is available between opening and closing tags of a custom component.
+
+* We can also use a custom element as below
+	-> return <TextInput {...props} style={{...styles.input, ...props.style}}
+
+* Please refer to the official React Native "input" attribute, there are many useful attributes we can use to make the input user friendly.
+<Input blurOnSubmit autoCapitalize='none' autoCorrect={false} keyBoardType="number-pad" maxLength={2} />
+
+* We can dismiss keyboard of user whenver user clicks anywhere, but for that first we need to import "Keyboard" from "reat-native" lib
+	-> <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}
+
+* We can use "Alert" as below
+	-> Alert.alert(
+		'Invalid Number!',
+		'Number has to be a number B/W 1 and 99',
+		[{ text: 'Okay', style: 'destructive', onPress: resetInputHandler}]
+	);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -57,25 +99,29 @@ React Hooks:
 * useState
 
 
-*****************************  All about Expo CLI  ***************************************
+***********************************  All about Imports  *****************************************
 * import React, { Component, useState } from "react";
-* import { View, Text, Button, TextInput, Image, StyleSheet, ScrollView, FlatList, Touchable, TouchableOpacity, TouchableHightlight, TouchableNativeFeedback, TouchableWithoutFeedback, Alert, Modal } from "reat-native";
+* import { View, Text, Button, TextInput, Image, StyleSheet, ScrollView, FlatList, Touchable, TouchableOpacity, TouchableHightlight, TouchableNativeFeedback, TouchableWithoutFeedback, Alert, Modal, Keyboard } from "reat-native";
 
 
 
 
 
 ******************************************************************************************
-*****************************  All about Expo CLI  ***************************************
+*************************************** IMP Points ***************************************
+* By default React Native's 'View' tag uses "Flexbox" and default 'flexDirection' is "column" means "Top to Bottom", So 'justiftContent'(Main Axis) will be "Top to Bottom" & 'alignItems'(Cross Axis) will be "Left to Right"
+
 * Any text/content should be rendered within <Text> tag.
 
+* "shadowOffset" attribute is an object and by default "shadow" property only works on IOS. To make it work on Android we need to use "elevation".
+
+* We can use "borderBottomLeftRadius"
 
 
 
 
 
-
-
+Note: Never ever trust user's input values, always validate the data that will come from user.
 
 
 
