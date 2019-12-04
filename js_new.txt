@@ -1,3 +1,57 @@
+Vanilla Javascript things:
+----------------------------------------------------------------------------
+* const reasonInput = document.querySelector("#reasonInput");
+* const amountInput = document.querySelector("#amountInput");
+* const cancelButton = document.querySelector("#cancelButton");
+* const confirmButton = document.querySelector("#cancelButton");
+* const totalExpensesOutput = document.querySelector("#total-expenses");
+
+* const totalExpenses = 0;
+
+*	const clear = () => {
+		reasonInput.value = '';
+		amountInput.value = '';
+	}
+
+* const newElement = document.createElement("div");
+* newElement.textContent = "This is the content between two divs";
+
+* const expensesList = document.querySelector("#expenses");
+* expensesList.appendChild(newElement);
+
+---------- An example ----------
+
+confirmButton.addEventListner('click', () => {
+	const enteredReason = reasonInput.value;
+	const enteredAmount = amountInput.value;
+
+	if(
+		enteredReason.trim().length <= 0 || 
+		enteredAmount.trim().length <= 0 || 
+		enteredAmount <= 0
+	){
+		return;
+	}
+
+	const newElement = document.createElement("ion-item");
+	newElement.textContent = enteredReason + ": T$" + enteredAmount;
+	expensesList.appendChild(newElement);
+
+	totalExpenses += +enteredAmount;
+	totalExpensesOutput.textContent = totalExpenses;
+
+	clear();
+
+});
+
+confirmButton.addEventListner('click', clear );
+
+
+****************************************************************************************
+
+
+
+
 Short & Sweet:
 --------------------------------------------------------------------------
 * var -> is function level

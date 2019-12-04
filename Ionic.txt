@@ -26,12 +26,6 @@ ionic g service services/movie
 
 
 
-
-
-
-
-
-
 *********************************************************************************************
 Steps to Generate ANDROID APK file:
 ----------------------------------------------------------
@@ -51,15 +45,97 @@ Steps to Generate ANDROID APK file:
 
 
 
-
-
-
-
-
 * Useful links to generate APK file:
 ----------------------------------------------------------
 https://www.youtube.com/watch?v=_QlduRREVJI
 https://www.youtube.com/watch?v=cP9SWMV4xKg
+
+
+
+
+
+
+
+
+
+
+
+
+
+************************************** Learning - Max *******************************************
+*************************************************************************************************
+* We can build "Progressive web App", "Adroid", "ios" & "Electron App"(Desktop App) using one codebase(HTML + CSS + Javascript).
+* We can create "Hybrid Apps".
+* "Hybrid Apps" means runs as a Website & a Mobile App (Incl. Native Device features)
+
+* 'Progressive web App' is web application to look and feel like native app.
+* "Capacitor" is a tool which is used to convert 'Web App' to a 'Native App'
+* iONIC web components are buit with a tools call "stencil"
+
+
+Note: We can use IONIC with pure "Vanilla Javascript" also.
+* If we want to use IONIC in basic HTML page then first we need to include IONIC's JS and CSS links.
+	-> <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+	-> <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+	-> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+
+FMD: https://ionicframework.com/docs/installation/cdn
+
+
+
+* Inside of "ionic.config.json" file there will be a property called "'type': 'angular'". This property lets IONIC CLI know that which kind of app you have - This is important for the right build commands.
+
+* "packet.json" file also contains IONIC related packages.
+
+* We use "@ionic/angular" package.
+
+* "ionic serve" know that it should run "ng serve" because of "'type': 'angulae'" property in 'ionic.config.json' file.
+
+* 
+
+
+
+
+IONIC tags & Usage:
+--------------------------------------------------------------------------------------------------
+* <ion-app> -> This will be used only once in a HTML page just wrap some basic style to the app.
+-> <ion-card>
+-> <ion-avatar>
+-> <ion-icon>
+-> <ion-header>
+-> <ion-toolbar>
+-> <ion-title>
+-> <ion-content>
+-> <ion-button>
+
+FMD => https://ionicframework.com/docs/components
+
+
+
+
+
+
+
+IONIC commands:
+----------------------------------------------------------------------------
+* ionic start
+* ionic serve || ng serve
+* ionic generate
+* ionic capacitor run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
+* 
+
+
+
+IONIC lifecycle hooks:
+----------------------------------------------------------------------------
+* ngOnInit()
+* ionViewWillEnter()
+* ionViewDidEnter()
+* ionViewWillLeave()
+* ionViewDidLeave()
+
+
+
 
 
 

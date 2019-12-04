@@ -1,0 +1,86 @@
+* "Node JS" installation is common for all these technologies
+
+
+
+******************************************** Angular ********************************************
+*************************************************************************************************
+* Official site -> https://angular.io/cli
+
+* npm i -g @angular/cli
+* ng new projectName
+* cd projectName
+* ng serve
+
+
+
+
+
+
+
+
+
+
+
+******************************************** React **********************************************
+*************************************************************************************************
+* Official site -> https://reactjs.org/docs/create-a-new-react-app.html
+
+* npx create-react-app projectName
+* cd projectName
+* npm start
+
+
+
+
+
+
+
+
+**************************************** React Native *******************************************
+*************************************************************************************************
+* Official site -> https://facebook.github.io/react-native/docs/getting-started
+
+* To create React Native App we have two ways
+	-> Expo
+	-> React Native CLI
+
+
+* To get started with Expo -> https://expo.io/learn
+
+
+
+
+
+******************************************** Ionic **********************************************
+*************************************************************************************************
+* Official site -> https://ionicframework.com/docs/
+
+* We need to install "ionic" & "cordova"
+
+* npm install -g ionic cordova
+* ionic start projectName blank --type=angular
+* cd projectName
+* ionic serve
+
+Note: We can install ionic lab using below command
+	-> npm i @ionic/lab
+Then we can start the app with below command
+	-> ionic lab
+
+* Ionic uses '8100' port by default for local. Previously it was '8101'
+* Ionic lab uses '8200' port by default for lab. Previously it was '8201'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
