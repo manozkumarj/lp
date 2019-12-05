@@ -121,8 +121,10 @@ IONIC commands:
 * ionic start
 * ionic serve || ng serve
 * ionic generate
+* ionic cordova platform add android
 * ionic capacitor run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
-* 
+
+* ionic cordova run android --device
 
 
 
@@ -140,3 +142,35 @@ IONIC lifecycle hooks:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Useful sites:
+----------------------------------------------------------------------------
+* https://ionicthemes.com/tutorials
+
+
+
+
+
+My practice project skeleton:
+----------------------------------------------------------------------------
+* Home
+	-> All Developers
+		-> Upon clicking it will take to details page
+		--> Here we will show only name of the user in a box with 'View', 'Edit' & 'Delete' buttons
+	-> Add Developer
+		-> "Add Developer" form page
