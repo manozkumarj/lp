@@ -126,6 +126,8 @@ IONIC commands:
 
 * ionic cordova run android --device
 
+* ionic cordova build android
+
 
 
 IONIC lifecycle hooks:
