@@ -28,6 +28,8 @@ Plugins:
 * Prettier - Code formatter
 * Bracket Pair Colorizer
 * Auto Rename Tag
+* Ionic 4 Snippets
+
 
 
 
