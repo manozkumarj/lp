@@ -107,6 +107,15 @@ IONIC tags & Usage:
 -> <ion-title>
 -> <ion-content>
 -> <ion-button>
+-> <ion-segment>  -> Just like tabs but not tabs
+
+-> 	<ion-list>
+		<ion-item> Item <ion-item>
+	</ion-list>
+
+-> 	<ion-select>
+		<ion-select-option> Option <ion-select-option>
+	</ion-select>
 
 FMD => https://ionicframework.com/docs/components
 
@@ -116,8 +125,8 @@ FMD => https://ionicframework.com/docs/components
 
 
 
-IONIC commands:
-----------------------------------------------------------------------------
+
+-----------------------------------  IONIC commands  -------------------------------------------
 * ionic start
 * ionic serve || ng serve
 * ionic generate
@@ -128,6 +137,23 @@ IONIC commands:
 * ionic cordova run android --device
 * cordova requirements android --verbose
 * ionic cordova build android
+
+
+-------------------------------------------------------------------------------------------------
+-----------------------------------  Packages & Usage  ------------------------------------------
+* To use Sqlite database
+	-> npm install @ionic-native/sqlite
+	-> ionic cordova plugin add cordova-sqlite-storage
+
+* To import some data into the Sqlite database first time
+	-> npm install @ionic-native/sqlite-porter
+	-> ionic cordova plugin add uk.co.workingedge.cordova.plugin.sqliteporter
+
+
+
+
+
+
 
 
 
@@ -163,6 +189,7 @@ IONIC lifecycle hooks:
 
 Useful sites:
 ----------------------------------------------------------------------------
+* https://devdactic.com/ionic-4-sqlite-queries/
 * https://ionicthemes.com/tutorials
 
 
