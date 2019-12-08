@@ -1,0 +1,18 @@
+* cd FOLDER-NAME
+* cd ..
+* cd \
+* touch FILE-NAME.EXTENSION
+* cd ~
+* mkdir FOLDER-NAME
+* ls
+* E:
+* 
+
+
+
+
+
+------------------- VIM editor ------------------------------
+* :w
+* Esc ( then ) :q
+* 

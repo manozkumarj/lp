@@ -131,6 +131,10 @@ FMD => https://ionicframework.com/docs/components
 * ionic serve || ng serve
 * ionic generate
 * npm i -g cordova-res
+
+* cordova platform rm android
+* cordova platform add android
+
 * ionic cordova platform add android
 * ionic capacitor run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
 
@@ -191,6 +195,7 @@ Useful sites:
 ----------------------------------------------------------------------------
 * https://devdactic.com/ionic-4-sqlite-queries/
 * https://ionicthemes.com/tutorials
+* https://www.freakyjolly.com/ionic-4-use-camera-using-ionic-native-plugin-in-ionic-4-latest-version/
 
 
 
