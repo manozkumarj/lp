@@ -7,37 +7,53 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 In the above link select "Windows x86". It make take you to 'Oracle login' page.
 
-After installing JAVA, run below commands in CMD to check whether JAVA is installed properly or not.
+* After installing JAVA, we need to set 'Environment variables'
+
+
+In 'System variables':
+-----------------------------------------------------
+JAVA_HOME -> C:\Program Files\Java\jdk1.8.0_231
+_JAVA_OPTIONS -> -Xmx512M
+
+In 'User variables':
+-----------------------------------------------------
+PATH -> C:\Program Files\Java\jdk1.8.0_231\bin
+
+
+
+* We can run below commands in CMD to check whether JAVA is installed properly or not.
 * java
-* java --version
+* java --version || java -version
 * javac
 
-* After installing JDK, just add below path inside of 'path' variable of "System variables"
-	-> C:\Program Files\Java\jdk-13.0.1\bin
-* Then run below commands in CMD to confirm java installation
-	-> java
-	-> javac
-	-> java --version
 
 ---------------------------------------------------------------------------------------------
 ------------------------------------------- Android -----------------------------------------
-* After installing JDK, just add below path inside of 'path' variable of "System variables"
-	-> C:\Users\manoj\AppData\Local\Android\Sdk\platform-tools
-	-> C:\Users\manoj\AppData\Local\Android\Sdk\tools
+* After installing Android, we need to set 'Environment variables'
+
+In 'User variables':
+-------------------------------------------------------------------
+ANDROID_HOME -> C:\Users\manoj\AppData\Local\Android\Sdk
+ANDROID_SDK_ROOT -> C:\Users\manoj\AppData\Local\Android\Sdk
+
+In 'System variables':
+-------------------------------------------------------------------
+PATH -> C:\Users\manoj\AppData\Local\Android\Sdk\emulator;
+		C:\Users\manoj\AppData\Local\Android\Sdk\platform-tools;
+		C:\Users\manoj\AppData\Local\Android\Sdk\tools;
+		C:\Users\manoj\AppData\Local\Android\Sdk\tools\bin
+
 * Then run below commands in CMD to confirm Android installation
 	-> android
 
-Useful links:
---------------
+Android downloadable links:
+--------------------------------------------------
 * https://developer.android.com/studio#downloads
 * https://developer.android.com/studio/install
 
 
-
 * how to install android studio in windows 7 32 bit properly and completely latest 2018
 https://www.youtube.com/watch?v=G2_I7pjXdjE
-
-* 
 
 
 Note: Sometimes when we try to open Android AVD we will get an alert like "intel haxm required".
@@ -45,5 +61,13 @@ In those cases refer to this link
 https://www.youtube.com/watch?v=vP71TkSh67M
 https://www.youtube.com/watch?v=G-NAR4-X8sY
 
+
 ---------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------
+------------------------------------------- Gradle ------------------------------------------
+* Use this link -> https://ionicframework.com/docs/installation/android
+
+* Then run below commands in CMD to confirm Gradle installation
+	-> gradle -v
+
+
+
