@@ -135,6 +135,8 @@ FMD => https://ionicframework.com/docs/components
 * cordova platform rm android
 * cordova platform add android
 
+* ionic integrations enable cordova --add  => Used to create 'xml' & 'resources' folder
+
 * ionic cordova platform add android
 * ionic capacitor run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
 
@@ -193,6 +195,7 @@ IONIC lifecycle hooks:
 
 Useful sites:
 ----------------------------------------------------------------------------
+* https://www.freakyjolly.com/ionic-4-show-native-like-toast-messages-in-ionic-application-in-2-steps-without-any-plugin/#more-2028
 * https://devdactic.com/ionic-4-sqlite-queries/
 * https://ionicthemes.com/tutorials
 * https://www.freakyjolly.com/ionic-4-use-camera-using-ionic-native-plugin-in-ionic-4-latest-version/
