@@ -38,10 +38,12 @@ ANDROID_SDK_ROOT -> C:\Users\manoj\AppData\Local\Android\Sdk
 
 In 'System variables':
 -------------------------------------------------------------------
+Note: We need to change the username in the below paths as manually before adding these paths in "PATH" variable.
+
 PATH -> C:\Users\manoj\AppData\Local\Android\Sdk\emulator;
 		C:\Users\manoj\AppData\Local\Android\Sdk\platform-tools;
 		C:\Users\manoj\AppData\Local\Android\Sdk\tools;
-		C:\Users\manoj\AppData\Local\Android\Sdk\tools\bin
+		C:\Users\manoj\AppData\Local\Android\Sdk\tools\bin;
 
 * Then run below commands in CMD to confirm Android installation
 	-> android
