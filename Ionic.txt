@@ -137,13 +137,25 @@ FMD => https://ionicframework.com/docs/components
 
 * ionic integrations enable cordova --add  => Used to create 'xml' & 'resources' folder
 
-* ionic cordova platform add android
+* ionic cordova platform add browser
+
 * ionic capacitor run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
 
 * ionic cordova run android --device  => This command is used ti install the app in our connected device using USB. Make sure your device is conneted with 'adb devices' command in CMD before running the command.
 
 * cordova requirements android --verbose
+
 * ionic cordova build android
+
+
+
+
+
+* ionic cordova platform add android
+* ionic cordova build browser
+
+* ionic cordova emulate browser
+* ionic cordova plugin add cordova-plugin-camera
 
 
 -------------------------------------------------------------------------------------------------
@@ -200,7 +212,8 @@ Useful sites:
 * https://devdactic.com/ionic-4-sqlite-queries/
 * https://ionicthemes.com/tutorials
 * https://www.freakyjolly.com/ionic-4-use-camera-using-ionic-native-plugin-in-ionic-4-latest-version/
-
+* https://www.youtube.com/watch?reload=9&v=PZVyE6LXu50  -> Cordova Not Available in ionic serve fixed Ionic Framework Cool Trick
+* https://www.youtube.com/watch?v=CGiqPTK7EoM&list=PLz5rnvLVJX5UEDbxBypmXHdxlReX47Qdn
 
 
 
