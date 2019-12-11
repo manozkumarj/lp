@@ -150,14 +150,16 @@ FMD => https://ionicframework.com/docs/components
 
 
 
-
-* ionic cordova platform add android
+Runnig the App in the Browser:
+---------------------------------------------------
+* npm i
+* ionic integrations enable cordova --add
+* ionic cordova platform add browser
 * ionic cordova build browser
-
-* ionic cordova emulate browser
 * ionic cordova plugin add cordova-plugin-camera
+* ionic cordova emulate browser
 
-
+* https://www.npmjs.com/package/cordova-sqlite-storage
 -------------------------------------------------------------------------------------------------
 -----------------------------------  Packages & Usage  ------------------------------------------
 * To use Sqlite database
