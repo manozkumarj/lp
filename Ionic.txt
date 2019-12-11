@@ -140,7 +140,8 @@ FMD => https://ionicframework.com/docs/components
 * ionic cordova platform add android
 * ionic capacitor run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
 
-* ionic cordova run android --device
+* ionic cordova run android --device  => This command is used ti install the app in our connected device using USB. Make sure your device is conneted with 'adb devices' command in CMD before running the command.
+
 * cordova requirements android --verbose
 * ionic cordova build android
 
