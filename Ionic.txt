@@ -216,7 +216,7 @@ Useful sites:
 * https://www.freakyjolly.com/ionic-4-use-camera-using-ionic-native-plugin-in-ionic-4-latest-version/
 * https://www.youtube.com/watch?reload=9&v=PZVyE6LXu50  -> Cordova Not Available in ionic serve fixed Ionic Framework Cool Trick
 * https://www.youtube.com/watch?v=CGiqPTK7EoM&list=PLz5rnvLVJX5UEDbxBypmXHdxlReX47Qdn
-
+* https://stackoverflow.com/questions/51828017/navcontroller-doesnt-work-in-ionic-4
 
 
 
