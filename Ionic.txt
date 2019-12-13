@@ -147,6 +147,8 @@ FMD => https://ionicframework.com/docs/components
 
 * ionic cordova build android
 
+* ionic cordova run android --prod
+
 
 
 
