@@ -219,7 +219,8 @@ Useful sites:
 * https://www.youtube.com/watch?reload=9&v=PZVyE6LXu50  -> Cordova Not Available in ionic serve fixed Ionic Framework Cool Trick
 * https://www.youtube.com/watch?v=CGiqPTK7EoM&list=PLz5rnvLVJX5UEDbxBypmXHdxlReX47Qdn
 * https://stackoverflow.com/questions/51828017/navcontroller-doesnt-work-in-ionic-4
-
+* https://www.youtube.com/watch?v=za5NaFavux4  --> Using a component inside of a component
+* https://www.youtube.com/watch?v=c3CrC9lL53k  --> Ionic 4 Grid Tutorial
 
 
 My practice project skeleton:
