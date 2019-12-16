@@ -1,0 +1,1 @@
+* https://www.sqlitetutorial.net/sqlite-drop-table/

@@ -228,6 +228,10 @@ Useful sites:
 * https://stackoverflow.com/questions/51828017/navcontroller-doesnt-work-in-ionic-4
 * https://www.youtube.com/watch?v=za5NaFavux4  --> Using a component inside of a component
 * https://www.youtube.com/watch?v=c3CrC9lL53k  --> Ionic 4 Grid Tutorial
+* https://forum.ionicframework.com/t/how-to-detect-platform-using-ionic-4/138189/6
+
+
+
 
 
 My practice project skeleton:
