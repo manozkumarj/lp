@@ -172,6 +172,7 @@ Runnig the App in the Browser:
 	-> npm install @ionic-native/sqlite-porter
 	-> ionic cordova plugin add uk.co.workingedge.cordova.plugin.sqliteporter
 
+FMD  -> https://devdactic.com/ionic-4-sqlite-queries/
 
 
 
