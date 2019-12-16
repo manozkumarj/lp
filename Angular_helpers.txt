@@ -149,4 +149,5 @@ https://www.youtube.com/watch?v=0KWQLFI8mFE
 Interview things:
 -----------------------------------------------------------------------------------------
 * What are Angular lifecycle hooks and sequesnce and when will each hook be triggered.
-* 
+* What is circular dependency
+* https://stackoverflow.com/questions/53955873/component-is-part-of-the-declarations-of-2-modules-in-angular/53956365

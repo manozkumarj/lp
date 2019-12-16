@@ -197,8 +197,15 @@ IONIC lifecycle hooks:
 
 
 
-
-
+* To change the background of 'ion-content' in all page, add below css inside of 'global.scss' file.
+	-> ion-content {
+	  		--ion-background-color: #dedede;
+	   }
+* To change the background & font-color of 'ion-header' in all page, add below css inside of 'global.scss' file.
+	-> ion-toolbar {
+		  --background: #3b4bad;
+		  --color: #fff;
+	   }
 
 
 
