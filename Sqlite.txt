@@ -1,1 +1,3 @@
 * https://www.sqlitetutorial.net/sqlite-drop-table/
+* https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-show-tables/
+* 
