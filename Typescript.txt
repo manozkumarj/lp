@@ -123,7 +123,6 @@ class Point{
 
 
 *************************************************************************************
-
 IMP points to remember:
 ---------------------------------
 * No need to specify 'function' keyword while creating a function
@@ -134,6 +133,22 @@ IMP points to remember:
 * tsc *.ts --target ES5 && node main.js
 
 * Once we make a parameter optional all the other parameters on the right side parameters should also optional.
+
+
+
+
+
+
+
+
+
+
+
+*************************************************************************************
+Interview things:
+-------------------------------------------------------------------------------------
+* https://www.youtube.com/watch?v=TlhxEYXifDw
+
 
 
 
