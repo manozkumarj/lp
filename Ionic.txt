@@ -234,6 +234,17 @@ Useful sites:
 * https://www.freakyjolly.com/ionic-4-complete-sqlite-crud-tutorial-for-ionic-4-angular-applications/
 * https://ionicframework.com/docs/angular/platform
 
+* https://forum.ionicframework.com/t/ionic-sqlite-example/101174/4  -> https://www.youtube.com/watch?v=Nn5RQpZBDsg
+
+
+
+
+
+
+
+
+
+
 
 My practice project skeleton:
 ----------------------------------------------------------------------------
