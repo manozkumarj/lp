@@ -132,16 +132,17 @@ FMD => https://ionicframework.com/docs/components
 * ionic generate
 * npm i -g cordova-res
 
-* cordova platform rm android
-* cordova platform add android
+* ionic cordova platform rm android
+* ionic cordova platform add android
 
 * ionic integrations enable cordova --add  => Used to create 'xml' & 'resources' folder
 
 * ionic cordova platform add browser
 
-* ionic capacitor run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
+* ionic cordova run android -l  => This will run 'ng build' command behind & starts our development server and opens Andoid AVD
 
 * ionic cordova run android --device  => This command is used ti install the app in our connected device using USB. Make sure your device is conneted with 'adb devices' command in CMD before running the command.
+https://medium.com/@coderonfleek/debugging-an-ionic-android-app-using-chrome-dev-tools-6e139b79e8d2
 
 * cordova requirements android --verbose
 
@@ -236,7 +237,8 @@ Useful sites:
 
 * https://forum.ionicframework.com/t/ionic-sqlite-example/101174/4  -> https://www.youtube.com/watch?v=Nn5RQpZBDsg
 
-
+* https://medium.com/@coderonfleek/debugging-an-ionic-android-app-using-chrome-dev-tools-6e139b79e8d2
+* https://geekyminds.co.in/exit-app-on-back-press-ionic-4/
 
 
 
