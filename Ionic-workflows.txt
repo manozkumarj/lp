@@ -1,0 +1,36 @@
+*********************** Integrating Sqlite with prepopulated SQL data  ************************
+* To integrate Sqlite with prepopulated SQL data follow one of below links
+* https://devdactic.com/ionic-4-sqlite-queries/  (OR)
+https://www.youtube.com/watch?time_continue=1306&v=fZ4giHzXfSg
+
+Additional stuff: https://www.youtube.com/watch?v=WK7Rzfc1CNc
+
+
+
+
+***********************************************************************************************
+******************************** Exiting from Ionic App ***************************************
+* https://geekyminds.co.in/exit-app-on-back-press-ionic-4/
+
+
+
+
+
+
+***********************************************************************************************
+********************************** Most useful commands ***************************************
+* npm install -g ionic cordova
+* ionic start || ionic start project-name blank --type=angular
+* ionic serve || ng serve || ionic serve --port 8899
+* ionic lab
+* ionic integrations enable cordova --add
+* ionic cordova platform add android
+* ionic cordova platform rm android
+* ionic cordova run android -l
+* ionic cordova run android --device
+* 
+
+
+
+***********************************************************************************************
+
