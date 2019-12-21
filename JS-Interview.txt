@@ -1,4 +1,5 @@
 /************   INETRVIEW purpose links   ***********/
+* https://stackoverflow.com/questions/12797118/how-can-i-declare-optional-function-parameters-in-javascript
 * https://www.youtube.com/watch?v=wFfkCaVTjZk&list=PL8p2I9GklV47SB9hjXCO1VsVAGPNu9Tgg
 * https://www.youtube.com/watch?v=6Wzj7kxfRdI
 * https://www.youtube.com/watch?v=qsNxdukPc2U
