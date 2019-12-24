@@ -490,6 +490,17 @@ https://www.youtube.com/watch?v=OK_JCtrrv-c
 
 
 ****************************************************************************
+Useful Links:
+-----------------------------------
+* https://help.dreamhost.com/hc/en-us/articles/215747748-How-can-I-redirect-and-rewrite-my-URLs-with-an-htaccess-file-
+
+
+
+
+
+
+****************************************************************************
+
 
 Learn:
 * https://www.freetutorials.eu/php-send-and-receive-mobile-text-messages-sms-1/
