@@ -241,6 +241,7 @@ Useful sites:
 * https://geekyminds.co.in/exit-app-on-back-press-ionic-4/
 * https://stackoverflow.com/questions/39662400/how-can-i-serve-ionic-app-on-a-different-port
 * https://enappd.com/blog/ionic-4-save-and-retrieve-data-locally-on-device/59/
+* https://stackoverflow.com/questions/42470781/insert-date-and-time-in-textbox-when-button-is-clicked
 
 
 
