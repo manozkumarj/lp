@@ -242,6 +242,7 @@ Useful sites:
 * https://stackoverflow.com/questions/39662400/how-can-i-serve-ionic-app-on-a-different-port
 * https://enappd.com/blog/ionic-4-save-and-retrieve-data-locally-on-device/59/
 * https://stackoverflow.com/questions/42470781/insert-date-and-time-in-textbox-when-button-is-clicked
+* https://www.freakyjolly.com/ionic-4-add-date-time-picker-in-ionic-4-application-without-native-plugin/#more-2430
 
 
 
