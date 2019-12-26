@@ -243,6 +243,7 @@ Useful sites:
 * https://enappd.com/blog/ionic-4-save-and-retrieve-data-locally-on-device/59/
 * https://stackoverflow.com/questions/42470781/insert-date-and-time-in-textbox-when-button-is-clicked
 * https://www.freakyjolly.com/ionic-4-add-date-time-picker-in-ionic-4-application-without-native-plugin/#more-2430
+* https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/
 
 
 
