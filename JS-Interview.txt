@@ -34,4 +34,4 @@ Ex:
 
 	FMD -> https://medium.com/dailyjs/how-to-remove-array-duplicates-in-es6-5daa8789641c
 
-* 
+* https://stackoverflow.com/questions/39827087/add-key-value-pair-to-all-objects-in-array/39827191
