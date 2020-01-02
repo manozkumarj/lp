@@ -152,3 +152,4 @@ Interview things:
 * What is circular dependency
 * https://stackoverflow.com/questions/53955873/component-is-part-of-the-declarations-of-2-modules-in-angular/53956365
 * https://stackoverflow.com/questions/38655613/angular2-set-value-for-formgroup
+* https://www.angularjswiki.com/angular/how-to-add-a-class-based-on-condition-in-angular/
