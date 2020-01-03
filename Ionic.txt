@@ -245,7 +245,7 @@ Useful sites:
 * https://www.freakyjolly.com/ionic-4-add-date-time-picker-in-ionic-4-application-without-native-plugin/#more-2430
 * https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/
 * https://stackoverflow.com/questions/43756290/how-to-detect-onfocus-and-blur-event-of-ion-searchbar-in-ionic2
-
+* https://stackoverflow.com/questions/30181226/how-to-insert-multiple-rows-with-a-parameter/30232457
 
 
 
