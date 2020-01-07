@@ -252,6 +252,23 @@ Useful sites:
 
 
 
+
+Learnables:
+----------------------------------------------------------------------------
+* Building a Swipeable Tabs - Like Whatsapp
+https://www.youtube.com/watch?v=8qUywCzR-vo
+* 
+
+
+
+
+
+
+
+
+
+
+
 My practice project skeleton:
 ----------------------------------------------------------------------------
 * Home
