@@ -145,8 +145,6 @@ Ex: onClick, onDoubleCick, onKeyDown, etc.,
 
 
 
-
-
 * 'filter' method is used to filter an array and it does not change the original array.
 Ex: const jobs = [
 		{ id: 1, isActive: true },
@@ -164,4 +162,19 @@ Ex: const colors = ['red', 'green', 'blue'];
 
 * 'slice', 'map' method return new array.
 * 'splice' modifies original array.
+
+
+
+
+
+
+
+
+
+Useful Links:
+----------------------------------------------------------------------------------------
+* https://www.tutorialspoint.com/How-to-pad-a-number-with-leading-zeros-in-JavaScript
+
+
+
 
