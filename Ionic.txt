@@ -257,6 +257,7 @@ Learnables:
 ----------------------------------------------------------------------------
 * Building a Swipeable Tabs - Like Whatsapp
 https://www.youtube.com/watch?v=8qUywCzR-vo
+* https://www.freakyjolly.com/ionic-4-keep-it-running-in-background-using-cordova-and-ionic-native-plugins/
 * 
 
 
