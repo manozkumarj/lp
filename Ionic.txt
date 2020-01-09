@@ -262,7 +262,8 @@ https://www.youtube.com/watch?v=8qUywCzR-vo
 * https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application
 * Custom Ionic Splash + Animation
 https://www.youtube.com/watch?v=dPUmskG_-y0
-* 
+* https://github.com/katzer/cordova-plugin-background-mode  |  https://www.techiediaries.com/ionic-background-mode/
+* https://www.freakyjolly.com/ionic-4-set-screen-orientation-in-landscape-portrait-and-lock-unlock-using-ionic-native-plugin/
 
 
 
