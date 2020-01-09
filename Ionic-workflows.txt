@@ -24,6 +24,7 @@ Additional stuff: https://www.youtube.com/watch?v=WK7Rzfc1CNc
 * ionic serve || ng serve || ionic serve --port 8899
 * ionic lab
 * ionic integrations enable cordova --add
+* ionic cordova resources
 * ionic cordova platform add android
 * ionic cordova platform rm android
 * ionic cordova run android -l

@@ -150,6 +150,7 @@ https://medium.com/@coderonfleek/debugging-an-ionic-android-app-using-chrome-dev
 
 * ionic cordova run android --prod
 
+* ionic cordova resources
 
 
 
@@ -258,6 +259,9 @@ Learnables:
 * Building a Swipeable Tabs - Like Whatsapp
 https://www.youtube.com/watch?v=8qUywCzR-vo
 * https://www.freakyjolly.com/ionic-4-keep-it-running-in-background-using-cordova-and-ionic-native-plugins/
+* https://stackoverflow.com/questions/55813237/how-to-change-default-app-icon-and-splash-screen-in-ionic-4-application
+* Custom Ionic Splash + Animation
+https://www.youtube.com/watch?v=dPUmskG_-y0
 * 
 
 

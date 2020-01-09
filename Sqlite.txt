@@ -1,4 +1,5 @@
 * https://www.sqlitetutorial.net/sqlite-drop-table/
 * https://www.sqlitetutorial.net/sqlite-tutorial/sqlite-show-tables/
 * https://stackoverflow.com/questions/30181226/how-to-insert-multiple-rows-with-a-parameter/30232457
+* https://www.tutlane.com/tutorial/sqlite/sqlite-datetime-function
 * 
