@@ -22,7 +22,7 @@ Additional stuff: https://www.youtube.com/watch?v=WK7Rzfc1CNc
 * npm install -g ionic cordova
 * ionic start || ionic start project-name blank --type=angular
 * ionic serve || ng serve || ionic serve --port 8899
-* ionic lab
+* npm i @ionic/lab  -->  ionic lab
 * ionic integrations enable cordova --add
 * ionic cordova resources
 * ionic cordova platform add android

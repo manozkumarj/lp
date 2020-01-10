@@ -265,13 +265,17 @@ https://www.youtube.com/watch?v=dPUmskG_-y0
 * https://github.com/katzer/cordova-plugin-background-mode  |  https://www.techiediaries.com/ionic-background-mode/
 * https://www.freakyjolly.com/ionic-4-set-screen-orientation-in-landscape-portrait-and-lock-unlock-using-ionic-native-plugin/
 * https://devdactic.com/push-notifications-ionic-onesignal/
-* https://enappd.com/blog/local-notifications-in-ionic-4/69/
+* https://enappd.com/blog/local-notifications-in-ionic-4/69/ *** Special ***
 
+* https://forum.ionicframework.com/t/how-to-make-a-background-process-when-app-is-not-running/41859/9  
+	-> https://github.com/katzer/cordova-plugin-local-notifications/  
+	-> https://forum.ionicframework.com/t/how-to-make-a-background-process-when-app-is-not-running/41859/14  
+	-> https://www.gajotres.net/prevent-ionic-application-from-going-to-sleep-in-background/
 
+* https://enappd.com/blog/implement-ionic-4-firebase-push/34/
+* https://market.ionicframework.com/starters/full-ionic-application-for-messaging-mobile-application-hichat
 
-
-
-
+* https://medium.com/hirewithparam/independent-notification-service-using-ionic-node-fcm-5cdde219480a
 
 
 
