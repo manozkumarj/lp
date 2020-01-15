@@ -248,6 +248,7 @@ Useful sites:
 * https://stackoverflow.com/questions/43756290/how-to-detect-onfocus-and-blur-event-of-ion-searchbar-in-ionic2
 * https://stackoverflow.com/questions/30181226/how-to-insert-multiple-rows-with-a-parameter/30232457
 
+* https://forum.ionicframework.com/t/fcm-notification-not-working-when-app-is-kill-closed/125629
 
 
 
