@@ -258,6 +258,10 @@ Useful sites:
 
 * https://forum.ionicframework.com/t/background-service-in-ionic/91212/21 ***
 
+* https://stackoverflow.com/questions/52671334/angular-6-run-a-function-in-every-x-seconds
+
+
+
 
 Learnables:
 ----------------------------------------------------------------------------
@@ -283,6 +287,10 @@ https://www.youtube.com/watch?v=dPUmskG_-y0
 * https://medium.com/hirewithparam/independent-notification-service-using-ionic-node-fcm-5cdde219480a
 
 * https://devdactic.com/ionic-4-socket-io/
+
+* IONIC4 BACKGROUND GEOLOCATION  --> https://www.youtube.com/watch?v=o_HWlQPcgmY
+
+* Ionic4 109 videos --> https://www.youtube.com/watch?v=ZXt1kzEc7zg&list=PL_HWG-SJYqpyTurpB-davCiJv-AkNCH_U
 
 
 My practice project skeleton:
