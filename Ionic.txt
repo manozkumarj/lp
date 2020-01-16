@@ -250,9 +250,13 @@ Useful sites:
 
 * https://forum.ionicframework.com/t/fcm-notification-not-working-when-app-is-kill-closed/125629
 
+* https://blog.mestwin.net/get-your-simple-push-notifications-app-with-ionic-4-and-firebase-cloud-messaging/
 
+* https://www.joshmorony.com/getting-familiar-with-local-notifications-in-ionic-2/
 
+* https://www.freecodecamp.org/news/how-to-get-push-notifications-working-with-ionic-4-and-firebase-ad87cc92394e/
 
+* https://forum.ionicframework.com/t/background-service-in-ionic/91212/21 ***
 
 
 Learnables:
@@ -278,7 +282,7 @@ https://www.youtube.com/watch?v=dPUmskG_-y0
 
 * https://medium.com/hirewithparam/independent-notification-service-using-ionic-node-fcm-5cdde219480a
 
-
+* https://devdactic.com/ionic-4-socket-io/
 
 
 My practice project skeleton:
