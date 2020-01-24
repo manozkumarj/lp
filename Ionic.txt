@@ -292,6 +292,8 @@ https://www.youtube.com/watch?v=dPUmskG_-y0
 
 * Ionic4 109 videos --> https://www.youtube.com/watch?v=ZXt1kzEc7zg&list=PL_HWG-SJYqpyTurpB-davCiJv-AkNCH_U
 
+* https://medium.com/@surajair/ionic-native-sqlite-with-browser-development-6847b7f9611
+
 
 My practice project skeleton:
 ----------------------------------------------------------------------------
