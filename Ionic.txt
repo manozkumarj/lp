@@ -260,6 +260,8 @@ Useful sites:
 
 * https://stackoverflow.com/questions/52671334/angular-6-run-a-function-in-every-x-seconds
 
+* https://medium.com/@christof.thalmann/convert-angular-project-to-android-apk-in-10-steps-c49e2fddd29
+
 
 
 
