@@ -275,6 +275,7 @@ https://www.youtube.com/watch?v=8qUywCzR-vo
 https://www.youtube.com/watch?v=dPUmskG_-y0
 * https://github.com/katzer/cordova-plugin-background-mode  |  https://www.techiediaries.com/ionic-background-mode/
 * https://www.freakyjolly.com/ionic-4-set-screen-orientation-in-landscape-portrait-and-lock-unlock-using-ionic-native-plugin/
+* https://stackoverflow.com/questions/27755208/how-to-restrict-app-to-portrait-mode-only-in-ionic-for-all-platforms
 * https://devdactic.com/push-notifications-ionic-onesignal/
 * https://enappd.com/blog/local-notifications-in-ionic-4/69/ *** Special ***
 
