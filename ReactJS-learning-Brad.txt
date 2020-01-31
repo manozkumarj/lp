@@ -175,4 +175,12 @@ React JS topics:
 * React Redux
 * React Hooks
 * Lifecycle
+* PropTypes
+* defaultProps
+* 
+
+
+
+**************************************** V2 *****************************************************
+* JSX elements ust wrapped in an enclosing tag.
 * 
