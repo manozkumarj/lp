@@ -262,6 +262,7 @@ Useful sites:
 
 * https://medium.com/@christof.thalmann/convert-angular-project-to-android-apk-in-10-steps-c49e2fddd29
 
+* https://stackoverflow.com/questions/23095341/how-to-rename-ionic-app-from-hellocordova
 
 
 
