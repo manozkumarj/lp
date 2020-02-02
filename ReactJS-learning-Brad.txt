@@ -184,3 +184,35 @@ React JS topics:
 **************************************** V2 *****************************************************
 * JSX elements ust wrapped in an enclosing tag.
 * 
+
+
+'Class component' hooks
+--------------------------------------
+* state
+* componentDidMount
+
+
+
+
+'Functional component' hooks
+--------------------------------------
+* useState
+* useEffect --> It is an arrow functions without paramaeters
+useEffect(() => {
+	
+	// eslint-disable-next-line
+}, []);
+* useReducer
+* useContext
+
+
+
+
+
+* In 'Class component' we use 'state' whereas in 'Functional component' we use 'useState' hook
+* In 'Class component' we use 'componentDidMount' whereas in 'Functional component' we use 'useEffect' hook
+* In 'Class component', 'propTypes' will be diclared inside of the class whereas in 'Functional component' 'propTypes' will be diclared outside of the function with function name.
+	User.propTypes = {}
+* In 'Functional component' there will be no 'render' method & props will be passed as arguments
+const User = ({name, id}) => {}
+* 
