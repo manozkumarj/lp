@@ -264,6 +264,7 @@ Useful sites:
 
 * https://stackoverflow.com/questions/23095341/how-to-rename-ionic-app-from-hellocordova
 
+* https://stackoverflow.com/questions/40111073/change-the-width-of-ionic-popup
 
 
 Learnables:
