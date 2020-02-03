@@ -243,6 +243,7 @@ export const ThemeContext = createContext();
 
 
 ******************************** The NetNinja *********************************************
+* 'npx' comes with npm 5.2+ versions.
 * Context API - Clean & easy way to share state betweene components
 * Context API is alternative to Redux we can say
 * 'contextType' will be used in 'Class component' but not in 'Functional component'.
@@ -256,8 +257,27 @@ export const ThemeContext = createContext();
 
 * Use pascalcase while creating 'context' files. Ex: BookContext.js
 * Use camelcase while creating 'reducer' files. Ex: bookReducer.js
+
+* We have two types of components
+	-> Container components - Sometimes called as 'class based components'
+		* Contains state
+		* Contains life-cycle hooks
+		* Not concerned with UI
+		* Use classes to create
+	-> UI components - Sometimes called as 'stateless'/'class based components'/'UI' components
+		* Don't contain state
+		* Receive data from 'props'
+		* Only concerned with UI
+		* Use functions to create
+
 * 
 
 
-
-
+Redux
+**************************************************************************************
+* First React creats a 'Virtual DOM' and renders in to the DOM. And React keep watches the changes and if if any mondification occures, then React compares that change with 'Virtual DOM' and then reders that particular change to the DOM.
+* A layer on-top of React
+* Components look like HTML template (actually JSX)
+* They can contain 'state' (data or UI state)
+* They also can contain javascript for functionality
+* 

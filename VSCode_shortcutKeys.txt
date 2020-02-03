@@ -29,10 +29,13 @@ Plugins:
 * Bracket Pair Colorizer
 * Auto Rename Tag
 * Ionic 4 Snippets
+* Sublime Babel
 
 
 
 
+
+* Monokai++ (Theme)
 
 
 
