@@ -216,3 +216,48 @@ useEffect(() => {
 * In 'Functional component' there will be no 'render' method & props will be passed as arguments
 const User = ({name, id}) => {}
 * 
+
+
+
+
+
+
+
+
+*********************************** Imports & shortcuts************************************
+* imrc
+* imr
+* cc
+* fc
+
+
+* import React, { Component, createContext } from 'react';
+export const ThemeContext = createContext();
+
+
+
+
+
+*******************************************************************************************
+
+
+
+******************************** The NetNinja *********************************************
+* Context API - Clean & easy way to share state betweene components
+* Context API is alternative to Redux we can say
+* 'contextType' will be used in 'Class component' but not in 'Functional component'.
+* 'useEffect()' will be triggered everytime data changes/renders & We can use 'useEffect()' method as many times as want.
+	useEffect(() => {
+		console.log('Songs changed');
+	}, [songs]);
+	useEffect(() => {
+		console.log('Age changed');
+	}, [age]);
+
+* Use pascalcase while creating 'context' files. Ex: BookContext.js
+* Use camelcase while creating 'reducer' files. Ex: bookReducer.js
+* 
+
+
+
+
