@@ -1,4 +1,0 @@
-* https://stackoverflow.com/questions/7295843/allow-only-numbers-to-be-typed-in-a-textbox
-
-* get week number of month from date  --> https://codepen.io/bhaskars11/pen/GNQOwM
-

@@ -1,0 +1,60 @@
+*********************************** Examples *********************************************
+
+--> let sampleArray = ['I', 'am', 'a', 'Software', 'Developer'];
+--> let sampleString = 'I am a Software Developer';
+
+
+* Creating an array from a string
+	let createdArray = sampleString.split(" ");
+
+* Creating a string from an array
+	let createdString = sampleArray.join(' ');
+
+* push() method adds new items to the end of an array, and returns the new length.
+	let newArray = sampleArray.push('Manoj');
+
+* unshift() method adds new items to the beginning of an array, and returns the new length.
+	let newArray = sampleArray.unshift('Yayyy');
+
+* pop() method is used to remove last item from an array and return the removed item
+	let removedItem = sampleArray.pop();
+
+* shift() method is used to remove first item from an array and return the removed item
+	let removedItem = sampleArray.shift();
+
+* Adding extra properties to an array of object using higher order method 'map'
+    -> this.freshDispenses = this.consumableDispenses = dispenses.map(
+	      dispense => ({
+	        ...dispense,
+	        allowQuantity: false,
+	        quantity: null
+	      })
+	    );
+
+
+
+
+*********************************** Patterns *********************************************
+* 
+
+
+
+
+******************************************************************************************
+*********************************** Useful links *****************************************
+
+******************************************************************************************
+*********************************** Useful links *****************************************
+* https://stackoverflow.com/questions/7295843/allow-only-numbers-to-be-typed-in-a-textbox
+* get week number of month from date  --> https://codepen.io/bhaskars11/pen/GNQOwM
+
+
+
+
+
+
+
+
+******************************************************************************************
+*********************************** Next *************************************************
+
