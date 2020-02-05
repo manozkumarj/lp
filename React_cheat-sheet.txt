@@ -1,0 +1,119 @@
+*********************************** Imports & shortcuts**********************************************
+* imrc
+* imr
+* cc
+* fc
+
+
+* import React, { Component, createContext } from 'react';
+* import { BrowserRouter, Route, Link, NavLink, Switch, withRouter } from 'react-router-dom';
+
+
+
+
+
+******************************************************************************************************
+****************************************** Redux *****************************************************
+* Central data store for all app data.
+* Any component can access data from it.
+* Makes state management easy.
+* 
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************************
+************************************* IMP Points *****************************************************
+* We automatically get 'props' in 'class based components' & we can acess then as 'this.props'.
+* We can access dynamic parameters from URL as below
+	componentDidMount(){
+		console.log(this.props);
+		let id = this.props.match.params.post_id;
+	}
+* 
+
+
+
+
+
+
+
+
+******************************************* Routing Example ******************************************
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+
+class App extends Component {
+	render(){
+		return (
+			<BrowserRouter>
+				<div className='App'>
+					<Navbar />
+					<Switch>
+					<Route exact path='/' component={Home} />
+					<Route exact path='/about' component={About} />
+					<Route exact path='/contact' component={Contact} />
+					</Switch>
+				</div>
+			</BrowserRouter>
+		);
+	}
+}
+
+export default App;
+
+   -------------------------------------------------------------
+
+import { Link, NavLink, withRouter } from 'react-router-dom';
+
+const Navbar = (props) => {
+
+	console.log(props);
+	setTimeout(() => {
+		props.history.push('/about');
+	}, 2000);
+
+	return (
+		<ul>
+			<li><Link to='/'>Home</Link>
+			<li><Link to='/about'>About</Link>
+			<li><Link to='/contact'>Contact</Link>
+		</ul>
+	);
+}
+
+export default withRouter(Navbar);
+
+
+
+* If we use '<NavLink>' instead of '<Link>' tag, '<NavLink>' adds a class named 'active'.
+* React router automatically applies some properties(Ex; history) to the 'props' by default on 
+every route.
+
+* But we can add those default props with 'Higher order component' which is 'withRouter'
+	
+******************************************************************************************************
+*********************************** Points to be noted ***********************************************
+* Only 'Class based components' contain 'Life-cycle' hooks but not 'Functional components'
+* 
+
+
+
+
+
+******************************************************************************************************
+
+
+
+
+
+

@@ -285,6 +285,12 @@ Redux
 * Components look like HTML template (actually JSX)
 * They can contain 'state' (data or UI state)
 * They also can contain javascript for functionality
+
+
+* Only 'Class based components' contain 'Life-cycle' hooks but not 'Functional components'
+
+* 'axios' is a HTTP request library.
+
 * 
 
 
