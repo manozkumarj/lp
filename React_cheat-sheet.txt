@@ -1,4 +1,42 @@
-*********************************** Imports & shortcuts**********************************************
+*********************************** Useful commands **************************************************
+* npm i create-react-app (Then) create-react-app [APP-NAME]
+	(OR)
+  npx i create-react-app [APP-NAME]
+
+  	Note:: Project name should contain lowercase alphabets only with '-' seperation
+
+* npm start
+	(By default, a ReactJS app runs on port 3000. An Express.js app also runs on the same port 3000)
+* npm build || npm run build
+
+
+
+
+
+******************************************************************************************************************************************* IMP Points *****************************************************
+* difference npx and npm
+	-> npm is a tool mainly used to install packages.
+	-> npx is a tool to execute packages.
+	What does it means? That if you want to execute a package without installing it on your computer and then launch it you can use npx directly.
+	Speaking of react , create-react-app is an utility to bootstrap a react project: if you use it with npx ( npx create-react-app my-app ) you will have your my-app project in place without the need to install create-react-app itself ( which will need another passage: npm install create-react-app and then create-react-app my-app)
+
+* We automatically get 'props' in 'class based components' & we can acess then as 'this.props'.
+* We can access dynamic parameters from URL as below
+	componentDidMount(){
+		console.log(this.props);
+		let id = this.props.match.params.post_id;
+	}
+* 
+
+
+
+
+
+
+
+
+******************************************************************************************************
+*********************************** Imports & shortcuts **********************************************
 * imrc
 * imr
 * cc
@@ -45,6 +83,7 @@
 
 
 
+******************************************************************************************************
 ******************************************* Routing Example ******************************************
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';

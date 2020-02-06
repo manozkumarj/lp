@@ -1,0 +1,14 @@
+* Project main content.
+* Technologies to be used... Frontend, Backend and Database - Web & Mobile Apps
+* Target audience
+* How revenue generates
+* Marketing the project
+* Version 1 features.
+
+
+-> Unique feature of our Site/App
+-> Why users should visit our Site/App again and again
+-> How to keep our users engaged with our Site/App everytime
+
+
+-> Always keep note of next version features ready.
