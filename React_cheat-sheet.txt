@@ -43,11 +43,12 @@
 * fc
 
 
-* import React, { Component, createContext } from 'react';
+* import React, { Component, createContext, useEffect, useState } from 'react';
 * import { BrowserRouter, Route, Link, NavLink, Switch, withRouter } from 'react-router-dom';
 
 
-
+* Packages which need to be install inorder to use them
+	-> react-router-dom
 
 
 ******************************************************************************************************
@@ -68,6 +69,8 @@
 
 ******************************************************************************************************
 ************************************* IMP Points *****************************************************
+* clss => clssName
+* for => htmlFor
 * We automatically get 'props' in 'class based components' & we can acess then as 'this.props'.
 * We can access dynamic parameters from URL as below
 	componentDidMount(){
@@ -150,9 +153,9 @@ every route.
 
 
 ******************************************************************************************************
-
-
-
+***************************************** Useful Links ***********************************************
+* https://tylermcginnis.com/react-router-pass-props-to-components/
+* 
 
 
 
