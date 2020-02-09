@@ -4,7 +4,9 @@
 ==================================================================================================
 --------------------------------------------- REACT ----------------------------------------------
 * 'To-do' App - We will add to-do using props and show them back via props only. 
-And will store to-dos in localStorage  --> to-do-app-with-props
+And will store to-dos in localStorage  --> to-do-app-with-props ==> Done
+
+* Github users App using 'AXIOS' HTTP request library.  --> Github-users-axios
 
 * Same 'To-do' App with 'Context API'  --> to-do-app-with-context-api
 

@@ -77,6 +77,19 @@
 		console.log(this.props);
 		let id = this.props.match.params.post_id;
 	}
+
+* If we want to create a function inside of 'Functional component' then we need to use 'const' keyword
+in front of function name.
+Ex: const Header = props => {
+		const funcName(){
+			// code
+		}
+		return (<> Some JSX code </>);
+	}
+
+* If you use 'useEffect()' method inside of 'Functional component' then don't forget add 
+"// eslint-disable-next-line" just above the close curly braces of 'useEffect()' method.
+
 * 
 
 
