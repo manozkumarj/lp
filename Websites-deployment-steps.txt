@@ -1,0 +1,24 @@
+***************************************** Netlify ******************************************************
+* First we need to install 'Netlify-CLI' using below command
+	-> npm i -g netlify-cli
+* Then we need to take of 'Environment variables' if any.
+* Then we need to create a file named 'netlify.toml'. And place below content inside of that file.
+	[build]
+		publish="build"
+* Then we need to make our project folder as netlify recognizable folder. For that run below command
+	-> netlify init
+	-> netlify deploy --prod
+
+
+
+********************************************************************************************************
+****************************************** Heroku ******************************************************
+* 
+
+
+
+********************************************************************************************************
+*************************************** Useful links ***************************************************
+* Firebase Hosting Tutorial - 5 Videos - The Net Ninja 
+	-> https://www.youtube.com/watch?v=mmmaeHBCTOw&list=PL4cUxeGkcC9he0kHAyiyr3dDO2xw0NWoP
+* 

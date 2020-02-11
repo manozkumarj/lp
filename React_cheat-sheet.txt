@@ -1,7 +1,7 @@
 *********************************** Useful commands **************************************************
 * npm i create-react-app (Then) create-react-app [APP-NAME]
 	(OR)
-  npx i create-react-app [APP-NAME]
+  npx create-react-app [APP-NAME]
 
   	Note:: Project name should contain lowercase alphabets only with '-' seperation
 
