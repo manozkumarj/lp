@@ -10,7 +10,14 @@
 *********************************** Examples *********************************************
 
 --> let sampleArray = ['I', 'am', 'a', 'Software', 'Developer'];
+--> let sampleArrayOfObjects = [
+								{prop1:"abc",prop2:"qwe"},
+							    {prop1:"bnmb",prop2:"yutu"},
+							    {prop1:"zxvz",prop2:"qwrq"}
+							   ];
+
 --> let sampleString = 'I am a Software Developer';
+--> let string = "Select~Nil~1+~2+~3+";
 
 
 * Creating an array from a string
@@ -40,7 +47,22 @@
 	      })
 	    );
 
+* 'split' & 'filter' functions combined
+	-> let filteredArray = string.split("~")).filter(l => l != 'Select');
 
+* Finding index from an array
+	-> let index = sampleArray.indexOf('Software');	// Output is 3
+
+* Finding index from an array of objects
+	-> let index = sampleArrayOfObjects.findIndex(x => x.prop2 ==="yutu");	// Output is 2
+
+
+*********************************** IMP points *******************************************
+* 'Increament' & 'Decreament' operators change the original value.
+
+
+
+******************************************************************************************
 
 
 *********************************** Patterns *********************************************
