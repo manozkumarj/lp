@@ -4,6 +4,12 @@
 * To get number of seconds from 1970
 	Math.round(new Date().getTime()/1000);
 
+* To get 9 months after date & seconds
+      let today = new Date();
+      today.setMonth(9);
+      console.log("+9 month date  --> " + new Date(today));
+      console.log("+9 months Timestamp  --> " + Math.round(new Date(today).getTime() / 1000));
+
 * 
 
 
@@ -56,6 +62,13 @@
 * Finding index from an array of objects
 	-> let index = sampleArrayOfObjects.findIndex(x => x.prop2 ==="yutu");	// Output is 2
 
+* Converting a date to timestamp
+	let createdAt = "2020-02-12 12:39:30".split(' ');
+	let createdDate = createdAt[0];
+	let splitDate = createdDate.split("-");
+	let createdTimestamp = splitDate[1] + "/" + splitDate[2] + "/" + splitDate[0];
+	console.log("createdTimestamp in MS  --> " + new Date(createdTimestamp).getTime());
+
 
 *********************************** IMP points *******************************************
 * 'Increament' & 'Decreament' operators change the original value.
@@ -74,7 +87,7 @@
 *********************************** Useful links *****************************************
 * https://stackoverflow.com/questions/7295843/allow-only-numbers-to-be-typed-in-a-textbox
 * get week number of month from date  --> https://codepen.io/bhaskars11/pen/GNQOwM
-
+* https://stackoverflow.com/questions/9873197/how-to-convert-date-to-timestamp
 
 
 
