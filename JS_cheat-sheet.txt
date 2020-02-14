@@ -15,6 +15,8 @@
 
 *********************************** Examples *********************************************
 
+--> let numbersArray = [1,2,3,4,5,6,7,8,9];
+--> let fruitsArray = ["Banana", "Orange", "Apple", "Mango"];
 --> let sampleArray = ['I', 'am', 'a', 'Software', 'Developer'];
 --> let sampleArrayOfObjects = [
 								{prop1:"abc",prop2:"qwe"},
@@ -43,6 +45,19 @@
 
 * shift() method is used to remove first item from an array and return the removed item
 	let removedItem = sampleArray.shift();
+
+* splice() method can be used to add new items to an array
+	Ex: fruitsArray.splice(2, 0, "Lemon", "Kiwi");
+
+	-> The first parameter (2) defines the position where new elements should be added (spliced in).
+	-> The second parameter (0) defines how many elements should be removed.
+	-> The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+	-> The splice() method returns an array with the deleted items
+
+	For the above example result will be
+		New Array: Banana,Orange,Lemon,Kiwi
+		Removed Items: Apple,Mango
+
 
 * Adding extra properties to an array of object using higher order method 'map'
     -> this.freshDispenses = this.consumableDispenses = dispenses.map(
@@ -88,7 +103,8 @@
 * https://stackoverflow.com/questions/7295843/allow-only-numbers-to-be-typed-in-a-textbox
 * get week number of month from date  --> https://codepen.io/bhaskars11/pen/GNQOwM
 * https://stackoverflow.com/questions/9873197/how-to-convert-date-to-timestamp
-
+* https://stackoverflow.com/questions/5767325/how-do-i-remove-a-particular-element-from-an-array-in-javascript
+* 
 
 
 
