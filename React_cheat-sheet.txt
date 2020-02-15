@@ -26,6 +26,13 @@
 		console.log(this.props);
 		let id = this.props.match.params.post_id;
 	}
+* 'contextType' will be used in 'Class component' but not in 'Functional component'.
+* We can consume 'context' in two ways
+	1) By using 'this.context'
+	2) 'Context consumer'
+* 'this.context' will holds the data of the provider which is imported by that class.
+* We can consume 'context' with 2nd way which is 'Context consumer' way will work in both 'Class component' & 'Functional component'.
+* We can consume multiple contexts in one component with Context consumer' way.
 * 
 
 

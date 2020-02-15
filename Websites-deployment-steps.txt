@@ -1,12 +1,15 @@
 ***************************************** Netlify ******************************************************
-* First we need to install 'Netlify-CLI' using below command
-	-> npm i -g netlify-cli
-* Then we need to take of 'Environment variables' if any.
-* Then we need to create a file named 'netlify.toml'. And place below content inside of that file.
+* First we need to create a file named 'netlify.toml'. And place below content inside of that file.
 	[build]
 		publish="build"
+* Then we need to install 'Netlify-CLI' using below command
+	-> npm i -g netlify-cli
 * Then we need to make our project folder as netlify recognizable folder. For that run below command
 	-> netlify init
+* Then we need to take of 'Environment variables' if any.
+* Then create 'dist' folder of the project with below command
+	-> npm run build
+* Then run below command to deploy
 	-> netlify deploy --prod
 
 
