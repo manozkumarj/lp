@@ -35,6 +35,15 @@
 * We can consume multiple contexts in one component with Context consumer' way.
 * 
 
+*** Hooks ***
+* Hooks are special functions. They allow us to do additional things in 'Functional components'
+* Means if we wanna use 'state' then don't need to use 'class component' anymore.
+-> useState() - uses state within a functional component
+-> useEffect() - Runs code when a component renders or re-renders
+-> useContext() - Used to consume context in a functional component.
+
+* We can use 'useEffect()' as many times as we want.
+
 
 
 
