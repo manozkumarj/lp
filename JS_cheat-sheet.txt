@@ -104,6 +104,9 @@
 * get week number of month from date  --> https://codepen.io/bhaskars11/pen/GNQOwM
 * https://stackoverflow.com/questions/9873197/how-to-convert-date-to-timestamp
 * https://stackoverflow.com/questions/5767325/how-do-i-remove-a-particular-element-from-an-array-in-javascript
+
+* https://www.w3schools.com/js/js_array_sort.asp
+
 * 
 
 
