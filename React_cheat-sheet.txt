@@ -40,7 +40,7 @@
 * Means if we wanna use 'state' then don't need to use 'class component' anymore.
 -> useState() - uses state within a functional component
 -> useEffect() - Runs code when a component renders or re-renders
--> useContext() - Used to consume context in a functional component.
+-> useContext() - Used to consume context in a functional component. We can use as many times as we want to consume different contexts.
 
 * We can use 'useEffect()' as many times as we want.
 
@@ -59,7 +59,7 @@
 * fc
 
 
-* import React, { Component, createContext, useEffect, useState } from 'react';
+* import React, { Component, createContext, useEffect, useState, useReducer } from 'react';
 * import { BrowserRouter, Route, Link, NavLink, Switch, withRouter } from 'react-router-dom';
 
 
