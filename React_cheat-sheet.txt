@@ -45,6 +45,39 @@
 * We can use 'useEffect()' as many times as we want.
 
 
+*** Usage of Context with Reducer ***
+* First we need to import "createContext, useReducer" in 'context' file.
+* export const BookContext = createContext();
+* const [books, dispatch] = useReducer(bookReducer, [], () => {
+    const localData = localStorage.getItem("books");
+    return localData ? JSON.parse(localData) : [];
+  });
+* return (
+    <BookContext.Provider value={{ books, dispatch }}>
+      {props.children}
+    </BookContext.Provider>
+  );
+
+* In 'reducer' file
+import uuid from "uuid/v4";
+export const bookReducer = (state, action) => {
+  switch (action.type) {
+    case "ADD_BOOK":
+      return [
+        ...state,
+        {
+          title: action.book.title,
+          author: action.book.author,
+          id: uuid()
+        }
+      ];
+    case "REMOVE_BOOK":
+      return state.filter(book => book.id !== action.id);
+    default:
+      return state;
+  }
+};
+
 
 
 
