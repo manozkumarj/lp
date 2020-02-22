@@ -82,8 +82,6 @@ export const bookReducer = (state, action) => {
 
 
 
-
-
 ******************************************************************************************************
 *********************************** Imports & shortcuts **********************************************
 * imrc
@@ -94,10 +92,16 @@ export const bookReducer = (state, action) => {
 
 * import React, { Component, createContext, useEffect, useState, useReducer } from 'react';
 * import { BrowserRouter, Route, Link, NavLink, Switch, withRouter } from 'react-router-dom';
+* import { createStore } from 'redux';
+	-> const store = createStore();
+* import { Provider } from 'react-redux';
+* import { connect } from 'react-redux'; // 'connect' is a higher-order component
 
 
 * Packages which need to be install inorder to use them
 	-> react-router-dom
+	-> redux
+	-> react-redux
 
 
 ******************************************************************************************************
@@ -105,6 +109,130 @@ export const bookReducer = (state, action) => {
 * Central data store for all app data.
 * Any component can access data from it.
 * Makes state management easy.
+* 
+
+
+Point by point ------------------------------------------------------------------------
+* We need two packages in order to use 'Redux Store' in our App. Those two packages are 
+	-> 'redux' = It's a 'redux store' library to store data.
+	-> 'react-redux' = It's a library which helps us to connect to our Redux store to React app. It's 		like a glue-layer B/W 'Redux' & our App.
+* To use/access 'redux' across all component in our app, we need to wrap our main App tag with redux provider as below.
+
+Inside of 'index.js' file 
+	import React from 'react';
+	import ReactDOM from 'react-dom';
+	import './index.css';
+	import App from './App';
+	import registerServiceWorker from './registerServiceWorker';
+	import { createStore } from 'redux'
+	import { Provider } from 'react-redux'
+	import rootReducer from './reducers/rootReducer'
+
+	const store = createStore(rootReducer);
+
+	ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+	registerServiceWorker();
+
+* Let's say we create 'rootReducer.js' file & contains below content
+	const initState = {
+	  posts: [
+	    {id: '1', title: 'Squirtle Laid an Egg', body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptate laborum perferendis, enim repellendus ipsam sunt autem at odit dolorum, voluptatum suscipit iste harum cum magni itaque animi laudantium fugiat'},
+	    {id: '2', title: 'Charmander Laid an Egg', body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptate laborum perferendis, enim repellendus ipsam sunt autem at odit dolorum, voluptatum suscipit iste harum cum magni itaque animi laudantium fugiat'},
+	    {id: '3', title: 'a Helix Fossil was Found', body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptate laborum perferendis, enim repellendus ipsam sunt autem at odit dolorum, voluptatum suscipit iste harum cum magni itaque animi laudantium fugiat'}
+	  ]
+	}
+
+	const rootReducer = (state = initState, action) => {
+	  console.log(action);
+	  if(action.type === 'DELETE_POST'){
+	   let newPosts = state.posts.filter(post => {
+	     return post.id !== action.id
+	   });
+	   return {
+	     ...state,
+	     posts: newPosts
+	   }
+	  }
+	  return state;
+	}
+
+	export default rootReducer
+
+* And we want to use above redux store data in a page where we display all posts, it will be as below
+	import React, { Component } from 'react'
+	import { Link } from 'react-router-dom'
+	import Pokeball from '../pokeball.png'
+	import { connect } from 'react-redux'
+
+	class Home extends Component {
+	  render(){
+	    const { posts } = this.props
+	    const postList = posts.length ? (
+	      posts.map(post => {
+	        return (
+	          <div className="post card" key={post.id}>
+	            <img src={Pokeball} alt="A Pokeball" />
+	            <div className="card-content">
+	              <Link to={'/' + post.id}>
+	                <span className="card-title red-text">{post.title}</span>
+	              </Link>
+	              <p>{post.body}</p>
+	            </div>
+	          </div>
+	        )
+	      })
+	    ) : (
+	      <div className="center">No posts to show</div>
+	    );
+
+	    return (
+	      <div>
+	        <div className="container home">
+	          <h4 className="center">Home</h4>
+	          {postList}
+	        </div>
+	      </div>
+	    )
+	  }
+	}
+
+	const mapStateToProps = (state) => {
+	  return {
+	    posts: state.posts
+	  }
+	}
+
+	export default connect(mapStateToProps)(Home)
+
+* And if we want to get only one posts from redux store data in another page, then...
+	-> 'mapStateToProps' method takes 2nd parameter which is contains current component props
+	const mapStateToProps = (state, ownProps) => {
+	  let id = ownProps.match.params.post_id;
+	  return {
+	    post: state.posts.find(post => post.id === id)
+	  }
+	}
+
+* To update the state of redux data, lets say we want to delete a post, then...
+	const mapDispatchToProps = (dispatch) => {
+	  return {
+	    deletePost: (id) => dispatch(deletePost(id))
+	  }
+	}
+
+	export default connect(mapStateToProps, mapDispatchToProps)(Post)
+
+* 
+
+
+
+
+
+******************************************************************************************************
+****************************************** Packages *****************************************************
+* redux = It's a library to store.
+* react-redux = It's a library which helps us to connect to our Redux store to React app. It's like a glue-layer B/W 'Redux' & our App.
+
 * 
 
 
@@ -218,6 +346,26 @@ every route.
 ***************************************** Useful Links ***********************************************
 * https://tylermcginnis.com/react-router-pass-props-to-components/
 * 
+
+
+
+
+
+
+
+
+******************************************************************************************************
+************************************** Interview things **********************************************
+* Current React version?
+* How to access 'props' in 'Class based ' & 'Functional' components?
+* Explain 'Context API' & 'Redux'
+* What are 'mapStateToProps' & 'mapDispatchToProps' functions?
+* What are 'action creators'?
+
+
+
+
+
 
 
 
