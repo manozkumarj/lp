@@ -247,7 +247,7 @@ export const ThemeContext = createContext();
 
 ******************************** The NetNinja *********************************************
 * 'npx' comes with npm 5.2+ versions.
-* Context API - Clean & easy way to share state betweene components
+* Context API - Clean & easy way to share state between components
 * Context API is alternative to Redux we can say
 * 'contextType' will be used in 'Class component' but not in 'Functional component'.
 * 'useEffect()' will be triggered everytime data changes/renders & We can use 'useEffect()' method as many times as want.
@@ -349,3 +349,16 @@ export default withRouter(Navbar);
 	
 
 ******************************************************************************************
+-------------- React, Redux & Firebase App Tutorial - The Net Ninja ----------------------
+* 
+
+
+
+
+
+
+
+
+
+
+
