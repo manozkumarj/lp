@@ -124,3 +124,49 @@ HTTP, path, fs, os, events, buffer
 * https://thebittheories.com/nodejs-interview-questions-935498510d46
 * http://www.tutorialspoint.com/nodejs/nodejs_interview_questions.htm
 * https://www.youtube.com/watch?v=-PuMp5tQ8Jw&list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x&index=15
+
+
+
+
+****************************************** IMP points ************************************************
+* JWT contains 3 parts
+  -> Header - Algorithm token type
+  -> Payload - It contains the data that we store/sent
+  -> Signature
+
+* 'middleware' is just a function that has access to the request & response cycle.
+
+
+
+
+
+
+****************************************** Status codes ************************************************
+* 401 = Un-Authorized
+* 500 = Bad request
+
+
+
+
+
+
+************************************** Askable Intervirew Q's ******************************************
+* What's Node JS?
+* Explain 'Status codes'?
+* Write sample express server connection with MongoDB connetion?
+* What is a 'middleware'?
+* How dod you protect the routes?
+* 
+
+
+
+
+
+
+************************************** Mongoose functions ******************************************
+* findById(id);
+* findOne({ email });
+* findById(id).sort({date: -1});
+
+
+
