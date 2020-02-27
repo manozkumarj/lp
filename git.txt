@@ -14,6 +14,7 @@
 * git diff  --> Shows the differences between current repository and changes that were made.
 * git diff master 2nd   --> Shows the differences between "master" & "2nd" branches.
 * "git merge --abort" to abort the merge
+* rm -rf .git  --> Makes the git folder normal folder - removes .git folder
 
 * git --help
 * git help commit -a

@@ -1,0 +1,27 @@
+* Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.
+* Node.js is a run-time JavaScript environment built on top of Chrome’s V8 engine. It uses an event-driven, non-blocking I/O model. It is lightweight and so efficient. Node.js has a package ecosystem called npm.
+* Node.js (or JavaScript) is a single-threaded, event-driven language.
+* REPL means Read-Eval-Print-Loop. It is a virtual environment that comes with Node.js. We can quickly test our JavaScript code in the Node.js REPL environment.
+* 
+
+
+
+
+****************************************** Status codes ************************************************
+* 200 = Ok
+* 400 = BAD_REQUEST
+* 401 = Un-Authorized
+* 403 = Forbidden
+* 404 = Not Found
+* 500 = INTERNAL_SERVER_ERROR
+
+
+
+
+
+* https://www.npmjs.com/package/http-status-codes
+
+************************************ Useful links for Intervirew *************************************
+* https://medium.com/@vigowebs/frequently-asked-node-js-interview-questions-and-answers-b74fa1f20678
+* 
+

@@ -23,6 +23,7 @@
 	Speaking of react , create-react-app is an utility to bootstrap a react project: if you use it with npx ( npx create-react-app my-app ) you will have your my-app project in place without the need to install create-react-app itself ( which will need another passage: npm install create-react-app and then create-react-app my-app)
 
 * We automatically get 'props' in 'class based components' & we can acess then as 'this.props'.
+* Never forget to use 'PropTypes' & 'defaultProps'
 * We can access dynamic parameters from URL as below
 	componentDidMount(){
 		console.log(this.props);
@@ -95,7 +96,7 @@ export const bookReducer = (state, action) => {
 
 
 * import React, { Component, createContext, useEffect, useState, useReducer } from 'react';
-* import { BrowserRouter, Route, Link, NavLink, Switch, withRouter } from 'react-router-dom';
+* import { BrowserRouter as Router, Route, Link, NavLink, Switch, withRouter } from 'react-router-dom';
 * import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 	-> const store = createStore();
 * import { Provider } from 'react-redux';
@@ -256,6 +257,7 @@ Inside of 'index.js' file
 * redux-thunk = It's a package which help us to work with redux in async code.
 * react-redux-firebase
 * redux-firestore
+* react-transition-group
 
 
 
@@ -305,6 +307,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import PropTypes from 'prop-types';
 
 class App extends Component {
 	render(){
@@ -383,7 +386,7 @@ every route.
 * Explain 'Context API' & 'Redux'
 * What are 'mapStateToProps' & 'mapDispatchToProps' functions?
 * What are 'action creators'?
-
+* What is 'Single State of Truth'?
 
 
 
