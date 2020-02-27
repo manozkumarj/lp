@@ -187,6 +187,11 @@ Multiple rows insertion:
 
 
 
+************************************* Useful Links *********************************************
+* https://www.jumpingbean.co.za/blog/mysql-if-exists-update-else-insert
+* https://dba.stackexchange.com/questions/99120/if-exists-then-update-else-insert/99126
+* 
+
 
 
 
