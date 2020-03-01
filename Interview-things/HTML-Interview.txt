@@ -1,0 +1,25 @@
+* Semantic HTML is a coding style. It is the use of HTML markup to reinforce the semantics or meaning of the content. For example: In semantic HTML <b> </b> tag is not used for bold statement as well as <i> </i> tag is used for italic. Instead of these we use <strong></strong> and <em></em> tags.
+* 
+
+
+
+
+
+
+
+
+
+
+
+*************************************** useful links **************************************************
+* https://www.edureka.co/blog/interview-questions/top-50-html-interview-questions-and-answers/
+* https://www.javatpoint.com/html-interview-questions
+* 
+
+
+
+
+
+
+
+

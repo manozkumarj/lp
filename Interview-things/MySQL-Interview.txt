@@ -1,0 +1,23 @@
+* MySQL Server’s default port is 3306.
+* The order of SQL SELECT statement is as follows:
+	-> SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT.
+* Database engines - MyISAM, INNO DB
+* To find the Nth salary consider the below statement
+	-> SELECT DISTINCT(salary) FROM employee ORDER BY salary DESC LIMIT n-1,1
+* 
+
+
+--------- Commands ---------------
+* output = mysql_query(sql, database_name);
+* number_of_rows = mysql_num_rows(output);
+* mysql_fetch_object: This constant fetches a result row as an object.
+* mysql_fetch_array: This constant fetches a result row as an associative array, numeric array or as both.
+* mysql_fetch_row: This constant gives us a result row as an enumerated array.
+* mysql_fetch_assoc: This constant gives us a result row as an associative array.
+
+
+
+
+*************************************** useful links **************************************************
+* 
+

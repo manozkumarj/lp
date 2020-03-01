@@ -1,0 +1,85 @@
+* {{}} -> String Interpolation
+* Angular is a front-end or client-side Framework, which needs a programming language like Typescript (developed by Microsoft).
+* Angular is a client-side Javascript framework and it uses Typescript language.
+* Angular is use to create SPA(Single Page Applications).
+* The Angular application is made using the following building-blocks:
+	-> Modules
+	-> Component
+	-> Template
+	-> Directives
+	-> Data Binding
+	-> Services
+	-> Dependency Injection
+	-> Routing
+
+* Transpiling is the process of converting the typescript into javascript (using Traceur, a JS compiler). Though typescript is used to write code in the Angular applications, the code is internally transpiled into javascript.
+
+* Components break up the application into smaller parts; whereas, Directives add behavior to an existing DOM element.
+
+* When it comes to the communication of Angular Components, which are in Parent-Child Relationship; we use @Input in Child Component when we are passing data from Parent to Child Component and @Output is used in Child Component to receive an event from Child to Parent Component.
+
+* 'ViewEncapsulation' decides whether the styles defined in a component can affect the entire application or not.
+
+* Services help us in not repeating the code. With the creation of services, we can use the same code from different components. Here is the command to create a service in angular, ng g service User (a UserService is created when this command is used).
+
+* When a component is dependent on another component the dependency is injected/provided during runtime.
+
+* Routing helps a user in navigating to different pages using links.
+
+* Any activity (button click, mouse click, mouse hover, mouse move, etc) of a user on a frontend/web screen is termed as an event. Such events are passed from the view (.HTML) page to a typescript component (.ts).
+
+* RouterOutlet is a substitution for templates rendering the components. In other words, it represents or renders the components on a template at a particular location.
+
+* Data Binding happens between the HTML (template) and typescript (component). Data binding can be done in 3 ways:
+
+	(i) Property Binding (ii) Event Binding (iii) Two-Way Data Binding.
+
+* A web page in Angular has many components involved in it. A Component is basically a block in which the data can be displayed on HTML using some logic usually written in typescript.
+
+* ngModel is a directive which can be applied on a text field. This a two-way data binding. ngModel is represented by [()]
+
+* It is a method which is subscribed to an observable. Whenever the subscribe method is called, an independent execution of the observable happens.
+
+* Observables are lazy, which means nothing happens until a subscription is made. Whereas Promises are eager; which means as soon as a promise is created, the execution takes place. Observable is a stream in which passing of zero or more events is possible and the callback is called for each event. Whereas, promise handles a single event.
+
+* Authentication: The user login credentials are passed to an authenticate API (on the server). On the server side validation of the credentials happens and a JSON Web Token (JWT) is returned. JWT is a JSON object that has some information or attributes about the current user. Once the JWT is given to the client, the client or the user will be identified with that JWT.
+
+	Authorization: After logging in successfully, the authenticated or genuine user does not have access to everything. The user is not authorized to access someone else’s data, he/she is authorized to access some data.
+
+* It is a library which helps us maintain the state of the application.
+
+* This feature is used to change the output on the template; something like changing the string into uppercase and displaying it on the template. It can also change Date format accordingly.
+
+* In ng-Class, loading of CSS class is possible; whereas, in ng-Style we can set the CSS style.
+
+* 
+
+* LifeCycle-hooks in sequence
+	-> ngOnChange
+	-> ngOnInit
+	-> ngDoCheck
+	-> ngAfterContentInit
+	-> ngAfterContentChecked
+	-> ngAfterViewInit
+	-> ngAfterViewChecked
+	-> ngOnDestroy
+
+*  
+
+
+
+
+
+
+
+
+
+************************************ Askable Interview Q's ********************************************
+* What is current Angular version?
+
+
+
+
+*************************************** useful links **************************************************
+* https://www.greycampus.com/blog/programming/top-30-interview-questions-and-answers-on-angular-5
+

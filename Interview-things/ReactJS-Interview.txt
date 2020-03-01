@@ -1,0 +1,77 @@
+* React is an open-source JavaScript library created by Facebook for building complex, interactive UIs in web and mobile applications.
+
+* React is a small library focused on building UI components
+
+* JSX is a shorthand for JavaScript XML.
+
+* When Facebook first released React to the world, they also introduced a new dialect of JavaScript called JSX that embeds raw HTML templates inside JavaScript code. JSX code by itself cannot be read by the browser; it must be transpiled into traditional JavaScript using tools like Babel and webpack.
+
+Ex: class MyComponent extends React.Component {
+	  render() {
+	    let props = this.props;
+
+	    return (
+	      <div className="my-component">
+	        <a href={props.url}>{props.name}</a>
+	      </div>
+	    );
+	  }
+	}
+
+* The ‘switch’ keyword is used when you want to display only a single route to be rendered amongst the several defined routes. The <switch> tag when in use matches the typed URL with the defined routes in sequential order. When the first match is found, it renders the specified route. Thereby bypassing the remaining routes.
+
+* 
+
+* At the highest level, React components have lifecycle events that fall into three general categories:
+	1) Initialization
+		-> getInitialstate()
+		-> getDefaultProps()
+		-> componentWillMount()
+		-> render()
+		-> componentDidMount()
+	2) State/Property Updates
+		-> componentWillReceiveProps()
+		-> shouldComponentUpdate()
+		-> componentWillUpdate()
+		-> render()
+		-> componentDidUpdate()
+	3) Destruction
+		-> componentWillUnmount()
+
+* Some of the most important lifecycle methods are:
+
+	-> componentWillMount() – Executed just before rendering takes place both on the client as well as 		server-side.
+	-> componentDidMount() – Executed on the client side only after the first render.
+	-> componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and 	before another render is called.
+	-> shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your 		component to update, return true else return false. By default, it returns false.
+	-> componentWillUpdate() – Called just before rendering takes place in the DOM.
+	-> componentDidUpdate() – Called immediately after rendering takes place.
+	-> componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear 		up the memory spaces.
+
+
+* LifeCycle-hooks
+	-> componentDidMount() = when the component is added to the DOM
+	-> componentWillUnmount() = when the component is removed from the DOM
+
+
+
+
+
+
+
+
+
+
+
+************************************ Askable Interview Q's ********************************************
+* What is current React JS version?
+
+
+
+
+*************************************** useful links **************************************************
+* https://www.edureka.co/blog/interview-questions/react-interview-questions/
+* https://www.codementor.io/blog/5-essential-reactjs-interview-questions-du1084ym1
+
+
+

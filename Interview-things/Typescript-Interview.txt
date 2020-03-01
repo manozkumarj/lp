@@ -1,0 +1,11 @@
+* npm i -g typescript
+* tsc -v
+* By default Typescript won't work on it's own. It should be compiled to plain-javascript
+* By default Typscript compile to ES3
+
+
+
+*************************************** useful links **************************************************
+* https://www.youtube.com/watch?v=ahCwqrYpIuM
+* 
+
