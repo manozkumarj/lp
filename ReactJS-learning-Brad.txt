@@ -37,7 +37,7 @@
 
 * We should use "className" in place of "class" with HTML tags. And in "label" tag we should use "htmlFor" in place of "for".
 
-* We should use "this." whenver we call call a function which is outside of "render" method.
+* We should use "this." whenver we call a function which is outside of "render" method.
 	export default class App extends Component {
 		foo(){
 			return "Hello";
@@ -182,7 +182,7 @@ React JS topics:
 
 
 **************************************** V2 *****************************************************
-* JSX elements ust wrapped in an enclosing tag.
+* JSX elements are wrapped in an enclosing tag.
 * 
 
 
@@ -190,6 +190,9 @@ React JS topics:
 --------------------------------------
 * state
 * componentDidMount
+* render
+* componentDidUpdate
+* componentWillUnmount
 
 
 

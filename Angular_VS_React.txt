@@ -23,7 +23,7 @@ React: Single curly brace { variable }
 
 
 
-To app in different port apart from default port
+To run the app in different port apart from default port
 ------------------------------------------------------------
 Angular: ng serve --port 4401
 React: please refer to "https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project" URL

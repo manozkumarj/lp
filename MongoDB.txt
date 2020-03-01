@@ -43,8 +43,8 @@ async function insertUser(){
 }
 
 
-* User.find({ name:'Manoj', isActive: true}); This can also be writter as
-User.find().and({ name:'Manoj' }, { isActive: true });
+* User.find({ name:'Manoj', isActive: true}); This can also be written as
+User.find().and([{ name:'Manoj' }, { isActive: true }]);
 
 * OR - User.find().or([{ name:'Manoj' }, { isActive: true }]);
 
@@ -76,7 +76,7 @@ User.find()
 	.limit(10)
 	.skip(3)
 	.sort([{ name: 1 }, { age: -1 }])
-	.cound();
+	.count();
 
 
 * Sample update query - 

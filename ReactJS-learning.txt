@@ -185,7 +185,7 @@ Ex: const Navbar = ({totalCounters}) => {
 		    );
 		  }
 
-	-> Aefore destructuring: 
+	-> After destructuring: 
 		render() {
 		const { onReset, counters, onDelete, onIncrement } = this.props;
 		    return (
@@ -234,7 +234,6 @@ Actions Done:
 * Lifecycle Hooks
 * Lifing the state up
 * Bubbling events to parent component
-* Multiple components in Sync
 * Stateless Functional Components
 * Destructuring Arguments
 
@@ -276,7 +275,7 @@ Ex: componentDidMount(){
 
 * Point to be noted: We can not use 'lifecycle hooks' in 'stateless functional components'.
 
-* 'componentWillUnmount' phase will be triggered just before a component is removed from DOM. We can do any king of cleanups like if we set up like timers or listners, to avoid memory leaks here.
+* 'componentWillUnmount' phase will be triggered just before a component is removed from DOM. We can do anything of cleanups like if we set up like timers or listners, to avoid memory leaks here.
 
 * To implement routing we need follow two things
 	-> We need to import "BrowserRouter" from "react-router-dom" in index.js
