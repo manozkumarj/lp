@@ -76,6 +76,12 @@
 
 ************************************ Askable Interview Q's ********************************************
 * What is current Angular version?
+* What are lifeCycle-hooks? explain them?
+* What are decorators? explain them?
+* What is component?
+* What is service?
+* Write sample route syntax for login?
+
 
 
 
