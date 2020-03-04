@@ -1,0 +1,23 @@
+* 
+
+
+
+
+
+************************************ Askable Interview Q's ********************************************
+* What is current Node version?
+* Write sample server connection?
+* What is Middleware? Write sample Middleware?
+* How do you protect routes? Write sample?
+* Define few status code?
+* What is Postman?
+* How do you access Post request's body?
+* How do you access get request's query params?
+
+
+
+
+
+*************************************** useful links **************************************************
+* 
+
