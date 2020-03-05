@@ -266,6 +266,8 @@ Useful sites:
 
 * https://stackoverflow.com/questions/40111073/change-the-width-of-ionic-popup
 
+* https://forum.ionicframework.com/t/alertcontroller-with-line-breaks-and-bullet-points-in-it-is-it-possible/61972/2
+
 
 Learnables:
 ----------------------------------------------------------------------------
