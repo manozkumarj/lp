@@ -23,10 +23,14 @@
 							    {prop1:"bnmb",prop2:"yutu"},
 							    {prop1:"zxvz",prop2:"qwrq"}
 							   ];
+--> let stringVar = 'Professional';
 
 --> let sampleString = 'I am a Software Developer';
 --> let string = "Select~Nil~1+~2+~3+";
 
+
+* To make first character upper case then
+	-> stringVar.charAt(0).toUpperCase() + stringVar.slice(1);
 
 * Creating an array from a string
 	let createdArray = sampleString.split(" ");

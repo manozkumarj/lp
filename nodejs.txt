@@ -25,7 +25,7 @@ Commannds:
 
 * npm config get init-author-name = It gives the default author name
 * npm config set init-author-name "Manoj" = It sets the default author name to "Manoj"
-* npm config delete init-author-name = It deltes the previouslt set author name to default
+* npm config delete init-author-name = It deletes the previously set author name to default
 
 
 -----------------------------------
@@ -64,7 +64,7 @@ app.use(morgan('tiny'));
 * NPM concept
 
 
-* Ryan Dahl embeded Google's V8 into C++ and named it as Node
+* 'Ryan Dahl' embeded Google's V8 engine into C++ and named it as 'Node'
 * Node is a run time javascript environment. It contains javascript engine that executes javascript code.
 * Every file in Node is considered as Module.
 * Variables and functions that are declared in a file are scoped to that module.
@@ -155,7 +155,7 @@ HTTP, path, fs, os, events, buffer
 * Explain 'Status codes'?
 * Write sample express server connection with MongoDB connetion?
 * What is a 'middleware'?
-* How dod you protect the routes?
+* How do you protect the routes?
 * 
 
 

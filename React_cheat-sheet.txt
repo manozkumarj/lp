@@ -35,7 +35,7 @@
 	2) 'Context consumer'
 * 'this.context' will holds the data of the provider which is imported by that class.
 * We can consume 'context' with 2nd way which is 'Context consumer' way will work in both 'Class component' & 'Functional component'.
-* We can consume multiple contexts in one component with Context consumer' way.
+* We can consume multiple contexts in one component with 'Context consumer' way.
 
 * Before going to create a component first we need to think whether that component needs 'state' or not. If that component doesn't need 'state' then it is better to go for "Functional component" otherwise "Class based component"
 
@@ -87,6 +87,20 @@ export const bookReducer = (state, action) => {
 
 
 ******************************************************************************************************
+*************************************** Sample RXJS **************************************************
+-> <span className={{'badge' + (type === 'professional' ? 'badge-success' : 'badge-primary')}}>
+	{type}
+	</span>
+
+-> <ul>
+	{email && (<li>
+		<i> {email} </i>
+	</li>)}
+
+-> 
+
+
+******************************************************************************************************
 *********************************** Imports & shortcuts **********************************************
 * imrc
 * imr
@@ -104,6 +118,7 @@ export const bookReducer = (state, action) => {
 * import thunk from 'redux-thunk';
 * import { reduxFirestore, getFirestore } from "redux-firestore";
 * import { reactReduxFirebase, getFirebase } from "react-redux-firebase";
+* import PropTypes from "prop-types";
 
 
 * Packages which need to be install inorder to use them
@@ -270,7 +285,7 @@ Inside of 'index.js' file
 
 ******************************************************************************************************
 ************************************* IMP Points *****************************************************
-* clss => clssName
+* class => className
 * for => htmlFor
 * We automatically get 'props' in 'class based components' & we can acess then as 'this.props'.
 * We can access dynamic parameters from URL as below
