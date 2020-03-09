@@ -74,18 +74,20 @@
 
 
 
-************************************ Askable Interview Q's ********************************************
+************************************ Askable Interview Q's ******************************************
 * What is current Angular version?
 * What are lifeCycle-hooks? explain them?
 * What are decorators? explain them?
 * What is component?
 * What is service?
 * Write sample route syntax for login?
+* Difference between aot and jit?
+	-> https://levelup.gitconnected.com/just-in-time-jit-and-ahead-of-time-aot-compilation-in-angular-8529f1d6fa9d
+* 
 
 
 
 
-
-*************************************** useful links **************************************************
+*************************************** useful links ***********************************************
 * https://www.greycampus.com/blog/programming/top-30-interview-questions-and-answers-on-angular-5
 

@@ -492,6 +492,8 @@ https://www.youtube.com/watch?v=OK_JCtrrv-c
 ****************************************************************************
 Useful Links:
 -----------------------------------
+* https://stackoverflow.com/questions/55176652/cant-find-xampp-setup-for-windows-32-bit-php-7-3-2
+* https://alexcican.com/post/how-to-remove-php-html-htm-extensions-with-htaccess/
 * https://help.dreamhost.com/hc/en-us/articles/215747748-How-can-I-redirect-and-rewrite-my-URLs-with-an-htaccess-file-
 
 

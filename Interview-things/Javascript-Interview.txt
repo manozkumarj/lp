@@ -1,0 +1,29 @@
+* 
+
+
+
+
+
+
+
+
+
+
+
+*************************************** Askable Q's ***********************************************
+* What ES6 features?
+* What are higher-order methods? explain them?
+* Diff B/W for-in & for-of?
+* Diff B/W const, let, and var?
+* OOPS concepts?
+* 
+
+
+
+
+*************************************** useful links ***********************************************
+
+
+
+
+
