@@ -109,7 +109,7 @@ export const bookReducer = (state, action) => {
 * rfc
 
 
-* import React, { Component, createContext, useEffect, useState, useReducer } from 'react';
+* import React, { Component, createContext, useEffect, useState, useReducer, useRef } from 'react';
 * import { BrowserRouter as Router, Route, Link, NavLink, Switch, withRouter } from 'react-router-dom';
 * import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 	-> const store = createStore();
@@ -119,6 +119,7 @@ export const bookReducer = (state, action) => {
 * import { reduxFirestore, getFirestore } from "redux-firestore";
 * import { reactReduxFirebase, getFirebase } from "react-redux-firebase";
 * import PropTypes from "prop-types";
+* import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 
 * Packages which need to be install inorder to use them
@@ -402,7 +403,7 @@ every route.
 * What are 'mapStateToProps' & 'mapDispatchToProps' functions?
 * What are 'action creators'?
 * What is 'Single State of Truth'?
-
+* What is 'useRef' and explain it's usage?
 
 
 
