@@ -222,6 +222,10 @@ IONIC lifecycle hooks:
 
 Useful sites:
 ----------------------------------------------------------------------------
+* https://ioncheatsheet.com/
+* http://www.developerslearnit.com/2018/09/creating-ionic-3-landing-and-login-page-pop-up-with-css3.html
+* https://stackoverflow.com/questions/55687695/how-to-give-alert-controller-css-in-ionic-4
+* https://stackoverflow.com/questions/43606619/ionic-2-modal-make-50-of-the-width
 * https://www.freakyjolly.com/ionic-4-show-native-like-toast-messages-in-ionic-application-in-2-steps-without-any-plugin/#more-2028
 * https://devdactic.com/ionic-4-sqlite-queries/
 * https://ionicthemes.com/tutorials
@@ -267,6 +271,11 @@ Useful sites:
 * https://stackoverflow.com/questions/40111073/change-the-width-of-ionic-popup
 
 * https://forum.ionicframework.com/t/alertcontroller-with-line-breaks-and-bullet-points-in-it-is-it-possible/61972/2
+
+* https://demo.mobiscroll.com/angular/popup/basic#theme=material  --> ***
+
+* https://www.youtube.com/watch?v=Bs_NnfyRFmk --> Ionic 4 Alert Tutorial
+* https://www.tutorialsplane.com/ionic-popup/
 
 
 Learnables:
