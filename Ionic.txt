@@ -230,6 +230,7 @@ Useful sites:
 * https://devdactic.com/ionic-4-sqlite-queries/
 * https://ionicthemes.com/tutorials
 * https://www.freakyjolly.com/ionic-4-use-camera-using-ionic-native-plugin-in-ionic-4-latest-version/
+* https://enappd.com/blog/image-picker-in-ionic-4-app/67/
 * https://www.youtube.com/watch?reload=9&v=PZVyE6LXu50  -> Cordova Not Available in ionic serve fixed Ionic Framework Cool Trick
 * https://www.youtube.com/watch?v=CGiqPTK7EoM&list=PLz5rnvLVJX5UEDbxBypmXHdxlReX47Qdn
 * https://stackoverflow.com/questions/51828017/navcontroller-doesnt-work-in-ionic-4
@@ -276,6 +277,10 @@ Useful sites:
 
 * https://www.youtube.com/watch?v=Bs_NnfyRFmk --> Ionic 4 Alert Tutorial
 * https://www.tutorialsplane.com/ionic-popup/
+* https://codesundar.com/ionic-action-sheet
+
+* https://blog.angulartraining.com/whats-the-difference-between-style-and-ngstyle-in-angular-68a3301c2ae6
+
 
 
 Learnables:
