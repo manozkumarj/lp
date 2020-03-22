@@ -315,6 +315,19 @@ https://www.youtube.com/watch?v=dPUmskG_-y0
 
 * https://medium.com/@surajair/ionic-native-sqlite-with-browser-development-6847b7f9611
 
+* https://www.freakyjolly.com/ionic-4-3-native-like-select-box-wheel-selector-in-ionic-application/
+
+* https://stackoverflow.com/questions/53643587/i-want-a-ionic3-simple-wheel-picker
+
+
+
+Links which helped to solve the errors I faced:
+----------------------------------------------------------------------------
+* https://forum.ionicframework.com/t/how-to-resolve-babel-error-when-installing-geolocation-in-ionic-app/185542/2
+
+
+
+
 
 My practice project skeleton:
 ----------------------------------------------------------------------------
