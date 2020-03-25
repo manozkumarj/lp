@@ -319,6 +319,43 @@ https://www.youtube.com/watch?v=dPUmskG_-y0
 
 * https://stackoverflow.com/questions/53643587/i-want-a-ionic3-simple-wheel-picker
 
+* https://stackoverflow.com/questions/34747259/ionic-age-number-spinner-component
+
+* https://www.djamware.com/post/5c9361e080aca754f7a9d1ef/ionic-4-angular-7-and-cordova-crop-and-upload-image ***
+
+* https://www.youtube.com/watch?v=dPUmskG_-y0 - Custom Ionic Splash + Animation
+
+
+
+
+
+
+Firebase with Ionic:
+----------------------------------------------------------------------------
+* https://www.youtube.com/watch?v=FwS9XlUc75A --> Ionic 4 CRUD Using Firebase Database
+* https://www.youtube.com/watch?v=OCV2W2DZDSI&list=PLYxzS__5yYQnpK36-GJjm7IEAuHR7IExa --> #0: [Kickstart] Creating a Social Media App - Ionic + Firebase + Angular + Uploadcare
+
+* https://ionicthemes.com/tutorials/about/building-a-ionic-firebase-app-step-by-step
+
+
+* https://www.youtube.com/watch?v=H20l9ofyR54 --> How to Create a Simple Ionic 4 Firebase App with AngularFire
+* https://www.youtube.com/watch?v=SHRjQA3lvNk --> How to Build An Ionic 4 App with Firebase and AngularFire 5
+* 
+
+
+
+
+Ionic sites:
+----------------------------------------------------------------------------
+* https://drissas.com/ionic-whatsapp/ <-> https://www.youtube.com/watch?v=kBb81eHcr2c
+* 
+
+
+
+
+
+
+
 
 
 Links which helped to solve the errors I faced:

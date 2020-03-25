@@ -5,12 +5,12 @@ VSCode extension:
 
 
 --------------------------------------------------------
-* React is used create (SAP) "Single Page Application"
+* React is used to create (SAP) "Single Page Application"
 * React can have class base components & functional components
-* Class base components will have like cycle hooks.
-* When we build web application using React we need "react" and "react-dom" packages for sure.
+* Class base components will have life-cycle hooks.
+* When we build web application using React, we need "react" and "react-dom" packages for sure.
 * We should use ES6's "Arrow Function" to create methods in order to access "this.props" object of it's 	component.
-	Ex: sampleMethod = (todo) =>{
+	Ex: sampleMethod = (todo) => {
 		console.log(this.props);
 	}
 * 
@@ -57,7 +57,7 @@ Useful packages for React:
 
 PWA(Progressive Web Apps)
 ------------------------------------------------------------------------
-* "ServiceWorked" module is used for PWA.
+* "ServiceWorker" module is used for PWA.
 * 
 
 
