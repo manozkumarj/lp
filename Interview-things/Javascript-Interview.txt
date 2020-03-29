@@ -22,7 +22,8 @@
 
 
 *************************************** useful links ***********************************************
-
+* https://www.youtube.com/watch?v=jpFNwuwr7o4 --> JavaScript interview question in Hindi # sort function with array
+* https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
 
 
 

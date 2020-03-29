@@ -55,6 +55,8 @@ Few string funs:
 * string.toLowerCase();
 * string.trim(); string.trimLeft(); string.trimRight();
 * string.split(' '); // This is just like explode() function in PHP
+* string.reverse();
+* string.join('');
 * 
 *********************
 

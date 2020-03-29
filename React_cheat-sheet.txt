@@ -16,10 +16,10 @@
 
 
 ******************************************************************************************************************************************* IMP Points *****************************************************
-* difference npx and npm
+* difference B/W npx and npm
 	-> npm is a tool mainly used to install packages.
 	-> npx is a tool to execute packages.
-	What does it means? That if you want to execute a package without installing it on your computer and then launch it you can use npx directly.
+	What does it mean? That if you want to execute a package without installing it on your computer and then launch it you can use npx directly.
 	Speaking of react , create-react-app is an utility to bootstrap a react project: if you use it with npx ( npx create-react-app my-app ) you will have your my-app project in place without the need to install create-react-app itself ( which will need another passage: npm install create-react-app and then create-react-app my-app)
 
 * We automatically get 'props' in 'class based components' & we can acess then as 'this.props'.
@@ -83,7 +83,7 @@ export const bookReducer = (state, action) => {
 };
 
 
-
+* Refs: Refs are a function provided by React to access the DOM element and the React element that you might have created on your own. They are used in cases where we want to change the value of a child component, without making use of props and all.
 
 
 ******************************************************************************************************
@@ -122,7 +122,7 @@ export const bookReducer = (state, action) => {
 * import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 
-* Packages which need to be install inorder to use them
+* Packages which need to be installed inorder to use them
 	-> react-router-dom
 	-> redux
 	-> react-redux
