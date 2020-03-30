@@ -332,6 +332,16 @@ https://www.youtube.com/watch?v=dPUmskG_-y0
 
 Firebase with Ionic:
 ----------------------------------------------------------------------------
+
+	keytool -exportcert -list -v -alias androiddebugkey -keystore -/ .android/debug.keystore
+
+* https://www.youtube.com/watch?v=aakXkUY6MYU --> How to get the SHA1 fingerprint certificate in android studio for debug mode
+(
+keytool -list -v -keystore C:\Users\USERNAME\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
+)
+
+
+
 * https://www.youtube.com/watch?v=FwS9XlUc75A --> Ionic 4 CRUD Using Firebase Database
 * https://www.youtube.com/watch?v=OCV2W2DZDSI&list=PLYxzS__5yYQnpK36-GJjm7IEAuHR7IExa --> #0: [Kickstart] Creating a Social Media App - Ionic + Firebase + Angular + Uploadcare
 
@@ -341,6 +351,12 @@ Firebase with Ionic:
 * https://www.youtube.com/watch?v=H20l9ofyR54 --> How to Create a Simple Ionic 4 Firebase App with AngularFire
 * https://www.youtube.com/watch?v=SHRjQA3lvNk --> How to Build An Ionic 4 App with Firebase and AngularFire 5
 * 
+
+* https://www.youtube.com/watch?v=tS4irXVdQ08 --> IONIC FACEBOOK LOGIN FOR MOBILE APP
+
+* 
+
+
 
 
 

@@ -36,7 +36,7 @@
 
 * A web page in Angular has many components involved in it. A Component is basically a block in which the data can be displayed on HTML using some logic usually written in typescript.
 
-* ngModel is a directive which can be applied on a text field. This a two-way data binding. ngModel is represented by [()]
+* ngModel is a directive which can be applied on a text field. This is a two-way data binding. ngModel is represented by [()]
 
 * It is a method which is subscribed to an observable. Whenever the subscribe method is called, an independent execution of the observable happens.
 
