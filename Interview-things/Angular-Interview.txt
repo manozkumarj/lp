@@ -12,6 +12,9 @@
 	-> Dependency Injection
 	-> Routing
 
+* Structural directives are easy to recognize. An asterisk (*) precedes the directive attribute name.
+Three of the common, built-in structural directives—NgIf, NgFor, and NgSwitch.
+
 * Transpiling is the process of converting the typescript into javascript (using Traceur, a JS compiler). Though typescript is used to write code in the Angular applications, the code is internally transpiled into javascript.
 
 * Components break up the application into smaller parts; whereas, Directives add behavior to an existing DOM element.
@@ -76,6 +79,8 @@
 
 ************************************ Askable Interview Q's ******************************************
 * What is current Angular version?
+* Diff B/W Angular JS & Angular?
+* Angular 5 features?
 * What are lifeCycle-hooks? explain them?
 * What are decorators? explain them?
 * What is component?
@@ -83,11 +88,14 @@
 * Write sample route syntax for login?
 * Difference between aot and jit?
 	-> https://levelup.gitconnected.com/just-in-time-jit-and-ahead-of-time-aot-compilation-in-angular-8529f1d6fa9d
+* How do you test your application? What tools do you use for testing?
+* What are structural directives in Angular?
+* What is lambda expression in angular?
 * 
-
-
 
 
 *************************************** useful links ***********************************************
 * https://www.greycampus.com/blog/programming/top-30-interview-questions-and-answers-on-angular-5
-
+* http://www.learnangularjs.net/angular5-features.php
+* https://www.geeksforgeeks.org/difference-between-angular-and-angularjs/
+* 

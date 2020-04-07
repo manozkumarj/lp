@@ -18,6 +18,15 @@
 
 
 
+
+*************************************** Askable Q's ***********************************************
+* What is latest version?
+* Write sample DB connection in NodeJS & PHP?
+* What's diff B/W Primary key & Foreign key?
+* What's diff B/W CONCAT & GROUP_CONCAT?
+* 
+
+
 *************************************** useful links **************************************************
 * 
 

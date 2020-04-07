@@ -49,7 +49,7 @@ some meta data is called "Component".
 * A component is made up of 3 things, 1)Template 2)Class 3)Meta data
 * There are 3 ways to specify the selector - 1)app-test 2).app-test 3)[app-test]
 * A property within double curly braces is known as "Interpolation" in Angular
-* Interpolation only works with Srtings but not boolean things.
+* Interpolation only works with Strings but not boolean things.
 To work with boolean things "Property binding" comes to the picture.
 Ex: <input type='text' [disabled]='isDisabled' value='Manoj' id={{myId}}' />
 Ex: <input type='text' bind-disabled='isDisabled' value='Manoj' id={{myId}}' />
