@@ -1,0 +1,32 @@
+* Lazy loading is a design pattern in Ionic framework used to defer initialization of components until it is needed. This practice speeds up the initial load of the application and increases performance.
+* Cordova allows you to access native device functions using JavaScript, and is typically used in combination with a UI framework. Ionic is a front-end, mobile-optimized library that can be used to make your Cordova app look native.
+* 
+
+
+
+
+* npm install ionic cordova -g
+
+
+
+
+************************************ Askable Interview Q's ******************************************
+* What is current Ionic version?
+* What is Cordova?
+* What is a hybrid app?
+* Ionic create & runnable commands?
+* Diff B/W Ionic 4 & 5?
+* What are the pluggins that you commonly use?
+* Name few Ionic tags?
+* Ionic app integration with Firebase flow?
+* How can find whether an Angular app is integrated to Ionic?
+* How can we use SQLite database in our app?
+* What is lazy loading in Ionic?
+* 
+
+
+*************************************** useful links ***********************************************
+* https://www.zeolearn.com/interview-questions/ionic-framework
+* 
+
+

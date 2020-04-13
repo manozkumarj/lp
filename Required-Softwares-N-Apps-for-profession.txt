@@ -6,7 +6,7 @@
 * Postman
 * MySQL query browser
 * Skype
-* AnyDesk / Join.me / Go to Meeting / Team Viewer
+* AnyDesk / Zoom Meetings / Join.me / Go to Meeting / Team Viewer
 * Microsoft Outlook
 * SVN
 * puTTY

@@ -1,3 +1,7 @@
+* 'var' and 'let' are both used for variable declaration in javascript but the difference between them is that 'var' is function scoped and 'let' is block scoped.
+
+* Both freeze and seal are used to create non extensible objects in JavaScript, but there are plenty of differences between them. Object.seal() allows changes to the existing properties of an object whereas Object.freeze() does not allow so. Object.freeze() makes an object immune to everything even little changes cannot be made. Object.seal() prevents from deletion of existing properties but cannot prevent them from external changes.
+
 * 
 
 
@@ -16,15 +20,20 @@
 * Diff B/W for-in & for-of?
 * Diff B/W const, let, and var?
 * OOPS concepts?
+* What is closure?
+* What is lamda function?
+* Difference between substr() and substring()?
+* What is the difference between freeze and seal in JavaScript ?
 * 
 
 
 
-
 *************************************** useful links ***********************************************
+* https://www.geeksforgeeks.org/javascript-interview-questions-and-answers
 * https://www.youtube.com/watch?v=jpFNwuwr7o4 --> JavaScript interview question in Hindi # sort function with array
 * https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
-
+* https://www.geeksforgeeks.org/what-is-the-difference-between-freeze-and-seal-in-javascript/
+* 
 
 
 

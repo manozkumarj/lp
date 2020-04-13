@@ -5,7 +5,7 @@
 
 
 ************************************ Askable Interview Q's ********************************************
-* What is current Node version?
+* What is current Node version? 12.16 LTS
 * Write sample server connection?
 * What is Middleware? Write sample Middleware?
 * How do you protect routes? Write sample?

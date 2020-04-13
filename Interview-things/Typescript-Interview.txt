@@ -5,6 +5,14 @@
 
 
 
+
+
+*************************************** Askable Q's ***********************************************
+* What is 'strict typing'?
+* What data types are available in TS?
+* 
+
+
 *************************************** useful links **************************************************
 * https://www.youtube.com/watch?v=ahCwqrYpIuM
 * 

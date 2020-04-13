@@ -35,3 +35,10 @@ let b = 'birds 5';
 let c = a+b; 
 console.log(c); // gives "2birds 5" as output.
 console.log(typeof(c)); // gives "string"
+
+
+
+
+*************************************** useful links ***********************************************
+* https://www.geeksforgeeks.org/difference-between-javascript-and-php/?ref=rp
+

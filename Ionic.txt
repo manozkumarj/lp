@@ -163,6 +163,7 @@ Runnig the App in the Browser:
 * ionic cordova plugin add cordova-plugin-camera
 * ionic cordova emulate browser
 
+* https://stackoverflow.com/questions/44640802/ionic-build-run-for-browser
 * https://www.npmjs.com/package/cordova-sqlite-storage
 -------------------------------------------------------------------------------------------------
 -----------------------------------  Packages & Usage  ------------------------------------------

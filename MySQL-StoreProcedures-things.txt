@@ -1,0 +1,19 @@
+* Deleting multiple records using IN clause ------------------------------------------------------------
+
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_user_allergies_upsert` $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_user_allergies_upsert`(IN IN_user_id INT, IN IN_relative_id INT,IN IN_commaSeparatedAllergy_ids VARCHAR(2000))
+
+BEGIN
+
+    set @sql = concat("DELETE FROM ehr_allergy WHERE user_id = ",IN_user_id," AND relative_id = ",IN_relative_id," AND allergy_id IN ('", replace(IN_commaSeparatedAllergy_ids,",","','"), "')");
+
+    PREPARE q FROM @sql;
+    
+    execute q;
+
+END $$
+
+DELIMITER ;
+------------------------------------------------------------------------------------------------------

@@ -1,3 +1,5 @@
+* 'var' and 'let' are both used for variable declaration in javascript but the difference between them is that 'var' is function scoped and 'let' is block scoped.
+
 * To get number of milliseconds from 1970
 	new Date().getTime(); (OR) +new Date();
 
@@ -112,7 +114,7 @@
 * https://www.w3schools.com/js/js_array_sort.asp
 
 * https://stackoverflow.com/questions/15595652/focus-next-input-once-reaching-maxlength-value
-
+* https://www.youtube.com/watch?v=tiRhFGnCltw
 
 
 
