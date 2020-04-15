@@ -1,3 +1,12 @@
+* We can use 'axios' OR 'fetch API' to make API calls
+* 
+
+
+
+
+
+
+
 * https://pixexid.com/tag/360%20Panorama
 * https://api.github.com/users/bradtraversy/followers  || https://api.github.com/users/mosh-hamedani/followers
 * 

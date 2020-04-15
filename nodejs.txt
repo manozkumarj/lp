@@ -117,8 +117,13 @@ Payment Gateway:
 
 
 NodeJS core modules:
---------------------------------
-HTTP, path, fs, os, events, buffer
+--------------------------------------------------------------------
+HTTP, path, fs, os, events, buffer, crypto
+
+-> FS functions
+    -> fs.watch(filePath, () => {});
+    -> fs.readFile(filePath, (err, data) => {});
+    -> fs.readFileSync(filePath);
 
 
 * https://thebittheories.com/nodejs-interview-questions-935498510d46

@@ -11,8 +11,9 @@
 	(By default, a ReactJS app runs on port 3000. An Express.js app also runs on the same port 3000)
 * npm build || npm run build
 
+* In React every tag should contain close tag. i.e, <img src="#" />
 
-
+* We have to use camecase to write css styles. i.e, marginBottom: '20px'
 
 
 ******************************************************************************************************************************************* IMP Points *****************************************************

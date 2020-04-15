@@ -2,9 +2,47 @@
 * Node.js is a run-time JavaScript environment built on top of Chrome’s V8 engine. It uses an event-driven, non-blocking I/O model. It is lightweight and so efficient. Node.js has a package ecosystem called npm.
 * Node.js (or JavaScript) is a single-threaded, event-driven language.
 * REPL means Read-Eval-Print-Loop. It is a virtual environment that comes with Node.js. We can quickly test our JavaScript code in the Node.js REPL environment.
+
+* In Node js every file is a moule. And every Node Js App contains at least one main module which is route module.
+
+* Node JS keeps the events in stack.
+
+* Asynchronous programming means - In Node js, any event takes much time, it will be in stack and callback function wil be triggered after event completion.
+
+* In browser we can use 'window' & 'document' objects. Whereas in Node we have 'global' & 'process'
+
+* We can execute any JS file by running below command in terminal/CMD
+	node FILE-NAME.js
+
+* It is possible to write synchronous way/code in Node JS. We can do that with 'fs.readFileSync' func.
+
 * 
 
 
+
+* We can use 'config' || 'dotenv' packages to utilise 'process.env'
+* 
+
+
+
+
+****************************************** Common packages *********************************************
+* express
+* express-validator
+* body-parser
+* morgan
+* nodemon
+* config || dotenv
+* multer
+* nodemailer
+* mongoose
+* mysql
+* jsonwebtoken
+* passport
+* uuid
+* cookie-parser
+* helmet
+* cors
 
 
 ****************************************** Status codes ************************************************

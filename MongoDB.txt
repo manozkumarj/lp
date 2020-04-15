@@ -2,6 +2,7 @@
 * We use the schema to define the shape of documents in a MongoDB collection.
 * __id is a unique identifier of a document
 * Mongoose is built on top of MongoDB driver
+* 'mlab' is online MongoDB database provider. We can store upto 0.5GB data.
 
 Possible datatypes:
 ---------------------------------------
@@ -147,9 +148,30 @@ https://www.youtube.com/watch?v=dQIXLhKcv5c&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX
 
 
 
+******************************** NodeJS Mongoose Schema dataTypes **********************************
+-> 	const mongoose = require("mongoose");
+	const {ObjectId} = mongoose.Schema;
+
+* type: String | Number | Date | ObjectId
+* trim: true,
+* required: true,
+* default: Date.now,
+* 
+
+* postedBy : {
+				type: ObjectId || mongoose.Schema.ObjectId,
+				ref: "User" // Collection name
+			}
 
 
 
+
+
+************************************** Mongoose functions ******************************************
+* findById(id);
+* findOne({ email });
+* findById(id).sort({date: -1});
+* find().select("_id title body")
 
 
 
@@ -184,3 +206,4 @@ Learnable links:
 ---------------------------------------- Useful Links ---------------------------------------
 * https://stackoverflow.com/questions/20796714/how-do-i-start-mongo-db-from-windows
 * https://www.djamware.com/post-sub-category/5845677b80aca7763489d871/mongodb
+

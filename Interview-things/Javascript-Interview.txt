@@ -24,6 +24,7 @@
 * What is lamda function?
 * Difference between substr() and substring()?
 * What is the difference between freeze and seal in JavaScript ?
+* Diff B/W normal func & Arrow func?
 * 
 
 

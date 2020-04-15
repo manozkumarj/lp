@@ -39,6 +39,12 @@ console.log(typeof(c)); // gives "string"
 
 
 
+*************************************** Node & PHP ***********************************************
+* Node js is single threaded & non-blocking I/O system. Whereas PHP is mult-threaded blocking.
+* 
+
+
+
 *************************************** useful links ***********************************************
 * https://www.geeksforgeeks.org/difference-between-javascript-and-php/?ref=rp
 
