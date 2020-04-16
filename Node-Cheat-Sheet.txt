@@ -16,7 +16,7 @@
 
 * It is possible to write synchronous way/code in Node JS. We can do that with 'fs.readFileSync' func.
 
-* 
+* 'npx' is available with Node 12+ versions
 
 
 

@@ -1,3 +1,6 @@
+* Javascript is based on ECMAscript specification
+* which is standard set by "European Computer Manifacturer Associations" (ECMA)
+
 * 'var' and 'let' are both used for variable declaration in javascript but the difference between them is that 'var' is function scoped and 'let' is block scoped.
 
 * To get number of milliseconds from 1970
@@ -12,7 +15,8 @@
       console.log("+9 month date  --> " + new Date(today));
       console.log("+9 months Timestamp  --> " + Math.round(new Date(today).getTime() / 1000));
 
-* 
+* Diff B/W normal func & Arrow func is 
+	Arrow func don't have their own context.
 
 
 *********************************** Examples *********************************************

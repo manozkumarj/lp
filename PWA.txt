@@ -1,0 +1,20 @@
+* A PWA (Progessive Web Application) can work on low speed networks and installable on mobile devices.
+* A PWA can be treated as a mobile application/mobile website.
+* 'Manifest.json' & 'service-worker.js' files are the heart for PWA apps
+
+Why PWAs:---------------------------------------------------------------------------------------------
+* PWAs can be installed on devices.
+* Works well over varying networks.
+* Platform agnostic (No app store OR play store required)
+* It's built using HTML, CSS, and Javascript
+* Responsive to any screen-size.
+* Provides an offline experience.
+
+PWA checklist:---------------------------------------------------------------------------------------------
+* Be served over HTTPS
+* Includes a Web App Manifest that includes:
+	-> short_name OR name
+	-> icons - must include 192px and 512px icon
+	-> start_url
+	-> display - must be one of fullscreen, standalone, or minimal-ui
+* Registers a service worker with a functional fetch handler
