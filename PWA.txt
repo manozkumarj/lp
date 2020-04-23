@@ -9,6 +9,7 @@ Why PWAs:-----------------------------------------------------------------------
 * It's built using HTML, CSS, and Javascript
 * Responsive to any screen-size.
 * Provides an offline experience.
+* Get push notifications just like an app
 
 PWA checklist:---------------------------------------------------------------------------------------------
 * Be served over HTTPS

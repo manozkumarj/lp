@@ -133,7 +133,7 @@ export const bookReducer = (state, action) => {
 	If first parameter(mapStateToProps) not available to pass then we can pass as 'null'
 		Ex: export default connect(null, mapDispatchToProps)(CreateProject);
 
-* Redux thunk is a middleware, it runs between 'Dispatch Action' & 'Reducer'. It allows us to perform Asynchronous task in our 'Action Creators'.
+* 'Redux thunk' is a middleware, it runs between 'Dispatch Action' & 'Reducer'. It allows us to perform Asynchronous task in our 'Action Creators'.
 	-> Thunk:
 		-> Halts the dispatch
 		-> Performs async request
@@ -387,6 +387,7 @@ every route.
 ******************************************************************************************************
 ***************************************** Useful Links ***********************************************
 * https://tylermcginnis.com/react-router-pass-props-to-components/
+* https://www.youtube.com/watch?v=sfvrjwVihFY --> react-router-nested-routes
 * 
 
 

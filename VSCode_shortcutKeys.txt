@@ -30,6 +30,7 @@ Plugins:
 * Auto Rename Tag
 * Ionic 4 Snippets
 * Sublime Babel
+* Path Intellisense
 
 
 

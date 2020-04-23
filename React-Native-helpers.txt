@@ -160,7 +160,7 @@ Commands:
 
 
 Commands:
-------------------------------
+------------------------------------------------------------
 * npm install react-native-cli --global
 * npx react-native init AwesomeProject
 * cd AwesomeProject

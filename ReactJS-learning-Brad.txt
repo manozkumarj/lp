@@ -2,7 +2,7 @@
 * Created & Maintained by Facebook.
 * Used to build dynamic user interfaes.
 * Component based library.
-* React is "technically" a library because it doesn't include a router OR Http like Angular does and so on but it is often refered to as a Framework as it is used for many of the same reasons as a framework.
+* React is "technically" a library because it doesn't include a 'router' OR 'Http' like Angular does and so on but it is often refered to as a Framework as it is used for many of the same reasons as a framework.
 * 
 
 
@@ -14,7 +14,7 @@
 * Components can have "props" & "state"
 * Class components can have "state" but "Functional components" could not. But "Hooks" allow us to have "State" within "Functional components".
 * Class component example
-	import React, { Component } from "react";
+	import React, { Component, Fragment } from "react";
 	export default class App extends Component {
 		render(){
 			return (
@@ -26,7 +26,7 @@
 	}
 
 * Functional component example
-	import React from "react";
+	import React, { Fragment } from "react";
 	export default App() {
 		return (
 			<React.Fragment>
@@ -39,9 +39,6 @@
 
 * We should use "this." whenver we call a function which is outside of "render" method.
 	export default class App extends Component {
-		foo(){
-			return "Hello";
-		}
 
 		render(){
 			return (
@@ -50,6 +47,10 @@
 					{ this.foo() }
 				</React.Fragment>
 			);
+
+			foo(){
+				return "Hello";
+			}
 		}
 	}
 
@@ -87,8 +88,8 @@
 		}
 
 		static propTypes = {
-			title: PropTypes.string.isRequired,
-			icon: PropTypes.string.isRequired
+			login: PropTypes.string.isRequired,
+			avatarUrl: PropTypes.string.isRequired
 		}
 
 		render(){
@@ -128,8 +129,8 @@
 	}
 
 	UserItem.propTypes = {
-		title: PropTypes.string.isRequired,
-		icon: PropTypes.string.isRequired
+		login: PropTypes.string.isRequired,
+		avatarUrl: PropTypes.string.isRequired
 	}
 
 
@@ -251,7 +252,7 @@ export const ThemeContext = createContext();
 ******************************** The NetNinja *********************************************
 * 'npx' comes with npm 5.2+ versions.
 * Context API - Clean & easy way to share state between components
-* Context API is alternative to Redux we can say
+* 'Context API' is alternative to 'Redux' we can say
 * 'contextType' will be used in 'Class component' but not in 'Functional component'.
 * 'useEffect()' will be triggered everytime data changes/renders & We can use 'useEffect()' method as many times as want.
 	useEffect(() => {
@@ -261,8 +262,8 @@ export const ThemeContext = createContext();
 		console.log('Age changed');
 	}, [age]);
 
-* Use pascalcase while creating 'context' files. Ex: BookContext.js
-* Use camelcase while creating 'reducer' files. Ex: bookReducer.js
+* Use 'pascalcase' while creating 'context' files. Ex: BookContext.js
+* Use 'camelcase' while creating 'reducer' files. Ex: bookReducer.js
 
 * We have two types of components
 	-> Container components - Sometimes called as 'class based components'
@@ -270,7 +271,7 @@ export const ThemeContext = createContext();
 		* Contains life-cycle hooks
 		* Not concerned with UI
 		* Use classes to create
-	-> UI components - Sometimes called as 'stateless'/'class based components'/'UI' components
+	-> UI components - Sometimes called as 'stateless'/'Functional components'/'UI' components
 		* Don't contain state
 		* Receive data from 'props'
 		* Only concerned with UI
@@ -283,7 +284,7 @@ export const ThemeContext = createContext();
 
 Redux
 **************************************************************************************
-* First React creats a 'Virtual DOM' and renders in to the DOM. And React keep watches the changes and if if any mondification occures, then React compares that change with 'Virtual DOM' and then reders that particular change to the DOM.
+* First React creats a 'Virtual DOM' and renders in to the DOM. And React keep watches the changes and if any mondification occures, then React compares that change with 'Virtual DOM' and then reders that particular change to the DOM.
 * A layer on-top of React
 * Components look like HTML template (actually JSX)
 * They can contain 'state' (data or UI state)

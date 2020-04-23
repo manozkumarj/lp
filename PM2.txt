@@ -1,5 +1,6 @@
 * npm i -g pm2
 * pm2 list
+* pm2 start server.js
 * pm2 start [id] // pm2 start all
 * pm2 save
 * pm2 delete [id] // pm2 delete all
@@ -20,7 +21,7 @@ To make the application start automatically after restarting the PC - Windows
 
 
 To make the application start automatically after restarting the PC - Linux
-* pm2 startup upstart
+* pm2 startup systemd/upstart
 * sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u kamrup-van3 --hp /home/kamrup-van3
 * pm2 unstartup systemd
 

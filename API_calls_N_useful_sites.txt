@@ -1,4 +1,5 @@
 * We can use 'axios' OR 'fetch API' to make API calls
+* 'axios' is a promise based Http client.
 * 
 
 
@@ -9,4 +10,6 @@
 
 * https://pixexid.com/tag/360%20Panorama
 * https://api.github.com/users/bradtraversy/followers  || https://api.github.com/users/mosh-hamedani/followers
+* https://api.randomuser.me/?nat=IN&results=50
+* https://jsonplaceholder.typicode.com/
 * 

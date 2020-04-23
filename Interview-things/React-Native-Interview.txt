@@ -1,0 +1,30 @@
+* 0.62 is current version
+* It is based on React js, which is written in JavaScript.
+* It is a framework that compiles to native app components, allowing you to build native mobile applications for different platforms.
+* React Native is a mobile app development framework that enables the development of multi-platform Android and iOS apps using native UI elements.
+* JSX is a syntax notation for JavaScript XML(XML-like syntax extension to ECMAScript). It stands for JavaScript XML. It provides expressiveness of JavaScript along with HTML like template syntax. For example, the below text inside h1 tag return as javascript function to the render function,
+	render(){
+        return(
+         <div>
+            <h1> Welcome to React world!!</h1>
+         </div>
+        );
+     }
+* 
+
+
+
+
+************************************ Askable Interview Q's ********************************************
+* What is current React Native version?
+
+
+
+
+*************************************** useful links **************************************************
+* https://www.bestinterviewquestion.com/react-native-interview-questions
+* https://www.fullstack.cafe/blog/react-native-interview-questions
+* 
+
+
+
