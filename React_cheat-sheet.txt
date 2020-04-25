@@ -121,6 +121,12 @@ export const bookReducer = (state, action) => {
 * import { reactReduxFirebase, getFirebase } from "react-redux-firebase";
 * import PropTypes from "prop-types";
 * import { CSSTransition, TransitionGroup } from "react-transition-group";
+* import ScrollToBottom from "react-scroll-to-bottom";
+* import ReactEmoji from "react-emoji";
+
+* import queryString from "query-string";
+	-> const data = queryString.parse(location.search);
+* io queryString from "socket.io-client";
 
 
 * Packages which need to be installed inorder to use them

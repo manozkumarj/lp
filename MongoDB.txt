@@ -166,7 +166,7 @@ https://www.youtube.com/watch?v=dQIXLhKcv5c&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX
 * trim: true,
 * required: true,
 * default: Date.now,
-* 
+* unique: true
 
 * postedBy : {
 				type: ObjectId || mongoose.Schema.ObjectId,
@@ -184,8 +184,17 @@ https://www.youtube.com/watch?v=dQIXLhKcv5c&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX
 * find().select("_id title body")
 * Post.findByIdAndUpdate(req.body.postId, {$push : { likes: req.body.userId }}, {new: true})
 * Post.findByIdAndUpdate(req.body.postId, {$pull : { likes: req.body.userId }}, {new: true})
+* User.findByIdAndDelete(id);
+* findOneAndDelete() returns the deleted document after having deleted it (in case you need its contents after the delete operation);
+	-> findOneAndDelete() should be able to delete on _id.
+* deleteOne() is used to delete a single document
+* remove() is a deprecated function and has been replaced by deleteOne() (to delete a single document) and deleteMany() (to delete multiple documents)
+* Post.findByIdAndUpdate(
+                req.body.postId,
+                { $push: { comments: comment, updated: new Date() } },
+                { new: true }
+            )
 * 
-
 
 
 
@@ -218,4 +227,4 @@ Learnable links:
 ---------------------------------------- Useful Links ---------------------------------------
 * https://stackoverflow.com/questions/20796714/how-do-i-start-mongo-db-from-windows
 * https://www.djamware.com/post-sub-category/5845677b80aca7763489d871/mongodb
-
+* https://stackoverflow.com/questions/42715591/mongodb-difference-remove-vs-findoneanddelete-vs-deleteone

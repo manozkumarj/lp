@@ -45,6 +45,9 @@
 * helmet
 * cors
 * pm2
+* socket.io
+* moment --> Use to format dates & time
+* 
 
 
 ****************************************** Status codes ************************************************
