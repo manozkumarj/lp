@@ -28,6 +28,8 @@ Commannds:
 * npm config delete init-author-name = It deletes the previously set author name to default
 
 
+* npm cache clean --force
+
 -----------------------------------
 
 Semantic versioning (SemVer) example = 5.0.1
