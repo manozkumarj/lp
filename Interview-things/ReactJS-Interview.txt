@@ -65,6 +65,11 @@ Ex: class MyComponent extends React.Component {
 
 ************************************ Askable Interview Q's ********************************************
 * What is current React JS version?
+* What is 'Context API' & write sample connection?
+* What is 'Redux' & write sample connection?
+* What is 'Ref'?
+* What is a 'Higher order component'?
+* 
 
 
 

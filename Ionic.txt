@@ -136,6 +136,7 @@ FMD => https://ionicframework.com/docs/components
 * ionic cordova platform add android
 
 * ionic integrations enable cordova --add  => Used to create 'xml' & 'resources' folder
+* ionic cordova resources
 
 * ionic cordova platform add browser
 
@@ -379,7 +380,8 @@ Links which helped to solve the errors I faced:
 ----------------------------------------------------------------------------
 * https://forum.ionicframework.com/t/how-to-resolve-babel-error-when-installing-geolocation-in-ionic-app/185542/2
 
-
+* https://github.com/ionic-team/ionic-cli/issues/2635
+* https://stackoverflow.com/questions/43598311/component-is-part-of-the-declaration-of-2-modules
 
 
 

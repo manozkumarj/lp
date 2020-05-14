@@ -148,12 +148,91 @@ export const bookReducer = (state, action) => {
 * 
 
 
+
+
+******************************************************************************************************
+***************************************** Context API ************************************************
+Class component way of interacting with Context API:
+----------------------------------------------------------------
+* Context will be created in class component by using { createContext } hook
+* Context can be consumed in class component in two ways
+	1) static contextType = ThemeContext;
+		console.log(this.context);
+	2) <ThemeContext.Consumer>{(context) => {}} </ThemeContext.Consumer>
+
+	FMD -> https://github.com/iamshaunjp/react-context-hooks/blob/lesson-4/contextapp/src/components/Navbar.js
+
+	-> The difference B/W above two ways are
+		* We can consume only one Context with 'contextType' approach
+		* We can consume multiple Contexts with <ThemeContext.Consumer> approach and it can work for Functional component as well
+
+
+Functional component way of interacting with Context API:
+----------------------------------------------------------------
+* 
+
+
+
+
+
+
 ******************************************************************************************************
 ****************************************** Redux *****************************************************
+Installable packages:
+------------------------------------------------------------------------------------
+* Dependencies -> redux, react-redux, redux-thunk, redux-logger
+* Dev Dependencies -> redux-devtools-extension
+* Chrome extensions -> Redux DevTools, React Developer Tools
+
 * Central data store for all app data.
 * Any component can access data from it.
 * Makes state management easy.
 * 
+
+* Redux is a predictable state container for Javascript Apps
+* Redux is a library for Javascript Apps
+* Redux stores the state of our application
+* Redux Version 1 is released in August 2015
+* React-Redux is the official Redux UI binding library for React
+* 'Action-creator' is a function that returns an action
+* 
+
+
+Redux-flow:
+* 'createStore' function takes 2 parameters - createStore(rootReducer, applyMiddleware(thunk))
+* First we 'dispatch' an action
+* Action passed to the Reducer
+* Reducer takes that action
+* Reducer passes that action to Redux, based on passed ACTION type Redux will update state and return updated state to the App.
+
+* Reducer takes two arguments - Current state, action
+
+* Action creators are just functions that generates actions for us.
+* We can make 'Async tasks' using 'Redux-thunk' inside of action-creators.
+* 'Redux-thunk' halts the dispatch & performs async request & then resumes dispatch
+* 'Redux-thunk' is a middleware and we need to apply it to store.
+* 
+
+* We need to make the component as 'Higher order component' in order to use Redux in a component.
+* We can make the component as 'Higher order component' with { connect }
+
+* We need to use 'mapStateToProps(state, ownProps)' function to map state to props.
+	Ex: const mapStateToProps(state, ownProps) => {
+		let id = ownProps.match.params.post_id;
+		return {
+			post_id: state.posts.filter(post => post.id == id);
+		}
+	}
+* We need to use 'mapDispatchToProps(dispatch)' function to dispatch an action
+	Ex: const mapDispatchToProps(dispatch) => {
+		return {
+			deletePost: (id) => {dispatch({typs: 'DELETE_POST', id})}
+		}
+	}
+
+THEN export default connetc(mapStateToProps, mapDispatchToProps)(Post);
+
+* Visit 'https://github.com/iamshaunjp/React-Redux-Firebase-App' to know hot to use multiple reducers, middleware & firestore
 
 
 Point by point ------------------------------------------------------------------------
