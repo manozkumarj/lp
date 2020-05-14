@@ -136,7 +136,7 @@ FMD => https://ionicframework.com/docs/components
 * ionic cordova platform add android
 
 * ionic integrations enable cordova --add  => Used to create 'xml' & 'resources' folder
-* ionic cordova resources
+* ionic cordova resources  => To generate cutom and falsh screen
 
 * ionic cordova platform add browser
 
@@ -152,6 +152,10 @@ https://medium.com/@coderonfleek/debugging-an-ionic-android-app-using-chrome-dev
 * ionic cordova run android --prod
 
 * ionic cordova resources
+
+* ionic cordova build android --prod --release
+
+* https://ionicframework.com/docs/deployment/play-store
 
 
 
@@ -283,6 +287,7 @@ Useful sites:
 
 * https://blog.angulartraining.com/whats-the-difference-between-style-and-ngstyle-in-angular-68a3301c2ae6
 
+* https://ionicframework.com/docs/deployment/play-store
 
 
 Learnables:
@@ -357,6 +362,27 @@ keytool -list -v -keystore C:\Users\USERNAME\.android\debug.keystore -alias andr
 * https://www.youtube.com/watch?v=tS4irXVdQ08 --> IONIC FACEBOOK LOGIN FOR MOBILE APP
 
 * 
+
+
+
+To build Signed APK to upload to PlayStore:
+-----------------------------------------------------------------------------------
+* https://ionicframework.com/docs/deployment/play-store
+* https://stackoverflow.com/questions/35173542/unable-to-sign-the-unsigned-apk
+
+Steps to build Signed APK file:
+----------------------------------------------------------------------------------------
+* Navigate to Project root directory 
+* Run 'ionic cordova build android --prod --release'
+* Then run 'keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000'
+	-> Above command generates 'my-release-key.keystore' file in root folder.
+* Then run 'jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore C:\Users\manoj\Downloads\Doctors-frontend-final\frontend\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk alias_name'
+
+* Then navigate to 'C:\Users\USERNAME\local\Android\SDK\build-tools\29.0.2' folder. There you need to find named 'zipalign'
+
+* Then run 'C:\Users\manoj\AppData\Local\Android\Sdk\build-tools\29.0.2>zipalign -v 4 C:\Use
+rs\manoj\Downloads\Doctors-frontend-final\frontend\platforms\android\app\build\o
+utputs\apk\release\app-release-unsigned.apk app-release.apk' from there itself
 
 
 
