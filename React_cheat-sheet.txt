@@ -475,8 +475,9 @@ every route.
 * https://www.youtube.com/watch?v=sfvrjwVihFY --> react-router-nested-routes
 * https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
 * https://stackoverflow.com/questions/33783620/disable-chrome-react-devtools-for-production
-* 
-
+* https://alligator.io/react/axios-react/
+* https://designrevision.com/react-axios/
+* https://stackoverflow.com/questions/44617825/passing-headers-with-axios-post-request
 
 
 

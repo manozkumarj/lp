@@ -3,3 +3,17 @@
 * https://stackoverflow.com/questions/30181226/how-to-insert-multiple-rows-with-a-parameter/30232457
 * https://www.tutlane.com/tutorial/sqlite/sqlite-datetime-function
 * 
+
+
+
+* While importing an SQL file, make sure that SQL file won't contain
+	-> AUTO_INCREMENT
+	-> UNIQUE
+	-> KEY
+	-> UNSIGNED
+
+* Make sure to have INT in place of INT(10)
+* AUTO_INCREMENT won't work in SQLite database, if you want you need to get the max ID from that table manually and increment it by 1 then pass it to next insertion query.
+* 
+
+FMD --> Take Homeotel's SQLite usage & that SQL file as sample.
