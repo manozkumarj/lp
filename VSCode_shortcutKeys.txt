@@ -31,7 +31,8 @@ Plugins:
 * Ionic 4 Snippets
 * Sublime Babel
 * Path Intellisense
-
+* Deno
+* 
 
 
 

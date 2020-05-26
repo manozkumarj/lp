@@ -378,12 +378,25 @@ Steps to build Signed APK file:
 	-> Above command generates 'my-release-key.keystore' file in root folder.
 * Then run 'jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore C:\Users\manoj\Downloads\Doctors-frontend-final\frontend\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk alias_name'
 
-* Then navigate to 'C:\Users\USERNAME\local\Android\SDK\build-tools\29.0.2' folder. There you need to find named 'zipalign'
+* Then navigate to 'C:\Users\USERNAME\local\Android\SDK\build-tools\29.0.2' folder. There you need to find a file named 'zipalign'
 
 * Then run 'C:\Users\manoj\AppData\Local\Android\Sdk\build-tools\29.0.2>zipalign -v 4 C:\Use
 rs\manoj\Downloads\Doctors-frontend-final\frontend\platforms\android\app\build\o
 utputs\apk\release\app-release-unsigned.apk app-release.apk' from there itself
 
+---------------- AAB file generation ------------------
+* After running 'ionic cordova build android --prod --release' command
+* change into the '/platforms/android' folder in terminal and run 'gradlew bundleRelease'. On Windows, the file might be called gradlew.bat instead.
+
+* jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore D:\My-Practice-things\Ionic\Ionic-Mine\Homeotel\platforms\android\app\build\outputs\bundle\release\app.aab alias_name
+
+	Note: This outputs the bundle at /platforms/android/app/build/outputs/bundle/release/app.aab
+
+* Then navigate to 'C:\Users\USERNAME\local\Android\SDK\build-tools\29.0.2' folder. There you need to find a file named 'zipalign'
+
+* Then run 'zipalign -v 4 D:\My-Practice-things\Ionic\Ionic-Mine\Homeotel\platforms\android\app\build\outputs\bundle\release\app.aab Homeotel-Patient-Signed-AAB.aab' from there itself
+
+FMD --> https://stackoverflow.com/questions/55556201/how-to-make-use-of-android-app-bundle-in-ionic-applications
 
 
 
