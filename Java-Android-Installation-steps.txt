@@ -61,6 +61,7 @@ https://www.youtube.com/watch?v=G2_I7pjXdjE
 Note: Sometimes when we try to open Android AVD we will get an alert like "intel haxm required".
 In those cases refer to this link
 * https://www.youtube.com/watch?v=xUVgywxZiu4
+* https://www.youtube.com/watch?v=kmV-u85NY5A  -- for HP laptops
 * https://www.youtube.com/watch?v=vP71TkSh67M
 * https://www.youtube.com/watch?v=G-NAR4-X8sY
 

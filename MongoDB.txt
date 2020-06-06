@@ -5,6 +5,9 @@
 * 'mlab' is online MongoDB database provider. We can store upto 0.5GB data.
 * 'mongodb atlas' is online MongoDB database provider. We can store upto 512MB data.
 
+* We can use .then() next to .save() - But on the other functions we need to use .exec().then()
+* 
+
 Possible datatypes:
 ---------------------------------------
 String, Number, Date, Array, Boolean
