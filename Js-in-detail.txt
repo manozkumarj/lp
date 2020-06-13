@@ -56,9 +56,13 @@ Getting date and time of current month from midnight
 * Removing an object (which index is 2) from an array of object
 this.masterServ.options_Subcalltype = this.masterServ.options_Subcalltype.slice(0, 2);
 
+* To get milliseconds from exact today midnight & tomorrow midnight
+https://stackoverflow.com/questions/3894048/what-is-the-best-way-to-initialize-a-javascript-date-to-midnight
+
+* setInterval every 5 mins
+https://stackoverflow.com/questions/5489917/jquery-javascript-setinterval/5489986
+
 * 
-
-
 
 
 

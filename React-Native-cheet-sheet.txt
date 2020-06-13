@@ -1,0 +1,77 @@
+* React 'Functional components' & 'React hooks' are supported in React >= 16.8 version only.
+* use 'CTRL+m' to open overlay in expo to enable/disable debugging options
+* Go to 'react-native-debugger' in github page to download an exe file.
+* 
+
+
+
+
+************************************** Differences **************************************
+* React Native
+-> onPress() == onClick()
+-> onChangeText()
+-> 
+
+
+
+************************************** All about components **************************************
+* <Text> component will not accept 'style' property, so if we want to style a <Text> component then we should wrap <Text> compoent with <View> component
+Ex: <View style={styles.screen}>
+		<Text> Some content <Text>
+	<View>
+
+* <Image>
+* <ImageBackground>
+* <TextInput>
+* <Button>
+* <TouchableWithoutFeedback>
+* <TouchableWithFeedback>
+* <TouchableNativeFeedback>
+* <TouchableOpacity>
+* <Scrollview>
+* <SafeAreaView>
+
+
+
+* Android version >= 21 only supports ripple effect
+
+************************************** All about CSS properties **************************************
+-> We need to use camelCase while using css properties
+-> 'shadow' property is only works in IOS but not in Android. We need to use 'elevation' property to make 'shadow' in Android.
+-> We need to use 'Dimensions' API to make app responsive
+	Note: 'Dimensions' API only calculate the when the App starts but not when we change the orientation by default. We need to create Dimensions.addEventListener('change', updateLayout)
+-> Expo has 'ScreenOrientation' API to work with responsiveness and orientation related things. It's alternative to 'Dimensions' API
+-> We need to use 'Keyboard' & 'KeyboardAvoidingView' to work with keyboard related things
+-> We need to use 'Alert' to work with alert related things
+-> We need to use 'Platform' object to work with platform related things
+* <Text> & <Button> components will not accept 'style' property
+* marginVertical
+
+
+Note: If any file contains lot of plotform related if else conditions, then we can create separate files for 'Android' & 'iOS' like below
+	-> MainButton.android.js
+	-> MainButton.ios.js
+
+	* But while using it we need to import as 'MainButton' only. React-Native automatically loads respective file depends of user platform
+
+
+
+************************************** Useful packages **************************************
+* npm i expo-font
+* npm i react-navigation -- along with it we need to install below packages
+	* expo install react-native-gesture-handler react-native-reanimated
+* npm i react-navigation-header-buttons
+* npm i react-native-screens
+
+************************************** Imports **************************************
+* import * as Font from 'expo-font';
+	-> First we need install 'expo-font'
+* import { AppLoading } from 'expo';
+* import { createStackNavigator, createBottomTabNavigator, createAppContainer } from 'react-navigation';
+* import { HeaderButton, Item } from 'react-navigation-header-buttons';
+* import { useScreens } from 'react-native-screens';
+* import { Ionicons } from '@expo/vector-icons';
+
+************************************** Useful sites **************************************
+* www.reactnavigation.org
+* 
