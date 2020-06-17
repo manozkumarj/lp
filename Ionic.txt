@@ -41,6 +41,12 @@ Steps to Generate ANDROID APK file:
 	-> ionic cordova run android
 * 
 
+
+* To ask permissions in App
+* https://stackoverflow.com/questions/47648849/how-to-use-cordova-plugin-android-permissions-in-ionic-3
+* https://developer.android.com/reference/android/Manifest.permission.html?hl=zh-tw
+* https://stackoverflow.com/questions/35627210/my-app-is-asking-microphone-record-audio-permission-even-thought-i-am-not-usi
+
 *********************************************************************************************
 
 

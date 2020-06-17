@@ -30,6 +30,7 @@ Ex: <View style={styles.screen}>
 * <TouchableOpacity>
 * <Scrollview>
 * <SafeAreaView>
+* <Switch>
 
 
 
@@ -57,20 +58,34 @@ Note: If any file contains lot of plotform related if else conditions, then we c
 
 
 ************************************** Useful packages **************************************
+* npm i -D redux-devtools-extension
 * npm i expo-font
 * npm i react-navigation -- along with it we need to install below packages
 	* expo install react-native-gesture-handler react-native-reanimated
 * npm i react-navigation-header-buttons
+* npm i react-navigation-material-botton-tabs
 * npm i react-native-screens
+* npm i react-native-paper
+* npm i expo-linear-gradient
 
 ************************************** Imports **************************************
+* import { View, Text, Button, Image, FlatList, Platform, Stylesheet, ActivityIndicator, AsyncStorage } from 'react-native';
+* import { composeWithDevtools } from 'redux-devtools-extension';
 * import * as Font from 'expo-font';
 	-> First we need install 'expo-font'
 * import { AppLoading } from 'expo';
-* import { createStackNavigator, createBottomTabNavigator, createAppContainer } from 'react-navigation';
+* import { createStackNavigator, createBottomTabNavigator, createAppContainer, createDrawerNavigator, createSwitchNavigator } from 'react-navigation';
 * import { HeaderButton, Item } from 'react-navigation-header-buttons';
 * import { useScreens } from 'react-native-screens';
 * import { Ionicons } from '@expo/vector-icons';
+* import { createMaterialBottomTabNavigator } from 'react-navigation-material-botton-tabs';
+* import { LinearGradient } from 'expo-linear-gradient';
+
+
+************************************** IMP points **************************************
+* We need to remove 'composeWithDevtools' after completion of project development
+* 'onRefresh' only works for 'ScrollView' & 'FlatList' tags
+
 
 ************************************** Useful sites **************************************
 * www.reactnavigation.org

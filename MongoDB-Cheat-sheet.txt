@@ -1,0 +1,58 @@
+* MongoDB uses 'BSON' to store data in database, BSON - Binary JSON
+* We pass JSON data throught query and the driver we use will convert the data from JSON to BSON and give that BSON data to MongoDB server
+* MongoDb's default storage engine is "WiredTiger"
+* Generally in our backend we will have drivers for different langualges(Nodejs, PHP, Python), these drivers interact with MongoDb server
+* MongoDB server will not write the data into files, but talk to storage engine. MongoDb's default storage engine is "WiredTiger".
+* MongoDB server gets the query from the driver we use in backend OR from the Shell and forwards that query to storage engine. And storage engine excutes the query
+* Aggregation Framework is a powerful way of retrieving the data we want
+* Mongo default port is 127.0.0.1:27017
+* If we want to start our mongod server in different port
+	-> sudo mongod --port 27018
+	* Then use the same port to start mongo as below
+		-> mongo --port 27018
+* 
+
+
+
+
+
+
+
+************************************** MongoDB datatypes ******************************************
+* ObjectId
+* String
+* Number
+* Boolean
+* Array
+* 
+
+
+
+
+
+******************************** Commands in CMD prompt in Mongo Shell **********************************
+* cls
+* show dbs
+	-> By default it shows admin, config, local DBs
+* use shop
+	-> Above command creates 'shop' DB if it's not exist and switched to it to use
+* db.products.insertOne({name: "A book", price: 12.99});
+* db.products.insertOne({name: "A T-shirt", price: 29.99, description: "Nice T-shirt"});
+* db.products.insertOne({name: "A Computer", price: 1229.99, description: "Nice computer", details: {cpu: "intel i7 8770", memory: 32}});
+* db.products.find().pretty();
+
+* 
+
+
+
+
+
+
+************************************ Learning by Max Udemy course **************************************
+* 
+
+
+
+
+
+
