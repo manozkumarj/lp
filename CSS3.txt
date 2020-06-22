@@ -139,3 +139,13 @@ For Cross browser support
   display: -ms-flexbox;
   display: flex;
 }
+
+
+******************************** Useful sites for CSS shapes related *********************************
+* http://nicolasgallagher.com/pure-css-folded-corner-effect/
+* https://www.geeksforgeeks.org/how-to-create-paper-corner-fold-effect-on-hover-by-using-html-and-css/
+* https://css-tricks.com/scooped-corners-in-2018/
+* https://stackoverflow.com/questions/34337586/create-a-css-folded-corner-with-shadow
+* https://stackoverflow.com/questions/32996454/css-folded-corner-effect-transparent-background/32996982
+* https://stackoverflow.com/questions/26385595/implemented-using-css-folded-corners
+* https://designshack.net/articles/css/code-a-simple-folded-corner-effect-with-css/

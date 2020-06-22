@@ -89,4 +89,22 @@ Note: If any file contains lot of plotform related if else conditions, then we c
 
 ************************************** Useful sites **************************************
 * www.reactnavigation.org
+* https://stackoverflow.com/questions/33879155/how-to-redirect-to-a-page-in-react-native
+* 
+
+
+
+
+
+
+
+******************************** Useful sites for CSS related *********************************
+* https://codepen.io/manozkumarj/pen/xxZqzjO
+* https://codedaily.io/tutorials/22/The-Shapes-of-React-Native
+* https://reactnativeexample.com/beautiful-backgrounds-shapes-to-react-native-based-in-flex/
+* https://reactnativecode.com/detect-orientation-android-ios-example-tutorial/
+* https://jsfiddle.net/kishore328/gs3nv9ty/5
+* https://stackoverflow.com/questions/50149063/react-native-image-semi-circle-using-css
+* https://reactnativeforyou.com/how-to-convert-view-into-custom-shapes-like-square-rectangle-circle-and-triangle/
+* https://stackoverflow.com/questions/44232282/elliptical-border-radius-in-react-native?rq=1
 * 
