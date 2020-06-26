@@ -1,6 +1,7 @@
 * React 'Functional components' & 'React hooks' are supported in React >= 16.8 version only.
 * use 'CTRL+m' to open overlay in expo to enable/disable debugging options
 * Go to 'react-native-debugger' in github page to download an exe file.
+* React uses 'flexbox' by default & default flexDirection is 'column' i.e, top to bottom. But in web default flexDirection is 'row' i.e, right to left
 * 
 
 
@@ -87,9 +88,20 @@ Note: If any file contains lot of plotform related if else conditions, then we c
 * 'onRefresh' only works for 'ScrollView' & 'FlatList' tags
 
 
+
+
+
+************************************** Errors **************************************
+* If we get 'There was a problem sending log messages to your development server' while doing API call - It's because the data is huge from API request. In that case we can use "response.data"
+* 
+
+
+
 ************************************** Useful sites **************************************
 * www.reactnavigation.org
 * https://stackoverflow.com/questions/33879155/how-to-redirect-to-a-page-in-react-native
+* https://github.com/react-native-community/react-native-modal
+* https://www.pubnub.com/blog/react-native-push-notifications-ios-android/
 * 
 
 
