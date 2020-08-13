@@ -1,6 +1,7 @@
+* JavaScript runtime environment that executes JavaScript code outside a web browser.
+* It's used for traditional web sites and back-end API services
+* The cluster module provides a way of creating child processes that runs simultaneously and share the same server port.
 * 
-
-
 
 
 

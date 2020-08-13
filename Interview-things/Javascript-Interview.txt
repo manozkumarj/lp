@@ -1,8 +1,95 @@
 * 'var' and 'let' are both used for variable declaration in javascript but the difference between them is that 'var' is function scoped and 'let' is block scoped.
 
-* Both freeze and seal are used to create non extensible objects in JavaScript, but there are plenty of differences between them. Object.seal() allows changes to the existing properties of an object whereas Object.freeze() does not allow so. Object.freeze() makes an object immune to everything even little changes cannot be made. Object.seal() prevents from deletion of existing properties but cannot prevent them from external changes.
+* A closure gives you access to an outer function's scope from an inner function.
+
+* Both 'freeze' and 'seal' are used to create non extensible objects in JavaScript, but there are plenty of differences between them. Object.seal() allows changes to the existing properties of an object whereas Object.freeze() does not allow so. Object.freeze() makes an object immune to everything even little changes cannot be made. Object.seal() prevents from deletion of existing properties but cannot prevent them from external changes.
+
+* The prototype is an object that is associated with every functions and objects by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible.
+FMD --> https://www.tutorialsteacher.com/javascript/prototype-in-javascript
+
+* Hoisting: In JavaScript, variable and function names can be used before declaring it. The JavaScript compiler moves all the declarations of variables and functions at the top so that there will not be any error. This is called hoisting.
+Points to Remember :
+	-> JavaScript compiler moves variables and function declaration to the top and this is called hoisting.
+	-> Only variable declarations move to the top, not the initialization.
+	-> Functions definition moves first before variables.
+FMD --> https://www.tutorialsteacher.com/javascript/javascript-hoisting
+
+* Eval: eval() is a global function in JavaScript that evaluates a specified string as JavaScript code and executes it.
+
+* Try - catch - finally
+FMD --> https://www.tutorialsteacher.com/javascript/javascript-error-handling
+
+* Scopes: FMD --> https://www.tutorialsteacher.com/javascript/scope-in-javascript
+
+* Promise:
+var promise = new Promise(function(resolve, reject) { 
+    resolve('Geeks For Geeks'); 
+}) 
+  
+	promise 
+		.then(function(successMessage) { 
+		   //success handler function is invoked 
+		    console.log(successMessage); 
+		}, function(errorMessage) { 
+		    console.log(errorMessage); 
+		});
+
+* Unique properties from array of object
+const data = [
+  { group: 'A', name: 'SD' }, 
+  { group: 'B', name: 'FI' }, 
+  { group: 'A', name: 'MM' },
+  { group: 'B', name: 'CO'}
+];
+const unique = [...new Set(data.map(item => item.group))]; // [ 'A', 'B']
+
+* let number = 5;
+let currentLoopIs = number;
+
+let finalOutput = 1;
+
+function doAction(getNumber) {
+  if (currentLoopIs) {
+    finalOutput = finalOutput * currentLoopIs;
+    currentLoopIs = --getNumber;
+    doAction(currentLoopIs);
+  }
+}
+
+doAction(number);
+
+console.log(finalOutput);
+
+
+* let mainArray = [0, 1];
+let loopCount = 10;
+
+function doAction () {
+  let one = mainArray[mainArray.length - 2];
+  let two = mainArray[mainArray.length - 1];
+
+  let add = one + two;
+
+  mainArray.push(add);
+};
+
+for (let i = 0; i <= loopCount; i++) {
+  doAction();
+}
+
+console.log(mainArray);
+
+
 
 * 
+
+
+
+
+
+
+
+
 
 
 

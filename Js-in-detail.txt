@@ -338,7 +338,7 @@ Useful links:
 ------------------------------------------------------------------------------------------
 * https://www.youtube.com/watch?v=6oDQaB2one8 (What Is Recursion - In Depth)
 * https://www.youtube.com/watch?v=ns1LX6mEvyM
-
+* https://stackoverflow.com/questions/6555182/remove-all-special-characters-except-space-from-a-string-using-javascript
 
 
 

@@ -63,8 +63,17 @@
 
 
 * https://www.npmjs.com/package/http-status-codes
+*** https://www.npmjs.com/package/compress-images  --> Nice Images compression Package
+* https://www.npmjs.com/package/jimp  --> Abit good Images compression Package
+* https://medium.com/better-programming/how-to-use-node-js-workers-for-video-encoding-f1379d3933d0
+* https://www.digitalocean.com/community/tutorials/how-to-add-advanced-photo-uploads-in-node-and-express
 
 ************************************ Useful links for Intervirew *************************************
 * https://medium.com/@vigowebs/frequently-asked-node-js-interview-questions-and-answers-b74fa1f20678
 * 
 
+
+************************************ Links which solved my errors *************************************
+* https://stackoverflow.com/questions/48387040/nodejs-recommended-max-old-space-size/48392705
+* https://stackoverflow.com/questions/36280818/how-to-convert-file-to-base64-in-javascript
+* 

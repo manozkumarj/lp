@@ -6,6 +6,20 @@
 
 * When Facebook first released React to the world, they also introduced a new dialect of JavaScript called JSX that embeds raw HTML templates inside JavaScript code. JSX code by itself cannot be read by the browser; it must be transpiled into traditional JavaScript using tools like Babel and webpack.
 
+* React components has a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders.
+
+* The main difference between state and props is that props are immutable. This is why the container component should define the state that can be updated and changed, while the child components should only pass data from the state using props.
+
+* In a controlled component, form data is handled by a React component. The alternative is uncontrolled components, where form data is handled by the DOM itself. To write an uncontrolled component, instead of writing an event handler for every state update, you can use a ref to get form values from the DOM.
+
+* Webpack is a popular module bundling system built on top of Node. js. It can handle not only combination and minification of JavaScript and CSS files, but also other assets such as image files (spriting) through the use of plugins.
+
+* Babel is a JavaScript compiler
+Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
+
+
+
+
 Ex: class MyComponent extends React.Component {
 	  render() {
 	    let props = this.props;
@@ -17,6 +31,42 @@ Ex: class MyComponent extends React.Component {
 	    );
 	  }
 	}
+
+* Lifecycle of Components:
+	* The three phases are: Mounting, Updating, and Unmounting.
+	* Mounting:
+		-> constructor()
+		-> getDerivedStateFromProps()
+		-> render()
+		-> componentDidMount()
+	* Updating
+		-> getDerivedStateFromProps()
+		-> shouldComponentUpdate()
+		-> render()
+		-> getSnapshotBeforeUpdate()
+		-> componentDidUpdate()
+	* Unmounting
+		-> componentWillUnmount()
+
+* 
+
+* What is HOC?
+	Concretely, a higher-order component is a function that takes a component and returns a new component.
+
+* State is a JavaScript object that stores a component's dynamic data and determines the component's behaviour. Because state is dynamic, it enables a component to keep track of changing information in between renders and for it to be dynamic and interactive. State can only be used within a class component.
+
+* Pure Components restricts Re-Rendering
+
+* Virtual DOM is any kind of representation of a real DOM. Virtual DOM is about avoiding unnecessary changes to the DOM, which are expensive performance-wise, because changes to the DOM usually cause re-rendering of the page. It allows to collect several changes to be applied at once, so not every single change causes a re-render, but instead re-rendering only happens once after a set of changes was applied to the DOM.
+
+* Shadow DOM is mostly about encapsulation of the implementation. A single custom element can implement more-or-less complex logic combined with more- or-less complex DOM. Shadow DOM refers to the ability of the browser to include a subtree of DOM elements into the rendering of a document, but not into the main document DOM tree.
+
+* What diff b/w axios and fetch
+axios handles xsrf attacks, fetch doesn't
+axios stringifies returned data and we can use it directly. in fetch, we need to convert into json.
+-> Cross-site request forgery:- Cross-site request forgery, also known as one-click attack or session riding and abbreviated as CSRF or XSRF, is a type of malicious exploit of a website where unauthorized commands are submitted from a user that the web application trusts.
+
+* 
 
 * The ‘switch’ keyword is used when you want to display only a single route to be rendered amongst the several defined routes. The <switch> tag when in use matches the typed URL with the defined routes in sequential order. When the first match is found, it renders the specified route. Thereby bypassing the remaining routes.
 
@@ -69,7 +119,8 @@ Ex: class MyComponent extends React.Component {
 * What is 'Redux' & write sample connection?
 * What is 'Ref'?
 * What is a 'Higher order component'?
-* 
+* what is webpack in react js?
+* what is babel in react js?
 
 
 
@@ -77,6 +128,6 @@ Ex: class MyComponent extends React.Component {
 *************************************** useful links **************************************************
 * https://www.edureka.co/blog/interview-questions/react-interview-questions/
 * https://www.codementor.io/blog/5-essential-reactjs-interview-questions-du1084ym1
-
+* https://nimbusweb.me/s/share/4500249/s63v81s0f102d0zg382y
 
 

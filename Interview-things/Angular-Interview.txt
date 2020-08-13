@@ -69,9 +69,24 @@ Three of the common, built-in structural directives—NgIf, NgFor, and NgSwitch.
 
 *  
 
+* A closure gives you access to an outer function's scope from an inner function.
 
+* Services are objects which get instantiated only once during the lifetime of an application. The main objective of a service is to share data, functions with different components of an Angular application.
+A service is defined using a @Injectable decorator. A function defined inside a service can be invoked from any component or directive.
 
+To create a service, run the following command:
 
+ng g s test-service
+
+* Unit tests are written using Jasmine and are run to see if individual parts of an application are working correctly. As a result, unit tests will either pass or fail depending on if the code is working correctly or has a bug. Angular uses Karma as the test runner for the project's unit tests.
+
+* Decorators are a design pattern that is used to separate modification or decoration of a class without modifying the original source code.
+
+* Decorators are functions that are invoked with a prefixed @ symbol, and immediately followed by a class , parameter, method or property.
+
+* Decorators are proposed for a future version of JavaScript, but the Angular team really wanted to use them, and they have been included in TypeScript.
+
+* 
 
 
 
@@ -98,4 +113,5 @@ Three of the common, built-in structural directives—NgIf, NgFor, and NgSwitch.
 * https://www.greycampus.com/blog/programming/top-30-interview-questions-and-answers-on-angular-5
 * http://www.learnangularjs.net/angular5-features.php
 * https://www.geeksforgeeks.org/difference-between-angular-and-angularjs/
+* https://www.interviewbit.com/angular-interview-questions/
 * 

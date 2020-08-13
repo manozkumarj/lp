@@ -469,6 +469,13 @@ every route.
 
 
 
+
+******************************************************************************************************
+***************************************** Useful Packages ********************************************
+* https://www.npmjs.com/package/react-player
+* https://video-react.js.org/components/player/
+* https://www.npmjs.com/package/browser-image-compression
+
 ******************************************************************************************************
 ***************************************** Useful Links ***********************************************
 * https://tylermcginnis.com/react-router-pass-props-to-components/
@@ -480,9 +487,7 @@ every route.
 * https://stackoverflow.com/questions/44617825/passing-headers-with-axios-post-request
 * https://flaviocopes.com/react-hook-usecallback/
 
-
-
-
+* 
 
 ******************************************************************************************************
 ************************************** Interview things **********************************************
