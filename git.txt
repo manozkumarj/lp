@@ -1,3 +1,6 @@
+* We can run Linux commands using git bash, that's the reason we use it.
+* Gitbash is a command line shell
+
 * git --version
 * git init
 * git config --global user.name 'Manoj Kumar'
@@ -18,6 +21,7 @@
 
 * git --help
 * git help commit -a
+* git checkout -- .  --> To make current branch files un-modified
 
 * git remote show origin  --> Shows if local reposiory is upto date with remote repository or not. And show pullable & pushable branches from local to remote.
 
@@ -120,14 +124,6 @@ Points:
 
 
 
-Useful links:
-------------------------------------------------------------------------------------
-* https://stackoverflow.com/questions/3541647/git-add-vs-git-commit-a
-
-
-
-
-
 
 
 
@@ -144,3 +140,8 @@ and have 1 and 1 different commits each, respectively.
 
 * 
 
+
+********************************* Useful Links *********************************************
+* https://stackoverflow.com/questions/3541647/git-add-vs-git-commit-a
+* https://www.youtube.com/watch?v=rgbCcBNZcdQ --> Creating a Simple Github Pull Request
+* 

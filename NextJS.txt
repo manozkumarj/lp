@@ -1,0 +1,17 @@
+* NestJS is a Server Side Rendering(SSR) framework
+* SEO crawlers can read the site content easily
+* By default NextJS uses 3000 port, to change the port use below command
+	-> next dev -p 4000
+* 
+
+
+
+
+
+
+
+
+
+
+******************************************* Useful Links *******************************************
+* https://www.youtube.com/watch?v=lmXZLFXLcc0&list=PLZjjdd9-SJS2ZvI4ct5Qtkje_Vdb5O_KM&index=1

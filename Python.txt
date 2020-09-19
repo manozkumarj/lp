@@ -1,0 +1,155 @@
+* Python is a Multi-purpose programming/General purpose language
+* Created by "Guido Van Rossum" in 1989
+* IDLE = Integrated Development and Learning Environment
+* 
+
+
+*************************************** Telsko playlist *************************************************
+* BODMAS rule
+* Operator precedence = That determines the order in which is order apply
+
+* 5/2 = 2.5
+* 5//2 = 2
+Above thing is called as Integer/Floor division
+
+* 2**3 = 8
+Above thing is POWER - 2 power 3
+
+* 10 % 3 = 1
+Above thing is Modular/remainder
+
+* 5*'Manoj' = "ManojManojManojManojManoj"
+
+* print("c:\doc\navin");
+c:\doc
+avin
+
+Here '\n' means NEW line
+
+* print(r"c:\doc\navin"); = c:\doc\navin
+Above thing is called as 'Raw String'
+
+* underscore(_) holds the value of previous operation
+
+* name = 'youtube'
+name[0] = 'y'
+name[-1] = 'e'
+name[0:2] = 'yo'
+name[1:4] = 'out'
+name[1:] = 'outube'
+name[:4] = 'yout'
+name[3:10] = 'tube'
+
+* len(name) = 7
+
+* 
+
+
+****************************************** Datatypes ******************************************
+* None
+* Numeric
+	-> int
+	-> float
+	-> complex
+	-> bool
+* List
+* Tuple
+* Set
+* String
+* Range
+* Dictionary (Map)
+
+****************************************** Operators ******************************************
+* Argumented assignment operator
+x = 3
+x += 2 # this is called as 'Argumented assignment operator'
+* Assignment operator -> a,b = 5,6
+* Unary operator
+n = 7
+n = -n // -7 will be assigned to 'n' variable
+
+* Logical operator
+a = 5
+b = 4
+a < 8 and b < 5 ==> True
+a < 8 or b < 5 ==> True
+
+x = True
+not x ==> False
+
+
+* Logicaloperators
+	-> and
+	-> or
+	-> not
+
+********************************** Some in-built functions ******************************************
+* len()
+* type()
+* int()
+* str()
+* float()
+* complex()
+* dictionary.keys()
+* dictionary.values()
+* bin(25) ==> 0b1101  --> convert Decimal to Bynary system
+* oct(25) ==> 0o31  --> convert Decimal to Octal system
+* hex(25) ==> 0x19  --> convert Decimal to HexaDecimal system
+
+
+********************************** Statements ******************************************
+* IF statement
+temperature = 35
+if temperature > 30:
+	print("It's a hot day")
+	print("Drink plenty of water")
+elif temperature > 20:
+	print("It's a nice day")
+elif temperature > 10:
+	print("It's a bit cold day")
+else:
+	print("It's cold day")
+print('done');
+
+
+* WHILE loop
+number =  5
+while number <= 5:
+	print(number)
+	number = number + 1
+
+* FOR loop
+numbers = [1, 2, 3, 4, 5]
+for item in numbers:
+	print(item)
+
+
+* RANGE
+numbers = range(5, 10, 2)
+for number in number:
+	print(number)
+
+****************************************** IMP points ******************************************
+* Strings in Python are Imutable, means they can't be changed
+* In Python 'List' is nothing but 'Array', Lists are mutable
+* List = [10, 'manoj', 20.4]
+* Tuple = (12,25,77,96,48,35)
+Tuple are immutable
+* The difference B/W 'List' & 'Tuple' is 'mutable' & 'immutable' respectively. And we should use 'len()' to get the length of 'List' & we should use 'count()' to get the length of 'Tuple'
+* set - {12, 45, 25, 78, 69}
+	-> set won't maintain sequesnce & doesn't support duplicate values & won't support indexing
+* We can't create 'Const' variable in Python
+* 'null' is considered as 'none' in Python
+
+* Decimal system
+range 0-9
+
+* Binary
+range 0-1
+
+* Octal system
+range 0-7
+
+* HexaDecimal system
+range 0-9 Then a-f
+

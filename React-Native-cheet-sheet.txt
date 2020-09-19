@@ -125,7 +125,7 @@ Note: If any file contains lot of plotform related if else conditions, then we c
 
 
 
-
+* https://stackoverflow.com/questions/46796441/testing-react-native-on-actual-device-without-a-running-packaging-manager
 
 
 ******************************** Useful sites for CSS related *********************************

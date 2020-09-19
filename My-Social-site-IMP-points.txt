@@ -1,0 +1,6 @@
+* Editor for mentions, emojis insertions
+* Socket.io
+* Images compressor
+* Node JS clusters
+* Micro-services
+* 

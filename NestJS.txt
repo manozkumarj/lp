@@ -1,0 +1,11 @@
+* NestJS is a NodeJS framework
+* Built up on a ExpressJS
+* It uses Typescript
+* It is a bit like Angular for backend
+* It is heavily inspired by Angular
+* It runs on server side, it's not alternative for Angular
+* It is mainly used to create REST APIs
+* We can create building blocks like NESTJS G SERVICE TEST
+* 'src/main.ts' file is the entry point to NestJS application
+* 'controllers' are responsible for all incoming requests & sending back the responses
+* 
