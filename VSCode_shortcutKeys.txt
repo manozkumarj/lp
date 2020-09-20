@@ -1,3 +1,6 @@
+* IDE - Integrated Development Environment
+* IDE provides - Auto-completion, Debugging, Testing
+
 VS Code shortcut keys:
 -------------------------------------------------------------------
 * shift+alt then down arrow = To copy current line

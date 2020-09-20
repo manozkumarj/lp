@@ -1,7 +1,18 @@
 * Python is a Multi-purpose programming/General purpose language
 * Created by "Guido Van Rossum" in 1989
 * IDLE = Integrated Development and Learning Environment
-* 
+* Indentation is very very important in Python - One tab equals to 4 spaces by default
+* Syntax error is like grammer in general language
+>>> 2 > [Enter] --> this gives Syntax error
+
+* PEPs = Python Enhancement Proposals
+
+* We never use complex number (1 + 2j) in web development
+
+
+*********************************** Useful VScode Extensions ********************************************
+* Python by Microsoft
+* Code Runner by Jun Han - It's a read-only use - We shouldn't python files with this extension if that files contains 'input' function(s). Because this extension is used only for output but won't work for taking input values.
 
 
 *************************************** Telsko playlist *************************************************
@@ -51,6 +62,7 @@ name[3:10] = 'tube'
 	-> int
 	-> float
 	-> complex
+		x = 1 + 2j
 	-> bool
 * List
 * Tuple
@@ -58,6 +70,32 @@ name[3:10] = 'tube'
 * String
 * Range
 * Dictionary (Map)
+
+=======================================================================================
+* LIST
+--------------------------------------------------------
+numbers = list(range(10))
+print(numbers[::2]) ==> [0, 2, 4, 6, 8]
+
+* To reverse a list
+print(numbers[::-1]) ==> [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+
+* Unpacking the list
+numbers = [1, 2, 3, 4, 5]
+first, second, tird, four, five = numbers
+
+Note: There should be same number of variable as list contains
+first, second, tird, four = numbers ==> This gives error
+
+but we can achieve it in other way as below
+first, second, *other = numbers
+
+but if we want to get first & last variables, it's as below
+first, *other, last = numbers
+
+
+=======================================================================================
 
 ****************************************** Operators ******************************************
 * Argumented assignment operator
@@ -77,24 +115,81 @@ a < 8 or b < 5 ==> True
 x = True
 not x ==> False
 
+* print('*' * 5) ==> '*****'
+* print([0] * 5) ==> [0, 0, 0, 0, 0]
+* letters = ['a', 'b', 'c']
+zeros = [0] * 5
+combined = zeros + letters
+print(combined) ==> [0, 0, 0, 0, 0, 'a', 'b', 'c']
+* print(list(range(5))) ==> [0, 1, 2, 3, 4]
 
-* Logicaloperators
+
+
+* Logicaloperators --> In Python logical operators are short-circuit evalution
+hight_income = True
+good_credit = True
+student = True
 	-> and
+		if hight_income and good_credit:
+			print("Eligible")
+		else:
+			print("Not eligible")
 	-> or
 	-> not
+		if (hight_income or good_credit) and not student:
+			print("Eligible")
+		else:
+			print("Not eligible")
+
+* Chaining comparision operators
+age = 22
+if age >= 18 and age < 65:
+if 18 <= age > 65:
+	print("Eligible")
 
 ********************************** Some in-built functions ******************************************
 * len()
 * type()
 * int()
-* str()
 * float()
+* bool()
+	10 == '10' ==> False # B'coz they both have diff datatypes
+	"bag" > "apple" ==> True
+	"bag" > "BAG" ==> False
+
+* ord() # this is used to get the order of char Ex: ord("b") ==> 98, ord("B") ==> 66
+* str()
 * complex()
 * dictionary.keys()
 * dictionary.values()
 * bin(25) ==> 0b1101  --> convert Decimal to Bynary system
 * oct(25) ==> 0o31  --> convert Decimal to Octal system
 * hex(25) ==> 0x19  --> convert Decimal to HexaDecimal system
+* eval() --> Evaluates an expression which is entered in input()
+* 
+
+
+
+String Functions:
+-------------------------------------------------------------------
+course = "Python Programming"
+* course.upper()
+* course.lower()
+* course.title()
+* course.strip()
+* course.lstrip()
+* course.rstrip()
+* course.find("Pro")
+* course.replace("p", "j")
+* print("pro" in course)
+* print("swift" not in course)
+
+
+Number Functions:
+-------------------------------------------------------------------
+* print(round(2.9)) ==> 3
+* print(abs(-2.9)) ==> 2.9
+
 
 
 ********************************** Statements ******************************************
@@ -111,6 +206,15 @@ else:
 	print("It's cold day")
 print('done');
 
+* Terinary Operator
+age = 22
+message = "Eligible" if age >= 18 else "Not eligible"
+
+
+* RANGE
+numbers = range(5, 10, 2)
+for number in number:
+	print(number)
 
 * WHILE loop
 number =  5
@@ -123,13 +227,121 @@ numbers = [1, 2, 3, 4, 5]
 for item in numbers:
 	print(item)
 
+* FOR ELSE loop
+successful = False
+for number in range(3):
+	print("Attempt")
+	if successful:
+		print("Successful")
+		break
+else:
+	print("Attempted 3 times and failed")
 
-* RANGE
-numbers = range(5, 10, 2)
-for number in number:
-	print(number)
+
+* Nested loops
+for x in range(5):
+	for y in range(3):
+		print(f"({x}, {y})")
+
+
+******************************************** Modules ******************************************
+* A module is like a separate file with some Python code
+* 'math' module includes lots of mathemetical functions for working with numbers
+
+* import math || from math import sqrt, pow
+math.sqrt, math.pow
+
+* import sys
+sys.argv
+
+
+******************************** Custom function defining **************************************
+* All functions by default returns 'None'
+* def greet(first_name, last_name):
+	print(f"Hi {first_name} {last_name}")
+	print("Welcome aboard")
+
+greet("Manoj", "Kumar")
+
+
+* def get_greeting(name):
+	return f"Hi {name}"
+
+greet_message = get_greeting("Manoj Kumar")
+print(greet_message)
+
+
+* def increment(number, by):
+	return number + by
+
+print(increment(2, by=1))
+Note: Above "by=1" is called as 'Keyword Aguments
+
+* DEFAULT ARGUMENTS
+Note: All optional parameters should come after required parameters
+def increment(number, by=1):
+	return number + by'
+
+print(increment(2))
+print(increment(2, 5))
+
+
+* XARGS
+def multiply(*numbers):
+	total = 1
+	for number in numbers:
+		total *= number
+		print(number)
+	return total
+
+print(multiply(2, 3, 4, 5))
+
+
+* XXARGS
+def save_user(**user):
+	print(user)
+
+save_user(id=1, name="John", age=22) ==> {'id': 1, 'name': 'John', 'age': 22}
+
+****************************************** Scopes ******************************************
+* There are 2 types of scopes
+	1) global
+	2) local
+
+* variabes which are defined outside of a function will have global scope
+* variabes which are defined inside of a function will have local scope
+
+We can change global scope variable value as below
+message = 'Hello'
+def greet(name):
+	global message
+	message = 'World'
+
+greet("Manoj")
+print(message) ==> World
+
+
+****************************************** Excercises ******************************************
+* FizzBuzz algorithm
+def fizz_buzz(input):
+	if(input % 3 == 0) and (input % 5 == 0):
+		return "FizzBuzz"
+	if(input % 3 == 0):
+		return "Fizz"
+	if(input % 5 == 0):
+		return "Buzz"
+	return input
+
+print(fizz_buzz(15))
 
 ****************************************** IMP points ******************************************
+* We can use thriple quotes also in Python
+"""
+	Hi Manoj,
+	How are you
+"""
+* We use # sign for comment
+* 'block' is called as 'suite' in Python
 * Strings in Python are Imutable, means they can't be changed
 * In Python 'List' is nothing but 'Array', Lists are mutable
 * List = [10, 'manoj', 20.4]
@@ -153,3 +365,15 @@ range 0-7
 * HexaDecimal system
 range 0-9 Then a-f
 
+* Backslash usage
+print("Python Programmin")
+print("Python \"Programmin")
+print("Python \'Programmin")
+print("Python \\Programmin")
+print("Python \nProgrammin")
+Backslash is called as escape character
+
+* Formatted string
+first = "Manoj"
+last = "Kumar"
+full = f"{first} {last}" ==> Manoj Kumar
