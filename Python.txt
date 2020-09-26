@@ -2,18 +2,29 @@
 * Created by "Guido Van Rossum" in 1989
 * IDLE = Integrated Development and Learning Environment
 * Indentation is very very important in Python - One tab equals to 4 spaces by default
-* Syntax error is like grammer in general language
->>> 2 > [Enter] --> this gives Syntax error
 
 * PEPs = Python Enhancement Proposals
 
 * We never use complex number (1 + 2j) in web development
+
+* When a function is part of an object, we refer to that function as a method
+
+* comprehension syntax is below
+[expression for item in items]
 
 
 *********************************** Useful VScode Extensions ********************************************
 * Python by Microsoft
 * Code Runner by Jun Han - It's a read-only use - We shouldn't python files with this extension if that files contains 'input' function(s). Because this extension is used only for output but won't work for taking input values.
 
+
+******************************************** Errors *****************************************************
+* Syntax error is like grammer in general language
+>>> 2 > [Enter] --> this gives Syntax error
+
+* If we try to access a key from a Dictionary which doesn't exist, then we get 'KeyError'
+
+* 
 
 *************************************** Telsko playlist *************************************************
 * BODMAS rule
@@ -94,8 +105,194 @@ first, second, *other = numbers
 but if we want to get first & last variables, it's as below
 first, *other, last = numbers
 
+Note: If we want index also, we need to use enumerate function
+
+* Iterating list
+letter = ['a', 'b', 'c']
+for letter in enumerate(letters)
+	index, item = letter
+	print(letter[0], letter[1]) ==> (0, a) then (1, b) then (2, c)
+
+Note: Above thing can also be re-written as below
+for index, letter in enumerate(letters)
+	print(index, letter)
+
+* If we want to add items to list at an end, we should use 'append()'
+list.append('d', 'e')
+
+* If we want to add items at a specific position to list at an end, we should use 'insert()'
+list.insert(0, '-')
+
+* If we want to remove items from a list at an end, we should use 'pop()'
+list.pop()
+Note: If we don't pass an index in pop method, by default 'pop' method removes last item from the list
+
+* If we want to remove items from a particulat position from list, we need to pass index
+list.pop(0)
+
+* If we want to remove items from a list and we don't know the index, then we can use 'remove()' method
+list.remove('b')
+Note: this will remove first occurence of the letter 'b' from the list. But if want to remove all occurences in the list, then we should iterate the list and apply remove() method in the loop
+
+* We can delete multiple item at a time from list as below
+del list[0:3]
+
+* To get an index of an item from an item, then we can use 'index()' method
+list.index('b')
+
+Note: If we try to get an index of an item which doen't exist in the list, it gives error but not '-1'
+So the better and good way to get an index is as below
+if 'b' in letters:
+	print(list.index('b'))
+
+Note: The other way is knowing the number of occurences of an item in the list
+print(letters.count('b'))
+
+* We want to delete all the item from a list, then use 'clear()' method
+list.clear()
+
+* We can sort a list in accending order as below
+list.sort()
+Note: The other way is as below
+sorted(letters)
+
+Note: The diff is list.sort modifies the original list whereas 'sorted()' doesn't
+
+* We can sort a list in deccending order as below
+list.sort(reverse=True)
+
+Note: The other way
+sorted(letters, reverse=True)
+
+* We can sort a list which contains tupple as below
+items = [
+	("Product1", 9),
+	("Product2", 10),
+	("Product3", 12),
+]
+
+def sort_item(item):
+	return item[1]
+
+items.sort(key=sort_item)
+print(items)
+
+Note: The above thing with lambda function way
+items.sort(key=lambda item:item[1])
+print(items)
+
 
 =======================================================================================
+* TUPLE
+------------------------------------------------------------------------------
+Note: Tuples are immutable, means they can't be changed once created, so we Tuple won't contain 'append()' and 'remove()' and other add & removable methods
+* Tuple is created with or without '()'
+Ex: tuple = (1, 2, 3) || tuple = 1, 2, 3
+Note: If it contains only one property then 
+tupe = (1) || tuple = 1,
+
+* Concatenating two tuples
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+combinedTuple = (1, 2, 3) + (4, 5, 6) ==> (1, 2, 3, 4, 5, 6)
+
+* Multiplyinh tuple
+tuple = (1, 2, 3)
+multipliedTuple = (1, 2) * 3 ==> (1, 2, 1, 2, 1, 2)
+
+* Converting List to Tuple
+point = tuple([1, 2, 3]) Also tuple("Hello World")
+
+* Unpacking tuple
+tuple = (1, 2, 3)
+x, y, z = tuple
+
+=======================================================================================
+* ARRAY
+---------------------------------------------------------------------
+* To create an array we need to import 'array' from 'array' module
+from array import array
+
+Note: We should use 'array' only if we are about to dealing with large sequence of numbers and encoutering performance problems
+
+Syntax: array(typecode, iterable)
+
+numbers = array('i', [1, 2, 3])
+
+
+
+=======================================================================================
+* SET
+---------------------------------------------------------------------
+* Set contains only unique values
+Note: We can't access 'set' items with indexed like we do with 'list' because 'set' is un-ordered collection of unique items
+
+Syntax: uniques = {1, 2, 3, 4}
+
+* We can make 'set' from a 'list'
+numbers = [1,1,2,3,3,3,4,]
+uniques = set(numbers) ==> {1,2,3,4}
+
+* first = {1,1,2,3,4}
+second = {1,5}
+
+print(first | second) ==> {1,2,3,4,5}
+print(first & second) ==> {1}
+print(first - second) ==> {2,3,4}
+print(first ^ second) ==> {2,3,4,5}
+
+* 
+
+
+=======================================================================================
+* DICTIONARIES
+---------------------------------------------------------------------
+Syntax: point = {"x": 1, "y": 2, "z": 3}
+we can also use 'dict' method and passing 'key=word' argument way as below
+point = dict(x=1, y=2, z=3)
+
+* We can access properties in 'Dictionary' with 'key'
+print(point['x'])
+
+Or wen use 'get' method access properties in 'Dictionary' with 'key' as below
+print(point.get("x")) ==> 1
+
+but, if we try to access a key which doesn't exist with 'get' method, then it returns 'None'
+print(point.get("aaa")) ==> None
+
+Here, we can pass default value also as below
+print(point.get("aaa", 0)) ==> 0
+
+* Changing item
+point['x'] = 10
+
+* Deleting item
+del point["x"]
+
+* Looping through Dictionary
+for key in point:
+	print(key, point[key])
+
+another way is below
+
+for key, value in point.items():
+	print(key, value)
+
+
+* Way to create Dictionary
+values = {}
+for x in range(5):
+	values[x] = x * 2
+
+Above thing can also be re-written as below with comprehension
+values = {x: x * 2 for x in range(5)}
+
+
+************************************** Comprehension *******************************************
+* comprehension syntax is below
+[expression for item in items]
+
+* comprehension can be used with 'list', 'set' and 'dictionary' but not with 'tuple' - but if we use comprehension with 'tuple' then we will get 'generator object'
 
 ****************************************** Operators ******************************************
 * Argumented assignment operator
@@ -191,6 +388,27 @@ Number Functions:
 * print(abs(-2.9)) ==> 2.9
 
 
+List Functions:
+-------------------------------------------------------------------
+items = [("product1", 10), ("product2", 9), ("product3", 12)]
+
+* prices = list(map(lambda item: item[1], items))
+* filtered = list(filter(lambda item: item[1] >= 10, items))
+
+-> List comprehension
+we can re-write above 'map()' with List comprehension as below
+* prices = [item[1] for item in items]
+
+we can re-write above 'filter()' with List comprehension as below
+* prices = [item for item in items if item[1] >= 10]
+
+-> We can use 'zip()' to join two Lists to combine as list of tuple as below
+list1 = [1, 2, 3]
+list2 = [10, 20, 30]
+
+zippedList = list(zip(list1, list2))
+print(zippedList)
+
 
 ********************************** Statements ******************************************
 * IF statement
@@ -253,6 +471,15 @@ math.sqrt, math.pow
 
 * import sys
 sys.argv
+
+* from collections import deque
+Note: 'deque()' is used to remove items one by one from left as below
+list = [1, 2, 3]
+print(deque.popleft())
+
+* from array import array
+* from sys import getsizeof
+* from pprint import pprint
 
 
 ******************************** Custom function defining **************************************
@@ -334,6 +561,39 @@ def fizz_buzz(input):
 
 print(fizz_buzz(15))
 
+
+* sentence = "This is a common interview question"
+
+char_frequesncy = {}
+for char in sentence:
+	if char in char_frequesncy:
+		char_frequesncy[char] += 1
+	else:
+		char_frequesncy[char] = 1
+
+pprint(char_frequesncy, width=1)
+print(sorted(char_frequesncy.items()))
+print(sorted(char_frequesncy.items(), key=lambda kv: kv[1]))
+print(sorted(char_frequesncy.items(), key=lambda kv: kv[1], reverse=True))
+
+char_frequesncy_sorted = sorted(char_frequesncy.items(), key=lambda kv: kv[1], reverse=True)
+print(char_frequesncy_sorted[0]) ==> ('i', 5)
+
+
+
+************************************** Unpacking Operators *********************************************
+-> '**' is Unpacking Operator for Dictionaries
+-> '*' is Unpacking Operator for other datatypes
+
+************************************** Differences *********************************************
+* Difference B/W 'set' & 'dictionary' is - 'set' will have only keys as below
+set = {1 2, 3}
+'dictionary' will have key-value pair as below
+dictionary = {'x':1, 'y':2, 'z':3}
+
+Note: Both 'set' & 'dictionary' uses curly braces to create
+
+
 ****************************************** IMP points ******************************************
 * We can use thriple quotes also in Python
 """
@@ -350,6 +610,7 @@ Tuple are immutable
 * The difference B/W 'List' & 'Tuple' is 'mutable' & 'immutable' respectively. And we should use 'len()' to get the length of 'List' & we should use 'count()' to get the length of 'Tuple'
 * set - {12, 45, 25, 78, 69}
 	-> set won't maintain sequesnce & doesn't support duplicate values & won't support indexing
+* If we want index also, we need to use enumerate function
 * We can't create 'Const' variable in Python
 * 'null' is considered as 'none' in Python
 
