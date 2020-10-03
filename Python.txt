@@ -3,6 +3,11 @@
 * IDLE = Integrated Development and Learning Environment
 * Indentation is very very important in Python - One tab equals to 4 spaces by default
 
+* We should use all lowercases for naming 'variable' and 'functions' && underscore(_) to differentiate to words
+* We should follow Pascal naming convension while creating class
+
+Pascalcase: The fisrt letter of every word should be uppercase. And we shouldn't use underscore(_) to differentiate to words
+
 * PEPs = Python Enhancement Proposals
 
 * We never use complex number (1 + 2j) in web development
@@ -19,12 +24,72 @@
 
 
 ******************************************** Errors *****************************************************
+*** An exception is a kind of error that terminates the program
+
 * Syntax error is like grammer in general language
 >>> 2 > [Enter] --> this gives Syntax error
 
 * If we try to access a key from a Dictionary which doesn't exist, then we get 'KeyError'
 
-* 
+* If we try to access a value with index from a list which doesn't exist, then we get 'IndexError'
+
+* If we try to divide an integer value with ZERO, then we get 'ZeroDivisionError'
+
+* If we enter a string value instead of Number in input() then we get 'ValueError' - below
+num = int(input("Enter Age: "))
+
+Note: To handle errors/exceptions we need to use 'try expect' way as below
+try:
+	file = open("app.py")
+	num = int(input("Enter Age: "))
+except ValueError as ex:
+	print("You didn't provide a valid age")
+	print(ex)
+	print(type(ex))
+except (ValueError, ZeroDivisionError):
+	print("Enter valid age")
+except ZeroDivisionError:
+	print("Age can't be 0")
+else:
+	print("No exceptions were thrown")
+finally:
+	file.close()
+print("Execution continues...")
+
+Note: 'else' will be executed only if there are no errors/exceptions & 'finally' will be executed always
+
+* The 'with' statement
+try:
+	with open('app.py') as file, open('another.txt') as target:
+		print("File is opened")
+
+Note: If we open a file using 'with' statement, then that file will be closed automatically no matter whether 'try' has 'finally' or not
+
+Note: The 'with' statement automatically releases external resources 
+
+
+* Raising own eceptions
+We can raise own exception with 'raise' statement, example is below
+def calculate_xfactor(age):
+	if age <= 0:
+		raise ValueError("Age can't be 0")
+	return 10/age
+
+try:
+	calculate_xfactor(-1)
+except ValueError as error;
+	print(error)
+
+
+
+Note: By convention all custom exceptions should end with 'Error'
+	Ex: InvalidOperationError
+Note: Everytime you wanna create a custom exception we should derive our class from built-in 'Exception' class
+
+class InvalidOperationError(Exception):
+	pass
+
+Note: We have many type of exceptions in Python, just google 'Python 3 exceptions'
 
 *************************************** Telsko playlist *************************************************
 * BODMAS rule
@@ -480,6 +545,8 @@ print(deque.popleft())
 * from array import array
 * from sys import getsizeof
 * from pprint import pprint
+* from timeit import timeit
+* from collections import namedtuple
 
 
 ******************************** Custom function defining **************************************
@@ -593,6 +660,133 @@ dictionary = {'x':1, 'y':2, 'z':3}
 
 Note: Both 'set' & 'dictionary' uses curly braces to create
 
+
+
+************************************** OOPs *********************************************
+* Class = bluprint for creating new objects
+* Object = is an instance of a class
+
+Note: All the methods that are defined in a class should have at least one parameter. By default it's 'self'.
+'self' is a reference to a current object.
+
+* Classes in Python will have 'Magical Methods'. All Magical methods starts & ends with double underscore(__methodname__)
+
+* Magical methods are
+__init__ --> It's nothing but a constructor
+
+* We should follow Pascal naming convension while creating class. Syntax is below
+class MyPoint:
+	def draw(self):
+		print("Draw")
+
+point = Point()
+print(type(point)) ==> <class '__main__.Point'>
+print(isinstance(point, Point))
+
+* We can use 'isinstance()' to check whether an object is an instance of a class or not, as above
+
+* We can use 'isinstance()' to check whether a variable is an instance of 'int' or not, as below
+print(isinstance(point, int))
+
+
+* INHERITANCE
+class Animal:
+	def __init(self):
+		self.age = 1
+
+	def eat(self):
+		print("Eat")
+
+class Mammal(Animal):
+	def __init(self):
+		self.weight = 2
+		super().__init__()
+
+	def walk(self):
+		print("Walk")
+
+class Fish(Animal):
+	def swim(self):
+		print("Swim")
+
+print(isinstance(m, Mammal))
+print(isinstance(m, object))
+print(issubclass(Mammal, Animal))
+
+
+* class Animal:
+	def eat(self):
+		print("Eat")
+
+class Bird(Animal):
+	def fly():
+		print("Fly")
+
+class Chicken(Bird):
+	pass
+
+Note: Above concept is 'Multi-level inheritance'
+
+
+* MULTIPLE INHERITANCE
+class Employee:
+	def greet():
+		print("Employee greet")
+
+class Person:
+	def greet():
+		print("Person greet")
+
+class Manager(Employee, Person):
+	pass
+
+manager = Manager()
+manager.greet() ==> "Employee greet"
+
+
+* ABSTACT CLASS
+from abc import ABC, abstractmethod
+
+class UIControl(ABC):
+	@abstract
+	def draw(self):
+		pass
+
+Note: Any class that inherits 'UIControl' class, then that class must should define 'draw' method
+
+
+* Extending built-in types
+class Text(str):
+	def duplicate(self):
+		return self + self
+
+text = Text("Python")
+text.duplicate() ==> PythonPython
+
+
+
+* Data classes
+class Point:
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
+
+p1 = Point(1, 2)
+p2 = Point(1, 2)
+
+print(p1 == p2) ==> False
+Note: Above output is 'False' is because these two objects are stored in different locations in memory. By default Python compares objects based on where they are stored in memory. To check the memory address of an object we can use 'id()' method
+
+print(id(p1)) ==> 4518487376
+print(id(p2)) ==> 4518487982
+
+To fix this issue we need to implement magic method called '__eq__'
+def __eq__(self, other):
+	return self.x == other.x && self.y == other.y
+
+
+
+Note: In Python we have 'pass' statement which does nothing but satisfies Python to execution
 
 ****************************************** IMP points ******************************************
 * We can use thriple quotes also in Python
