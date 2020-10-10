@@ -5,6 +5,7 @@
 * cd ~
 * mkdir FOLDER-NAME
 * ls
+* ls -l
 * E:
 * 
 

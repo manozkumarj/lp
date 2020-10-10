@@ -1,6 +1,6 @@
 * We can use 'axios' OR 'fetch API' to make API calls
 * 'axios' is a promise based Http client.
-* 
+* We can use 'twilio' site to send messages
 
 
 
@@ -14,4 +14,5 @@
 * https://jsonplaceholder.typicode.com/
 * https://api.adviceslip.com/
 * http://worldtimeapi.org/
+* https://api.yelp.com/v3/businesses/search
 * 

@@ -17,6 +17,27 @@ Pascalcase: The fisrt letter of every word should be uppercase. And we shouldn't
 * comprehension syntax is below
 [expression for item in items]
 
+* PYPI --> Python Package Index, It's like NPM. It's basically a repository of Python packages which are built by developers across world.
+
+* We can install PYPI packages using command line as below
+	pip install	requests
+
+Note: We can install a specific version of a package as below
+	pip install	requests==2.9.0 (OR) pip install requests==2.9.* (OR) pip install requests~=2.9.0
+
+* We can un-install a package using command line as below
+	pip uninstall	requests
+
+* We can know the installed packages by below command
+	pip list
+
+* Docstring is indicated by 3 double quotes (""") - Example is below
+""" One line description
+
+	A more detailed explanation
+"""
+Note; Above one is called as 'Multi-line doc sting'
+
 
 *********************************** Useful VScode Extensions ********************************************
 * Python by Microsoft
@@ -543,10 +564,26 @@ list = [1, 2, 3]
 print(deque.popleft())
 
 * from array import array
-* from sys import getsizeof
+* from sys import getsizeof, argv
 * from pprint import pprint
 * from timeit import timeit
 * from collections import namedtuple
+* import csv
+* import json
+* from pathlib import Path
+* import sqlite3
+* import time
+* from datetime import datetime, timedelta
+* import random
+* import string
+* import webbrowser
+* import email.mime.multipart from MIMEMultipart
+* import email.mime.text from MIMEText
+* import email.mime.image from MIMEImage
+* import smtplib
+* from string import Template
+* import subprocess
+
 
 
 ******************************** Custom function defining **************************************
@@ -788,6 +825,13 @@ def __eq__(self, other):
 
 Note: In Python we have 'pass' statement which does nothing but satisfies Python to execution
 
+
+******************************************** Popular Packages ******************************************
+* requests
+* twilio
+* beautifulsoup4
+
+
 ****************************************** IMP points ******************************************
 * We can use thriple quotes also in Python
 """
@@ -832,3 +876,16 @@ Backslash is called as escape character
 first = "Manoj"
 last = "Kumar"
 full = f"{first} {last}" ==> Manoj Kumar
+
+
+
+
+
+
+
+
+****************************************** Python websites ******************************************
+* www.python.org
+* www.pypi.org
+* 
+
