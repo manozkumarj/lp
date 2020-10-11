@@ -261,7 +261,131 @@ void main(){
 
 
 ******************************************* OOPs *************************************************
-* 
+* A class is a blue print of an object
+* class example is below
+class Person{
+	String name;
+	int age;
+
+	// Below one is Default Constructor
+	Person(String name, [int age = 18]){
+		this.name = name;
+		this.age = age;
+	}
+
+	// above Default constructor also be written as
+	// Person(this.name, [this.age = 18]);
+
+	// Below one is called as names constructor
+	Person.guest(){
+		name = 'Mahesh';
+		age = 26;
+	}
+
+	void showOutput(){
+		print(name);
+		print(age);
+	}
+}
+
+void main(){
+	Person person1 = Person('Manoj');
+	// person1.name = 'Manoj';
+	// person1.age = 28;
+	person1.showOutput();
+
+	var person2 = Person.guest();
+	person2.showOutput();
+}
+
+
+* final, static, const
+class X{
+	final name;
+	static const int age = 10;
+
+	X(this.name);
+}
+
+main(){
+	var x = X('jack');
+	print(x.name); ==> jack
+	print(x.age); ==> gives error since 'age' is prefixed with 'static'
+	print(X.age); ==> 10
+}
+
+Note: variables which are prefixed with 'final' key can't be changed
+Note: variables which are prefixed with 'final' key can only be changed in runtime, i.e., in constructor
+
+* variables which are prefixed with 'static' key are called as 'class property', all other properties are called as 'object.properties'.
+
+* Class properties can't be accessed with object
+
+* Inheritence example is below
+class Vehicle{
+	String model;
+	int year;
+
+	Vehicle(this.model, this.year){
+		print(this.model);
+		print(this.year);
+	}
+
+	void showOutput(){
+		print(model);
+		print(year);
+	}
+}
+
+class Car extends Vehicle{
+	double price;
+
+	Car(String model, int year, this.price) : super(model, year);
+
+	void showOutput(){
+		super.showOutput();
+		print(this.price);
+	}
+}
+
+void main(){
+	var car1 = Car('Accord', 2014, 150000);
+	car1.showOutput();
+}
+
+* We need to use '@override' annotation while overriding the method
+
+* Exception handling
+int mustGreaterThanero(int val){
+	if(val <= 0){
+		throw Exception("Value must be greater than zero");
+	}
+	return val;
+}
+
+void letVerifyTheValue(var val){
+	var valueVerification;
+
+	try{
+		valueVerification = mustGreaterThanero(val);
+	}
+	catch(e){
+		print(e);
+	}
+	finally{
+		if(valueVerification == null){
+			print("value is not accepted");
+		}
+		else{
+			print("value is verified $valueVerification");
+		}
+	}
+}
+
+void main(){
+	letVerifyTheValue(10);
+	letVerifyTheValue(0);
+}
 
 ****************************************** Dart websites ******************************************
 * https://dart.dev/
