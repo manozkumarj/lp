@@ -35,7 +35,7 @@ Plugins:
 * Sublime Babel
 * Path Intellisense
 * Deno
-* 
+* Material Icon Theme by Philipp Kief
 
 
 

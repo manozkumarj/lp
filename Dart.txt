@@ -1,4 +1,6 @@
+* Dart programming language is developed by Google
 * Dart is the main programming language to develop cross platform mobile applications using Flutter framework.
+* Dart is focused on frontend(mobie apps, web) user interface (UI) development.
 * Dart is a 'static & compiled programming language'
 	Static programming language -> Means once we define a variable a string value then it can't be modified in future.
 	But we have 'dynamic' type, with that we can do
@@ -159,7 +161,11 @@ void main(){
 
 dynamic sum({var num1, var num2}) => num1 + num2;
 
-Note: Named parameters are optional parameters
+Note: All the Named parameters are optional parameters, but we can make Named optional parameters as required by passing '@required' annotation, below is example
+Person({@required String name, int age = 30}){}
+
+Note: @required annotation is not a feature of Dart, but it works in Flutter
+
 void main(){
 	print(sum(10));
 	print(sum(10, num2: 2));
