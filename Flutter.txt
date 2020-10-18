@@ -10,6 +10,15 @@
 
 * void main() function will automatially executed when App starts by Flutter & Dart
 
+* If we don't want a class to be used in other file then we need to prefix the class name with '_', below
+class _MyAppState extends State<MyApp>
+
+Note: Same thing applies for properties & method names
+
+* We can use 'Dart Debugger' from VS code
+
+* '@required' decorator introduced by Flutter
+
 * 
 
 
@@ -39,6 +48,7 @@ Note: PROJECT_NAME.iml file will be generated automatically by Flutter
 
 ****************************************** Imports **************************************************
 * import 'package:flutter/material.dart'
+* import 'package:flutter/foundation.dart'
 * 
 
 ****************************************** Widgets **************************************************
@@ -47,20 +57,47 @@ Output & Input (Visible)
 * RaisedButton()
 * Text()
 * Card()
+* FlatButton()
+* Image()
+* Icon()
+* TextField()
+* 
 
 
 Layout & Control (Invisible)
 --------------------------------------------------------------------------------------------
 * Row()
-* Column()
+* Column(
+	mainAxisAlignment: MainAxisAlignment.center,
+	crossAxisAlignment: CrossAxisAlignment.streath,
+	children: <Widget>[]
+)
+
 * ListView()
+* Stack()
+* ListView()
+	* ListTile()
+* GridView()
+* 
 
 
 Other
 --------------------------------------------------------------------------------------------
 * Saffold()
 * AppBar
-* Container()
+* Container(
+	width: double.infinity,
+	child: Text(),
+)
+
+* Card(
+	color: Colors.white,
+	child: Text()
+)
+
+* Center()
+* GestureDetector()
+* InkWell()
 
 ****************************************** Sample code **************************************************
 Example 1:
@@ -83,6 +120,40 @@ class MyApp extends StatelessWidget{
 
 Example 2:
 --------------------------------------------------------------------------------------------
+return Container(
+	width: double.infinity,
+	margin: EdgeInsets.all(10),
+	child: Text(
+		'Hello world',
+		style: TextStyle(fontSize: 18),
+		textAlign: TextAlign.center,  
+	),
+);
+
+
+Example 3:
+--------------------------------------------------------------------------------------------
+return Container(
+	width: double.infinity,
+	margin: EdgeInsets.all(10),
+	child: RaisedButton(
+		color: Colors.blue,
+		textColor: Colors.white,
+		child: Text(
+			'Hello world',
+			style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+			textAlign: TextAlign.center,  
+		),
+		onPressed: null,
+	),
+);
+
+****************************************** Error types **************************************************
+* RangeError
 
 ****************************************** Flutter websites ******************************************
-* 
+* https://flutter.dev/
+* https://flutter.dev/docs/development/ui/widgets
+* https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+* https://howtodothisinflutter.com/
+* https://www.codewithakshay.com/cheat-sheets

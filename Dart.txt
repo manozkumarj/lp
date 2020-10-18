@@ -77,6 +77,8 @@ Multiple line of comment
 
 * const aConstNum = 0;
 
+* DateTime date = DateTime.now();
+
 * r'In a raw string, not even \n gets a special treatment' --> This is 'RAW' string
 * We can print multi line using ''' OR """ quotes
 
@@ -393,6 +395,18 @@ void main(){
 	letVerifyTheValue(0);
 }
 
+
+* If we don't want a class to be used in other file then we need to prefix the class name with '_', below
+class _MyAppState extends State<MyApp>
+
+Note: Same thing applies for properties & method names
+
 ****************************************** Dart websites ******************************************
 * https://dart.dev/
 * https://dartpad.dartlang.org/0ca5b334ec413c084575f575e0240501
+
+
+****************************************** Questions ******************************************
+* What's the diff B/W 'final' Y 'const'?
+* What's the diff B/W const question = const ['one', 'two'];
+
