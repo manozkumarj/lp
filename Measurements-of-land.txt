@@ -12,6 +12,33 @@
 
 
 
+All about Lengths:
+-----------------------------------------------------------------------------------
+* 1 MM
+* 1 CM = 10 MMs
+* 1 Inch = 2.54 CMs
+* 1 Foot = 12 Inchs
+* 1 Yard(Gajam) = 3 Feets
+* 1 Meter = 100 CMs
+* 1 KM = 1000 Ms
+* 1 Mile = 1.60 KMs
+* 
+
+
+All about Areas:
+-----------------------------------------------------------------------------------
+* 1 SQ FT = 144 SQ Inchs
+* 1 SQ YD = 9 SQ FT
+* 1 Cent = 48.4 SQ YD
+* 1 Gunta = 2.5 Cents = 121 SQ YD = 1089 SQ FTs
+* 1 Acre = 100 Cents = 40 Guntas
+* 1 Hectare = 2.47 Acres
+* 
+
+
+
+
+
 
 
 
@@ -66,4 +93,11 @@ https://www.youtube.com/watch?v=YVpBZAO0kmQ
 Measuring a land which is in not in measurable shape
 https://www.youtube.com/watch?v=KLN68OlIMcs
 
-* 
+* పొడవులకు/దూరాలకు(Lengths) వైశాల్యాలకు(Areas) ప్రమాణాలు| గజాలు,గుంటలు,Inch,Yards,sq ft,sq yd,Acres
+https://www.youtube.com/watch?v=XJepoYMMtrY
+
+*** How to Measure Land Area in Telugu | ఇంటి స్థలాలను సులువుగా & ఖచ్చితంగా కొలవడం ఎలా? (In diff shapes)
+https://www.youtube.com/watch?v=IFuAYaSP1LY
+
+* భూమి కొలతలు || ఎకరం నుండి సెంట్లు,అంకణాలు, గజాలు,అడుగులు, గుంటల లోకి మార్చుట
+https://www.youtube.com/watch?v=4-sw_0mbbI0

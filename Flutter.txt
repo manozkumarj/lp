@@ -17,7 +17,7 @@ Note: Same thing applies for properties & method names
 
 * We can use 'Dart Debugger' from VS code
 
-* '@required' decorator introduced by Flutter
+* '@required' decorator introduced by Flutter, we should import either 'material' or 'foundation' package to use '@required' decorator.
 
 * 
 
