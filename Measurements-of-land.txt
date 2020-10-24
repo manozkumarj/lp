@@ -29,7 +29,7 @@ All about Areas:
 -----------------------------------------------------------------------------------
 * 1 SQ FT = 144 SQ Inchs
 * 1 SQ YD = 9 SQ FT
-* 1 Cent = 48.4 SQ YD
+* 1 Cent = 48.40 SQ YD
 * 1 Gunta = 2.5 Cents = 121 SQ YD = 1089 SQ FTs
 * 1 Acre = 100 Cents = 40 Guntas
 * 1 Hectare = 2.47 Acres
