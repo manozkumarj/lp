@@ -10,10 +10,19 @@
 * https://www.youtube.com/watch?v=o3qRsF7S6wI --> What is Share and Stock Market | Stock markets Theory. Basics for beginners in Telugu. TeluguBadi
 * https://www.youtube.com/watch?v=yBA6rl-enoQ --> How to Apply for an IPO [Using ICICI Internet Banking]
 * https://www.youtube.com/watch?v=dE8QSS8Qnkw --> How to Apply for IPO [Using HDFC Bank Net Banking]
+* https://www.youtube.com/watch?v=oAdt4nszctM --> How to apply Mrs Bector Food IPO || How to apply for IPO in Groww || How to apply for IPO -- Bank of Baroda
+
+* https://www.youtube.com/watch?v=zCMJW8lH73g --> (Telugu) BEST time to Enter in Stock market for intraday | beginners
+* https://www.youtube.com/watch?v=wOROjPgU3cQ&list=PLggxfrdV-9ssst1Q0gsDJMd4CyYft5jJA -->  Stock Market TRADING Course తెలుగు లో DAY TRADER తెలుగు 19 videos
+* https://www.youtube.com/watch?v=H9OBY1ZhSus&list=PLggxfrdV-9ssst1Q0gsDJMd4CyYft5jJA&index=4 --> what is stock market(Telugu) ,NSE , BSE , Commodities , Currency and How to buy shares?
+* 
 
 
-
-
+******************************************** Googled ***************************************************************
+* Generally market timings 9:15 AM - 3:30 PM
+* IPO timings 10:00 AM - 5:00 PM
+* European markets opens at 12:30 PM
+* 
 
 
 
@@ -21,11 +30,15 @@
 * DEMAT - D-Materialized account - Converting paper format shares into eletronic format --> central depository(CDSL, NSDL)
 * SEBI - Securities & Exchange Board of India 
 * IPO - Initial Public Offering
-	1) Book Building
-	2) Fixed Price
+	1) Book Building -> It will have price range (ex: 100-105)
+	2) Fixed Price -> It will have a fixed price
+
+* CDSL - Central Depository Services (India) Limited.
+* NSDL - National Securities Depository Limited.
 
 * ASBA - Application Supported by Blocked Amounts
 
+* BTST - Buy Today Sell Tomorrow
 * OFS - Offer For Sale
 * MIS - Margin Intraday Square Off
 * DRHP - Draft Red Herring Prospectus
@@ -35,3 +48,24 @@
 * ROE - Return On Equity
 * QSR - Quick Service Restaurants
 * CAGR - Compound Annual Growth Rate
+* MCX - Multi Commodity Exchange
+* NCDX - National Commodity & Derivatives Exchange
+* FMC - Forward Market Commission
+* ROI - Return On Invest
+* ETF - Exchange Traded Fund
+
+
+
+********************************************************************************************************************
+* CDSL and NSDL are both government registered share depositories in India. Share depositories hold shares in an electronic form.
+* CDSL Demat A/C No. looks like - 16 digits -> 12345678 12345678
+* NSDL Demat A/C No. looks like - 16 digits -> IN123456 12345678
+
+Note: In above 16 digits, 1st 8 digits indicates -> DP ID && 2nd 8 digits indicates -> Client ID
+
+
+******************************************** Googled ***************************************************************
+* difference between intraday and delivery
+* 
+
+********************************************************************************************************************
