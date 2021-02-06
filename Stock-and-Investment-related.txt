@@ -10,12 +10,24 @@
 * https://www.youtube.com/watch?v=o3qRsF7S6wI --> What is Share and Stock Market | Stock markets Theory. Basics for beginners in Telugu. TeluguBadi
 * https://www.youtube.com/watch?v=yBA6rl-enoQ --> How to Apply for an IPO [Using ICICI Internet Banking]
 * https://www.youtube.com/watch?v=dE8QSS8Qnkw --> How to Apply for IPO [Using HDFC Bank Net Banking]
+* https://www.youtube.com/watch?v=cKb-LCNJ-Uo --> How to apply IPO (Telugu) from SBI Bank (ASBA) | ZERODHA | UPSTOX | Metropolis
+* 
 * https://www.youtube.com/watch?v=oAdt4nszctM --> How to apply Mrs Bector Food IPO || How to apply for IPO in Groww || How to apply for IPO -- Bank of Baroda
 
 * https://www.youtube.com/watch?v=zCMJW8lH73g --> (Telugu) BEST time to Enter in Stock market for intraday | beginners
 * https://www.youtube.com/watch?v=wOROjPgU3cQ&list=PLggxfrdV-9ssst1Q0gsDJMd4CyYft5jJA -->  Stock Market TRADING Course తెలుగు లో DAY TRADER తెలుగు 19 videos
 * https://www.youtube.com/watch?v=H9OBY1ZhSus&list=PLggxfrdV-9ssst1Q0gsDJMd4CyYft5jJA&index=4 --> what is stock market(Telugu) ,NSE , BSE , Commodities , Currency and How to buy shares?
+* https://www.youtube.com/watch?v=SgCZquvujQ8 --> What is IPO and How to Apply for IPO in Telugu | Stock market basics for beginners
+*** https://www.youtube.com/watch?v=38qoRc-DPME --> Stocks లో investment చేసే ముందు Profit & Loss ఎలా చూడాలి ? | TRIDENT, YES BANK stock
+* https://www.youtube.com/watch?v=25eDSS-8pwM --> What are DP Charges || DP charges kya hota hai || DP Charges
+* https://www.youtube.com/watch?v=zc0dbmjwNVQ --> What is Dividend in stock market | stock market basics for beginners | Telugu badi
+* https://www.youtube.com/watch?v=nUQ--0WwzQg&list=PLlvLovf9pQzFrsjx-g7Odu2cHr9Xpk1iK --> Stock Market Basics for beginners in Telugu - 31 videos
+* https://www.youtube.com/watch?v=XTcNkvEpSwE&list=PLggxfrdV-9sslctRd8JylwMdM2-owsHHZ --> Basics of Stock Market ( తెలుగు లో ) - BtoB ( BASICS to BALANCE SHEET) - 9 videos
+* https://www.youtube.com/watch?v=E3itoVTbNq8 --> IPO Terms Explained (Telugu) | How IPO Allotment Works in Telugu | Get Trading Telugu
+* https://www.samco.in/knowledge-center/articles/ipo-vs-fpo/
 * 
+
+
 
 
 ******************************************** Googled ***************************************************************
@@ -53,6 +65,17 @@
 * FMC - Forward Market Commission
 * ROI - Return On Invest
 * ETF - Exchange Traded Fund
+* HNI - High Netwoth Investors
+* YoY - Year on Year
+* QoQ - Quater on Quater
+* EBITDA - Enrnings Before Interest Tax Depreciation Amortization
+	Revenue - Cost of operations = EBITDA
+* 
+
+
+
+* Financial Year starts at April 1st & ends at Next year 31st March
+Ex: FY20 --> April 1st 2019 To March 31st 2020
 
 
 
@@ -68,4 +91,8 @@ Note: In above 16 digits, 1st 8 digits indicates -> DP ID && 2nd 8 digits indica
 * difference between intraday and delivery
 * 
 
-********************************************************************************************************************
+********************************************** IMP points **************************************************************
+* Don't catch the falling knife
+* Avoid companies with high debt
+* Avoid companies with higher promoter pledging
+* 
