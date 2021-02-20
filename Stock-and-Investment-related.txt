@@ -25,6 +25,7 @@
 * https://www.youtube.com/watch?v=XTcNkvEpSwE&list=PLggxfrdV-9sslctRd8JylwMdM2-owsHHZ --> Basics of Stock Market ( తెలుగు లో ) - BtoB ( BASICS to BALANCE SHEET) - 9 videos
 * https://www.youtube.com/watch?v=E3itoVTbNq8 --> IPO Terms Explained (Telugu) | How IPO Allotment Works in Telugu | Get Trading Telugu
 * https://www.samco.in/knowledge-center/articles/ipo-vs-fpo/
+*** https://www.youtube.com/watch?v=fDODh7Ne2Ww --> 1.#F​&o - futures and options trading Basics in Telugu
 * 
 
 
@@ -70,7 +71,13 @@
 * QoQ - Quater on Quater
 * EBITDA - Enrnings Before Interest Tax Depreciation Amortization
 	Revenue - Cost of operations = EBITDA
-* 
+STT - Security Transation Tax
+* LTCG - Long Term Capital Gain
+* FMGC - Fast Moving Goods Company
+* ARPU - Average Revenue Per User
+* ISP - Internet Service Provider
+* EPS - Earnings/Loss per Share
+* NAV - Net Asset Value
 
 
 
@@ -96,3 +103,21 @@ Note: In above 16 digits, 1st 8 digits indicates -> DP ID && 2nd 8 digits indica
 * Avoid companies with high debt
 * Avoid companies with higher promoter pledging
 * 
+
+
+
+********************************************** Concepts **************************************************************
+* Derivative are 4 types
+	1) Forwards
+	2) Futures
+	3) Options
+	4) Swaps
+
+* Generally we use F&O for Hedging
+* 
+
+
+
+********************************************** Useful links **************************************************************
+* https://zerodha.com/margin-calculator/Futures/
+* https://docs.google.com/spreadsheets/d/1AdXr4voOKs2RpxftI_eJ78J7j-fBremMGiOOnf0I9jc/edit#gid=0
