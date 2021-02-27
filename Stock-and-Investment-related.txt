@@ -11,7 +11,7 @@
 * https://www.youtube.com/watch?v=yBA6rl-enoQ --> How to Apply for an IPO [Using ICICI Internet Banking]
 * https://www.youtube.com/watch?v=dE8QSS8Qnkw --> How to Apply for IPO [Using HDFC Bank Net Banking]
 * https://www.youtube.com/watch?v=cKb-LCNJ-Uo --> How to apply IPO (Telugu) from SBI Bank (ASBA) | ZERODHA | UPSTOX | Metropolis
-* 
+* https://www.youtube.com/watch?v=jQrYORmfOwU --> HOW TO APPLY IPO ONLINE THROUGH IDBI BANK NETBANKING IN ZERODHA BY DHAVAL MALVANIA
 * https://www.youtube.com/watch?v=oAdt4nszctM --> How to apply Mrs Bector Food IPO || How to apply for IPO in Groww || How to apply for IPO -- Bank of Baroda
 
 * https://www.youtube.com/watch?v=zCMJW8lH73g --> (Telugu) BEST time to Enter in Stock market for intraday | beginners
@@ -26,6 +26,9 @@
 * https://www.youtube.com/watch?v=E3itoVTbNq8 --> IPO Terms Explained (Telugu) | How IPO Allotment Works in Telugu | Get Trading Telugu
 * https://www.samco.in/knowledge-center/articles/ipo-vs-fpo/
 *** https://www.youtube.com/watch?v=fDODh7Ne2Ww --> 1.#F​&o - futures and options trading Basics in Telugu
+* https://www.youtube.com/watch?v=AxhvxTnKOwc --> What is the P/E Ratio in Telugu | Price to Earning Ratio and EPS | Meaning of PE Ratio and EPS
+* https://www.youtube.com/watch?v=cclogQRAkmg&list=PL4CRxQ27l-75HepV1wdXG84yMy_Bly-Vo --> What is fundamental analysis in telugu | basics of stock market telugu | telugu trading thoughts - 3 videos
+* https://www.youtube.com/watch?v=bCtl0kmFyJY --> what is dividend,bonus,split, buyback in telugu | corporate actions telugu | telugu trading thoughts
 * 
 
 
@@ -71,6 +74,7 @@
 * QoQ - Quater on Quater
 * EBITDA - Enrnings Before Interest Tax Depreciation Amortization
 	Revenue - Cost of operations = EBITDA
+* EBIT - Enrnings Before Interest & Taxes
 STT - Security Transation Tax
 * LTCG - Long Term Capital Gain
 * FMGC - Fast Moving Goods Company
@@ -78,6 +82,13 @@ STT - Security Transation Tax
 * ISP - Internet Service Provider
 * EPS - Earnings/Loss per Share
 * NAV - Net Asset Value
+* FII - Foreign institutional investors
+* P/E - Price to Earning Ratio --> P/E ratio should be low
+* EPS - Earning Per Share
+* CMP - Current Market Price
+* ROE - Return on Equity
+* ROCE - Return on Capital Employed
+* ROA - Return on Assets
 
 
 
@@ -107,6 +118,47 @@ Note: In above 16 digits, 1st 8 digits indicates -> DP ID && 2nd 8 digits indica
 
 
 ********************************************** Concepts **************************************************************
+* Dividend = Dividend refers to a reward, cash or otherwise, that a company gives to its shareholders
+* Dividends are 2 types
+	1) Cash dividend
+	1) Stocks dividend
+* In Dividend, 4 dates are IMP
+	1) Announcement date
+	2) Ex date = We should purchase stocks before the ex date to eligible for dividend
+	3) Record date = We should have stocks by the Record date to eligible for dividend
+	4) Payout date = On this date dividend will be given
+* Dividend may be given for every 3 months OR 6 months OR 1 year by companies. Few companies may not give dividends.
+* Another types of dividend
+	1) Final dividend - After ending of Financial year
+	2) Interim dividend - In between Financial year
+	3) Special dividend - When company got money and it want to share to shareholders
+
+* Buy back = A company wants to buy their shares from their shareholders
+* In Buy back, 3 dates are IMP
+	1) Announcement date
+	2) Open & Ending date
+
+* Bonus & Split
+
+* Bonus, Bonus ratio 3:1, here if we've 1 share, then company will give us 3 shares
+
+* Market capital = current market price * no.of oustanding shares
+
+* Share capital = Face value * no.of oustanding shares
+
+* Diff B/W Spit & Bonus
+	-> Split
+		* 1 share changes to multiple shares
+		* Face value changes
+		* No change in share capital
+		* Company, no need to put money
+
+	-> Bonus
+		* Company gives new shares
+		* No change inFace value changes
+		* Share capital increases
+		* Company have to add money in bonus
+
 * Derivative are 4 types
 	1) Forwards
 	2) Futures
@@ -114,10 +166,29 @@ Note: In above 16 digits, 1st 8 digits indicates -> DP ID && 2nd 8 digits indica
 	4) Swaps
 
 * Generally we use F&O for Hedging
-* 
+* Futures will have monthly expiry
+	Near, Next, Far
+* In Options there are 2 ways
+	-> Call(+)
+	-> Put(-)
+* If any stock price is increasing, then we can BUY stocks, futures, or CALL in options OR we can SELL PUT in options
+* If any stock price is decreasing, then we can SELL stocks, futures, or CALL in options OR we can BUY PUT in options
+* Options will have weekly expiry
+* Few key words related to Options
+	Call, Put, Strike Price, In the Money, At the Money, Out of the Money, Option Greeks, Option chain
+
+* In Options,
+	Buyers - Risk limited & Profit Unlimited
+	Selers - Profit limited & Risk Unlimited
 
 
 
 ********************************************** Useful links **************************************************************
 * https://zerodha.com/margin-calculator/Futures/
 * https://docs.google.com/spreadsheets/d/1AdXr4voOKs2RpxftI_eJ78J7j-fBremMGiOOnf0I9jc/edit#gid=0
+
+Financial websites:--
+* moneycontrol.com
+* economictimes.com
+* nseindia.com
+* bseindia.com
