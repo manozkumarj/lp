@@ -1,0 +1,72 @@
+* Vue is a frontend Javascript framework for building websites & user inerfaces
+* Vue is popular with Node.Js & Express (MEVN Stack)
+* Vue can also run on the server-side by using SSR framework like Nuxt
+* Vue uses virtual DOM
+* Vue components include a template for markup, logic including any state/data/methods as well as the styling for that component.
+Sample Vue component code is below
+
+	<template>
+		<header>
+			<title>{{title}}</title>
+		</header>
+	</template>
+
+	<script>
+		export default {
+			props: {
+				title: String,
+			},
+		}
+	</script>
+
+	<style scoped>
+		header{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+	</style>
+
+Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only applicable to this coponent level only.
+
+
+* Components can have their own state which can determine how a specific component behaves and what data is displayed.
+* Some state may be local to a specific component and some may be 'global' or 'app' level state that needs to be shared with multiple components.
+* 'Vuex' is a state manager for global state in larger applications
+* Options API & Composition API
+* Vue cli is standard toolong for Vue.js development
+* 
+
+
+
+
+* v-bind:src, v-bind:alt directives can be used for image tag
+<img v-bind:src="picture" v-bind:alt="`${firstName} ${lastName}`"> OR
+<img :src="picture" :alt="`${firstName} ${lastName}`">
+
+
+
+
+****************************************** Directives ******************************************
+* v-bind:src
+* v-bind:alt
+
+
+
+
+
+****************************************** Useful commands ******************************************
+* npm install -g @vue/cli (OR) yarn global add @vue/cli
+* vue create [project-name]
+* 
+
+
+
+****************************************** Flutter websites ******************************************
+* v3.vuejs.org
+
+
+
+
+
