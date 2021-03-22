@@ -1,4 +1,7 @@
 * Vue is a frontend Javascript framework for building websites & user inerfaces
+* Initial release in Feb 2014
+* Vue runs on default port 8080
+* File extension is '.vue'
 * Vue is popular with Node.Js & Express (MEVN Stack)
 * Vue can also run on the server-side by using SSR framework like Nuxt
 * Vue uses virtual DOM
@@ -19,7 +22,7 @@ Sample Vue component code is below
 		}
 	</script>
 
-	<style scoped>
+	<style lang="stylus" scoped>
 		header{
 			display: flex;
 			justify-content: space-between;
@@ -47,18 +50,57 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 
 
 
+****************************************** VScode Extentions ******************************************
+* Vetur - by Pine Wu
+
+
+
+****************************************** Props in Script area ******************************************
+* name
+* props: { msg: String }
+* data(): { return { show: true, users: [ {id: 1, name: 'Manoj'}, {id: 2, name: 'Mahesh'} ] } }
+* methods: { display(): { this.show = !this.show } }
+* components: { Header, Footer }
+
 
 ****************************************** Directives ******************************************
 * v-bind:src
 * v-bind:alt
+* v-if="show"
+	v-else
+	Ex: <h1 v-if="show">Show title</h1>
+		<h1 v-else>Hide title</h1>
+
+* v-for
+	<tr v-for="user in users" :key="user.id">
+		<td>{{user.id}}</td>
+		<td>{{user.name}}</td>
+	</tr>
+
+* v-once --> it makes the value constant, means it can't be changed again
+<h3 v-once>{{name}}</h3>
+
+* <p v-html="rowHtml"></p>
+
+* v-bind
+<button v-bind:disabled="isDisabled">Click</button>
+
+* <h1 v-bind:style="{color: 'blue'}">Style binding</h1>
+
+* <h1 v-bind:class="{bgClrCls: true, clrCls: false}">class binding</h1>
 
 
-
+****************************************** Methods ******************************************
+* v-on:click
+* v-on:mouseover
+<button v-on:click="hello('Alert hello')">Click</button>
 
 
 ****************************************** Useful commands ******************************************
 * npm install -g @vue/cli (OR) yarn global add @vue/cli
+* vue --version || vue -V ((Note it's CAPITAL -V))
 * vue create [project-name]
+* npm run serve || npm serve
 * 
 
 

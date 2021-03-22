@@ -100,6 +100,9 @@ STT - Security Transation Tax
 * ROCE - Return on Capital Employed
 * ROA - Return on Assets
 
+* QSR - Quick Service Restaurant -- Ex: Dominos, Burgerking, KFC
+* CDR - Casual Dining Restaurant -- Ex: Barbeque Nation
+
 
 
 * Financial Year starts at April 1st & ends at Next year 31st March
