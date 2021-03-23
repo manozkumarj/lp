@@ -49,6 +49,22 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 <img :src="picture" :alt="`${firstName} ${lastName}`">
 
 
+****************************************** IMP points ******************************************
+* H1-H6 tags can't be used inside of <p> tag
+* 'this.$el' refers to the entire HTML part of that component
+* 
+
+
+
+****************************************** Packages & Imports *****************************************
+* axios, vue-axios
+
+
+* import Vue from 'vue';
+* import VueAxios from 'vue-axios';
+* import axios from 'axios';
+Vue.use(VueAxios, axios);
+
 
 ****************************************** VScode Extentions ******************************************
 * Vetur - by Pine Wu
@@ -61,6 +77,7 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 * data(): { return { show: true, users: [ {id: 1, name: 'Manoj'}, {id: 2, name: 'Mahesh'} ] } }
 * methods: { display(): { this.show = !this.show } }
 * components: { Header, Footer }
+* All lifecycle hooks
 
 
 ****************************************** Directives ******************************************
@@ -89,8 +106,167 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 
 * <h1 v-bind:class="{bgClrCls: true, clrCls: false}">class binding</h1>
 
+* v-model --> it is like two way data binding
+Ex1: <input type="text" v-model="inputValue" />
+Ex2: <h1 style="white-space:pre-line">{{inputValue}}</h1>
+<textarea v-model="inputValue" />
 
-****************************************** Methods ******************************************
+* Props from child to parent component
+CHILD Comp:
+<template>
+	<div>
+		<button v-on:click="updateTitle">Change Title</button>
+	</div>
+</template>
+
+<script>
+	export default {
+		name: 'Child',
+		methods: {
+			updateTitle() {
+				this.$emit("changeTitle", "Parent title Updated")
+			}
+		}
+	}
+</script>
+
+PARENT Comp:
+<template>
+	<div>
+		<h1>{{title}}</h1>
+		<Child v-on:changeTitle="updateTitle($event)" />
+	</div>
+</template>
+
+<script>
+	import Child from './components/Child';
+	export default {
+		name: 'Child',
+		data() {
+			retun {
+				title: "Parent Title"
+			},
+		},
+		methods: {
+			updateTitle(title) {
+				this.title = title;
+			}
+		}
+	}
+</script>
+
+**************************************** Useful code samples ****************************************
+* Form with validations
+<template>
+	<div>
+		<p v-if="error.length">
+			<b> Please correct following errors </b>
+			<ul>
+				<li v-for="e in errors" :key="e"> {{e}} </li>
+			</ul>
+		</p>
+		<form @submit="login">
+			<input type="text" placeholder="Enter name" v-model="name" /><br>
+			<input type="password" placeholder="Enter password" v-model="password" /><br>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+</template>
+
+<script>
+	export default {
+		name: 'Login',
+		data(){
+			return {
+				errors: [],
+				name: null,
+				password: null,
+			}
+		}
+		methods: {
+			login(e) {
+				e.preventDefault();
+				this.errors = [];
+				console.log("Submitted");
+				if(this.name && this.password){
+					console.log("No errors");
+				}
+				if(!this.name){
+					this.errors.push("Username is required");
+				}
+				if(!this.password){
+					this.errors.push("password is required");
+				}
+			}
+		}
+	}
+</script>
+
+
+* Filters
+Filters will be declared in main.js file
+Ex1: Vue.filter('uCase', function(string){
+	return string.toUpperCase();
+});
+
+
+* API call
+<template>
+	<div>
+		<h1>Employees list</h1>
+			<table border="1px">
+				<tr>
+					<td>Name</td>
+					<td>Salary</td>
+					<td>Age</td>
+				</tr>
+				<tr v-for="item in list" :key="item.id">
+					<td> {{item.employee_name}} </td>
+					<td> {{item.employee_salary}} </td>
+					<td> {{item.employee_age}} </td>
+				</tr>
+				<li> {{e}} </li>
+			</table>
+	</div>
+</template>
+
+<script>
+	import Vue from 'vue';
+	import VueAxios from 'vue-axios';
+	import axios from 'axios';
+	Vue.use(VueAxios, axios);
+	export default {
+		name: 'EmployeesList',
+		data(){
+			return {
+				list: [],
+			}
+		},
+		mounted(){
+			Vue.axios.get('http://dummy.restapiexample.com/api/v1/employees')
+				.then(res => {
+					console.log(res.data.data);
+					this.list = res.data.data;
+				});
+		}
+	}
+</script>
+
+
+
+****************************************** Lifecycle hooks ******************************************
+* beforeCreate:function(){}
+* created:function(){}
+* beforeMount:function(){ console.log(this.$el); }
+* mounted:function(){ console.log(this.$el); }
+* beforeUpdate:function(){}
+* updated:function(){}
+* beforeDestroy:function(){}
+* destroyed:function(){}
+
+
+
+****************************************** Methods *************************************************
 * v-on:click
 * v-on:mouseover
 <button v-on:click="hello('Alert hello')">Click</button>
@@ -103,9 +279,11 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 * npm run serve || npm serve
 * 
 
+****************************************** Concepts ***********************************************
+* Lifecycle hooks
+* Filters
 
-
-****************************************** Flutter websites ******************************************
+****************************************** Vue websites ******************************************
 * v3.vuejs.org
 
 
