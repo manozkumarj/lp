@@ -17,3 +17,5 @@
 * https://api.yelp.com/v3/businesses/search
 * https://randomuser.me/
 * http://dummy.restapiexample.com/api/v1/employees
+* https://github.com/typicode/json-server
+* 

@@ -52,12 +52,12 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 ****************************************** IMP points ******************************************
 * H1-H6 tags can't be used inside of <p> tag
 * 'this.$el' refers to the entire HTML part of that component
-* 
+* 'this.$route.params' gives all the params from current URL
 
 
 
 ****************************************** Packages & Imports *****************************************
-* axios, vue-axios
+* axios, vue-axios, vue-router
 
 
 * import Vue from 'vue';
@@ -65,10 +65,83 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 * import axios from 'axios';
 Vue.use(VueAxios, axios);
 
+* 
+
 
 ****************************************** VScode Extentions ******************************************
 * Vetur - by Pine Wu
 
+
+
+
+****************************************** Routing ******************************************
+* Normal routing example - from main.js file
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from './components/Home';
+import About from './components/About';
+import Settings from './components/Settings';
+import Users from './components/Users';
+import User from './components/User';
+import PageNotFound from './components/PageNotFound';
+Vue.use(VueRouter);
+const routes = [
+	{path: '/', component: Home},
+	{path: '/about', component: About},
+	{path: '/settings', component: Settings},
+	{path: '/users', component: Users},
+	{path: '/user/:id', component: User},
+	{path: '*', component: PageNotFound},
+];
+const router = new VueRouter({
+	routes
+});
+new Vue({
+	router: router,
+	render: h => h(App),
+}).$mount('#app');
+
+&& In App.vue page
+<template>
+	<div id="app">
+		<ul>
+			<li><router-link to="/"> Home </li>
+			<li><router-link to="/about"> About </li>
+			<li><router-link to="/settings"> Settings </li>
+			<li><router-link to="/users"> Users </li>
+		</ul>
+		<router-view></router-view>
+	</div>
+</template>
+
+&& In Users.vue page
+<template>
+	<div>
+		<h1>Users</h1>
+		<p><router-link to="user/1"> Manoj </p>
+		<p><router-link to="user/2"> Mahesh </p>
+		<p><router-link to="user/3"> Kranthi </p>
+	</div>
+</template>
+
+&& In User.vue page
+<template>
+	<div>
+		<h1>User component</h1>
+		<p>User ID is {{userId}}</p>
+	</div>
+</template>
+
+<script>
+	export default {
+		name: 'User',
+		data(){
+			return {
+				userId: this.$route.params.id
+			}
+		}
+	}
+</script>
 
 
 ****************************************** Props in Script area ******************************************
@@ -165,7 +238,7 @@ PARENT Comp:
 				<li v-for="e in errors" :key="e"> {{e}} </li>
 			</ul>
 		</p>
-		<form @submit="login">
+		<form @submit="login" method="post">
 			<input type="text" placeholder="Enter name" v-model="name" /><br>
 			<input type="password" placeholder="Enter password" v-model="password" /><br>
 			<button type="submit">Login</button>
@@ -285,6 +358,8 @@ Ex1: Vue.filter('uCase', function(string){
 
 ****************************************** Vue websites ******************************************
 * v3.vuejs.org
+* bootstrap-vue.org
+* NPM vue-axios
 
 
 
