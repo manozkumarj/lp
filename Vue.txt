@@ -39,7 +39,7 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 * 'Vuex' is a state manager for global state in larger applications
 * Options API & Composition API
 * Vue cli is standard toolong for Vue.js development
-* 
+* if we don't define the props which a component is receiving from parent component, then those props are considered as 'Non-props data'
 
 
 
@@ -53,6 +53,10 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 * H1-H6 tags can't be used inside of <p> tag
 * 'this.$el' refers to the entire HTML part of that component
 * 'this.$route.params' gives all the params from current URL
+* 'v-bind="$attrs"' - it contains non-props data
+Note: if we don't define the props which a component is receiving from parent component, then those props are considered as 'Non-props data'
+
+* 
 
 
 
@@ -149,8 +153,11 @@ new Vue({
 * props: { msg: String }
 * data(): { return { show: true, users: [ {id: 1, name: 'Manoj'}, {id: 2, name: 'Mahesh'} ] } }
 * methods: { display(): { this.show = !this.show } }
-* components: { Header, Footer }
+* components: { Header, Footer, 'home': Home }
 * All lifecycle hooks
+* inheritAttrs: false
+* computed: { getResult() { return (100*70)-10; } }
+* watch: { count(val, prevVal) { alert("value changed"); } }
 
 
 ****************************************** Directives ******************************************
@@ -171,6 +178,8 @@ new Vue({
 <h3 v-once>{{name}}</h3>
 
 * <p v-html="rowHtml"></p>
+
+* <component v-bind:is="cmp"></component>
 
 * v-bind
 <button v-bind:disabled="isDisabled">Click</button>
@@ -227,6 +236,12 @@ PARENT Comp:
 		}
 	}
 </script>
+
+
+* v-pre
+* v-show
+* v-cloak
+* v-slot:header
 
 **************************************** Useful code samples ****************************************
 * Form with validations
@@ -326,6 +341,33 @@ Ex1: Vue.filter('uCase', function(string){
 </script>
 
 
+* Dynamic component
+<template>
+	<h1>Dynamic Component</h1>
+	<button @click="tab='java'">Load Java</button>
+	<button @click="tab='node'">Load Node</button>
+	<button @click="tab='php'">Load PHP</button>
+
+	<component :is="tab" />
+</template>
+
+<script>
+	import Java from './components/Java';
+	import Node from './components/Node';
+	import Php from './components/Php';
+	export default {
+		name: 'Home',
+		components: { Java, Node, Php },
+		data(){
+			return {
+				tab: 'java',
+			}
+		}
+	}
+</script>
+
+
+
 
 ****************************************** Lifecycle hooks ******************************************
 * beforeCreate:function(){}
@@ -355,6 +397,46 @@ Ex1: Vue.filter('uCase', function(string){
 ****************************************** Concepts ***********************************************
 * Lifecycle hooks
 * Filters
+* Dynamic component using component tag
+* Custom directives
+Ex: <h1 v-size>Custom Directives in VueJs</h1>
+Custom directives will be declared in main.js file
+Ex1: Vue.directive('size', {
+		bind(el){
+			el.style.fontSize = '60px'
+		}
+	});
+
+Ex: <h1 v-size="small">Custom Directives in VueJs</h1>
+Ex2: Vue.directive('size', {
+		bind(el, binding, vnode){
+			if(binding.value == 'small'){
+				el.style.fontSize = '20px'
+			}
+			else if(binding.value == 'bib'){
+				el.style.fontSize = '100px'
+			}
+			else {
+				el.style.fontSize = '60px'
+			}
+		}
+	});
+
+
+* Non-props data
+* Computed props
+* slots
+* Teleport component --> Using teleport component we can show some html content out sode of 'app' ID i.e., outside of Vue app area
+Syntax: <teleport to="#footer"><h3>This is footer</h3></teleport>
+
+****************************************** Interview Q's ******************************************
+* What is VueJs & current version?
+* What is computed property?
+* What are watchers?
+* What are slots?
+* Proper way of loading dynamic component?
+* What is Teleport component?
+
 
 ****************************************** Vue websites ******************************************
 * v3.vuejs.org

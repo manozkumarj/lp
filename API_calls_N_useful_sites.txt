@@ -19,3 +19,11 @@
 * http://dummy.restapiexample.com/api/v1/employees
 * https://github.com/typicode/json-server
 * 
+
+
+******************************************************************************************************************
+* https://slides.com/
+* https://www.domainracer.com/
+
+
+
