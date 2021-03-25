@@ -18,12 +18,15 @@
 * https://randomuser.me/
 * http://dummy.restapiexample.com/api/v1/employees
 * https://github.com/typicode/json-server
+* https://www.random.org/integers/?num=1&min=-1000&max=1000&col=1&base=10&format=plain&rnd=new
 * 
 
 
 ******************************************************************************************************************
 * https://slides.com/
+* https://app.diagrams.net/
 * https://www.domainracer.com/
+* 
 
 
 

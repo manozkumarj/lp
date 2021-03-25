@@ -42,7 +42,7 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 * if we don't define the props which a component is receiving from parent component, then those props are considered as 'Non-props data'
 
 
-
+* If we don't use Vuex for state management then we may encounter 'Prop drilling' flow.
 
 * v-bind:src, v-bind:alt directives can be used for image tag
 <img v-bind:src="picture" v-bind:alt="`${firstName} ${lastName}`"> OR
@@ -52,16 +52,19 @@ Note: if we keep 'scoped' in 'style' atrribute, it means all the styles are only
 ****************************************** IMP points ******************************************
 * H1-H6 tags can't be used inside of <p> tag
 * 'this.$el' refers to the entire HTML part of that component
+* 'this.$route' gives the current page path
 * 'this.$route.params' gives all the params from current URL
 * 'v-bind="$attrs"' - it contains non-props data
 Note: if we don't define the props which a component is receiving from parent component, then those props are considered as 'Non-props data'
 
+* '$store.state' -> with this we can access global store/state of the App
 * 
 
 
 
 ****************************************** Packages & Imports *****************************************
 * axios, vue-axios, vue-router
+* npm install vuex@next
 
 
 * import Vue from 'vue';
@@ -150,7 +153,7 @@ new Vue({
 
 ****************************************** Props in Script area ******************************************
 * name
-* props: { msg: String }
+* props: { msg: String, title: { type: String, default: 'Default title' } }
 * data(): { return { show: true, users: [ {id: 1, name: 'Manoj'}, {id: 2, name: 'Mahesh'} ] } }
 * methods: { display(): { this.show = !this.show } }
 * components: { Header, Footer, 'home': Home }
@@ -158,18 +161,24 @@ new Vue({
 * inheritAttrs: false
 * computed: { getResult() { return (100*70)-10; } }
 * watch: { count(val, prevVal) { alert("value changed"); } }
+* emits: ['delete-task'];
 
 
 ****************************************** Directives ******************************************
-* v-bind:src
-* v-bind:alt
+* v-bind:src || :src
+* v-bind:alt || :alt
+* v-on:click || @click
+Ex: <button v-on:click="submit">Submit</button> || <button @click="submit()">Submit</button>
+
+* v-show
+
 * v-if="show"
 	v-else
 	Ex: <h1 v-if="show">Show title</h1>
 		<h1 v-else>Hide title</h1>
 
 * v-for
-	<tr v-for="user in users" :key="user.id">
+	<tr v-for="(user, index) in users" :key="index">
 		<td>{{user.id}}</td>
 		<td>{{user.name}}</td>
 	</tr>
@@ -242,6 +251,7 @@ PARENT Comp:
 * v-show
 * v-cloak
 * v-slot:header
+
 
 **************************************** Useful code samples ****************************************
 * Form with validations
@@ -390,7 +400,7 @@ Ex1: Vue.filter('uCase', function(string){
 ****************************************** Useful commands ******************************************
 * npm install -g @vue/cli (OR) yarn global add @vue/cli
 * vue --version || vue -V ((Note it's CAPITAL -V))
-* vue create [project-name]
+* vue create [project-name] || vue ui
 * npm run serve || npm serve
 * 
 
@@ -429,6 +439,59 @@ Ex2: Vue.directive('size', {
 * Teleport component --> Using teleport component we can show some html content out sode of 'app' ID i.e., outside of Vue app area
 Syntax: <teleport to="#footer"><h3>This is footer</h3></teleport>
 
+
+
+
+
+
+===================================================== VueX =====================================================
+* VueX is official state management library for VueJs
+* It's used to share the data across the all components of the App, it's centralized storage data for the App
+Vuex Syntax:
+new Vuex.Store({
+	state: {
+
+	},
+	mutations: {
+
+	},
+	actions: {
+
+	},
+	getters: {
+
+	}
+});
+
+* Mutations is the only reccomended wat to change the statein Vuex store, we can change the state directly but it's not reccomended. The main reason is Mutations can track the changes in state which is very useful for debugging purpose in dev tool.
+
+* Lifecycle of Vuex store
+	-> Actions
+	-> Mutations
+	-> State
+
+* Lifecycle flow explanation
+	-> The Component dispatches an action OR calls an 'Action', 'Action' is responsible for the business logic & also communicate with backend API
+	-> If it needs to change the data then it commits the 'Mutation' and that 'Mutation' track the changes & it also communicate with devtools for debugging purpose
+	-> And then that 'Mutation' update the value of 'State'
+	-> Since 'State' is reactive, so it will be updated everywhere in the App automatically.
+
+* To use Vuex4 we should be using Vue3
+
+* 'Mutations' shouldn't contain Async actions.
+* 'Actions' should only contain Async actions.
+
+
+****************************************** Imports & Packages ***********************************************
+* import Vue from "vue";
+* import Vuex, { mapState, mapGetters, mapActions } from 'vuex';
+
+
+
+* vuex
+
+=====================================================================================================================
+
 ****************************************** Interview Q's ******************************************
 * What is VueJs & current version?
 * What is computed property?
@@ -441,6 +504,7 @@ Syntax: <teleport to="#footer"><h3>This is footer</h3></teleport>
 ****************************************** Vue websites ******************************************
 * v3.vuejs.org
 * bootstrap-vue.org
+* cli.vuejs.org
 * NPM vue-axios
 
 
