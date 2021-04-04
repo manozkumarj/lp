@@ -92,13 +92,16 @@ STT - Security Transation Tax
 * ISP - Internet Service Provider
 * EPS - Earnings/Loss per Share
 * NAV - Net Asset Value
-* FII - Foreign institutional investors
+* FII - Foreign Institutional Investors
+* DII - Domestic Institutional Investors
 * P/E - Price to Earning Ratio --> P/E ratio should be low
 * EPS - Earning Per Share
 * CMP - Current Market Price
 * ROE - Return on Equity
 * ROCE - Return on Capital Employed
 * ROA - Return on Assets
+* EMS — Electronic Manufacturing System
+* 
 
 * QSR - Quick Service Restaurant -- Ex: Dominos, Burgerking, KFC
 * CDR - Casual Dining Restaurant -- Ex: Barbeque Nation

@@ -60,7 +60,7 @@ Note: if we don't define the props which a component is receiving from parent co
 * '$store.state' -> with this we can access global store/state of the App
 * 
 
-
+* We can use '$event.stopPropagation'
 
 ****************************************** Packages & Imports *****************************************
 * axios, vue-axios, vue-router
