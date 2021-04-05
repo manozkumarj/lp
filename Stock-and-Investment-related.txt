@@ -101,7 +101,8 @@ STT - Security Transation Tax
 * ROCE - Return on Capital Employed
 * ROA - Return on Assets
 * EMS — Electronic Manufacturing System
-* 
+* PSU - Public Sector Undertaking
+* ELSS - Equity-Linked Savings Scheme
 
 * QSR - Quick Service Restaurant -- Ex: Dominos, Burgerking, KFC
 * CDR - Casual Dining Restaurant -- Ex: Barbeque Nation
