@@ -230,9 +230,9 @@ Redux-flow:
 		}
 	}
 
-THEN export default connetc(mapStateToProps, mapDispatchToProps)(Post);
+THEN export default connet(mapStateToProps, mapDispatchToProps)(Post);
 
-* Visit 'https://github.com/iamshaunjp/React-Redux-Firebase-App' to know hot to use multiple reducers, middleware & firestore
+* Visit 'https://github.com/iamshaunjp/React-Redux-Firebase-App' to know how to use multiple reducers, middleware & firestore
 
 
 Point by point ------------------------------------------------------------------------

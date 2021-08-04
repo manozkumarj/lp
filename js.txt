@@ -520,7 +520,7 @@ String, Number, Boolean, Undefined, Null
 2) Reference type:
 Object, Array, Function
 
-We have to ways to access a property of an object.
+We have two ways to access a property of an object.
 1) dot notation = obj.property;
 2) bracket notation = obj['property'];
 
@@ -563,9 +563,6 @@ JS OOPS:
 Admin.prototype = Object.create(User.prototype);
 
 
-
-
-
 * Object.assign() Method
 Among the Object constructor methods, there is a method Object.assign() which is used to copy the values and properties from one or more source objects to a target object.
 Object.assign() is used for cloning an object.
@@ -573,7 +570,7 @@ Object.assign() is used to merge object with same properties.
 Input : var obj1 = { a: 10 };
         var obj2 = { b: 20 };
         var obj3 = { c: 30 };
-        var new_obj = Object.assign(o1, o2, o3);
+        var new_obj = Object.assign(obj1, obj2, obj3);
         console.log(new_obj);
 Output : Object { a: 10, b: 20, c: 30 }
 

@@ -1,10 +1,31 @@
 * React is an open-source JavaScript library created by Facebook for building complex, interactive UIs in web and mobile applications.
 
 * React is a small library focused on building UI components
+* React is a JavaScript library for building user interfaces.
+* React is used to build single page applications.
+* React allows us to create reusable UI components.
+
+Sample code:
+	import React from 'react';
+	import ReactDOM from 'react-dom';
+
+	class Test extends React.Component {
+	  render() {
+	    return <h1>Hello World!</h1>;
+	  }
+	}
+
+	ReactDOM.render(<Test />, document.getElementById('root'));
+
 
 * JSX is a shorthand for JavaScript XML.
 
 * When Facebook first released React to the world, they also introduced a new dialect of JavaScript called JSX that embeds raw HTML templates inside JavaScript code. JSX code by itself cannot be read by the browser; it must be transpiled into traditional JavaScript using tools like Babel and webpack.
+
+* How does React Work?
+React creates a VIRTUAL DOM in memory.
+Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
+
 
 * React components has a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders.
 
@@ -12,7 +33,7 @@
 
 * In a controlled component, form data is handled by a React component. The alternative is uncontrolled components, where form data is handled by the DOM itself. To write an uncontrolled component, instead of writing an event handler for every state update, you can use a ref to get form values from the DOM.
 
-* Webpack is a popular module bundling system built on top of Node. js. It can handle not only combination and minification of JavaScript and CSS files, but also other assets such as image files (spriting) through the use of plugins.
+* Webpack is a popular module bundling system built on top of Node Js. It can handle not only combination and minification of JavaScript and CSS files, but also other assets such as image files (spriting) through the use of plugins.
 
 * Babel is a JavaScript compiler
 Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
@@ -105,10 +126,27 @@ axios stringifies returned data and we can use it directly. in fetch, we need to
 
 
 
+* Lifecycle of Components
+Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+The three phases are: Mounting, Updating, and Unmounting.
+	-> Mounting
+		constructor()
+		getDerivedStateFromProps()
+		render()
+		componentDidMount()
+	-> Updating
+		getDerivedStateFromProps()
+		shouldComponentUpdate()
+		render()
+		getSnapshotBeforeUpdate()
+		componentDidUpdate()
+	-> Unmounting
+		componentWillUnmount()
 
+* What is a pure component?
+Pure Components in React are the components which do not re-renders when the value of state and props has been updated with the same values. If the value of the previous state or props and the new state or props is the same, the component is not re-rendered.
 
-
-
+* 
 
 
 
@@ -123,7 +161,7 @@ axios stringifies returned data and we can use it directly. in fetch, we need to
 * what is babel in react js?
 
 
-
+*** https://www.w3schools.com/react/default.asp
 
 *************************************** useful links **************************************************
 * https://www.edureka.co/blog/interview-questions/react-interview-questions/

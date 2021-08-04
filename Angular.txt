@@ -171,7 +171,7 @@ https://www.youtube.com/watch?v=qh5nHv-4aw0&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTk
 * When a component is dependent on another component the dependency is injected/provided during runtime. 
 * Routing helps a user in navigating to different pages using links. 
 * A web page in Angular has many components involved in it. A Component is basically a block in which the data can be displayed on HTML using some logic usually written in typescript. 
-* ngModel is a directive which can be applied on a text field. This a two-way data binding. ngModel is represented by [()] 
+* ngModel is a directive which can be applied on a text field. This is a two-way data binding. ngModel is represented by [()] 
 * It is a method which is subscribed to an observable. Whenever the subscribe method is called, an independent execution of the observable happens.  
 * Observables are lazy, which means nothing happens until a subscription is made. Whereas Promises are eager; which means as soon as a promise is created, the execution takes place. Observable is a stream in which passing of zero or more events is possible and the callback is called for each event. Whereas, promise handles a single event. 
 
@@ -282,7 +282,7 @@ this.router.navigate(['/login']);
 *************************************************************************************
 Angular by MAX:
 ------------------------------
-* Angular is a Javascript Framework which allows you to creative reactive Single-Page-Application
+* Angular is a Javascript Framework which allows you to create reactive Single-Page-Application
 * Whenver we run 'ng serve' command it will create javascript script bundles and those bundles will be added to index.html file.
 Bundles names: 
 	inline.bundle.js, 
@@ -294,7 +294,7 @@ Bundles names:
 * main.ts file is the file which runs first in Angular, it exists inside of 'src' folder.
 * @Component, @Injectable, @NgModule are decorators.
 * @Component contains below properties
-	selecotor, template/templateUrl, styles/styleUrls
+	selector, template/templateUrl, styles/styleUrls
 
 * @NgModule contains below properties
 	declarations, imports, providers, bootsrtap

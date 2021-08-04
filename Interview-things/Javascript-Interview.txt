@@ -2,7 +2,7 @@
 
 * A closure gives you access to an outer function's scope from an inner function.
 
-* Both 'freeze' and 'seal' are used to create non extensible objects in JavaScript, but there are plenty of differences between them. Object.seal() allows changes to the existing properties of an object whereas Object.freeze() does not allow so. Object.freeze() makes an object immune to everything even little changes cannot be made. Object.seal() prevents from deletion of existing properties but cannot prevent them from external changes.
+* Both 'freeze' and 'seal' are used to create non extensible objects in JavaScript, but there are plenty of differences between them. Object.seal() allows changes to the existing properties of an object whereas Object.freeze() does not allow so. Object.freeze() makes an object immute to everything even little changes cannot be made. Object.seal() prevents from deletion of existing properties but cannot prevent them from external changes.
 
 * The prototype is an object that is associated with every functions and objects by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible.
 FMD --> https://www.tutorialsteacher.com/javascript/prototype-in-javascript
@@ -20,6 +20,9 @@ FMD --> https://www.tutorialsteacher.com/javascript/javascript-hoisting
 FMD --> https://www.tutorialsteacher.com/javascript/javascript-error-handling
 
 * Scopes: FMD --> https://www.tutorialsteacher.com/javascript/scope-in-javascript
+
+* Promise
+A Promise handles a single event when an async operation completes or fails.
 
 * Promise:
 var promise = new Promise(function(resolve, reject) { 
@@ -81,7 +84,26 @@ console.log(mainArray);
 
 
 
-* 
+* Closure example
+function Counter() {
+    var counter = 0;
+
+    function IncreaseCounter() {
+        return counter += 1;
+    };
+
+    return IncreaseCounter;
+}
+
+var counter = Counter();
+alert(counter()); // 1
+alert(counter()); // 2
+alert(counter()); // 3
+alert(counter()); // 4
+
+* With arrow functions there are no binding of this.
+
+* Call invokes the function and allows you to pass in arguments one by one. Apply invokes the function and allows you to pass in arguments as an array. Bind returns a new function, allowing you to pass in a this array and any number of arguments.
 
 
 
@@ -108,13 +130,19 @@ console.log(mainArray);
 * Diff B/W const, let, and var?
 * OOPS concepts?
 * What is closure?
+  Closure is explained very well here --> https://www.tutorialsteacher.com/javascript/closure-in-javascript
 * What is lamda function?
 * Difference between substr() and substring()?
 * What is the difference between freeze and seal in JavaScript ?
 * Diff B/W normal func & Arrow func?
-* 
+* What is prototype?
+  Prototype is explained very well here --> https://www.tutorialsteacher.com/javascript/prototype-in-javascript
 
+* Explain call, apply, and bind methods?
 
+***** https://www.w3schools.com/react/react_es6.asp
+
+* https://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
 
 *************************************** useful links ***********************************************
 * https://www.geeksforgeeks.org/javascript-interview-questions-and-answers

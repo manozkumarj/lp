@@ -12,6 +12,8 @@
 	-> Dependency Injection
 	-> Routing
 
+* A component is made up of 3 things, 1)Template 2)Class 3)Meta data
+
 * Structural directives are easy to recognize. An asterisk (*) precedes the directive attribute name.
 Three of the common, built-in structural directives—NgIf, NgFor, and NgSwitch.
 
@@ -86,8 +88,13 @@ ng g s test-service
 
 * Decorators are proposed for a future version of JavaScript, but the Angular team really wanted to use them, and they have been included in TypeScript.
 
-* 
+* Promise = Holds the eventual result of an asynchoronus operation
 
+* Prototypes. When a function is created in JavaScript, JavaScript engine adds a prototype property to the function. This prototype property is an object (called as prototype object) has a constructor property by default. constructor property points back to the function on which prototype object is a property.
+
+* 'axios' is a HTTP request library.
+
+* 
 
 
 

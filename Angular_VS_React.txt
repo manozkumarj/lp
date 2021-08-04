@@ -36,7 +36,7 @@ React: please refer to "https://stackoverflow.com/questions/40714583/how-to-spec
 
 
 ************************************** IMP Points to remember ****************************************
-* Angular provides a number of built-in features like,routing, state management, rxjs library and http services straight out of the box. This means that one does not need tolook for the above stated features separately. They are all provided with angular.
+* Angular provides a number of built-in features like routing, state management, rxjs library and http services straight out of the box. This means that one does not need to look for the above stated features separately. They are all provided with angular.
 
 * Angular app will be served from 4200 port by default
 * React app will be served from 3000 port by default

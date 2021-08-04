@@ -150,7 +150,11 @@ HTTP, path, fs, os, events, buffer, crypto
 
 ****************************************** Status codes ************************************************
 * 401 = Un-Authorized
-* 500 = Bad request
+* 400 = Bad request
+* 500 = Internal server error
+* 404 = Not found
+* 408 = Request timeout
+* 
 
 
 

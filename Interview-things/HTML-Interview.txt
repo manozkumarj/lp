@@ -1,4 +1,15 @@
 * Semantic HTML is a coding style. It is the use of HTML markup to reinforce the semantics or meaning of the content. For example: In semantic HTML <b> </b> tag is not used for bold statement as well as <i> </i> tag is used for italic. Instead of these we use <strong></strong> and <em></em> tags.
+
+* The <section> tag: The section tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+The <article> tag: The article tag specifies independent, self-contained content.
+https://stackoverflow.com/questions/33910294/what-is-the-difference-between-article-and-section-in-html5
+
+* What is a Web Worker?
+A web worker is a JavaScript running in the background, without affecting the performance of the page.
+When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.
+https://www.w3schools.com/html/html5_webworkers.asp
+
 * 
 
 

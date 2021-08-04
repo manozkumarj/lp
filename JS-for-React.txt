@@ -22,5 +22,5 @@
 	walk();
 
 * In JS, the "this" keyword will work based on how a function is called.
-* If we call a function as a method in an obeject, 'this' will return a reference of that object.
+* If we call a function as a method in an object, 'this' will return a reference of that object.
 * 

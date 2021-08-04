@@ -10,7 +10,7 @@
 	let imgUrl = 'https://picsum.photos/id/276/400/200';
 		[src]='imgUrl'
 		<h2 textContent="title"></h2>
-* Wherever we want add text between Headeings, Divs, Span so on, we should use "Interpolation", but not "Property binding"
+* Wherever we want add text between Headings, Divs, Span and so on, we should use "Interpolation", but not "Property binding"
 * Attribute binding
 Ex: let colSpan = 2;
 	<td [attr.colspan]="colSpan"></td>
@@ -116,9 +116,9 @@ Short & Sweet:
 
 Folder structure:
 ----------------------------------------------------------------------------
-* Foder - e2e = End 2 End - used to do end 2 end test
-* Foder - node_modules
-* Foder - src
+* Folder - e2e = End 2 End - used to do end 2 end test
+* Folder - node_modules
+* Folder - src
 			- app - assets - environment
 * 
 

@@ -36,10 +36,12 @@
 * 
 
 
-
+* https://www.youtube.com/watch?v=0_KY5VK51Rc -->IPO vs NFO | Stock market and mutual funds
 
 
 * https://www.youtube.com/watch?v=U0hqE5Cny8A --> REAL STORY of Harshad Mehta 1992 SCAM (తెలుగు) - Stock Market SCAM
+* https://www.youtube.com/watch?v=38Af2xVdQOw --> WHAT IS NFO |NEW FUND OFFER IN TELUGU | NFO అంటే ఏమిటి ? (2018)
+
 * 
 
 
@@ -53,6 +55,8 @@
 
 
 ********************************************************************************************************************
+* IPO - Initial Public Offering
+* NFO - New Fund Offer
 * DEMAT - D-Materialized account - Converting paper format shares into eletronic format --> central depository(CDSL, NSDL)
 * SEBI - Securities & Exchange Board of India 
 * IPO - Initial Public Offering
@@ -103,6 +107,8 @@ STT - Security Transation Tax
 * EMS — Electronic Manufacturing System
 * PSU - Public Sector Undertaking
 * ELSS - Equity-Linked Savings Scheme
+* AUM - Assets Under Management
+* PAT - Profit After Tax
 
 * QSR - Quick Service Restaurant -- Ex: Dominos, Burgerking, KFC
 * CDR - Casual Dining Restaurant -- Ex: Barbeque Nation
