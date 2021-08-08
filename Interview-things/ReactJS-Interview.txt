@@ -146,7 +146,260 @@ The three phases are: Mounting, Updating, and Unmounting.
 * What is a pure component?
 Pure Components in React are the components which do not re-renders when the value of state and props has been updated with the same values. If the value of the previous state or props and the new state or props is the same, the component is not re-rendered.
 
+* Basically we use setState() to change any state properties. setState() is asynchronous process. We can also use forceupdate() to change any state properties, but forceupdate() is synchronous process.
+Note: setState() & forceupdate() re-renders the component.
+
+
+
+
+
+
+* What are the advantages of using React?
+	Use of Virtual DOM to improve efficiency:
+	React uses virtual DOM to render the view. As the name suggests, virtual DOM is a virtual representation of the real DOM. Each time the data changes in a react app, a new virtual DOM gets created. Creating a virtual DOM is much faster than rendering the UI inside the browser. Therefore, with the use of virtual DOM, the efficiency of the app improves.
+
+	Reusable components:
+	React uses component-based architecture for developing applications. Components are independent and reusable bits of code. These components can be shared across various applications having similar functionality. The re-use of components increases the pace of development.
+
+
+* What is JSX?
+JSX stands for JavaScript XML.
+It allows us to write HTML inside JavaScript and place them in the DOM without using functions like appendChild( ) or createElement( ).
+As stated in the official docs of React, JSX provides syntactic sugar for React.createElement( ) function.
+Note - We can create react applications without using JSX as well.
+Let’s understand how JSX works:
+
+Without using JSX, we would have to create an element by the following process:
+const text = React.createElement('p', {}, 'This is a text');
+const container = React.createElement('div','{}',text );
+ReactDOM.render(container,rootElement);
+
+Using JSX, the above code can be simplified:
+const container = (
+ <div>
+   <p>This is a text</p>
+ </div>
+);
+ReactDOM.render(container,rootElement);
+
+* What is the virtual DOM? How does react use the virtual DOM to render the UI?
+As stated by the react team, virtual DOM is a concept where a virtual representation of the real DOM is kept inside the memory and is synced with the real DOM by a library such as ReactDOM.
+
+* Why was virtual DOM introduced? 
+DOM manipulation is an integral part of any web application, but DOM manipulation is quite slow when compared to other operations in JavaScript.
+The efficiency of the application gets affected when several DOM manipulations are being done. Most JavaScript frameworks update the entire DOM even when a small part of the DOM changes.
+For example, consider a list that is being rendered inside the DOM. If one of the items in the list changes, the entire list gets rendered again instead of just rendering the item that was changed/updated. This is called inefficient updating.
+To address the problem of inefficient updating, the react team introduced the concept of virtual DOM.
+
+
+* What are the differences between controlled and uncontrolled components?
+Controlled Component:
+Controlled Component is also called as "dumb component".
+Controlled Components
+A controlled component is a component that renders form elements and controls them by keeping the form data in the component's state.
+
+In a controlled component, the form element's data is handled by the React component (not DOM) and kept in the component's state. A controlled component basically overrides the default behavior of the HTML form elements.
+
+We create a controlled component by connecting the form element (<input>, <textarea> or <select>) to the state by setting its attribute value and the event onChange.
+
+	Example - Controlled Component:
+	const { useState } from 'react';
+
+	function Controlled () {
+	  const [email, setEmail] = useState();
+
+	  const handleInput = (e) => setEmail(e.target.value);
+
+
+	  return <input type="text" value={email} onChange={handleInput}/>;
+	}
+
+Uncontrolled Components:
+An uncontrolled component is a component that renders form elements, where the form element's data is handled by the DOM (default DOM behavior). To access the input's DOM node and extract its value you can use a ref.
+
+	Example - Uncontrolled component:
+	const { useRef } from 'react';
+
+	function Example () {
+	  const inputRef = useRef(null);
+	  return <input type="text" defaultValue="bar" ref={inputRef}/>
+	}
+
+
+
+* What are the differences between Stateful and Stateless Components?
+Stateful and stateless components have many different names.
+
+They are also known as:
+– Container vs Presentational components
+– Smart vs Dumb components
+
+The literal difference is that one has state, and the other doesn’t. That means the stateful components are keeping track of changing data, while stateless components print out what is given to them via props, or they always render the same thing.
+
+Example of Stateful/Container/Smart component:
+class Main extends Component {
+ constructor() {
+   super()
+   this.state = {
+     books: []
+   }
+ }
+ render() {
+   <BooksList books={this.state.books} />
+ }
+}
+
+Example of Stateless/Presentational/Dumb component:
+const BooksList = ({books}) => {
+ return (
+   <ul>
+     {books.map(book => {
+       return <li>book</li>
+     })}
+   </ul>
+ )
+}
+
+
+
+* What are the different lifecycle methods in React?
+Every component in React has lifecycle methods that we can tap into, to trigger changes at a particular phase of the life cycle.
+Each component in react goes through three phases: Mounting, Updating, and Unmounting.
+There are corresponding lifecycle methods for each of the three phases:
+
+Mounting:
+
+There are four built-in lifecycle methods that are called in the following order when a component is mounted:
+constructor( ) - This is called before anything else. We can set the initial state of the component inside this method. The constructor method is used to set the initial state and bind methods to the component.
+getDerivedStateFromProps( ) - This is called before rendering the elements in the DOM.
+In this method, we can set the state of the component based on the props we received. This method is used very rarely.
+render( ) - This is the only required method in the class component. This method returns the HTML elements which are going to be rendered inside the DOM.
+componentDidMount( ) - It is called right after the component is rendered inside the DOM. All the statements which require the DOM nodes can be executed in this method. Network requests from a remote end-point can also be instantiated in this method.
+
+Updating:
+
+Updates in react are caused by changes in state or props. Update leads to re-rendering of the component. The following methods are called when a component is re-rendered:
+getDerivedStateFromProps( ) - This method is called again when a component is being re-rendered.
+shouldComponentUpdate( ) - This method is called before rendering the component when new props are received. It lets React know if the component’s output is affected by the newly received props or by the state change. By default, it returns true.
+render( ) - To re-render the HTML inside the DOM, the render( ) method gets called again.
+getSnapshotBeforeUpdate( ) - This method is called just before the newly rendered HTML gets committed to the DOM. It stores the previous state of the component so that React has an idea of what parts of the DOM needs to be updated.
+componentDidUpdate( ) - It is called after the component gets re-rendered. This method works just like the componentDidMount( ) method, the difference is that this method does not get called on initial render.
+
+Unmounting:
+
+componentWillUnmount( ) - This method is called just before the component gets destroyed. Any clean up statements should be executed inside this method.
+
+
+* Explain Strict Mode in React.
+StrictMode is a tool added in the version 16.3 of React to highlight potential problems in an application. It performs additional checks on the application.
+Syntax:
+function App() {
+  return (
+    <React.StrictMode>
+      <div classname="App">
+        <Header/>
+        <div>
+          Page Content
+        </div>
+        <Footer/>
+      </div>
+    </React.StrictMode>
+  );
+}
+
+To enable StrictMode, <React.StrictMode> tags need to be added inside the application:
+import React from "react";
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+ <React.StrictMode>
+   <App />
+ </React.StrictMode>,
+ rootElement
+);
+
+StrictMode currently helps with the following issues:
+Identifying components with unsafe lifecycle methods
+Certain lifecycle methods are unsafe to use in asynchronous react applications. With the use of third-party libraries it becomes difficult to ensure that certain lifecycle methods are not used.
+StrictMode helps in providing us a warning if any of the class components uses an unsafe lifecycle method.
+
+Warning about the usage of legacy string API
+If one is using an older version of React, callback ref is the recommended way to manage refs instead of using the string refs. StrictMode gives a warning if we are using string refs to manage refs.
+
+Warning about the usage of findDOMNode
+Previously, findDOMNode( ) method was used to search the tree of a DOM node. This method is deprecated in React. Hence, the StrictMode gives us a warning about the usage of this method.
+Warning about the usage of legacy context API (because the API is error-prone)
+
+
+* How to prevent re-renders in React?
+Reason for re-renders in React:
+Re-rendering of a component and it’s child components occur when props or state of the component has been changed.
+Re-rendering components that are not updated, affects the performance of an application.
+
+Use shouldComponentUpdate( ) method only when you are sure that it’s a static component.
+
+
+* Explain React state and props.
+Props:
+	Immutable
+	Has better performance
+	Can be passed to child components	
+
+State
+	Mutable
+	Owned by its component
+	has setState() method to modify properties
+	Changes to state can be asynchronous
+	can only be passed as props
+
+
+* Explain React Hooks.
+What are Hooks? Hooks are functions that let us “hook into” React state and lifecycle features from a functional component.
+React Hooks cannot be used in class components. They let us write components without class.
+
+Why were Hooks introduced in React?
+React hooks were introduced in the 16.8 version of React.
+Previously, functional components were called stateless components. Only class components were used for state management and lifecycle methods.
+The need to change a functional component to a class component, whenever state management or lifecycle methods were to be used, led to the development of Hooks.
+
+* What are the different ways to style a React component?
+	Inline Styling
+	Using JavaScript object
+	CSS Stylesheet
+
+* Name a few techniques to optimize React app performance.
+There are many ways through which one can optimize the performance of a React app, let’s have a look at some of them:
+
+Using useMemo( ) -
+It is a React hook that is used for caching CPU-Expensive functions.
+Sometimes in a React app, a CPU-Expensive function gets called repeatedly due to re-renders of a component, which can lead to slow rendering.
+useMemo( ) hook can be used to cache such functions. By using useMemo( ), the CPU-Expensive function gets called only when it is needed.
+
+Using React.PureComponent -
+It is a base component class that checks state and props of a component to know whether the component should be updated.
+Instead of using the simple React.Component, we can use React.PureComponent to reduce the re-renders of a component unnecessarily.
+
+Lazy Loading -
+It is a technique used to reduce the load time of a React app. Lazy loading helps reduce the risk of web app performances to minimal.
+
+
+* What is prop drilling in React?
+Sometimes while developing React applications, there is a need to pass data from a component that is higher in the hierarchy to a component that is deeply nested.
+To pass data between such components, we pass props from a source component, and keep passing the prop to the next component in the hierarchy till we reach the deeply nested component.
+The disadvantage of using prop drilling is that the components that should otherwise be not aware of the data have access to the data.
+
 * 
+
+
+
+
+
+
+
+
 
 
 
@@ -159,9 +412,13 @@ Pure Components in React are the components which do not re-renders when the val
 * What is a 'Higher order component'?
 * what is webpack in react js?
 * what is babel in react js?
+* What is the difference between arrow function and normal function?
+* What are the differences between Stateful and Stateless Components?
+https://programmingwithmosh.com/javascript/stateful-stateless-components-react/
 
 
 *** https://www.w3schools.com/react/default.asp
+* https://www.interviewbit.com/react-interview-questions/
 
 *************************************** useful links **************************************************
 * https://www.edureka.co/blog/interview-questions/react-interview-questions/

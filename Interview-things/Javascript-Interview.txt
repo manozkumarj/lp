@@ -14,6 +14,77 @@ Points to Remember :
 	-> Functions definition moves first before variables.
 FMD --> https://www.tutorialsteacher.com/javascript/javascript-hoisting
 
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+
+Just like  var, let declarations are hoisted to the top. Unlike var which is initialized as undefined, the let keyword is not initialized. So if you try to use a let variable before declaration, you'll get a Reference Error.
+
+Hoisting of const
+Just like let, const declarations are hoisted to the top but are not initialized.
+
+So just in case you missed the differences, here they are:
+  -> var declarations are globally scoped or function scoped while let and const are block scoped.
+  -> var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+  -> They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.
+  -> While var and let can be declared without being initialized, const must be initialized during declaration.
+
+* var, let, const
+VAR: variables declared using VAR keyword can be re-declared & updated.
+  var greeter = "hey hi";
+  var times = 4;
+
+  if (times > 3) {
+      var greeter = "say Hello instead"; 
+  }
+
+  console.log(greeter) // "say Hello instead"
+
+LET: variables declared using LET keyword can not be re-declared but updated.
+  let greeting = "say Hi";
+  let times = 4;
+
+  if (times > 3) {
+      let hello = "say Hello instead";
+      console.log(hello);// "say Hello instead"
+  }
+  console.log(hello) // hello is not defined
+  ******
+  let greeting = "say Hi";
+  let greeting = "say Hello instead"; // error: Identifier 'greeting' has already been declared
+  ******
+  let greeting = "say Hi";
+  if (true) {
+      let greeting = "say Hello instead";
+      console.log(greeting); // "say Hello instead"
+  }
+  console.log(greeting); // "say Hi"
+
+CONST: Like let declarations, const declarations can only be accessed within the block they were declared. const cannot be updated or re-declared. This means that the value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared. So if we declare a variable with const, we can neither do this:
+
+  const greeting = "say Hi";
+  greeting = "say Hello instead";// error: Assignment to constant variable. 
+  *******
+  const greeting = "say Hi";
+  const greeting = "say Hello instead";// error: Identifier 'greeting' has already been declared
+  *******
+  This behavior is somehow different when it comes to objects declared with const. While a const object cannot be updated, the properties of this objects can be updated. Therefore, if we declare a const object as this:
+  const greeting = {
+      message: "say Hi",
+      times: 4
+  }
+  while we cannot do this:
+  greeting = {
+      words: "Hello",
+      number: "five"
+  } // error:  Assignment to constant variable.
+  we can do this:
+  greeting.message = "say Hello instead";
+
+
+
+
+
+
+
 * Eval: eval() is a global function in JavaScript that evaluates a specified string as JavaScript code and executes it.
 
 * Try - catch - finally
@@ -106,9 +177,79 @@ alert(counter()); // 4
 * Call invokes the function and allows you to pass in arguments one by one. Apply invokes the function and allows you to pass in arguments as an array. Bind returns a new function, allowing you to pass in a this array and any number of arguments.
 
 
+* What is the difference between null and undefined in JavaScript?
+In JavaScript, undefined means a variable has been declared but has not yet been assigned a value, such as:
+
+var testVar;
+alert(testVar); //shows undefined
+alert(typeof testVar); //shows undefined
+null is an assignment value. It can be assigned to a variable as a representation of no value:
+
+var testVar = null;
+alert(testVar); //shows null
+alert(typeof testVar); //shows object
+From the preceding examples, it is clear that undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object.
+
+null === undefined // false
+null == undefined // true
+null === null // true
 
 
+* Difference for..in and for..of:
+Both for..in and for..of are looping constructs which are used to iterate over data structures. The only difference between them is the entities they iterate over:
 
+for..in iterates over all enumerable property keys of an object
+for..of iterates over the values of an iterable object. Examples of iterable objects are arrays, strings, and NodeLists.
+
+Example:
+let arr = ['el1', 'el2', 'el3'];
+
+arr.addedProp = 'arrProp';
+
+// elKey are the property keys
+for (let elKey in arr) {
+  console.log(elKey);
+}
+
+// elValue are the property values
+for (let elValue of arr) {
+  console.log(elValue)
+}
+
+
+* Difference between foreach and map
+map() returns a new array while . forEach() doesn't. That is why you see that difference in the output. . forEach() just operates on every value in the array.
+
+* For loop: The JavaScript for loop is used to iterate through the array or the elements for a specified number of times.
+
+* Difference between forEach and for loop in Javascript
+For Loop: It is one of the original ways of iterating over an array. It is faster in performance.The break statement can be used to come out from the loop. 
+  for (let i = 0; i < foodArray.length; i++) {
+    if (foodArray[i].name === 'Pizza') {
+      console.log('I LOVE PIZZA');
+      break;
+    }
+  }
+
+forEach Loop: It is a newer way with lesser code to iterate over an array. It is slower than the traditional loop in performance. The break statement cannot be used because of the callback function. forEach keeps the variable’s scope to the block.
+  const num = 4;
+  const arr = [0, 1, 2];
+
+  arr.forEach(num => {
+    console.log(num);
+  });
+
+  // Result:
+  // 0
+  // 1
+  // 2
+  console.log(num);
+
+  // Result:
+  // 4
+
+
+* 
 
 
 
@@ -127,7 +268,9 @@ alert(counter()); // 4
 * What ES6 features?
 * What are higher-order methods? explain them?
 * Diff B/W for-in & for-of?
-* Diff B/W const, let, and var?
+*** Diff B/W const, let, and var?
+https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+
 * OOPS concepts?
 * What is closure?
   Closure is explained very well here --> https://www.tutorialsteacher.com/javascript/closure-in-javascript
@@ -143,6 +286,13 @@ alert(counter()); // 4
 ***** https://www.w3schools.com/react/react_es6.asp
 
 * https://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
+
+* What is the difference between null and undefined in JavaScript?
+https://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript
+
+* Difference between forEach and for loop in Javascript
+https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/
+https://alligator.io/js/foreach-vs-for-loops/
 
 *************************************** useful links ***********************************************
 * https://www.geeksforgeeks.org/javascript-interview-questions-and-answers

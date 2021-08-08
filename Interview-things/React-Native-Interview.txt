@@ -1,7 +1,12 @@
-* 0.62 is current version
+* 0.64 is current version
 * It is based on React js, which is written in JavaScript.
 * It is a framework that compiles to native app components, allowing you to build native mobile applications for different platforms.
 * React Native is a mobile app development framework that enables the development of multi-platform Android and iOS apps using native UI elements.
+
+* React Native is a framework that compiles to native app components, allowing you to build native mobile applications for different platforms.
+
+* Same code base for both Android & iOS Apps
+
 * JSX is a syntax notation for JavaScript XML(XML-like syntax extension to ECMAScript). It stands for JavaScript XML. It provides expressiveness of JavaScript along with HTML like template syntax. For example, the below text inside h1 tag return as javascript function to the render function,
 	render(){
         return(
@@ -10,9 +15,222 @@
          </div>
         );
      }
+
+Ex: 
+	import React, { Component } from 'react';    
+	import { Text, View } from 'react-native';    
+	export default class App extends Component {    
+      state = {
+        myState: 'React Native Interview Questions'
+      }
+
+		updateState = () => this.setState({ myState: 'React Native Interview Questions and Answers' })
+
+		render() {
+			return (
+			   <View>    
+			       <Text onPress={this.updateState}> {this.state.myState} </Text>    
+			   </View>
+			);
+		}
+	}
+
+* Expo is a framework and a platform for universal React applications. It is a set of tools and services built around React Native and native platforms that help you develop, build, deploy, and quickly iterate on iOS, Android, and web apps from the same JavaScript/TypeScript codebase.
+	npm install --global expo-cli
+	expo init my-project
+
+* The state is used to control the components.
+
+* Write a program to display "Hello World" in react native?
+	import React, {Component} from 'react';  
+	import {Platform, StyleSheet, Text, View} from 'react-native';
+	type Props = {};
+	export default class App extends Component<Props> {
+	render() {
+		return (
+		      <View>
+		        <Text>Hello WorldText>
+		     View>
+		    );
+		  }
+	}  
+
+* How to use map function in React Native?
+import React, { Component } from "react";
+import { Text, View } from "react-native";
+
+export default class mapFunction extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      array: [
+        {
+          title: "example title 1",
+          subtitle: "example subtitle 1"
+        },
+        {
+          title: "example title 2",
+          subtitle: "example subtitle 2"
+        },
+        {
+          title: "example title 3",
+          subtitle: "example subtitle 3"
+        }
+      ]
+    };
+  }
+
+  list = () => {
+    return this.state.array.map(element => {
+      return (
+        <View style={{ margin: 10 }}>
+          <Text>{element.title}</Text>
+          <Text>{element.subtitle}</Text>
+        </View>
+      );
+    });
+  };
+
+  render() {
+    return <View>{this.list()}</View>;
+  }
+}
+
+* What are Props and how is it used in React Native?
+Props are means to the parameters that are used for customizing the component when the component is being created or re-rendered. They are more like the argument which is passed to the React component.
+
+* What is HOC in React Native?
+Higher-Order-Component, shortly known as HOC is an advanced React Native technique to reuse the component logic. The function obtains a component and returns a new element.
+
+Example:
+	function HOC(Comp) {
+	    return class NewComp extends Component {
+			render() {
+				return <comp>
+			}
+	    }
+	}
+
+
+* What is the difference between state and props?
+State is mutable & Props are immutable
+
+* What is the difference between ShadowDOM and VirtualDOM?
+ShadowDOM: Shadow DOM creates small pieces of the DOM object which has its own, isolated scope as they represent.
+VirtualDOM: Virtual DOM creates a copy of the whole DOM object
+
+* What is JSX?
+It allows us to write HTML elements in React and place them in the DOM without any createElement() and/orappendChild() methods.JSX also converts HTML tags into react elements and makes it easier to write.
+Example:
+	const myelement = <h1>React Interview Questions</h1>;
+	ReactDOM.render(myelement, document).
+
+* What is AppRegistry react native?
+It is an entry point of JavaScript which is used to run all the apps to React Native. All the components of the App root must register themselves with AppRegistry.registerComponent(), after that the native system will be able to load the bundle regarding the app. After that, they can run the app simply by invoking AppRegistry.runApplication().
+
+* How Axios works in React Native?
+With the help of Axios, the user can send GET, POST, PUT, and DELETE requests to the REST API and render a response to the application. With the help of Axios, users can interact with the REST API. In general, Axios is a promise-based HTTP client which used by the react-native.
+
+* What are controlled and uncontrolled components in react native?
+Controlled Components: A controlled component is one that is bound to a value, and the changes inside it will be handled in code by using event-based callbacks. Has much efficient control over the form elements and data.It accepts the current value as a prop.
+
+Uncontrolled Components: This is similar to the traditional HTML form inputs, but, here, the form data is handled by the DOM itself. Here, the data is controlled by the DOM itself.A ref is used for their current values.
+
+
+* What is the difference between FlatList and ScrollView?
+FlatList: It renders all the child components at once without impacting the performance.
+ScrollView: It renders all the child components at once. However, it decreases the performance.
+
+* What are hooks in react native?
+Hooks are a new enhancement in React 16.8. They allow to utilize the state and other react features without involving the class. The major agenda behind using the hooks are to handle the side effects in the functional components of react.
+
+* What is the difference between Hot Reloading and Live Reloading in React Native?
+Hot Reloading: It only refreshes the files that were changed without losing the state of the app.It displays the code changes according to new code changes without restarting the app from start.
+
+Live Reloading: It reloads or refreshes the entire app when a file changes.It requires the restart of the app in case of any change in the code
+
+* What are the difference between a component and an element in React.
+React Component: A class or function which optionally accepts inputs and returns a React element via JSX.
+React Element: It describes what the user wants to be displayed on the screen, Simplifying it, the react element is an object representation for some UI.
+
 * 
 
 
+
+
+
+
+
+
+
+
+* React Native Advantages
+	Highly useful for native app developers with benefitting features.
+	Superbly cost-effective and code reuse
+	No need for recompilation with changes and live reloading of codes.
+	Use of intelligent debugging tools for text editors.
+
+* What are the disadvantages of React Native?
+The React Native has following limitations or cons: 
+	Security risks
+	Single threaded interface
+	Poor memory management
+	Doesn’t support all native APIs
+	Dependable on third-party libraries
+	Not equivalent to true native apps written entirely on Java or Swift/Obj-C.
+
+
+
+
+
+
+
+
+
+
+
+Regarding SVB project:
+----------------------------------------------------------------------------------------------------------------------
+* About the project
+First Check is a startup-investor networking application that allows investors to anonymously view
+startups based on their recommendations. An investor can directly contact the founders of a shortlisted startup
+through an in-built messaging platform with the ability to share images and documents as well. We used pure React-Native but not Expo
+
+* Packages used
+	- react-redux  --> state manager
+	- react-native-router-flux  --> to handle the routes
+	- native-base  --> make use of diff components like Input, Item, Text, Container
+	- react-native-detector --> used to detect screenshots
+	- react-native-orientation-locker  --> to handle the orientation of the device
+	- @react-native-community/netinfo  --> To detect the device network
+	- react-native-device-info  --> used to handle the notches
+	- react-native-image-picker  --> used to upload all kind of images
+	- react-native-document-picker  --> used to upload all kind of documents
+	- react-native-push-notification  --> used to handle push notifications
+	- react-native-permissions  --> used to handle the device permissions
+	- react-native-reanimated  --> used to make animations
+	- react-native-toast-native  --> used to show toasts
+
+* Few components from 'react-native' package
+import {
+  Alert,
+  Dimensions,
+  Image,
+  Keyboard,
+  LayoutAnimation,
+  Platform,
+  SafeAreaView,
+  StatusBar,
+  TouchableOpacity,
+  View,
+  VirtualizedList,
+} from 'react-native';
+
+
+* Few components from 'native-base' package
+import { Input, Item, Text, Container } from 'native-base';
+
+* 
 
 
 ************************************ Askable Interview Q's ********************************************
@@ -22,7 +240,7 @@
 
 
 *************************************** useful links **************************************************
-* https://www.bestinterviewquestion.com/react-native-interview-questions
+*** https://www.bestinterviewquestion.com/react-native-interview-questions
 * https://www.fullstack.cafe/blog/react-native-interview-questions
 * 
 
