@@ -36,7 +36,16 @@ Plugins:
 * Path Intellisense
 * Deno
 * Material Icon Theme by Philipp Kief
-
+* advanced-new-file - by patbenatar
+* REST Client - by Huachao Mao
+* Auto Rename Tag - by Jun Han
+* Add jsdoc comments - by stevencl
+* Better comments - by Aaron Bond
+* GitLens -- Git supercharged - by Eric Amodio  --> This will help to find out who changed the code
+* Remote - SSH - by Microsoft
+* Remote - Containers - by Microsoft
+* Awesome Flutter snippets - by Neevash Ramial
+* Paste JSON as Code - by Quicktype
 
 
 
@@ -76,4 +85,8 @@ IMP Links:
 
 
 Note: After installing any plugin, we should re-start VSCode.
-******************************************************************************
+
+**************************************** Useful links ***************************************************************
+*** 25 VS Code Productivity Tips and Speed Hacks --> https://www.youtube.com/watch?v=ifTF3ags0XI
+* 
+

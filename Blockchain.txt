@@ -1,0 +1,20 @@
+* We should learn Solidy for Blockchain developement.
+
+* What is Solidity used for?
+Solidity programming is the primary code language currently used for implementing smart contracts. Developed on the Ethereum platform, Solidity allows programmers to write smart contracts and blockchain dApps.
+
+* Solidity is an object-oriented programming language for writing smart contracts.
+
+* What is ganache in block chain?
+Ganache is a personal blockchain for rapid Ethereum and Corda distributed application development. You can use Ganache across the entire development cycle; enabling you to develop, deploy, and test your dApps in a safe and deterministic environment. Ganache comes in two flavors: a UI and CLI.
+
+* What is Truffle blockchain?
+Truffle is a world-class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier.
+
+* web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
+
+* Who created web3 js?
+the Ethereum Foundation
+The web3. js library is an open source JavaScript library (GNU Lesser General Public License version 3) built by the Ethereum Foundation, and it includes functions to communicate with an Ethereum node via the JavaScript Object Notation - Remote Procedure Call (JSON-RPC) protocol.
+
+* 

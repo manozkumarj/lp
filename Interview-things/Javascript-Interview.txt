@@ -1,3 +1,46 @@
+* Javascript is a "synchronous single threaded" language. It has one "call stack" and it can do onething at a time. This call stack is present in JS engine. All the JS code is executed inside of this call stack
+********* https://www.youtube.com/watch?v=8zKuNo4ay8E
+
+* Whenever we run a JS program, an "Global Execution context"(GEC) is created and it goes through 2 phases. "Memory creation phase" and "Code execition phase"
+
+* Everything in Javascript happens inside an "Execution context" AKA "Variable environment".
+"Execution context" has two components which are
+  1) Memory component
+  2) Code component
+* "Execution context" goes through 2 phases
+phase 1 -> Memory creation phase
+phase 2 -> Code execition phase
+
+* Call stack handles all the above operations perfectly. Call stack maintains the order of execution of execution contexts.
+Call stack has many names, which are
+  Exection context stack
+  Program stack
+  Control stack
+  Runtime stack
+  Machine stack
+
+* Jaascript engine is very fast.
+
+* Functions in Js behave very differently when compared to other languages. Each function is like a new "Execution context" area.
+
+* What is the event loop in js?
+The event loop is the secret behind JavaScript's asynchronous programming... The event queue is responsible for sending new functions to the track for processing. It follows the queue data structure to maintain the correct sequence in which all operations should be sent for execution.
+
+* What is event loop in JavaScript with example?
+JavaScript has a concurrency model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.
+
+* How does event loop work?
+The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack.
+
+Altogether -> The event loop is the secret behind JavaScript's asynchronous programming... The event queue is responsible for sending new functions to the track for processing. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack.
+
+
+* What is event bubbling and how is it different to event capturing?
+  -> Event Bubbling − Whenever an event happens on an element, the event handlers will first run on it and then on its parent and finally all the way up to its other parent elements. 
+  -> Event Capturing − It is the reverse of the event bubbling and here the event starts from the parent element and then to its child element.
+
+* 
+
 * 'var' and 'let' are both used for variable declaration in javascript but the difference between them is that 'var' is function scoped and 'let' is block scoped.
 
 * A closure gives you access to an outer function's scope from an inner function.
@@ -86,6 +129,19 @@ CONST: Like let declarations, const declarations can only be accessed within the
 
 
 * Eval: eval() is a global function in JavaScript that evaluates a specified string as JavaScript code and executes it.
+Ex: console.log(eval('2 + 2'));
+// expected output: 4
+
+console.log(eval(new String('2 + 2')));
+// expected output: 2 + 2
+
+console.log(eval('2 + 2') === eval('4'));
+// expected output: true
+
+console.log(eval('2 + 2') === eval(new String('2 + 2')));
+// expected output: false
+
+
 
 * Try - catch - finally
 FMD --> https://www.tutorialsteacher.com/javascript/javascript-error-handling
@@ -151,7 +207,7 @@ for (let i = 0; i <= loopCount; i++) {
   doAction();
 }
 
-console.log(mainArray);
+console.log(mainArray); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
 
 
 
@@ -175,6 +231,24 @@ alert(counter()); // 4
 * With arrow functions there are no binding of this.
 
 * Call invokes the function and allows you to pass in arguments one by one. Apply invokes the function and allows you to pass in arguments as an array. Bind returns a new function, allowing you to pass in a this array and any number of arguments.
+
+Call: The call() method calls a function with a given 'this' value and arguments provided individually.
+Syntax
+call()
+call(thisArg)
+call(thisArg, arg1)
+call(thisArg, arg1, arg2)
+call(thisArg, arg1, ... , argN)
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+
+apply():
+The apply() method calls a function with a given 'this' value, and arguments provided as an array (or an array-like object).
+apply(thisArg)
+apply(thisArg, argsArray)
+
+bind():
+The bind() method creates a new function that, when called, has its 'this' keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+
 
 
 * What is the difference between null and undefined in JavaScript?
@@ -264,41 +338,554 @@ forEach Loop: It is a newer way with lesser code to iterate over an array. It is
 
 
 
+
+
+
+
+
+* Excercises:
+1) var output = (function(x) { delete x; return x; })(0);
+output(); // Returns an error as 'output is not a function';
+console.log(output); // Returns 0;
+
+2) var x = 1;
+var output = (function(x) { delete x; return x; })();
+console.log(output); // Returns 1;
+
+3) var trees = ["xyz", "xxxx", "test", "ryan", "apple"];
+delete trees[3]; // Returns true
+console.log(trees.length); // Returns 5
+
+
+Coding challenges --> https://www.fullstacktutorials.com/interviews/javascript-coding-questions-answers-6.html
+* Reverse a given string using JavaScript?
+var str = "Full Stack Tutorials";
+var output = str
+  .split("")
+  .reverse()
+  .join("");
+console.log(output);
+
+
+* Find the sum of all elements/numbers of a given array?
+  -> using array reduce() method
+      var arr = [1, 2, 5, 10, 20];
+      var sum = arr.reduce((a, i) => {
+        return a + i;
+      });
+      console.log(sum); // 38
+
+  -> using loops (e.g. - for loop)
+      var arr = [1, 2, 5, 10, 20];
+      var sum = 0;
+      for (let i in arr) {
+        sum += arr[i];
+      }
+      console.log(sum); // 38
+
+* Reverse the order of the elements in an array:
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits.reverse(); // ["Mango", "Apple", "Orange", "Banana"]
+The reverse() method reverses the order of the elements in an array.
+reverse() overwrites the original array.
+
+* const number = undefined + 11;
+if (number === NaN) {
+  document.write("NaN");
+} else if (number === 11) {
+  document.write("11");
+} else {
+  document.write("other");
+}
+
+// other
+
+
+* const number = null + 11; // 11
+
+* JavaScript startsWith and endsWith?
+let name = "Full Stack Tutorials, Latest Interview Questions and Answers!";
+
+//startsWith
+console.log(name.startsWith("Full")); // true
+console.log(name.startsWith("full")); // false
+console.log(name.startsWith("Tutorials")); // false
+console.log(name.startsWith("Tutorials", 11)); // true
+
+//endsWith
+console.log(name.endsWith("Answers!")); // true
+console.log(name.endsWith("answers!")); // false
+Note:- Both startsWith & endsWith are case-sensitive.
+
+
+* var a=3;
+var b=a++;
+var c=++a;
+console.log(a,b,c); // 5 3 5
+
+* function func1() {
+  return {
+    name: "Full Stack Tutorials",
+  };
+}
+console.log(func1()); // {name: "Full Stack Tutorials"}
+
+
+* function func2() {
+  return;
+  {
+    name: "Full Stack Tutorials";
+  }
+}
+console.log(func2()); // undefined 
+Note: Reason:-
+The reason for this has to do with the fact that semicolons are technically optional in JavaScript (although omitting them is generally really bad form).
+
+As a result, when the line containing the return statement (with nothing else on the line) is encountered in func2(), a semicolon is automatically inserted immediately after the return statement.
+
+
+* console.log(typeof undefined); // undefined
+console.log(typeof null); // object
+console.log(typeof NULL); // undefined
+console.log(typeof typeof 1); // string
+
+
+* How to convert an Object {} into an Array [] in JavaScript?
+let obj = { id: "1", name: "Test User", age: "25", profession: "Developer" };
+
+//Method 1: Convert the keys to Array using - Object.keys()
+console.log(Object.keys(obj)); // ["id", "name", "age", "profession"]
+
+// Method 2 Converts the Values to Array using - Object.values()
+console.log(Object.values(obj)); // ["1", "Test User", "25", "Developer"]
+
+// Method 3 Converts both keys and values using - Object.entries()
+console.log(Object.entries(obj)); //[["id", "1"],["name", "Test User"],["age", "25"],["profession", "Developer"]]
+
+
+* How to convert an Array [] to Object {} in JavaScript?
+let arr = ["1", "Test User", "25", "Developer"];
+let arr1 = [
+  ["id", "1"],
+  ["name", "Test User"],
+  ["age", "25"],
+  ["profession", "Developer"],
+];
+
+//Method 1: Using Object.assign() method
+console.log(Object.assign({}, arr));
+//{0: "1", 1: "Test User", 2: "25", 3: "Developer"}
+
+// Method 2 Using Spread operator
+console.log({ ...arr });
+//{0: "1", 1: "Test User", 2: "25", 3: "Developer"}
+
+// Method 3: Using Object.fromEntries() method
+console.log(Object.fromEntries(arr1));
+//{id: "1", name: "Test User", age: "25", profession: "Developer"}
+
+
+* const a = { x: 1, y: 2 };
+const b = a;
+b.x = 3;
+console.log(a); // { x: 3, y: 2 }
+console.log(b); // { x: 3, y: 2 }
+
+Reason: both the object are pointing to same reference.
+
+
+* let a = 10;
+var a = 20;
+console.log(a); // SyntaxError: Identifier 'a' has already been declared
+
+* Explain what a callback function is and provide a simple example
+A callback function is a function that is passed to another function as an argument and is executed after some operation has been completed. Below is an example of a simple callback function that logs to the console after some operations have been completed.
+
+  function modifyArray(arr, callback) {
+    // do something to arr here
+    arr.push(100);
+    // then execute the callback function that was passed
+    callback();
+  }
+
+  var arr = [1, 2, 3, 4, 5];
+
+  modifyArray(arr, function() {
+    console.log("array has been modified", arr);
+  });
+
+
+* Given a string, reverse each word in the sentence
+For example "Welcome to this Javascript Guide!" should be become "emocleW ot siht tpircsavaJ !ediuG"
+var string = "Welcome to this Javascript Guide!";
+
+// Output becomes !ediuG tpircsavaJ siht ot emocleW
+var reverseEntireSentence = reverseBySeparator(string, "");
+
+// Output becomes emocleW ot siht tpircsavaJ !ediuG
+var reverseEachWord = reverseBySeparator(reverseEntireSentence, " ");
+
+function reverseBySeparator(string, separator) {
+  return string.split(separator).reverse().join(separator);
+}
+
+* How to empty an array in JavaScript?
+
+Method 1:
+var arrayList =  ['a', 'b', 'c', 'd', 'e', 'f'];
+arrayList = [];
+
+Above code will set the variable arrayList to a new empty array. This is recommended if you don't have references to the original array arrayList anywhere else because It will actually create a new empty array. You should be careful with this way of empty the array, because if you have referenced this array from another variable, then the original reference array will remain unchanged, Only use this way if you have only referenced the array by its original variable arrayList.
+
+var arrayList = ['a', 'b', 'c', 'd', 'e', 'f']; // Created array
+var anotherArrayList = arrayList;  // Referenced arrayList by another variable
+arrayList = []; // Empty the array
+console.log(anotherArrayList); // Output ['a', 'b', 'c', 'd', 'e', 'f']
+
+Method 2:
+arrayList.length = 0;
+Above code will clear the existing array by setting its length to 0. This way of empty the array also update all the reference variable which pointing to the original array. This way of empty the array is useful when you want to update all the another reference variable which pointing to arrayList.
+
+For Instance:
+
+var arrayList = ['a', 'b', 'c', 'd', 'e', 'f']; // Created array
+var anotherArrayList = arrayList;  // Referenced arrayList by another variable
+arrayList.length = 0; // Empty the array by setting length to 0
+console.log(anotherArrayList); // Output []
+
+
+* How would you check if a number is an integer?
+A very simply way to check if a number is a decimal or integer is to see if there is a remainder left when you divide by 1.
+
+function isInt(num) {
+  return num % 1 === 0;
+}
+
+console.log(isInt(4)); // true
+console.log(isInt(12.2)); // false
+console.log(isInt(0.3)); // false
+
+
+
+* Make this work
+Question: duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
+Answer: function duplicate(arr) {
+  return arr.concat(arr);
+}
+
+duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
+
+
+* FizzBuzz Challenge
+Problem
+Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
+
+Answer
+Check out this version of FizzBuzz:
+
+for (let i = 1; i <= 100; i++) {
+  let f = i % 3 == 0,
+    b = i % 5 == 0;
+  console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
+}
+
+* Given two strings, return true if they are anagrams of one another
+Problem
+For example: Mary is an anagram of Army
+
+Answer
+var firstWord = "Mary";
+var secondWord = "Army";
+
+isAnagram(firstWord, secondWord); // true
+
+function isAnagram(first, second) {
+  // For case insensitivity, change both words to lowercase.
+  var a = first.toLowerCase();
+  var b = second.toLowerCase();
+
+  // Sort the strings, and join the resulting array to a string. Compare the results
+  a = a.split("").sort().join("");
+  b = b.split("").sort().join("");
+
+  return a === b;
+}
+
+
+* What will the following code output?
+Problem
+(function() {
+  var a = b = 5;
+})();
+
+console.log(b);
+
+Answer
+The code above will output 5 even though it seems as if the variable was declared within a function and can't be accessed outside of it. This is because
+
+var a = b = 5;
+is interpreted the following way:
+
+var a = b;
+b = 5;
+But 'b' is not declared anywhere in the function with var so it is set equal to 5 in the global scope.
+
+
+* Write a function that would allow you to do this
+Problem
+multiply(5)(6);
+Answer
+You can create a closure to keep the value of a even after the inner function is returned. The inner function that is being returned is created within an outer function, making it a closure, and it has access to the variables within the outer function, in this case the variable a.
+
+function multiply(a) {
+  return function(b) {
+    return a * b;
+  }
+}
+
+multiply(5)(6); // 30
+
+
+* javascript check if array contains value
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.includes("Mango")   // Returns true
+
+* javascript check if object has property
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+1. hasOwnProperty() method: 
+fruits.includes("Mango")   // Returns true
+
+2. in operator: 
+'name' in hero;     // => true
+'realName' in hero; // => false
+
+3. Comparing with undefined:
+hero.name;     // => 'Batman'
+hero.realName; // => undefined
+
+
+* The concat() method concatenates (joins) two or more arrays.
+const hege = ["Cecilie", "Lone"];
+const stale = ["Emil", "Tobias", "Linus"];
+const children = hege.concat(stale); // Cecilie,Lone,Emil,Tobias,Linus
+
+* The map() method creates a new array with the results of calling a function for every array element.
+const numbers = [4, 9, 16, 25];
+const newArr = numbers.map(Math.sqrt)
+
+* What is reduce () in JavaScript?
+The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+const numbers = [15.5, 2.3, 1.1, 4.7];
+document.getElementById("demo").innerHTML = numbers.reduce(getSum, 0);
+
+function getSum(total, num) {
+  return total + Math.round(num);
+}
+
+
+* The sort() method sorts the elements of an array.
+Example: Sort numbers in an array in descending order:
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+
+
+* javascript delete element from array of objects
+const people = [
+  { id: 1, name: 'serdar' },
+  { id: 5, name: 'alex' },
+  { id: 300, name: 'brittany' }
+];
+
+const idToRemove = 5;
+
+const filteredPeople = people.filter((item) => item.id !== idToRemove);
+
+// [
+//   { id: 1, name: 'serdar' },
+//   { id: 300, name: 'brittany' }
+// ]
+
+(OR)
+
+const apps = [
+  {id:1, name:'Jon'}, 
+  {id:2, name:'Dave'},
+  {id:3, name:'Joe'}
+]
+
+//remove item with id=2
+const itemToBeRemoved = {id:2, name:'Dave'}
+
+apps.splice(apps.findIndex(a => a.id === itemToBeRemoved.id) , 1)
+
+//print result
+console.log(apps)
+
+
+
+* Do NOT use the delete operator on Arrays. delete will not remove an entry from an Array, it will simply replace it with undefined.
+
+var arr = [0,1,2];
+delete arr[1];
+// [0, undefined, 2]
+
+* console.log(a, b, c);
+abc();
+var a = 1;
+let b = 2;
+const c = 3;
+
+function abc(){
+  alert();
+}
+
+Output: 1, undefined, undefined
+Note: Alert won't show up
+
+* abc();
+console.log(a, b, c);
+var a = 1;
+let b = 2;
+const c = 3;
+
+function abc(){
+  alert();
+}
+
+Output: Only alert shows up
+
+
+* call, apply, and bind methods?
+JavaScript also provides some special methods and properties to every function object. So every function in JavaScript inherits those methods. Call, bind, and apply are some of the methods that every function inherits.
+
+
+* let string = 'this is a string of words';
+let arrayOfStrings = string.split(' ');
+
+let newArray = [];
+
+for(let i=0; i < arrayOfStrings.length; i++){
+    let singleArray = arrayOfStrings[i].split('').reverse().join('');
+    newArray.push(singleArray);
+
+
+    let singleArray = arrayOfStrings[i].split('').reverse().join('');
+}
+
+newArray.join(' '); // "siht si a gnirts fo sdrow"
+
+
+* var a = 1;
+  console.log('1-> ', a); // 1
+function func(){
+  console.log('2-> ', a); // undefined
+  var a = 2;
+  console.log('3-> ', a); // 2
+}
+  console.log('4-> ', a); // 1
+
+func();
+  console.log('5-> ', a); // 1
+
+
+
+* for(var i=0 ; i<3 ; i++){
+console.log(i , 'for')
+setTimeout(()=>{
+   console.log(i);
+} , 1000);
+}
+Note: make VAR to LET
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+* Basic rules worth remembering:
+  -> “this” always refers to an object.
+  -> “this” refers to an object which calls the function it contains.
+  -> In the global context, “this” refers to either window object or is undefined if the ‘strict mode’ is used.
+
+
+
+
+
+
+
+
+
+
+
+
+
 *************************************** Askable Q's ***********************************************
 * What ES6 features?
 * What are higher-order methods? explain them?
 * Diff B/W for-in & for-of?
 *** Diff B/W const, let, and var?
 https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
-
+* What is Hoisting? -> https://www.youtube.com/watch?v=Fnlnw8uY6jo
 * OOPS concepts?
 * What is closure?
   Closure is explained very well here --> https://www.tutorialsteacher.com/javascript/closure-in-javascript
 * What is lamda function?
 * Difference between substr() and substring()?
-* What is the difference between freeze and seal in JavaScript ?
+* What is the difference between 'freeze' and 'seal' in JavaScript ?
 * Diff B/W normal func & Arrow func?
 * What is prototype?
   Prototype is explained very well here --> https://www.tutorialsteacher.com/javascript/prototype-in-javascript
 
 * Explain call, apply, and bind methods?
+https://www.youtube.com/watch?v=75W8UPQ5l7k --> call, apply and bind method in JavaScript
+https://blog.bitsrc.io/understanding-call-bind-and-apply-methods-in-javascript-33dbf3217be#8262
+https://www.freecodecamp.org/news/how-to-use-the-apply-call-and-bind-methods-in-javascript-80a8e6096a90/
+https://www.codingame.com/playgrounds/9799/learn-solve-call-apply-and-bind-methods-in-javascript
+
+*** How JavaScript Works 🔥& Execution Context | Namaste JavaScript Ep.1
+https://www.youtube.com/watch?v=ZvbzSrg0afE&list=RDCMUC3N9i_KvKZYP4F84FPIzgPQ&start_radio=1&rv=ZvbzSrg0afE&t=10
+
+***** Asynchronous JavaScript & EVENT LOOP from scratch
+https://www.youtube.com/watch?v=8zKuNo4ay8E
+
+* What is function currying in JavaScript?
 
 ***** https://www.w3schools.com/react/react_es6.asp
 
 * https://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
 
-* What is the difference between null and undefined in JavaScript?
+* What is the difference between 'null' and 'undefined' in JavaScript?
 https://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript
 
-* Difference between forEach and for loop in Javascript
+* Difference between 'forEach' and 'for loop' in Javascript
 https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/
 https://alligator.io/js/foreach-vs-for-loops/
+
+* JavaScript: Promises or async-await
+https://betterprogramming.pub/should-i-use-promises-or-async-await-126ab5c98789
+
+
+* Javascript binary search
+https://stackabuse.com/binary-search-in-javascript/
+
+* Coding challenges
+https://www.fullstacktutorials.com/interviews/javascript-coding-questions-answers-6.html
 
 *************************************** useful links ***********************************************
 * https://www.geeksforgeeks.org/javascript-interview-questions-and-answers
 * https://www.youtube.com/watch?v=jpFNwuwr7o4 --> JavaScript interview question in Hindi # sort function with array
 * https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
 * https://www.geeksforgeeks.org/what-is-the-difference-between-freeze-and-seal-in-javascript/
+*** https://www.tutorialstonight.com/js/javascript-star-pattern.php
+*** https://www.tutorialstonight.com/number-pattern-programs-in-javascript.php
 * 
 
 

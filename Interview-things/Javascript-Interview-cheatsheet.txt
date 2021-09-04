@@ -1,0 +1,157 @@
+* Altogether -> The event loop is the secret behind JavaScript's asynchronous programming... The event queue is responsible for sending new functions to the track for processing. If the Call Stack is empty, the Event Loop will take the first event from the callback queue and will push it to the Call Stack. Basically event loop acts like a gatekeeper here.
+
+* Call: The call() method calls a function with a given 'this' value and arguments provided individually.
+Syntax call(thisArg, arg1, ... , argN)
+
+* The apply() method calls a function with a given 'this' value, and arguments provided as an array (or an array-like object).
+apply(thisArg)
+apply(thisArg, argsArray)
+
+* Call invokes the function and allows you to pass in arguments one by one. Apply invokes the function and allows you to pass in arguments as an array. Bind returns a new function, allowing you to pass in a this array and any number of arguments.
+
+* Closure example
+function Counter() {
+    var counter = 0;
+
+    function IncreaseCounter() {
+        return counter += 1;
+    };
+
+    return IncreaseCounter;
+}
+
+var counter = Counter();
+alert(counter()); // 1
+alert(counter()); // 2
+alert(counter()); // 3
+alert(counter()); // 4
+
+
+----------------------------------------------------------------------------------------------
+* let mainArray = [0, 1];
+let loopCount = 10;
+
+function doAction () {
+  let one = mainArray[mainArray.length - 2];
+  let two = mainArray[mainArray.length - 1];
+
+  let add = one + two;
+
+  mainArray.push(add);
+};
+
+for (let i = 0; i <= loopCount; i++) {
+  doAction();
+}
+
+console.log(mainArray); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
+----------------------------------------------------------------------------------------------
+* Explain what a callback function is and provide a simple example
+A callback function is a function that is passed to another function as an argument and is executed after some operation has been completed. Below is an example of a simple callback function that logs to the console after some operations have been completed.
+
+  function modifyArray(arr, callback) {
+    // do something to arr here
+    arr.push(100);
+    // then execute the callback function that was passed
+    callback();
+  }
+
+  var arr = [1, 2, 3, 4, 5];
+
+  modifyArray(arr, function() {
+    console.log("array has been modified", arr);
+  });
+----------------------------------------------------------------------------------------------
+* const a = { x: 1, y: 2 };
+const b = a;
+b.x = 3;
+console.log(a); // { x: 3, y: 2 }
+console.log(b); // { x: 3, y: 2 }
+
+Reason: both the object are pointing to same reference.
+
+
+* let a = 10;
+var a = 20;
+console.log(a); // SyntaxError: Identifier 'a' has already been declared
+----------------------------------------------------------------------------------------------
+
+* How to convert an Object {} into an Array [] in JavaScript?
+let obj = { id: "1", name: "Test User", age: "25", profession: "Developer" };
+
+//Method 1: Convert the keys to Array using - Object.keys()
+console.log(Object.keys(obj)); // ["id", "name", "age", "profession"]
+
+// Method 2 Converts the Values to Array using - Object.values()
+console.log(Object.values(obj)); // ["1", "Test User", "25", "Developer"]
+
+// Method 3 Converts both keys and values using - Object.entries()
+console.log(Object.entries(obj)); //[["id", "1"],["name", "Test User"],["age", "25"],["profession", "Developer"]]
+
+
+* How to convert an Array [] to Object {} in JavaScript?
+let arr = ["1", "Test User", "25", "Developer"];
+let arr1 = [
+  ["id", "1"],
+  ["name", "Test User"],
+  ["age", "25"],
+  ["profession", "Developer"],
+];
+
+//Method 1: Using Object.assign() method
+console.log(Object.assign({}, arr));
+//{0: "1", 1: "Test User", 2: "25", 3: "Developer"}
+
+// Method 2 Using Spread operator
+console.log({ ...arr });
+//{0: "1", 1: "Test User", 2: "25", 3: "Developer"}
+
+// Method 3: Using Object.fromEntries() method
+console.log(Object.fromEntries(arr1));
+//{id: "1", name: "Test User", age: "25", profession: "Developer"}
+
+----------------------------------------------------------------------------------------------
+1)
+* Given a string, reverse each word in the sentence
+For example "Welcome to this Javascript Guide!" should be become "emocleW ot siht tpircsavaJ !ediuG"
+var string = "Welcome to this Javascript Guide!";
+
+// Output becomes !ediuG tpircsavaJ siht ot emocleW
+var reverseEntireSentence = reverseBySeparator(string, "");
+
+// Output becomes emocleW ot siht tpircsavaJ !ediuG
+var reverseEachWord = reverseBySeparator(reverseEntireSentence, " ");
+
+function reverseBySeparator(string, separator) {
+  return string.split(separator).reverse().join(separator);
+}
+
+2)
+* let string = 'this is a string of words';
+let arrayOfStrings = string.split(' ');
+
+let newArray = [];
+
+for(let i=0; i < arrayOfStrings.length; i++){
+    let singleArray = arrayOfStrings[i].split('').reverse().join('');
+    newArray.push(singleArray);
+
+
+    let singleArray = arrayOfStrings[i].split('').reverse().join('');
+}
+
+newArray.join(' '); // "siht si a gnirts fo sdrow"
+----------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+

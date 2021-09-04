@@ -1,0 +1,21 @@
+* CI(Continuous Integration) means everytime we make a commint/push to the branch, a new Build and Automation Test will be done. Integration means Pushing the code/Merging the new code into the codebase
+* CD(Continuous Delivery) means pushing that build to a dev/mock server. Delivery means Making it available for deployment.
+* Not every company/project follows both CI and CD. Few companies follow only CI and few may follow CD.
+* There are different tools available to implement CI/CD like - Jenkins, AWS, Git-Actions
+
+
+
+-------------------------------------------- Docker -----------------------------------------------------------
+* Docker is an ecosystem where we can create containers/run containers
+* Sometimes the project will work perfectly on devs machine but not on testers/other devs machine who took copy of our project, it's due to some dependencies may dependent on OS. This kind of problem will solve by Docker. We can transfer our project with same dependencies/modules.
+* Containers can be created by images. When we page a container it will create an image, and that image can be transffered/shared with anyone who needs it.
+* 
+
+
+
+* https://www.youtube.com/watch?v=u-YWtdbpEhQ  --> What is Docker?
+* https://www.youtube.com/watch?v=WSqja26WUEY  --> What is Docker (in Telugu) ?
+---------------------------------------------------------------------------------------------------------------
+-------------------------------------------- Nginx ------------------------------------------------------------
+* Nginx is used for reverse proxy as well as load balencer.
+* 

@@ -1,0 +1,20 @@
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* I'm not familiar with Gradient (conic gradient) related topic
+* I'm not familiar with Counters related things
+	For gradient refer - https://www.youtube.com/watch?v=0gayskscLY4

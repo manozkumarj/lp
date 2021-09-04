@@ -111,13 +111,13 @@ axios stringifies returned data and we can use it directly. in fetch, we need to
 
 * Some of the most important lifecycle methods are:
 
-	-> componentWillMount() – Executed just before rendering takes place both on the client as well as 		server-side.
+	-> componentWillMount() – Executed just before rendering takes place both on the client as well as server-side.
 	-> componentDidMount() – Executed on the client side only after the first render.
-	-> componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and 	before another render is called.
-	-> shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your 		component to update, return true else return false. By default, it returns false.
+	-> componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and before another render is called.
+	-> shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your component to update, return true else return false. By default, it returns false.
 	-> componentWillUpdate() – Called just before rendering takes place in the DOM.
 	-> componentDidUpdate() – Called immediately after rendering takes place.
-	-> componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear 		up the memory spaces.
+	-> componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear up the memory spaces.
 
 
 * LifeCycle-hooks
@@ -195,7 +195,6 @@ To address the problem of inefficient updating, the react team introduced the co
 * What are the differences between controlled and uncontrolled components?
 Controlled Component:
 Controlled Component is also called as "dumb component".
-Controlled Components
 A controlled component is a component that renders form elements and controls them by keeping the form data in the component's state.
 
 In a controlled component, the form element's data is handled by the React component (not DOM) and kept in the component's state. A controlled component basically overrides the default behavior of the HTML form elements.
@@ -391,31 +390,442 @@ Sometimes while developing React applications, there is a need to pass data from
 To pass data between such components, we pass props from a source component, and keep passing the prop to the next component in the hierarchy till we reach the deeply nested component.
 The disadvantage of using prop drilling is that the components that should otherwise be not aware of the data have access to the data.
 
+* Difference between arrow function and normal function
+	-> Unlike regular functions, arrow functions do not have their own this. Arguments objects are not available in arrow functions, but are available in regular functions.
+	-> Arrow functions don't have their own this or arguments binding.
+
+Arrow functions should NOT be used because:
+	They do not have 'this'
+	It uses “lexical scoping” to figure out what the value of “this” should be. In simple word lexical scoping it uses “this” from the inside the function’s body.
+
+	They do not have 'arguments'
+	Arrow functions don’t have an arguments object. But the same functionality can be achieved using rest parameters.
+	let sum = (...args) => args.reduce((x, y) => x + y, 0) sum(3, 3, 1) // output - 7 `
+
+	They cannot be used with 'new'
+	Arrow functions can't be construtors because they do not have a prototype property.
+
+When to use arrow function and when not:
+	Don't use to add function as a property in object literal because we can not access this.
+	Function expressions are best for object methods. Arrow functions are best for callbacks or methods like map, reduce, or forEach.
+	Use function declarations for functions you’d call by name (because they’re hoisted).
+	Use arrow functions for callbacks (because they tend to be terser).
+
+
+* Pure Components in React
+Pure Components in React are the components which do not re-renders when the value of state and props has been updated with the same values. If the value of the previous state or props and the new state or props is the same, the component is not re-rendered. Pure Components restricts the re-rendering ensuring the higher performance of the Component
+Features of React Pure Components:
+	-> Prevents re-rendering of Component if props or state is the same
+	-> Takes care of “shouldComponentUpdate” implicitly
+	-> State and Props are Shallow Compared
+	-> Pure Components are more performant in certain cases
+
+React provides the 'PureComponent' base class for these class components. Class components that extend the React.PureComponent class are treated as pure components.
+
+Take the scenario below, in which we’re updating the component’s state variable at a continuous interval of one second. With every call to “setState”, we update the counter value to the same value.
+
+	class ImpureComponent extends React.Component {
+	  constructor() {
+	    super();
+	    this.state = {
+	      counter: 0
+	    }
+	    
+	    // The value of Counter is updated to same value during continues interval
+	    
+	    setInterval(() => {
+	      this.setState({
+	        counter: 0
+	      });
+	    }, 1000);
+	  }
+	  
+	  render() {
+	    return <b>Counter Value: {this.state.counter}</b>
+	  }
+	}
+
+Here, setState is called and the value of “counter” is set to the same value. When setState is called, the component is re-rendered. In this scenario, the updated component view remains the same. There is effectively no difference in the UI — the new values are unchanged. Re-rendering, in this case, is an overhead.
+In order to cater to this problem, React introduced Pure Components. They compare the initial and final values for the state and props variables. If there is no difference between the two, they won’t trigger the re-rendering logic for the component.
+
+Example:
+	class ImpureComponent extends React.PureComponent {
+	  constructor() {
+	    super();
+	    this.state = {
+	      counter: 0
+	    }
+	    
+	    // The value of Counter is updated to same value during continues interval
+	    setInterval(() => {
+	      this.setState({
+	        counter: 0
+	      });
+	    }, 1000);
+	  }
+	  
+	  render() {
+	    
+	    // This function wont be re-rendered in case when the new state is same as previous
+	    return <b>Counter Value: {this.state.counter}</b>
+	  }
+	}
+
+In the code above the component is inherited from React.PureComponent, each time the state or props are updated it compares the previous and next value — if the values are the same the Render function is not triggered. Performance is improved by not calling “render” recursively.
+
+Understanding Shallow Comparison:
+Before we proceed further, we need to understand the concept of Shallow Comparison in JavaScript. The values saved in the variable can be either a primitive or reference type. Example “var a = 10”, here the value saved in the variable “a” is of primitive type. The data stored in Objects and Array can be referred to as Reference type data. Comparing Primitive Values is not a concern, problems arise when we have reference values during the comparison.
+
+When we compare two different objects with the same properties, they equate to false. JavaScript looks for the object reference (Starting Address of the Object). Since the references are different, then even if the property values are the same, it results in “false” value.
+
+
+
+
+
+
+
+
+
+
+
+Some hooks functions: https://www.youtube.com/watch?v=TNhaISOUy6Q
+-----------------------------------------------------------------------------
+-> useSelector() - Allows you to extract data from the Redux store state
+-> useState() - uses state within a functional component
+-> useEffect() - Runs code when a component renders or re-renders. It returns nothing.
+	useEffect(() => { 
+		console.log('useEffect ran');
+	}); // this will run on every render and re-render
+
+	useEffect(() => { 
+		console.log('useEffect ran');
+	}, []); // this will run on only on initial render
+
+Note: we can make API calls inside of useEffect hook like JSON server --> 
+https://www.youtube.com/watch?v=eao7ABGFUXs --> Full React Tutorial #16 - Using JSON Server
+
+-> useContext() - Used to consume context in a functional component. We can use as many times as we want to consume different contexts.
+-> useMemo() - 
+Example: const isEven = useMemo(() => {
+	let i = 0;
+	while(i < 20000000) i++;
+	return counterOne % 2 === 0;
+}, [counterOne]);
+FMD --> https://www.youtube.com/watch?v=qySZIzZvZOY
+
+-> useCallback() - It's a hook that will return a memorized version of the callback function that only changes if one of the dependencies has changed. It's mainly used to deal with performance optimization.
+Example: const inrementAge = useCallback(() => {
+		setAge(age + 1);
+}, [age]);
+ FMD -> https://www.youtube.com/watch?v=IL82CzlaCys
+
+
+-> useRef()
+FMD -> https://www.youtube.com/watch?v=t2ypzz6gJm0
+Example: 
+import React, { useState, useEffect, useRef } from 'react';
+
+export default App = () => {
+	const [name, setName] = useState('');
+	let renderCount = useRef(0);
+	let inputRef = useRef();
+	let prevName = useRef('');
+
+	useEffect(() => {
+		renderCount.current = renderCount.current + 1;
+	});
+
+	useEffect(() => {
+		prevName.current = name;
+	}, [name]);
+
+	const focus = () => {
+		inputRef.current.focus();
+		// inputRef.current.value = 'Some value';
+	}
+
+	return (
+		<>
+			<input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
+			<div>My name is {name}, and it's used to be {prevName.current}</div>
+			<div>I re-rendered {renderCount.curent} times</div>
+			<button onClick={focus}>Focus</button>
+		</>
+	);
+}
+
+-> What is the difference between useMemo and useCallback?
+useMemo and useCallback use memoization.
+
+I like to think of memoization as remembering something.
+
+While both useMemo and useCallback remember something between renders until the dependancies change, the difference is just what they remember.
+
+useMemo will remember the returned value from your function.
+
+useCallback will remember your actual function.
+
+- what is memoization?
+Memoization can pretty much be summed up as a kind of cache for the value returned from a function.
+
+
+
+
+* React.Memo It's a higher order component. React.Memo will prevent unnecessary re-renders. And it's nothing to do with hooks.
+Syntax: export default React.memo(App);
+
+* What is a redux saga?
+Redux Saga is a middleware library used to allow a Redux store to interact with resources outside of itself asynchronously. This includes making HTTP requests to external services, accessing browser storage, and executing I/O operations. These operations are also known as side effects.
+
+* What is the difference between ReactDOM render and render?
+render only creates the virtual DOM. It does not add it to the actual browser DOM. ReactDOM.render does both.
+
+* How do you prevent a child component from rendering?
+If you're using a React class component you can use the shouldComponentUpdate method or a React.PureComponent class extension to prevent a component from re-rendering.
+
+* Which of the react lifecycle method is called before rendering?
+The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM. This is the natural place to set the state object based on the initial props.
+
+* What is synthetic events in React?
+A synthetic event is a cross-browser wrapper around the browser's native event. It has the same interface as the browser's native event, including stopPropagation() and preventDefault(), except the events work identically across all browsers.
+
+* What is React lazy loading?
+In essence, lazy loading means that a component or a part of code must get loaded when it is required. It is also referred to as code splitting and data fetching . Talking about React specifically, it bundles the complete code and deploys all of it at the same time.
+
+React.lazy
+By the version of 16.6, React has built in support for lazy loading components. React.lazy function takes a promise based function and returns it.
+
+<Suspense /> is a react component which has fallback prop that takes any react component. By using that component, you can show loading indicator.
+
+Example:
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom";
+/* wait 100 ms to render component */
+const CustomComponent = React.lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./custom-component")), 100)
+    )
+);
+/* wait 500 ms to render component */
+const CustomComponent2 = React.lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./custom-component")), 5000)
+    )
+);
+function App() {
+  return (
+    <>
+      <Suspense fallback={<div>Loading</div>}>
+        <CustomComponent label="Component 1" />
+        <CustomComponent2 label="Component 2" />
+      </Suspense>
+    </>
+  );
+}
+
+
+Ex: https://codesandbox.io/s/reactlazy-multiple-suspense-example-hgz4u?expanddevtools=1&fontsize=14
+FMD -> https://medium.com/@muratcatal/lazy-loading-in-react-2a43ea2b2dd1
+
+* What is event bubbling in React?
+Event Bubbling is the process that JavaScript looks for the DOM element at which event happened. It is divided into 3 phases: capturing phase, targeting phase, bubbling phase.
+
+* Can we use context API and Redux together?
+It is possible to use both in a project but unnecessary.
+
+* Should I use Redux or context API?
+Context API is easy to is use as it has a short learning curve. It requires less code, and because there's no need of extra libraries, bundle sizes are reduced. Redux on the other hand requires adding more libraries to the application bundle. The syntax is complex and extensive creating unnecessary work and complexity.
+
+* Diff B/W Redux vs Context API:
+Context API: Resourceful and ideal for small applications where state changes are minimal
+Redux: Perfect for larger applications where there are high-frequency state updates
+
+
+* how to get the previous value of props or state?
+-> Can I get previous state in useEffect?
+Since state isn't tightly coupled with component instance in functional components, previous state cannot be reached in useEffect without saving it first, for instance, with useRef
+
+-> With React class components you have the 'componentDidUpdate' method which receives previous props and state as arguments or you can update an instance variable (this. previous = value) and reference it later to get the previous value.
+
+-> Let’s see how we can implement a simple counter with class components:
+class Counter extends React.Component {
+ constructor(props) {
+   super(props);
+   this.state = {
+     prevCount: this.props.count,
+   };
+ }
+ 
+ componentDidUpdate(prevProps) {
+   if (prevProps.count !== this.props.count) {
+     this.setState({ prevCount: prevProps.count });
+   }
+ }
+ 
+ render() {
+   const { count } = this.props;
+   const { prevCount } = this.state;
+   return <h1>Now: {count}, before: {prevCount}</h1>;
+ }
+}
+
+-> Let’s see with functional components:
+import { useState, useEffect, useRef } from "react";
+// Usage
+function App() {
+  // State value and setter for our example
+  const [count, setCount] = useState(0);
+  // Get the previous value (was passed into hook on last render)
+  const prevCount = usePrevious(count);
+  // Display both current and previous count value
+  return (
+    <div>
+      <h1>
+        Now: {count}, before: {prevCount}
+      </h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+// Hook
+function usePrevious(value) {
+  // The ref object is a generic container whose current property is mutable ...
+  // ... and can hold any value, similar to an instance property on a class
+  const ref = useRef();
+  // Store current value in ref
+  useEffect(() => {
+    ref.current = value;
+  }, [value]); // Only re-run if value changes
+  // Return previous value (happens before update in useEffect above)
+  return ref.current;
+}
+
+FMD -> https://usehooks.com/usePrevious/
+
+* componentWillUnmount is used to make some operations like clearing the intervals.
+
+* What is React fragment for?
+A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+* What is error boundary in React?
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed. Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them.
+FMD --> https://kentcdodds.com/blog/use-react-error-boundary-to-handle-errors-in-react
+
+* What is boundary error example?
+An invalid value entered into an application. For example, if a number is higher or lower than a range of values or there are too many characters in a text entry, a boundary error occurs. See validity checking.
+FMD --> https://kentcdodds.com/blog/use-react-error-boundary-to-handle-errors-in-react
+
+* What is fallback UI in React?
+Error boundaries are React components which catch JavaScript errors anywhere in our app, log those errors, and display a fallback UI. ... It does not break the whole app component tree and only renders the fallback UI whenever an error occurred in a component.
+
+* How do I log errors in React JS?
+The first is the React error boundary component and the second is the try-catch statement.
+React Error Boundaries and Logging. Recently, React v16. 0 introduced error boundaries. ...
+Old-School Try-Catch Statement. There's nothing wrong with using a try-catch or try-catch-finally statement to log data and handle errors.
+
+
+* PropTypes exports a range of validators that can be used to make sure the data you receive is valid.
+
+* What is default props in React?
+The defaultProps is a React component property that allows you to set default values for the props argument. If the prop property is passed, it will be changed. The defaultProps can be defined as a property on the component class itself, to set the default props for the class.
+
+
+
+* What is the difference between Redux and context API?
+	- Context + useReducer are React features, and therefore cannot be used outside of React. A Redux store is independent of any UI, and so it can be used separate from React.
+	- Context API prompts a re-render on each update of the state and re-renders all components regardless. Redux however, only re-renders the updated components.
+
+
 * 
 
 
 
 
 
+All about using env file:
+---------------------------------------------------------------------
+* We should create .env file in root area
+* Every variable name should start with 'REACT_APP', otherwise we can't access the env variables with 'process.env'.
+Ex: REACT_APP_SITE_URL=http://localhost:8080
+* While creating the variales make sure that variable values don't wrapped with single OR double quotes && there should be no spaces after and before to the = sign.
+* Whenever we make any changes in .env file, we should re-start the server.
+
+FMD --> https://www.youtube.com/watch?v=KJE4LtAxLEw
+
+For axios instance setup refer --> https://www.youtube.com/watch?v=v8pYy4cIeSQ
 
 
 
 
+
+
+All about unit testing: https://www.youtube.com/watch?v=jrSE7XgGwRQ
+---------------------------------------------------------------------
+* We use in-built "@testing-library/react" library
+* 
+
+
+
+
+Packages used:
+-------------------------------------------
+* axios
+* react-redux
+* redux
+* redux-thunk
+* react-router-dom
+* react-notifications-component
+* 
+
+
+
+
+
+Features from React 16:
+-------------------------------------------
+* React Hooks
+* Context API
+* Error boudaries
+* Lazy loading
+* Strict mode
 
 
 
 ************************************ Askable Interview Q's ********************************************
-* What is current React JS version?
+* What is current React JS version? 17
 * What is 'Context API' & write sample connection?
 * What is 'Redux' & write sample connection?
+* Can you draw Redux flow?
+https://betterprogramming.pub/understanding-the-flow-of-a-react-redux-application-4dc8c8da08c7
+
 * What is 'Ref'?
 * What is a 'Higher order component'?
 * what is webpack in react js?
 * what is babel in react js?
+* What is lazy loading?
+* How to get the previous value of props or state?
 * What is the difference between arrow function and normal function?
-* What are the differences between Stateful and Stateless Components?
+https://www.geeksforgeeks.org/difference-between-regular-functions-and-arrow-functions/
+https://stackoverflow.com/questions/34361379/are-arrow-functions-and-functions-equivalent-interchangeable
+
+* What are 'Pure Components' in React?
+https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48
+
+* What are the differences between 'Stateful' and 'Stateless' Components?
 https://programmingwithmosh.com/javascript/stateful-stateless-components-react/
 
+* Diff B/W Redux vs Context API: https://www.codehousegroup.com/insight-and-inspiration/tech-stream/using-redux-and-context-api
+
+* What is 'error boundary' in React?
+FMD --> https://kentcdodds.com/blog/use-react-error-boundary-to-handle-errors-in-react
+
+* REACT MEMO vs USECALLBACK vs USEMEMO
+https://www.youtube.com/watch?v=uojLJFt9SzY
+
+* Regarding Unit testing.
+https://www.youtube.com/watch?v=jrSE7XgGwRQ
 
 *** https://www.w3schools.com/react/default.asp
 * https://www.interviewbit.com/react-interview-questions/

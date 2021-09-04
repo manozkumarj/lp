@@ -13,7 +13,7 @@
 
 * In React every tag should contain close tag. i.e, <img src="#" />
 
-* We have to use camecase to write css styles. i.e, marginBottom: '20px'
+* We have to use camelcase to write css styles. i.e, marginBottom: '20px'
 
 
 ******************************************************************************************************************************************* IMP Points *****************************************************

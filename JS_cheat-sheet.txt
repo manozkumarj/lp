@@ -104,8 +104,8 @@
 
 
 *********************************** Patterns *********************************************
-* 
-
+*** https://www.tutorialstonight.com/js/javascript-star-pattern.php
+*** https://www.tutorialstonight.com/number-pattern-programs-in-javascript.php
 
 
 ******************************************************************************************
