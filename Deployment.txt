@@ -19,3 +19,19 @@
 -------------------------------------------- Nginx ------------------------------------------------------------
 * Nginx is used for reverse proxy as well as load balencer.
 * 
+
+
+---------------------------------------------------------------------------------------------------------------
+-------------------------------------------- SSH ------------------------------------------------------------
+* SSH stands for Secure Shell
+* Secure connection between two machines
+* Allows remote administration of servers
+* Use it to transfer files to a remote server
+* SSH or Secure Shell is a network communication protocol that enables two computers to communicate (c.f http or hypertext transfer protocol, which is the protocol used to transfer hypertext such as web pages) and share data.
+* What is SSH command?
+ssh stands for “Secure Shell”. It is a protocol used to securely connect to a remote server/system. ... ssh command instructs the system to establish an encrypted secure connection with the host machine.
+* What is the difference between SSL and SSH?
+The first difference between SSL and SSH is their application. SSL is mostly used for establishing a secure connection between website and clients, while SSH is utilized to create secure remote connections on insecure networks. The second difference between SSL and SSH is in the method they both operate.
+* What is the difference between https and SSH?
+Any time someone uses a website with a URL that starts with HTTPS, he is on a site with SSL/TLS. SSH is for securely executing commands on a server. SSL is used for securely communicating personal information. SSH uses a username/password authentication system to establish a secure connection.
+* s

@@ -1,3 +1,5 @@
+* Brendan Eich is an American computer programmer and technology executive. He created the JavaScript programming language and co-founded the Mozilla project
+
 * Javascript is a "synchronous single threaded" language. It has one "call stack" and it can do onething at a time. This call stack is present in JS engine. All the JS code is executed inside of this call stack
 ********* https://www.youtube.com/watch?v=8zKuNo4ay8E
 
@@ -19,7 +21,12 @@ Call stack has many names, which are
   Runtime stack
   Machine stack
 
-* Jaascript engine is very fast.
+* Jaascript engine is very fast. There are many types of JS engines, for example
+  - Goolgle chrome, Node, Deno JS engine name is 'V8'
+  - Microsoft Edge's JS engine name is 'Chakra'
+  - Firefox JS engine name is 'SpiderMonkey'
+
+* JS can behave like 'Interpreted language' as well as 'Compiled language', it depends of JS Engine. When 'Brendan Eich' created the JS, it was suppose to be a 'Interpreted language'. But modern browser's JS engine behave like 'Interpreted language' as well as 'Compiled language'.
 
 * Functions in Js behave very differently when compared to other languages. Each function is like a new "Execution context" area.
 
@@ -123,6 +130,14 @@ CONST: Like let declarations, const declarations can only be accessed within the
   greeting.message = "say Hello instead";
 
 
+
+
+* What is the difference between document and window objects?
+Well, the window is the first thing that gets loaded into the browser. This window object has the majority of the properties like length, innerWidth, innerHeight, name, if it has been closed, its parents, and more.
+
+What about the document object then?
+
+The document object is your html, aspx, php, or other document that will be loaded into the browser. The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc. What does this really mean? That means if you want to access a property for the window it is window.property, if it is document it is window.document.property which is also available in short as document.property.
 
 
 
@@ -868,6 +883,9 @@ https://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-
 * Difference between 'forEach' and 'for loop' in Javascript
 https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/
 https://alligator.io/js/foreach-vs-for-loops/
+
+* What is the difference between document and window objects?
+http://eligeske.com/jquery/what-is-the-difference-between-document-and-window-objects-2/
 
 * JavaScript: Promises or async-await
 https://betterprogramming.pub/should-i-use-promises-or-async-await-126ab5c98789

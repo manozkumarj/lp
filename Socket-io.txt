@@ -1,5 +1,6 @@
+* WebRTC = Web Real-Time Communication
+* Alternatively we've WebTransport, it's a better version of WebSockets
 * 
-
 
 
 

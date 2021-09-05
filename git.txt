@@ -1,5 +1,31 @@
 * We can run Linux commands using git bash, that's the reason we use it.
 * Gitbash is a command line shell
+* Git is a version control system for tracking changes in computer file. It's userd for coordinating work among several people on a project and tracking progress over time.
+* Git is a software that can be installed directly onto our systems. It's used Source Code Management in software development.
+* Version Control System = It's a system that records all the changes made to a file or set of files, so a specific version may called later if needed. This helps in collaboration with all team members.
+* It allows multiple users to work together.
+* Large projects can be handled efficiently.
+* Git can be used offline and doesn't need internet connection for use.
+* Git can be used without Github
+* Used for version control and code sharing.
+* There's no GUI.
+* Code changes like commit, merge, etc. are done using commands from the command line.
+* Open source licensed.
+* Alternatives/Competitors are
+	- Mercurial, Supervision, IBM, Rational Team Concert and ClearCase
+
+
+
+* Github = It's a Git repository hosting service, which provides web-based graphical interface. It's hosted on the cloud.
+* Github can't be used offline and needs internet connection for use.
+* Used for centralised source code hosting on the cloud.
+* It provides an easy to use GUI.
+* Everything is done through a web-based interface.
+* Includes a free and pay for use tiers.
+* Alternatives/Competitors are
+	- Atlassian, BitBucket and GitLab
+
+
 
 * git --version
 * git init
@@ -11,9 +37,13 @@
 * git config --list/-l --system ( will list only the system settings )
 * git add index.html
 * git status
+* git stash (OR) git stash -u  --> Removes files from staging area
+* git stash list
+* git stash show
 * git rm --cached index.html
 * git restore --staged <file | .>" to unstage  (OR)  git reset  --> Used to undone "git add"
 * git commit -m 'changed a file'
+* git log (OR) git log --oneline (OR) git log --author="manoz" (OR) git log --before="DATE"  --> it shows all the commit history
 * git diff  --> Shows the differences between current repository and changes that were made.
 * git diff master 2nd   --> Shows the differences between "master" & "2nd" branches.
 * "git merge --abort" to abort the merge
@@ -46,14 +76,23 @@
 	-> git branch -l
 * You may also use the show-branch command for seeing the branches and their commits as follows
 	-> git show-branch
+* To delete a branch
+	-> git branch -d branchName  --> This will delete the branch but it shows notification of changes - preffered
+	-> git branch -D branchName  --> This will delete the branch without showing any changes notification
 
 
 * If we want to merge Login to Master branch
 	-> git merge login
 	* With above command, all the changes which were made inside of "Login" branch will be merged inside of "Master" branch
 
+* If we want to go to previous commit after commit a new commit, so first we need to see the logs, in the list of logs al the commits will be shown with HASH code. Then we need to run below command
+	-> git revert HASH(7af537f)
 
+And again if we want to move ahead, then
+	-> git revert HEAD (Basically it will take it to the recent/last commit)
 
+* If we want our branch to be upto date with any branch for example master branch after doing a new commit, then
+	-> git rebase master
 
 * To push local repository to server(GIT), first we need to create a repository in our GITHUB account. Then it will give instructions to add our local repository to server
 
@@ -79,6 +118,7 @@
 
 * To get all the changes from remote repository to our local repository, use below command
 	-> git pull
+	-> git pull origin develop
 
 * $ git push
 fatal: The current branch 2nd has no upstream branch.
@@ -144,6 +184,9 @@ and have 1 and 1 different commits each, respectively.
 ********************************* Useful Links *********************************************
 * https://stackoverflow.com/questions/3541647/git-add-vs-git-commit-a
 * https://www.youtube.com/watch?v=rgbCcBNZcdQ --> Creating a Simple Github Pull Request
+* https://www.youtube.com/watch?v=ytSoabxSQ6E --> Support for password authentication was removed Github Fixed using Token (August 13, 2021) - Linux
+*** https://www.youtube.com/watch?v=b5oQZdzA37I  --> Git Commands With Examples | Git Tutorial | Git Branching & Merging | DevOps Training | Edureka
+* https://www.youtube.com/watch?v=xJXgvr8bPes  --> Git vs GitHub | Git And GitHub Difference | What Is Git And GitHub? | Git And GitHub | Simplilearn
 * 
 
 

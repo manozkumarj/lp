@@ -632,6 +632,9 @@ FMD -> https://medium.com/@muratcatal/lazy-loading-in-react-2a43ea2b2dd1
 * What is event bubbling in React?
 Event Bubbling is the process that JavaScript looks for the DOM element at which event happened. It is divided into 3 phases: capturing phase, targeting phase, bubbling phase.
 
+* What is event delegation in React?
+It's a method of attaching event handlers not to the element from which you actually want to handle events, but to a higher-level element.
+
 * Can we use context API and Redux together?
 It is possible to use both in a project but unnecessary.
 
