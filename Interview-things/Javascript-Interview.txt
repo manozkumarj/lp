@@ -1,6 +1,6 @@
-* Brendan Eich is an American computer programmer and technology executive. He created the JavaScript programming language and co-founded the Mozilla project
+* Brendan Eich is an American computer programmer and technology executive. He created the JavaScript programming language and co-founded the Mozilla project.
 
-* Javascript is a "synchronous single threaded" language. It has one "call stack" and it can do onething at a time. This call stack is present in JS engine. All the JS code is executed inside of this call stack
+* Javascript is a "synchronous single threaded" language. It has one "call stack" and it can do onething at a time. This call stack is present in JS engine. All the JS code is executed inside of this call stack.
 ********* https://www.youtube.com/watch?v=8zKuNo4ay8E
 
 * Whenever we run a JS program, an "Global Execution context"(GEC) is created and it goes through 2 phases. "Memory creation phase" and "Code execition phase"
@@ -336,6 +336,20 @@ forEach Loop: It is a newer way with lesser code to iterate over an array. It is
 
   // Result:
   // 4
+
+
+* What is a Pure Function?
+Pure Function is a function (a block of code ) that always returns the same result if the same arguments are passed. It does not depend on any state, or data change during a program’s execution rather it only depends on its input arguments.
+
+Also a pure function does not produce any observable side effects such as network requests or data mutation etc.
+
+Let’s see the below JavaScript Function:
+
+function calculateGST( productPrice ) {
+    return productPrice * 0.05;
+}
+FMD --> https://www.geeksforgeeks.org/pure-functions-in-javascript/
+https://www.youtube.com/watch?v=fYbhD_KMCOg
 
 
 * 
@@ -890,12 +904,25 @@ http://eligeske.com/jquery/what-is-the-difference-between-document-and-window-ob
 * JavaScript: Promises or async-await
 https://betterprogramming.pub/should-i-use-promises-or-async-await-126ab5c98789
 
+* javascript difference between import and require
+https://stackoverflow.com/questions/46677752/the-difference-between-requirex-and-import-x
 
 * Javascript binary search
 https://stackabuse.com/binary-search-in-javascript/
 
 * Coding challenges
 https://www.fullstacktutorials.com/interviews/javascript-coding-questions-answers-6.html
+
+
+
+
+
+* 5 JavaScript Concepts You HAVE TO KNOW
+https://www.youtube.com/watch?v=a00NRSFgHsY
+
+
+
+
 
 *************************************** useful links ***********************************************
 * https://www.geeksforgeeks.org/javascript-interview-questions-and-answers

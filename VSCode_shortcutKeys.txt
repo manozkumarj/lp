@@ -46,6 +46,10 @@ Plugins:
 * Remote - Containers - by Microsoft
 * Awesome Flutter snippets - by Neevash Ramial
 * Paste JSON as Code - by Quicktype
+* Thunder Client - by Ranga Vadhineni  --> It's just like a Postman tools to make/test API calls
+FMD --> https://www.youtube.com/watch?v=AbCTlemwZ1k
+
+* 
 
 
 

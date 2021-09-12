@@ -9,3 +9,8 @@ Ex: let a = 1;
 	-> The above statements give error in TS but not in JS.
 
 * 
+
+
+
+* How to use TypeScript with React... But should you?
+https://www.youtube.com/watch?v=ydkQlJhodio

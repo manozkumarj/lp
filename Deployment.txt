@@ -1,8 +1,27 @@
+* Nginx & Apache are web-servers
+
+
 * CI(Continuous Integration) means everytime we make a commint/push to the branch, a new Build and Automation Test will be done. Integration means Pushing the code/Merging the new code into the codebase
 * CD(Continuous Delivery) means pushing that build to a dev/mock server. Delivery means Making it available for deployment.
 * Not every company/project follows both CI and CD. Few companies follow only CI and few may follow CD.
 * There are different tools available to implement CI/CD like - Jenkins, AWS, Git-Actions
 
+
+* We can use WinSCP or FileZilla to transfer file generally
+
+
+
+
+-------------------------------------------- YAML -----------------------------------------------------------
+* Generally YAML is a data serialization language just like XML, JSON
+* YAML isn't a Markup language.
+* File extension is .yaml OR .yml
+* YAML is like key-value pair kind of a thing and INDENTATION plays major role.
+* People generally use '_' to sepaate the words instead of camelcase.
+* Default date format is YYYY-MM-DD HH:MM:SS
+* YAML is widely used format for writting configurations for different DevOps tools and apps
+* 
+* 
 
 
 -------------------------------------------- Docker -----------------------------------------------------------
@@ -22,7 +41,7 @@
 
 
 ---------------------------------------------------------------------------------------------------------------
--------------------------------------------- SSH ------------------------------------------------------------
+-------------------------------------------- SSH --------------------------------------------------------------
 * SSH stands for Secure Shell
 * Secure connection between two machines
 * Allows remote administration of servers
@@ -34,4 +53,6 @@ ssh stands for “Secure Shell”. It is a protocol used to securely connect to 
 The first difference between SSL and SSH is their application. SSL is mostly used for establishing a secure connection between website and clients, while SSH is utilized to create secure remote connections on insecure networks. The second difference between SSL and SSH is in the method they both operate.
 * What is the difference between https and SSH?
 Any time someone uses a website with a URL that starts with HTTPS, he is on a site with SSL/TLS. SSH is for securely executing commands on a server. SSL is used for securely communicating personal information. SSH uses a username/password authentication system to establish a secure connection.
-* s
+* 'Telnet' is an alternative for SSH, but Telnet is not secure than SSH
+* Telnet is a type of client-server protocol that can be used to open a command line on a remote computer, typically a server. Users can utilize this tool to ping a port and find out whether it is open.
+* 

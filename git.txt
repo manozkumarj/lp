@@ -187,10 +187,11 @@ and have 1 and 1 different commits each, respectively.
 * https://www.youtube.com/watch?v=ytSoabxSQ6E --> Support for password authentication was removed Github Fixed using Token (August 13, 2021) - Linux
 *** https://www.youtube.com/watch?v=b5oQZdzA37I  --> Git Commands With Examples | Git Tutorial | Git Branching & Merging | DevOps Training | Edureka
 * https://www.youtube.com/watch?v=xJXgvr8bPes  --> Git vs GitHub | Git And GitHub Difference | What Is Git And GitHub? | Git And GitHub | Simplilearn
-* 
+
+* 5 Github Hacks that you should know | for Coders (Includes Keyboard shortcuts)
+https://www.youtube.com/watch?v=B67X9xtOyuI
 
 
-
-
+* https://git.io/  --> URL shortner
 ********************************* Useful Github users *********************************************
 * https://github.com/machadop1407

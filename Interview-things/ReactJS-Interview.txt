@@ -481,9 +481,13 @@ When we compare two different objects with the same properties, they equate to f
 
 
 
+* Redux flow
+	- First we should create a reducer with default state, it contains all the action types.
+	- Inside of index.js fie, we should import { Provider } from react-redux, and { createStore } from redux.
+	- And then we create a store and wrap the app root component with that <Provider store={store}>
+Sample Todo app using Redux - https://www.youtube.com/watch?v=IebYX3Okh44
 
-
-
+* 
 
 
 
@@ -575,7 +579,8 @@ Memoization can pretty much be summed up as a kind of cache for the value return
 Syntax: export default React.memo(App);
 
 * What is a redux saga?
-Redux Saga is a middleware library used to allow a Redux store to interact with resources outside of itself asynchronously. This includes making HTTP requests to external services, accessing browser storage, and executing I/O operations. These operations are also known as side effects.
+- Redux-saga is a library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures.
+- Redux Saga is a middleware library used to allow a Redux store to interact with resources outside of itself asynchronously. This includes making HTTP requests to external services, accessing browser storage, and executing I/O operations. These operations are also known as side effects.
 
 * What is the difference between ReactDOM render and render?
 render only creates the virtual DOM. It does not add it to the actual browser DOM. ReactDOM.render does both.
@@ -809,6 +814,7 @@ https://betterprogramming.pub/understanding-the-flow-of-a-react-redux-applicatio
 * what is babel in react js?
 * What is lazy loading?
 * How to get the previous value of props or state?
+* What is the difference between redux-thunk & redux-saga?
 * What is the difference between arrow function and normal function?
 https://www.geeksforgeeks.org/difference-between-regular-functions-and-arrow-functions/
 https://stackoverflow.com/questions/34361379/are-arrow-functions-and-functions-equivalent-interchangeable
@@ -829,6 +835,12 @@ https://www.youtube.com/watch?v=uojLJFt9SzY
 
 * Regarding Unit testing.
 https://www.youtube.com/watch?v=jrSE7XgGwRQ
+
+* Getting started with React and Redux todo app code walkthrough
+https://www.youtube.com/watch?v=IebYX3Okh44
+
+* Redux Saga vs Thunk: What should you choose?
+https://www.youtube.com/watch?v=K0gt-15moaI
 
 *** https://www.w3schools.com/react/default.asp
 * https://www.interviewbit.com/react-interview-questions/

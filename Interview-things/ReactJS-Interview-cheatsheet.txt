@@ -1,0 +1,79 @@
+
+* Lifecycle of Components
+Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+The three phases are: Mounting, Updating, and Unmounting.
+	-> Mounting
+		constructor()
+		getDerivedStateFromProps()
+		render()
+		componentDidMount()
+	-> Updating
+		getDerivedStateFromProps()
+		shouldComponentUpdate()
+		render()
+		getSnapshotBeforeUpdate()
+		componentDidUpdate()
+	-> Unmounting
+		componentWillUnmount()
+
+* What is a pure component?
+Pure Components in React are the components which do not re-renders when the value of state and props has been updated with the same values. If the value of the previous state or props and the new state or props is the same, the component is not re-rendered.
+
+* Basically we use setState() to change any state properties. setState() is asynchronous process. We can also use forceupdate() to change any state properties, but forceupdate() is synchronous process.
+Note: setState() & forceupdate() re-renders the component.
+
+-------------------------------------------------------------------------------------------------------------
+
+-> What is the difference between useMemo and useCallback?
+useMemo and useCallback use memoization.
+
+While both useMemo and useCallback remember something between renders until the dependancies change, the difference is just what they remember.
+
+useMemo will remember the returned value from your function.
+
+useCallback will remember your actual function.
+
+- what is memoization?
+Memoization can pretty much be summed up as a kind of cache for the value returned from a function.
+
+-------------------------------------------------------------------------------------------------------------
+* Explain React Hooks.
+What are Hooks? Hooks are functions that let us “hook into” React state and lifecycle features from a functional component.
+React Hooks cannot be used in class components. They let us write components without class.
+
+
+-> useSelector() - Allows you to extract data from the Redux store state
+-> useState() - uses state within a functional component
+-> useEffect() - Runs code when a component renders or re-renders. It returns nothing.
+-> useContext() - Used to consume context in a functional component. We can use as many times as we want to consume different contexts.
+-> useCallback() - It's a hook that will return a memorized version of the callback function that only changes if one of the dependencies has changed. It's mainly used to deal with performance optimization.
+* React.Memo It's a higher order component. React.Memo will prevent unnecessary re-renders. And it's nothing to do with hooks.
+Syntax: export default React.memo(App);
+
+-------------------------------------------------------------------------------------------------------------
+* What is React fragment for?
+A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+* What is error boundary in React?
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed. Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them.
+
+-------------------------------------------------------------------------------------------------------------
+* What is synthetic events in React?
+A synthetic event is a cross-browser wrapper around the browser's native event. It has the same interface as the browser's native event, including stopPropagation() and preventDefault(), except the events work identically across all browsers.
+
+* What is React lazy loading?
+In essence, lazy loading means that a component or a part of code must get loaded when it is required.
+
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------

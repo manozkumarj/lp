@@ -109,12 +109,12 @@ Note: If we want to align items vertically, we should specify height to the cont
 
 
 IMP points to be remembered:
----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 * We should use "overflow: auto" when we use "float: left" for list items for example.
 * We should use "Padding" on <a> tag if it is inside of <li> tag for better view.
 * We can't do "margin: auto" on inline elements.
 * Top, Bottom, Laft and Right properties won't work on "position: static".
-* "position: absolute" property work based on Parent element. And parent element position 	should be "relative".
+* "position: absolute" property work based on Parent element. And parent element position should be "relative".
 * 'class' styles overrides 'tag' styles.
 * Negative things are possible only for margins but not on paddings.
 * If we want to make an image center, first we should apply "display: block".
@@ -130,7 +130,7 @@ https://stackoverflow.com/questions/43707076/position-sticky-not-working-css-and
 
 
 For Cross browser support
----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 * https://medium.com/@elad/supporting-css-grid-in-internet-explorer-b38669e75d66
 * https://stackoverflow.com/questions/11173106/apply-style-only-on-ie
 .wrapper {
@@ -139,6 +139,57 @@ For Cross browser support
   display: -ms-flexbox;
   display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************* SASS *******************************************************
+* What is Sass?
+	- Sass stands for Syntactically Awesome Stylesheet
+	- Sass is an extension to CSS
+	- Sass is a CSS pre-processor
+	- Sass is completely compatible with all versions of CSS
+	- Sass reduces repetition of CSS and therefore saves time
+	- Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006
+	- Sass is free to download and use
+
+* Why Use Sass?
+Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.
+
+Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.
+
+* How Does Sass Work?
+A browser does not understand Sass code. Therefore, you will need a Sass pre-processor to convert Sass code into standard CSS.
+
+This process is called transpiling. So, you need to give a transpiler (some kind of program) some Sass code and then get some CSS code back.
+
+* Tip: Transpiling is a term for taking a source code written in one language and transform/translate it into another language.
+
+* Sass File Type
+Sass files has the ".scss" file extension.
+
+* 
+
+
+
+
+
+
+
+
+
 
 
 ******************************** Useful sites for CSS shapes related *********************************

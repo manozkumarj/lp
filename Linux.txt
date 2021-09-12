@@ -1,0 +1,47 @@
+* FHS - Filesystem Hierarchy Standard
+
+* In commsnds 'apt' is a package manager like 'npm'
+************************************************** Commands *****************************************************
+* pwd  --> It'll show the Present working Directory
+* ls  --> It'll show all the folders and files in Present working Directory
+* ls -l  --> It'll show all the folders and files in Present working Directory with permissions and other details
+* chmod  --> Used to changes the permissions of the folder/file
+* mkdir  --> Used to create a new directory
+* touch file.txt  --> Used to create a new file
+* mv  --> Used to move file(s)
+* cp  --> Used to copy file(s)
+* cp -r  -->  Used to copy directory including files in it.
+* rm text.txt  --> Used to delete file.
+* rm -R dir  --> Used to delete directory.
+* rm -rf dir  --> Used to delete directory even though that dir has some files in it.
+* cat text.txt  --> Quick preview of a file content without opening it in editor
+* history  --> It will show the history of command that were used so far
+* clear  --> Clears the commands
+* find bea*  --> Used to find files
+* vi text.txt  --> We can edit the file in command prompt itself, here press 'i' to enter into edit mode, use 'Esc' key to come back to command mode. To save use ':w'. To exit ':q'
+* df (OR) df -h  --> Shows the current status
+* ps aux  --> shows all applications in progress launched by the users and super user
+* sudo apt-get install aptitude  --> We can install/update our system from trusted resources
+* Remember to use 'man' + any command to get all the possible operations we do it with it.
+Ex: man ls
+	OR
+ls --help
+Then press 'u' to exit
+
+* sudo apt update  --> It'll update our packages
+* cd /  --> Takes us to root directory
+
+
+
+
+
+
+
+
+
+**********************************************************************************************************
+* Linux - Tutorial for Beginners in 13 MINUTES! [ UPDATED ]
+https://www.youtube.com/watch?v=BMGixkvJ-6w
+
+* Linux Tutorial - Basic Command Line - by Taversymedia
+https://www.youtube.com/watch?v=cBokz0LTizk&t=2s

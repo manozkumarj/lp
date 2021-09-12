@@ -1,0 +1,7 @@
+* Learning of Unit testing for React applications
+* Integration of Sockets in React app
+* Process of CI/CD pipeline with Node for MERN app
+* React with Typescript && React-query && Next JS
+* Need to learn Linux, all the commands including installing diff packages
+* Need to learn Python for Blockchain ;)
+* React with PWA including Push-Notifications

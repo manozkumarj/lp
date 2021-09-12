@@ -7,7 +7,7 @@
 
 
 
-
+* https://uicolorpicker.com/
 * https://pixexid.com/tag/360%20Panorama
 * https://api.github.com/users/bradtraversy/followers  || https://api.github.com/users/mosh-hamedani/followers
 * https://api.randomuser.me/?nat=IN&results=50
@@ -20,8 +20,13 @@
 * https://github.com/typicode/json-server
 * https://www.random.org/integers/?num=1&min=-1000&max=1000&col=1&base=10&format=plain&rnd=new
 * https://placeholder.com/
-* 
+* https://fakestoreapi.com/
 
+
+
+
+* MUST USE Websites & Tools for Web Developers
+https://www.youtube.com/watch?v=9CEW3Tmx2tg
 
 ******************************************************************************************************************
 * https://slides.com/
