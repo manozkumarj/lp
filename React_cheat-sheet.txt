@@ -7,6 +7,8 @@
 
   	Note:: 'npx' allows us to use 'create-react-app' without installing it first.
 
+ * npx create-react-app react-typescript-demo --template typescript
+
 * npm start
 	(By default, a ReactJS app runs on port 3000. An Express.js app also runs on the same port 3000)
 * npm build || npm run build
@@ -14,6 +16,8 @@
 * In React every tag should contain close tag. i.e, <img src="#" />
 
 * We have to use camelcase to write css styles. i.e, marginBottom: '20px'
+
+* If we use the version >= 17, then we no need to import 'React' in each file.
 
 
 ******************************************************************************************************************************************* IMP Points *****************************************************

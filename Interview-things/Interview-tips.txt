@@ -4,6 +4,9 @@
 
 
 
+* Spaghetti code:
+ - Spaghetti code is a pejorative phrase for unstructured and difficult-to-maintain source code. Spaghetti code can be caused by several factors, such as volatile project requirements, lack of programming style rules, and software engineers with insufficient ability or experience.
+
 
 * --------- Few Tips and Tricks to groom yourself for the Interview ---------
 Here are some tips and tricks to answer one of the famous questions, "Tell me about yourself". This is a very common question which everyone (including a highly experienced candidate) has to answer in an interview. Here, my concentration is very much on freshers and people with minimal experience. As this group of candidates usually end up giving irrelevant information. When this question is asked, make sure the following points are considered:

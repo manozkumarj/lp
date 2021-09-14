@@ -49,14 +49,32 @@ Plugins:
 * Thunder Client - by Ranga Vadhineni  --> It's just like a Postman tools to make/test API calls
 FMD --> https://www.youtube.com/watch?v=AbCTlemwZ1k
 
+* Material Icon Theme  - by Philipp Kief
+* Material Theme  - by Equinusocio
+* Cobalt2 Theme Official - by wes Bos
+* Winter is coming - by John papa
+* 
+
+
+**************************************************************************************
+Themes:
+-----------------------------------------------------------------------------
+* Monokai++
+* Night owl
 * 
 
 
 
-* Monokai++ (Theme)
 
 
 
+**************************************************************************************
+Shortcuts:
+-----------------------------------------------------------------------------
+* To open a new file --> ctrl + n
+* To close the current file/window --> ctrl + w
+* To open the command palette --> ctrl + p && ctrl + Shift + p
+* To switch between the file --> ctrl + tab
 
 
 ******************************************************************************
@@ -79,9 +97,19 @@ IMP Points:
 
 
 
-******************************************************************************
+*****************************************************************************************************************
 IMP Links:
------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+***** VS Code Tricks you might not want to miss
+ - https://www.youtube.com/watch?v=sXu7PBJRTFM
+* Matching Colorful Brackets are BUILT IN to VS Code - (No Extension Needed)
+https://www.youtube.com/watch?v=KZC2_OMaEpc
+* 5 Ways to Customize VS Code
+ - https://www.youtube.com/watch?v=yvXHM2NByh4
+*** Don't Use the Sidebar in VS Code!!
+ - https://www.youtube.com/watch?v=s3H6PmB4SZ4
+***** VS Code tips: The Editor: Cursor Blinking setting
+ - https://www.youtube.com/watch?v=Hms3gUBKaVQ
 * https://community.dynamics.com/nav/b/tharangacnavblog/posts/git-bash-on-visual-studio-code-integrated-terminal
 
 
@@ -94,3 +122,13 @@ Note: After installing any plugin, we should re-start VSCode.
 *** 25 VS Code Productivity Tips and Speed Hacks --> https://www.youtube.com/watch?v=ifTF3ags0XI
 * 
 
+
+
+
+
+
+**************************************** My fav settings ***************************************************************
+* Theme is 'Cobalt2 Theme Official - by wes Bos'
+* For Icons 'Material Icon Theme  - by Philipp Kief'
+* Font is 'CascadiaCode'
+* 

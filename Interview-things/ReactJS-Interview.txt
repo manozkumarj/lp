@@ -812,9 +812,12 @@ https://betterprogramming.pub/understanding-the-flow-of-a-react-redux-applicatio
 * What is a 'Higher order component'?
 * what is webpack in react js?
 * what is babel in react js?
+* How do you upgrade your React App?
 * What is lazy loading?
 * How to get the previous value of props or state?
 * What is the difference between redux-thunk & redux-saga?
+* What are the Pros and Cons of ReactJS?
+	- https://www.koombea.com/blog/react-pros-and-cons-what-are-the-advantages-and-disadvantages-of-reactjs/
 * What is the difference between arrow function and normal function?
 https://www.geeksforgeeks.org/difference-between-regular-functions-and-arrow-functions/
 https://stackoverflow.com/questions/34361379/are-arrow-functions-and-functions-equivalent-interchangeable
