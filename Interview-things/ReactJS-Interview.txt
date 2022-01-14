@@ -745,6 +745,14 @@ The defaultProps is a React component property that allows you to set default va
 	- Context + useReducer are React features, and therefore cannot be used outside of React. A Redux store is independent of any UI, and so it can be used separate from React.
 	- Context API prompts a re-render on each update of the state and re-renders all components regardless. Redux however, only re-renders the updated components.
 
+* What is the difference between npm and yarn?
+NPM and Yarn are package managers that help to manage a project’s dependencies. A dependency is, as it sounds, something that a project depends on, a piece of code that is required to make the project work properly. We need them because managing the project’s dependencies is a difficult task and it quickly becomes tedious, and out of hand when the project grows. By managing the dependencies, we mean to include, un-include, and update them.
+
+npm: It is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command-line client, also called npm, and an online database of public and paid-for private packages called the npm registry.
+
+yarn: It stands for Yet Another Resource Negotiator and it is a package manager just like npm. It was developed by Facebook and is now open-source. The intention behind developing yarn(at that time) was to fix performance and security concerns with npm.
+
+FMD --> https://www.geeksforgeeks.org/difference-between-npm-and-yarn/
 
 * 
 
@@ -800,6 +808,24 @@ Features from React 16:
 * Strict mode
 
 
+Features from React 17:
+--------------------------------------------------------------------
+* We no need to import 'React' in each component like before
+* Hot-reload has become much faster
+* Service-worker is not supported
+
+
+
+
+Features from React 18:
+--------------------------------------------------------------------
+* Root API
+* Automatic Batching - mean group multiple state updates into a single re-render for better performance
+Note: we opt-out automatic batching by using 'flushSync'
+* startTrasition
+* Suspense and SSR (Server Side Rendering)
+FMD --> https://www.youtube.com/watch?v=BN4pVo7ectA
+
 
 ************************************ Askable Interview Q's ********************************************
 * What is current React JS version? 17
@@ -814,6 +840,10 @@ https://betterprogramming.pub/understanding-the-flow-of-a-react-redux-applicatio
 * what is babel in react js?
 * How do you upgrade your React App?
 * What is lazy loading?
+* What are Styled Components in React?
+* What is the difference between npm and yarn?
+https://www.geeksforgeeks.org/difference-between-npm-and-yarn/
+
 * How to get the previous value of props or state?
 * What is the difference between redux-thunk & redux-saga?
 * What are the Pros and Cons of ReactJS?

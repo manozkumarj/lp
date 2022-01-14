@@ -3,7 +3,11 @@
 * SMA = Simple Moving Average
 * ILO = Initial Liquidity Offering
 
+* Crypto coin: Is an independent project which has its own block chain. I.e. bitcoin, cardano, ethereum, harmony-one, algorand and so forth.
 
+Crypto token: Doesn't have its own block chain. It's built on another crypto block chain. In the case of Shiba Inu, it's built on the Ethereum block chain via ERC20 token. SHIB's tokenization is created via ERC20. This is why you need to pay eth gas fee to move it to the shibaswap because it's on the eth main net.
+
+* 
 
 
 
@@ -26,11 +30,28 @@ https://www.youtube.com/watch?v=92um5BfI4yg
 * https://www.youtube.com/watch?v=a8ww4aNlPQU  --> What is an NFT? (Crypto Beginners)
 * https://www.youtube.com/watch?v=7CMks9_PVqs  --> Pay ZERO Taxes on Your Crypto Gains with a CRT | Mark J Kohler
 * https://www.youtube.com/watch?v=YJyXfjbBmc8  --> All about Blockchain | Simply Explained
+* Crypto Coin vs Token (Differences + Examples)
+https://www.youtube.com/watch?v=422HORNUfkU
+
+* What is an NFT? (Non-Fungible Tokens Explained)
+https://www.youtube.com/watch?v=4dkl5O9LOKg
+
+* What is Ethereum Gas? (Examples + Easy Explanation)
+https://www.youtube.com/watch?v=3ehaSqwUZ0s
+
+* What is DeFi? (Decentralized Finance Animated)
+https://www.youtube.com/watch?v=17QRFlml4pA
+
+* What is a Liquidity Pool in Crypto? (Animated)
+https://www.youtube.com/watch?v=dVJzcFDo498
+
+* https://www.youtube.com/watch?v=CBCdajjBM_Q
+MetaMask వాడడం ఎలా? Step by Step Simply Explained for Beginners | Uniswap, PanCakeSwap | Airdrop?
+
+* https://www.youtube.com/watch?v=h93uttcHcM4
+Crypto Cashout Plan | How we Plan to Cashout this Bull Cycle | Crypto Telugu
+
 * 
-
-
-
-
 
 
 

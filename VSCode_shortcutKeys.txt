@@ -35,6 +35,7 @@ Plugins:
 * Sublime Babel
 * Path Intellisense
 * Deno
+* vscode-styled-components  --> by Julien Poissonnier
 * Material Icon Theme by Philipp Kief
 * advanced-new-file - by patbenatar
 * REST Client - by Huachao Mao
@@ -61,7 +62,7 @@ Themes:
 -----------------------------------------------------------------------------
 * Monokai++
 * Night owl
-* 
+* Dark+
 
 
 
@@ -130,5 +131,5 @@ Note: After installing any plugin, we should re-start VSCode.
 **************************************** My fav settings ***************************************************************
 * Theme is 'Cobalt2 Theme Official - by wes Bos'
 * For Icons 'Material Icon Theme  - by Philipp Kief'
-* Font is 'CascadiaCode'
+* Font is 'Cascadia Code' OR 'Dark+' And change for font to {'cascadia code', Consolas, 'Courier New', monospace} in settings
 * 

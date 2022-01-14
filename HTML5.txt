@@ -1,8 +1,28 @@
 HTML5:
 ********************************************************************
 
+* Types of inputs we have
+ - text
+ - email
+ - color
+ - date
+ - time
+ - password
+ - checkbox
+ - radio
+ - file
 
-
+* Less known elements
+ - legend
+ - fieldset
+ - progress
+ - datalist
+ - sub
+ - sup
+ - picture
+ - source
+ - pre
+ - template
 
 
 
@@ -55,3 +75,9 @@ body {
     padding: 0;
     unicode-bidi: embed;
 }
+
+
+
+*************************************** Useful links *****************************************************
+***** 5+ Must Know HTML Tags That Almost Nobody Knows --> by WDS
+https://www.youtube.com/watch?v=iX_QyjdctsQ

@@ -94,7 +94,11 @@ ng g s test-service
 
 * 'axios' is a HTTP request library.
 
-* 
+* What we can't do with Interpolation?
+ - We can't use 'typeof' keyword
+ - We can't use increament/decreament operators
+ - We can't assign values
+ - We can't use 'new' keyword
 
 
 
@@ -113,7 +117,7 @@ ng g s test-service
 * How do you test your application? What tools do you use for testing?
 * What are structural directives in Angular?
 * What is lambda expression in angular?
-* 
+* What we can't do with Interpolation?
 
 
 *************************************** useful links ***********************************************

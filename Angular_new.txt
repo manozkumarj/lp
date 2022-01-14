@@ -88,6 +88,27 @@ Ex: let colSpan = 2;
 
 
 
+* Components are building-blocks of the App
+* Diff B/W Interpolation & property binding
+	- <input type="text" value={{name}} />  --> This is Interpolation
+	- <input type="text" [value]="name" />  --> This is property binding
+Note: We can't use Boolean value with interpolation
+
+
+
+
+
+
+
+Angular 12 Features:
+---------------------------------------------------------------------------------------------------
+* By default strict mode is True. We can check that inside tsconfig.json file.
+* 
+
+
+
+
+
 Short & Sweet:
 ----------------------------------------------------------------------------
 * We should register all the "componenets", "pipes" & "directives" inside of "declarations" array in app.module.ts
@@ -131,6 +152,19 @@ Folder structure:
 
 Commands:
 ----------------------------------------------------------------------------
+* npm i -g @angular/cli@latest
+* ng -v
+* ng help
+* ng generate --help
+* ng new myApp
+* ng serve
+* ng generate component navbar || ng g c navbar
+* ng g c user-list --inine-style
+* ng g c student-list --inine-template
+* ng g c country-list --inine-style --inine-template
+* ng g module user-auth
+* ng generate service api-service || ng g s api-service
+* ng g class dummy
 * ng build environment=prod || ng build --prod
 * ng lint
 * ng lint --fix
