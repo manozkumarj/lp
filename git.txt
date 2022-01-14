@@ -195,6 +195,5 @@ https://www.youtube.com/watch?v=B67X9xtOyuI
 * https://git.io/  --> URL shortner
 
 
-Token-2 --> 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
 ********************************* Useful Github users *********************************************
 * https://github.com/machadop1407
