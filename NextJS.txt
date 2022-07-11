@@ -2,10 +2,29 @@
 * SEO crawlers can read the site content easily
 * By default NextJS uses 3000 port, to change the port use below command
 	-> next dev -p 4000
+* Next JS is a React Framework for production.
+* Next.js is an open-source web development framework built on top of Node.js enabling React based web applications functionalities such as server-side rendering and generating static websites.
+* Next JS is a React Framework built & maintain by Vercel company.
+* Next JS is a React framework that enables you to build superast and extremely user-friendly static websites, as well as full fledge production ready web applications using React.
+* The big reason to choose Next JS is its SEO efficiency/friendly.
+* It's using Server-Side Rendering (SSR) and at the same time it can also be great Static Site Generator (SSG).
+* Next.JS websites are super-fase, easy-to-scan, and provide a great user experience and that's why Google wil favour them above other and rank them higher.
+* There are many more why we should learn NextJS
+	-> File Based Routing(pages/index.js)
+	-> Support for CSS Modules(CSS for each page)
+	-> Pre-rendering (better SEO)
+	-> Image Optimization ('next/image')
+	-> API route ('pages/api/user.js')
+	-> Typescript support, Fast refresh (fast Live Editing Experience)
+	-> Dev & Prod buid system
+
+* Commands: ------------------------------------------------------------------------------------------------------------
+* npx create-next-app PROJECT-NAME
+* npm run dev
 * 
 
-
-
+Note: PROJECT-NAME shouldn't contain capital letters
+-------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -14,4 +33,11 @@
 
 
 ******************************************* Useful Links *******************************************
+*** https://www.youtube.com/watch?v=nresBvpaVH0  --> NextJs in 7 Minutes
+* https://www.youtube.com/watch?v=R59e1Vl5lO8 --> 10 Next.js Tips You Might Not Know!
+* https://www.youtube.com/watch?v=6jWWKczzGM0  --> 5 Reasons I Use Next.js Over Plain React
+*** https://www.youtube.com/watch?v=hpClfDEmNu8 --> Client Side Rendering vs Server Side Rendering vs Pre-Rendering | JavaScript SEO (2022)
+* 
+* https://www.youtube.com/watch?v=f1rF9YKm1Ms --> Client-Side VS Server-Side Rendering - Data Fetching with Next.js
 * https://www.youtube.com/watch?v=lmXZLFXLcc0&list=PLZjjdd9-SJS2ZvI4ct5Qtkje_Vdb5O_KM&index=1
+* 

@@ -860,6 +860,7 @@ Note: make VAR to LET
 * What ES6 features?
 * What are higher-order methods? explain them?
 * Diff B/W for-in & for-of?
+* Diff B/W est operator & Spread operator?
 *** Diff B/W const, let, and var?
 https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
 * What is Hoisting? -> https://www.youtube.com/watch?v=Fnlnw8uY6jo

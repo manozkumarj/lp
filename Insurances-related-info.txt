@@ -1,13 +1,41 @@
+* IRDA --> Insurance Regulatory and Development Authority
+* 
+
 -----------------------------------------------------------------------------------------------------------------------
 Term Insurance related:------------------------------------------------------------------------------------------------
+* Riders we need to look for
+	- Life stage benefit(Can we increase the coverage in future with same premium)
+	- Waiver of Premium
+	- Critical illness rider
+	- 
+* Facilities we need to ask
+	- Will you provide insurance for suicide also?
 * 
 
 Useful videos:
+* https://www.youtube.com/watch?v=uPqNNshSA9I  --> All you need to know about Term Insurance | CA Rachana Ranade
+* 
+
+------------------------------------------------------------------------------------------------------------------------
+Term Insurance for Parents:---------------------------------------------------------------------------------------------
+* I think Max Life company suits best
+
+Useful videos:
+* https://www.youtube.com/watch?v=GN6Ly8DKN5A  --> Good News|New Term Insurance |Saral jeevan bheema
+* https://www.youtube.com/watch?v=lLxxuDLCT24  --> Saral Jeevan Bima Details In Telugu - Best Term Insurance Plan In 2021 | Kowshik Maridi
+* https://www.youtube.com/watch?v=N4CRmawnbLs  --> Pradhan Mantri Jeevan Jyoti Bima Yojana Scheme in Telugu | PMJJBY Scheme Telugu | Kowshik Maridi
+* https://www.youtube.com/watch?v=9-7D67j5fQ4  --> "కొత్త స్కీం వచ్చింది " #LIC Saral Jeevan Bhima Telugu, LIC New Plan
+* https://www.youtube.com/watch?v=xdpZlW3xLIA  --> Saral Jeevan Bima in telugu
+* https://www.youtube.com/watch?v=mEmmE-SGOF0  --> "వచ్చేసింది - 10 లక్షల భీమా 240/- రూ ||లకే " #Saral Jeevan Bhima In Telugu ( 2021)
+* https://www.youtube.com/watch?v=gUNl7PrQCPs  --> Max Life Saral Jeevan Beema || Best Term Plan 2021 || @palleturi kurradu
 * 
 
 ---------------------------------------------------------------------------------------------------------------------
 Health Insurance related:--------------------------------------------------------------------------------------------
 * Personal & Floater types
+* Two types of payments are there
+	- Reimbursed
+	- Cashless
 * Waiting period?
 * No claim bonus (What if we don't go to hospital in a year)
 * Covered diseases including Corona, Cancer and all
@@ -31,6 +59,18 @@ Health Insurance related:-------------------------------------------------------
 * Will you do medical check-up every year?
 * Is there Live-Healthy benefit?
 
+* 10 things to chek before buying Heath Insurance - by Rachana Ranade
+	- Cashless treatment
+	- Network Hospitals
+	- Coverage for Pre & Post Hospitalisation
+	- Claim settlement ration
+	- More than Hospitalisation
+	- Restoration benefir
+	- Co-pay clauses
+	- Insurance cap
+	- Waiting period
+	- No claim bonus
+
 IMP points:----------
 * In-Patient treatment means if a patient hospitalized min 24Hrs in hospital
 * Day-care treatment means if a patient diesn't need 24Hrs hospitalization
@@ -44,4 +84,9 @@ IMP points:----------
 Useful videos:------
 * https://www.youtube.com/watch?v=pWT0Jz9_Elc --> Best health insurance policy in india 2020 Telugu | Health insurance guide
 *** https://www.youtube.com/watch?v=4BBUemQUVOg --> Max Bupa health insurance : Max Bupa reassure plan in Telugu (2021)
+* https://www.youtube.com/watch?v=jLdwFGtaMcA --> Top 5 Reasons to Buy Health Insurance | CA Rachana Ranade
+
+
+Tax Benefit sectons:------
+* Section 80D up to 25K for individuals below 60 yeard, but an additional tx benefit of 50K if your parents are above 60 years
 ----------------------------------------------------------------------------------------------------------------------------

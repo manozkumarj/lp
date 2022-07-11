@@ -1,3 +1,5 @@
+* Javascript is a scripting language used both on cient and server, that allows you to make web pages interactive.
+
 * JSON.parse(): A common use of JSON is to exchange data to/from a web server.
 When receiving data from a web server, the data is always a string.
 Parse the data with JSON.parse(), and the data becomes a JavaScript object.
@@ -32,6 +34,9 @@ Reference DATATYPES:
 * Objects
 * Array
 *********************************************************************
+NUMBERS:
+-------------
+* Type of 1 and 1.5 is Number only.
 
 *********************************************************************
 STRINGS:
@@ -488,10 +493,31 @@ If the argument is an expression, eval() evaluates the expression. If the argume
 
 * Js imparative and declarative
 
+-----------------------------------------------------------------------------------------------------
+List of ES5 features:
+-----------------------------------------------------------------------------------------------------
+--> Array features:
+* isArray();
+let let data = [1,2,3,4,5];
+console.log(Array.isArray(data)); // true
 
+map();
+filter();
+forEach();
+every();
+some();
+indexOf();
+lastIndexOf();
+
+--> JSON features:
+stringify();
+
+--> Date features:
+valueOf();
+
+-----------------------------------------------------------------------------------------------------
 List some new features of ES6:
----------------------------------------------------------------------
-New Features in ES6.
+-----------------------------------------------------------------------------------------------------
 Support for constants (also known as “immutable variables”)
 Block-Scope support for both variables, constants, functions
 Arrow Functions
@@ -505,8 +531,69 @@ Destructuring Assignment
 Modules, Classes, Iterators, Generators
 Support for Map/Set & WeakMap/WeakSet
 Promises, Meta-Programming ,Internationalization & Localization
-Exponentiation Operator
----------------------------------------------------------------------------
+Default parameters
+Rest operators
+Classes
+* Async/Await
+-----------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------
+List some new features of ES7:
+-----------------------------------------------------------------------------------------------------
+* Exponentiation Operator
+console.log(3**3) // 27;
+
+* includes();
+
+-----------------------------------------------------------------------------------------------------
+List some new features of ES8:
+-----------------------------------------------------------------------------------------------------
+* padStart()
+* padEnd()
+* Object.entries()
+* Object.values()
+
+
+-----------------------------------------------------------------------------------------------------
+List some new features of ES9:
+-----------------------------------------------------------------------------------------------------
+* Regular expression improvements
+* 
+
+
+-----------------------------------------------------------------------------------------------------
+List some new features of ES10:
+-----------------------------------------------------------------------------------------------------
+* Flat
+* Functions.toString
+* trimStart()
+* trimEnd()
+* Object.fromEntries
+
+-----------------------------------------------------------------------------------------------------
+List some new features of ES11:
+-----------------------------------------------------------------------------------------------------
+* BigInt (Number.MAX_SAFE_INTEGER)
+2*53-1 = 9007199254740991
+* Dynamic import
+* Nullish operator
+let name = null;
+let output = name ?? 'John';
+* Optional Chaining
+
+
+-----------------------------------------------------------------------------------------------------
+List some new features of ES12:
+-----------------------------------------------------------------------------------------------------
+* String.prototype.replaceAll()
+* Numeric Separators
+* Logical assignment operators
+&&-, ||-
+
+
+-----------------------------------------------------------------------------------------------------
+
 
 * JSON.stringify
 * JSON.parse

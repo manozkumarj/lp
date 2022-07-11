@@ -49,9 +49,10 @@
 * Means if we wanna use 'state' then don't need to use 'class component' anymore.
 -> useState() - uses state within a functional component
 -> useEffect() - Runs code when a component renders or re-renders
--> useContext() - Used to consume context in a functional component. We can use as many times as we want to consume different contexts.
+	* We can use 'useEffect()' as many times as we want.
+-> useContext() - Context provides a way to pass data through component tree without having to pass props down manually at every level. Used to consume context in a functional component. We can use as many times as we want to consume different contexts.
 
-* We can use 'useEffect()' as many times as we want.
+
 
 
 *** Usage of Context with Reducer ***
@@ -466,7 +467,7 @@ every route.
 	
 ******************************************************************************************************
 *********************************** Points to be noted ***********************************************
-* Only 'Class based components' contain 'Life-cycle' hooks but not 'Functional components'
+* Only 'Class based components' contain 'Life-cycle' methods but not 'Functional components'
 * 
 
 
